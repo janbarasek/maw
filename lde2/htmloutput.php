@@ -297,6 +297,7 @@ MathJax.Hub.Config({
    SVG: { linebreaks: { automatic: true } }
    });
 
+
 	</script>
 
 	<?php

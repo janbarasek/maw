@@ -93,16 +93,16 @@ $souborobr = fopen(NAZEV_SOUBORU_OBR, "w");
 
 fwrite($souborobr, "set isosamples 30 \n");
 fwrite($souborobr, "set view $viewa," . "$viewb \n");
-//fwrite($souborobr,"unset border \n");
+
 fwrite($souborobr, "unset title \n");
 fwrite($souborobr, "unset key \n");
 fwrite($souborobr, "set size square \n" . $colorizegraph . "\n");
-//fwrite($souborobr,"set term png size 600,600 transparent\n");
-//fwrite($souborobr,'set output "solid.png"'."\n");
+
+
 fwrite($souborobr, "set term svg size 600,600 \n");
 fwrite($souborobr, 'set output "solid.svg"' . "\n");
-//fwrite($souborobr,"set xrange [$xmin:$xmax]\n");
-//fwrite($souborobr,"set yrange [$ymin:$ymax]\n");
+
+
 fwrite($souborobr, "set vrange [" . $meza . ":" . $mezb . "]\n");
 fwrite($souborobr, "set urange [0:6.28]\n");
 fwrite($souborobr, "$hidden\nset parametric\n");
@@ -126,14 +126,11 @@ fclose($souborobr);
 /* Here we run all programms                                            */
 /* ---------------------------------------------------------------------*/
 
-//$file=$maw_tempdir."/solid.png";
-//system ("cd $maw_tempdir; gnuplot solid; convert -shave 40x40 solid.png solid.png");
+
 $file = $maw_tempdir . "/solid.svg";
 system("cd $maw_tempdir; gnuplot solid");
 
-//header("Content-Type: image/png");
-//header("Content-Disposition: attachment; filename=".basename($file).";" );
-//header("Content-Transfer-Encoding: binary");
+
 header("Content-Type: image/svg+xml");
 header("Content-Disposition: attachment; filename=" . basename($file) . ";");
 readfile($file);

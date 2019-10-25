@@ -35,8 +35,6 @@ require('streams.php');
 require('gettext.php');
 
 
-// Variables
-
 global $text_domains, $default_domain, $LC_CATEGORIES, $EMULATEGETTEXT, $CURRENTLOCALE;
 $text_domains = [];
 $default_domain = 'messages';
@@ -44,8 +42,6 @@ $LC_CATEGORIES = ['LC_CTYPE', 'LC_NUMERIC', 'LC_TIME', 'LC_COLLATE', 'LC_MONETAR
 $EMULATEGETTEXT = 0;
 $CURRENTLOCALE = '';
 
-
-// Utility functions
 
 /**
  * Utility function to get a StreamReader for the given text domain.
@@ -56,7 +52,7 @@ function _get_reader($domain = null, $category = 5, $enable_cache = true)
 	if (!isset($domain))
 		$domain = $default_domain;
 	if (!isset($text_domains[$domain]->l10n)) {
-		// get the current locale
+
 		$locale = _setlocale(LC_MESSAGES, 0);
 		$p = isset($text_domains[$domain]->path) ? $text_domains[$domain]->path : './';
 		$path = $p . "$locale/" . $LC_CATEGORIES[$category] . "/$domain.mo";
@@ -118,8 +114,6 @@ function _encode($text)
 }
 
 
-// Custom implementation of the standard gettext related functions
-
 /**
  * Sets a requested locale, if needed emulates it.
  */
@@ -130,8 +124,8 @@ function _setlocale($category, $locale)
 		if ($CURRENTLOCALE != '')
 			return $CURRENTLOCALE;
 		else
-			// obey LANG variable, maybe extend to support all of LC_* vars
-			// even if we tried to read locale without setting it first
+
+
 			return _setlocale($category, $CURRENTLOCALE);
 	} else {
 		$ret = 0;
@@ -158,7 +152,7 @@ function _setlocale($category, $locale)
 function _bindtextdomain($domain, $path)
 {
 	global $text_domains;
-	// ensure $path ends with a slash
+
 	if ($path[strlen($path) - 1] != '/')
 		$path .= '/';
 	elseif ($path[strlen($path) - 1] != '\\')
@@ -191,7 +185,6 @@ function _gettext($msgid)
 {
 	$l10n = _get_reader();
 
-	//return $l10n->translate($msgid);
 	return _encode($l10n->translate($msgid));
 }
 
@@ -210,7 +203,6 @@ function _ngettext($single, $plural, $number)
 {
 	$l10n = _get_reader();
 
-	//return $l10n->ngettext($single, $plural, $number);
 	return _encode($l10n->ngettext($single, $plural, $number));
 }
 
@@ -221,7 +213,6 @@ function _dgettext($domain, $msgid)
 {
 	$l10n = _get_reader($domain);
 
-	//return $l10n->translate($msgid);
 	return _encode($l10n->translate($msgid));
 }
 
@@ -232,7 +223,6 @@ function _dngettext($domain, $single, $plural, $number)
 {
 	$l10n = _get_reader($domain);
 
-	//return $l10n->ngettext($single, $plural, $number);
 	return _encode($l10n->ngettext($single, $plural, $number));
 }
 
@@ -243,7 +233,6 @@ function _dcgettext($domain, $msgid, $category)
 {
 	$l10n = _get_reader($domain, $category);
 
-	//return $l10n->translate($msgid);
 	return _encode($l10n->translate($msgid));
 }
 
@@ -254,13 +243,9 @@ function _dcngettext($domain, $single, $plural, $number, $category)
 {
 	$l10n = _get_reader($domain, $category);
 
-	//return $l10n->ngettext($single, $plural, $number);
 	return _encode($l10n->ngettext($single, $plural, $number));
 }
 
-
-// Wrappers to use if the standard gettext functions are available, but the current locale is not supported by the system.
-// Use the standard impl if the current locale is supported, use the custom impl otherwise.
 
 function T_setlocale($category, $locale)
 {
@@ -276,7 +261,7 @@ function T_bindtextdomain($domain, $path)
 
 function T_bind_textdomain_codeset($domain, $codeset)
 {
-	// bind_textdomain_codeset is available only in PHP 4.2.0+
+
 	if (_check_locale() and function_exists('bind_textdomain_codeset'))
 		return bind_textdomain_codeset($domain, $codeset);
 	else return _bind_textdomain_codeset($domain, $codeset);
@@ -339,8 +324,6 @@ function T_dcngettext($domain, $single, $plural, $number, $category)
 	else return _dcngettext($domain, $single, $plural, $number, $category);
 }
 
-
-// Wrappers used as a drop in replacement for the standard gettext functions
 
 if (!function_exists('gettext')) {
 	function bindtextdomain($domain, $path)

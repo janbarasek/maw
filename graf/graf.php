@@ -79,7 +79,7 @@ if (($out == "gif") || ($out == "pdf")) {
 		echo sprintf("\n<li>" . __("<b>This message usually appears also if you click link more times than once.</b>"));
 		echo sprintf("\n<li><b>" . __("Wait a bit, return to the page with calculator form, fill again if necessary and resend the form. Then you will be allowed to build animation again. But click only once and be patient (about 20 sec)!") . "<b>");
 		system("rm -r " . $maw_tempdir);
-//    system ("rm /tmp/maw_lock");
+
 		$datcasip = "funkce: $fce, $xmin..$xmax, $ymin..$ymax, $out";
 		save_log($datcasip, "posun-grafu-odmitnuto");
 		die();
@@ -100,7 +100,6 @@ if ((stristr($fcenew, 'log')) and (preg_match('~[^0-9/.]~', $logbase)) and ($nat
 	die();
 }
 
-// formconv_gnuplot moved to maw.php
 
 if ((stristr($fcenew, 'log')) and ($naturallog == "0")) {
 	$logbasetex = formconv($logbase);
@@ -114,16 +113,8 @@ if ($naturallog == "1") {
 
 if ($out == "html") {
 	maw_html_head();
-	//echo ($maw_processing_msg);
 
-	//ob_flush();
-	//flush();
-	//if (function_exists("maw_after_flush")) {echo(maw_after_flush());}
 
-	//function hide_message()
-	//{
-	//  return('<script>document.getElementById("processing").style.display = "none";</script>');
-	//}
 }
 
 $vystup = `$mawtimeout $maxima --batch-string="fcenew:$fcenew;load(\"/var/www/maw/graf/graf.mac\");"`;
@@ -136,8 +127,6 @@ $vystup = str_replace("\"\n#", "\"#", $vystup);
 $vystup = str_replace("\"###", "\"##a#", $vystup);
 $vystup = preg_replace("~(\(%i1.*\(%i2)~", "%i2", $vystup);
 
-//if ($out=="html")   {echo '<pre>';echo $vystup;echo '</pre>'; }
-//echo"---------------\n";
 
 $vystupk = $vystup;
 $vystupk = str_replace(" ", "", $vystupk);
@@ -156,12 +145,8 @@ if ($out == "html") {
 }
 
 if (!((stristr($vystupk, "kontrola10")) and (stristr($vystupk, "kontrola2[[0,0],[0,0]]")))) {
-	//save_log_err("funkce: $fce, $xmin..$xmax, $ymin..$ymax, $out","posun-grafu");
-	//$address="&function=".rawurlencode($fce)."&xmin=".rawurlencode($xmin)."&xmax=".rawurlencode($xmax)."&ymin=".rawurlencode($ymin)."&ymax=".rawurlencode($ymax);
-	//echo("<hr><center>\$ y=".formconv($fcenew)."\\neq A f\\Bigl(ax+b\\Bigr)+B \$</center><hr>");
-	//echo (hide_message());
-	//echo sprintf(__("<b>Attempt to draw the graph by shifting and resizing graph of basic elementary function failed.</b> <ul><li>The function is not in the form  A*f(a*x+b)+B, where A, a, B, b are real constants and f is basic elementary function.</li><li>The graph is on the picture below. If you wish to investigate function from its derivatives, use %s another application in MAW%s (your function and bounds for the picture will be transferred into new form automatically when clicking the previous link).</li></ul>")," <a href=\"$mawhtmlhome/index.php?form=prubeh".$address."\">","</a>");
-	//check_for_errors($vystupkopie,"funkce: $fce, $xmin..$xmax, $ymin..$ymax, $out","posun-grafu");
+
+
 	die();
 }
 
@@ -195,7 +180,6 @@ function najdiretezec($klicoveslovo, $retezec)
 	$vystup = $matches[0];
 	$vystup = str_replace("### " . $klicoveslovo, "", $vystup);
 
-	//  echo $vystup.'<br>';
 	return ($vystup);
 }
 
@@ -273,10 +257,8 @@ if (($out == "html") and ($funkcetex != $funkcetexorig)) {
 	}
 
 	echo '<li>' . sprintf(__("Shift: horizontally %s units and vertically  %s units (positive values mean move to the left or top, negative to the right or bottom)"), $vodpos, $svpos) . "</li>";
-	//echo sprintf(__("<li>The graph is bold. Click the picture to see an animation of the deformation in GIF format or click the following link to get a high quality output in %s form. (takes few seconds)</li>"),"<a href=\"$mawphphome/graf/graf.php?naturallog=$naturallog&logbase=$logbase&out=pdf&lang=$lang&funkce=".rawurlencode("$fce")."&xmin=$xmin&ymin=$ymin&xmax=$xmax&ymax=$ymax&mrizka=$mrizka.\">PDF</a>");
-	//echo "<li>";
-	//$link=$mawphphome.'/graf/graf.php?naturallog='.$naturallog.'&lang='.$lang.'&logbase='.$logbase.'&out=gif&funkce='.rawurlencode("$fce").'&xmin='.$xmin.'&ymin='.$ymin.'&xmax='.$xmax.'&ymax='.$ymax.'&mrizka='.$mrizka;
-	//printf (__("Click %s here %s to see the annimation how the graph of basic elementary function transforms into desired graph."),"<a href=\"$link\">","</a>");
+
+
 	echo '</ul>';
 	echo '<div>';
 }
@@ -326,7 +308,7 @@ if (($out == "gif") or ($out == "pdf")) {
 	fwrite($souborobr, "unset key\n");
 	if ($out == "gif") {
 		fwrite($souborobr, "set term gif notransparent size 500,400\n");
-		//fwrite($souborobr,"set term gif size 500,400\n");
+
 		$pripona = "gif";
 		$styl = "";
 		$stylas = " lt -1";
@@ -586,24 +568,6 @@ if (($out == "gif") or ($out == "pdf")) {
 fclose($souborobr);
 
 $jmeno = getmypid();
-
-//if ($out=="html")
-//  {
-//    echo '<img alt="loading ..." src="'.$mawphphome.'/graf/graf.php?naturallog=',$naturallog,'&logbase=',$logbase,'&out=svg&funkce=',rawurlencode("$fce"),'&xmin=',$xmin,'&ymin=',$ymin,'&xmax=',$xmax,'&ymax=',$ymax,'&mrizka=',$mrizka,'"></img>';
-//  }
-// if ($out =="png"){
-//   $file=$maw_tempdir."/graf.png";
-//   system ("cd $maw_tempdir; gnuplot vstup");
-//   header("Content-Type: image/png");
-//   readfile($file);
-//  }
-
-// if ($out =="svg"){
-//   $file=$maw_tempdir."/graf.svg";
-//   system ("cd $maw_tempdir; gnuplot vstup");
-//   header("Content-Type: image/svg+xml");
-//   readfile($file);
-//  }
 
 
 if ($out == "gif") {

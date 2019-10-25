@@ -1,7 +1,6 @@
 <?php
 
-// func: redirect($to,$code=307)
-// spec: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+
 function redirect($to, $code = 301)
 {
 	$location = null;
@@ -47,7 +46,7 @@ function redirect($to, $code = 301)
 		header("Location: $location");
 		header('Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0');
 	} elseif (($hs == true) || ($code == 302) || ($code == 303)) {
-		// todo: draw some javascript to redirect
+
 		$cover_div_style = 'background-color: #ccc; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;';
 		echo "<div style='$cover_div_style'>\n";
 		$link_div_style = 'background-color: #fff; border: 2px solid #f00; left: 0px; margin: 5px; padding: 3px; ';
@@ -59,8 +58,7 @@ function redirect($to, $code = 301)
 	exit(0);
 }
 
-//redirect("./mathtex.cgi?".str_replace(" ","{}",rawurldecode($_SERVER['QUERY_STRING'])));
 redirect("./mathtex.cgi? " . rawurldecode($_SERVER['QUERY_STRING']));
-//echo '<img src="./mathtex.cgi?',str_replace(" ","{}",rawurldecode($_SERVER['QUERY_STRING'])),'>';
+
 
 ?>

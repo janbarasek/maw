@@ -3,7 +3,6 @@ $scriptname = "domf";
 
 require("../common/maw.php");
 
-// We do now allow hyperbolic and other functions here. Could be fixed later.
 $functions = 'abs|asin|acos|atan|acot|sin|cos|tan|cot|log|exp|sqrt';
 $parameters = ' ';
 
@@ -137,7 +136,7 @@ if ($akce == 5) {
 				echo("\n");
 			}
 			echo '</table><br><br>';
-			//     echo '<pre>',$podminky[1][2],'</pre>';
+
 
 			if ($pocetprom != "1") {
 				echo '<b>', __("Domain (red region)"), '</b> <br>';

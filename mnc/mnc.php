@@ -163,7 +163,6 @@ if ($requestedoutput == "html") {
 	die();
 }
 
-//die("<pre>".$TeXfile);
 
 /* Errors in compilation? We send PDF file or log of errors              */
 /* ---------------------------------------------------------------------*/

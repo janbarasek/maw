@@ -82,7 +82,7 @@ if ($akce == 1) {// looking for curve intersections
 	system("$mawtimeout $maxima --batch-string=\"display2d:false\$ float(solve($fcef=$fceg,[x]));\"");
 
 	echo "</pre>";
-	//echo __("<h2>Remarks</h2><ul> <li>You can use the clipboard to copy the output into the form.</li> <li>Use back button to go back to the form.</li><li>Remember to change the action for computation now. Otherwise you get this page again.</li></ul>");
+
 
 	$parameters = "a=$meza&b=$mezb&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&f=" . rawurlencode("$fcef") . "&g=" . rawurlencode("$fceg");
 	echo("<h2>" . __("Picture") . "</h2>" . "<center><img class=centerimg alt=\"Loading ...\" src=\"$mawphphome/gnuplot/gnuplot_region.php?$parameters\"></center>");
@@ -98,7 +98,6 @@ $xmax = input_to_maxima($xmax, "xmax");
 $ymin = input_to_maxima($ymin, "ymin");
 $ymax = input_to_maxima($ymax, "ymax");
 
-// test if the interval for integration is a subset of integral for picture
 $kontrola = `$mawtimeout $maxima --batch-string="print (\"asdf\",is($meza>=$xmin),is($mezb<=$xmax),\"asdf\",\"lll\",is($mezb-($meza)>0));"`;
 
 check_for_errors($kontrola, $datcasip, "geom");
@@ -133,9 +132,8 @@ if (preg_match("~lll *false ~", $kontrola)) {
 	$fixedlink = preg_replace('/.*\?/', '', $fixedlink);
 	$fixedlink = preg_replace('/&referer=.*?&/', '&', $fixedlink);
 	$link = "$mawhtmlhome/index.php?form=geom&auto=1&$fixedlink";
-	//echo ("<h2>aaaa</h2>".$link);
-	//$link=str_replace(mezaa,mezb,str_replace(mezb,meza,str_replace(meza,mezaa,$maw_URI)));
-	//http://um.mendelu.cz/dev-maw/geom/geom.php?lang=cs&ip=62.245.112.168&referer=http%3A%2F%2Fum.mendelu.cz%2Fdev-maw-html%2Findex.php%3Flang%3Dcs%26amp%3Bform%3Dintegral&funkceg=1&funkcef=4&meza=0&mezb=1&akce=0&xmin=-1&xmax=3&ymin=-1&ymax=3
+
+
 	printf(__("<h2>Error</h2>The upper limit (%s) for the set (and for integration) is bigger then the lower limit (%s). Interchange limits in the form or clicking this %slink%s."), "<i>$mezb</i>", "<i>$meza</i>", "<a href=\"$link\">", "</a>");
 	$datcasip = $datcasip . " interchanged limits";
 	save_log_err($datcasip, "geom");
@@ -144,8 +142,6 @@ if (preg_match("~lll *false ~", $kontrola)) {
 	$linkfcef = $fceg;
 }
 
-
-// 1-st test: both functions are continuous and well ordered on [a,b]
 $kontrola = `$mawtimeout $maxima --batch-string="load(\"$mawhome/geom/tests.mac\"); testreal($fcef,$meza,$mezb);testreal($fceg,$meza,$mezb);test1($fcef,$fceg,$meza,$mezb);"`;
 if (preg_match("~an error.~", $kontrola)) {
 	maw_html_head();
@@ -179,7 +175,6 @@ if (preg_match("~an error.~", $kontrola)) {
 
 check_for_errors($kontrola, $datcasip . " " . $problem, "geom");
 
-// volume of revolution - test that the region does not intersect x axis
 
 if (($akce == "2") || ($akce == "3")) {
 	$kontrola = `$mawtimeout $maxima --batch-string="load(\"$mawhome/geom/tests.mac\"); test2($fcef,$fceg,$meza,$mezb);"`;
@@ -199,7 +194,7 @@ if (($akce == "2") || ($akce == "3")) {
 		echo("<pre>$kontrola</pre></body></html>");
 		die();
 	}
-	// check if both functions are positive or negative
+
 	$kontrola2 = `$mawtimeout $maxima --batch-string="load(\"$mawhome/geom/tests.mac\"); test1($fceg,0,$meza,$mezb);"`;
 	if (preg_match("~an error.~", $kontrola2)) {
 		$tempf = $fcef;
@@ -258,26 +253,11 @@ if ($akce == 3) { // 3d picture - solid of revolution
 	}
 
 
-	//echo '<br>',changeviewgnuplot(10,0,__("up")),'<br>';
-	//echo changeviewgnuplot(0,10,__("left")),'<br>';
-	//echo changeviewgnuplot(0,-10,__("right")),'<br>';
-	//echo changeviewgnuplot(-10,0,__("down")),'<br>';
-
-	//$href="geom.php?akce=2&funkcef=".rawurlencode("$linkfcef")."&funkceg=".rawurlencode("$linkfceg")."&xmin=".rawurlencode("$xmin")."&xmax=".rawurlencode("$xmax")."&ymin=".rawurlencode("$ymin")."&ymax=".rawurlencode("$ymax")."&meza=".rawurlencode("$meza")."&mezb=".rawurlencode("$mezb")."&colors=$colors&hidden=$hidden&lang=$lang";
-	//echo ("<a href=\"$href\">".__("Volume computation")."</a><br>");
-
-
 	$strsolid = "<img class=centerimg alt=\"Loading ...\" src=\"../../maw/geom/solid.php?viewa=" . rawurlencode($viewa) . "&viewb=" . rawurlencode($viewb) . "&fcef=" . rawurlencode("$fcef") . "&fceg=" . rawurlencode("$fceg") . "&meza=" . rawurlencode("$meza") . "&mezb=" . rawurlencode("$mezb") . "&xmin=" . rawurlencode("$xmin") . "&xmax=" . rawurlencode("$xmax") . "&ymin=" . rawurlencode("$ymin") . "&ymax=" . rawurlencode("$ymax") . "&colors=$colors&hidden=$hidden\">";
 
 	echo $strsolid;
 
-	//echo '<br>',changeviewgnuplot(10,0,__("up")),'<br>';
-	//echo changeviewgnuplot(0,10,__("left")),'<br>';
-	//echo changeviewgnuplot(0,-10,__("right")),'<br>';
-	//echo changeviewgnuplot(-10,0,__("down")),'<br>';
 
-	//$href="geom.php?akce=2&funkcef=".rawurlencode("$linkfcef")."&funkceg=".rawurlencode("$linkfceg")."&xmin=".rawurlencode("$xmin")."&xmax=".rawurlencode("$xmax")."&ymin=".rawurlencode("$ymin")."&ymax=".rawurlencode("$ymax")."&meza=".rawurlencode("$meza")."&mezb=".rawurlencode("$mezb")."&colors=$colors&hidden=$hidden&lang=$lang";
-	//echo ("<a href=\"$href\">".__("Volume computation")."</a><br>");
 	die("</body></html>");
 }
 

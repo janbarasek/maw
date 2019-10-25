@@ -476,12 +476,6 @@ td {padding:10px;}
 
 }
 
-//if ($pdflink==1)
-//{
-//echo ("<hr><a href=\"$mawphphome"."/..".$maw_URI."&what=pdf\">PDF</a>");
-//}
-
-//echo ("<pre>".$output);
 
 echo hide_message() . '</body></html>';
 

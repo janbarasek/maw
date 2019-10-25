@@ -28,7 +28,6 @@ function VolumeB($a, $b, $c, $d)
 
 require("$maw_tempdir/data.php");
 
-//printf ("<h3>%s</h3>",$problem);
 
 printf("<div class=logickyBlok>%s</div>", $problem);
 

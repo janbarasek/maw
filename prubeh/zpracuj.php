@@ -53,7 +53,7 @@ check_for_security("$fce, $xmin, $xmax, $ymin, $ymax");
 
 check_for_y($fce);
 $variables = 'x';
-//$parameters=' ';
+
 
 $funkce = input_to_maxima($fce);
 check_for_y($fce);
@@ -65,7 +65,6 @@ check_for_y($fce);
 $maw_tempdir = "/tmp/MAW_maxima" . getmypid() . "xx" . RandomName(6);
 system("mkdir $maw_tempdir; chmod oug+rwx $maw_tempdir; touch $maw_tempdir/uspech");
 
-//test, jestli je funkce polynom, nebo RLF
 $prvnipruchod = `$mawtimeout $maxima --batch-string="display2d:false$ [load(linearalgebra), f(x):=$funkce, g:xthru(f(x)),u:ratsimp(num(g)),polynomialp(num(g),[x]),v:denom(g),polynomialp(denom(g),[x]),kraceni,if is(num(ratsimp(f(x)))=0) or ratsimp(diff(expand(num(g))/expand(num(ratsimp(f(x)))),x))=0 then 0 else gcd(expand(num(xthru(f(x)))),expand(denom(xthru(f(x))))),zkraceno,ratsimp(f(x)),testnapolynom,polynomialp(g,[x])];"`;
 
 check_for_errors($prvnipruchod, "funkce: $fce,  x:$xmin..$xmax,   y:$ymin..$ymax, typ:$typ, bad input", "prubeh");
@@ -75,7 +74,6 @@ ereg("\(%o2\).*", $prvnipruchod, $vystup);
 $testpol = ereg_replace("\n", "", $vystup[0]);
 $testpol = ereg_replace(" ", "", $testpol);
 
-//if ((ereg("true.*true",$testpol)) and (!(ereg("true,1,true",$testpol))))
 if ((ereg("true.*true", $testpol)) and (ereg("testnapolynom,false", $testpol))) {
 	$typ = "racionalni lomena funkce";
 	if ((!ereg("kraceni,0", $testpol)) and (ereg("\"/\"", $testpol))) {
@@ -252,7 +250,7 @@ if ((ereg("true.*true", $testpol)) and (ereg("testnapolynom,false", $testpol))) 
 	$htmlFile = $htmlFile . "</div></div>";
 
 	$htmlFile = $htmlFile . sprintf(" <div class='inlinediv'><div class='logickyBlok'>");
-	//$htmlFile = $htmlFile.sprintf("<p>%s :&nbsp;&nbsp;&nbsp; $\\displaystyle y' %s = %s $ </p>",__("Evaluation of \$y''\$"),$vypocetderBHTML,$derivacesoucBHTML);
+
 	$htmlFile = $htmlFile . sprintf("<p>%s :&nbsp;&nbsp;&nbsp; $\\displaystyle y'' = %s $ </p>", __("The second derivative"), $derivacesoucBHTML);
 	$htmlFile = $htmlFile . sprintf("<p>%s :&nbsp;&nbsp;&nbsp; $\\displaystyle %s =0 $ </p>", __("Condition for critical points"), $rcekritHTML);
 
@@ -272,9 +270,8 @@ if ((ereg("true.*true", $testpol)) and (ereg("testnapolynom,false", $testpol))) 
 	}
 	$htmlFile = $htmlFile . "<p>" . $temp . "</p>";
 
-	//if ($mawISAjax==0) {
 	$htmlFile = $htmlFile . sprintf("<img class=centerimg alt='Processing image ...' src=\"%s/prubeh/zpracuj.php?funkce=%s&xmin=%s&xmax=%s&ymin=%s&ymax=%s&output=png\">", $mawphphome, rawurlencode($fce), rawurlencode($xmin), rawurlencode($xmax), rawurlencode($ymin), rawurlencode($ymax));
-	//   }
+
 
 } else {
 	if (ereg("true,1,true", $testpol)) {
@@ -311,8 +308,6 @@ if ((ereg("true.*true", $testpol)) and (ereg("testnapolynom,false", $testpol))) 
 	fwrite($soubor, 'block( if numberp(factor(diff(f,x,2))) then tex([],"' . $maw_tempdir . '/output.tex' . '") else tex(map(testreal,maw_solve_in_domain(factor(ratsimp(' . $trigsimp . '(radcan(diff(f,x,2))))),f,x)),"' . $maw_tempdir . '/output.tex"));' . "\n");
 	fwrite($soubor, 'if numberp(f) then tex([],"' . $maw_tempdir . '/output.tex' . '") else tex(map(testreal,maw_solve_in_domain(f,f,x)),"' . $maw_tempdir . '/output.tex");' . "\n");
 
-
-//  $funkce_tex="\\def\\funkce{".exec("echo \"$funkce\"|/usr/bin/formconv")."}";
 
 	fclose($soubor);
 
@@ -440,9 +435,8 @@ if ((ereg("true.*true", $testpol)) and (ereg("testnapolynom,false", $testpol))) 
 	}
 	$htmlFile = $htmlFile . $lostsolsHTML;
 
-	//if ($mawISAjax==0) {
 	$htmlFile = $htmlFile . sprintf("<br><img class=centerimg alt='Processing image ...' src=\"%s/prubeh/zpracuj.php?funkce=%s&xmin=%s&xmax=%s&ymin=%s&ymax=%s&output=png&rendom=%s\">", $mawphphome, rawurlencode($fce), rawurlencode($xmin), rawurlencode($xmax), rawurlencode($ymin), rawurlencode($ymax), $maw_tempdir);
-	//}
+
 }
 
 
@@ -482,9 +476,8 @@ if ($lastline != "") {
 			}
 			$htmlFile = str_replace($formconv_repl_input, $formconv_repl_output, $htmlFile);
 			echo $htmlFile;
-			//echo "vypocet<pre style='max-width:800px;'>";
-			//system("cd $maw_tempdir ; cat *.tex");
-			//echo "</pre>";
+
+
 			if ($mawISAjax == 0) {
 				echo('</body></html>');
 			}

@@ -546,7 +546,6 @@ $y_p=\partikularni$
 ';
 }
 
-// initial value problem
 
 system("cd $maw_tempdir; touch output; $catchmawerrors");
 

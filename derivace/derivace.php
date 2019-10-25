@@ -69,16 +69,14 @@ if ($akce == "2") {
 } else {
 	fwrite($soubor, "load(\"$mawhome/derivace/derivace2.mac\");\n");
 	if ($akce == "1") {
-		//fwrite($soubor,"texput(derivace,[\"\\\\frac{\\\\partial}{\\\\partial x}\\\\left(\",\"\\\\right)\\\"],matchfix);\n texput(derivaceb,[\\\"\\\\frac{\\\\partial}{\\\\partial x}\\\\left(\\\",\\\"\\\\right)\\\"],matchfix);\n ");
-		//texput(derivace,["\\left(","\\right)^\\prime"],matchfix)$
-		//texput(derivaceb,["\\left(","\\right)^\\prime"],matchfix)$
+
+
 		fwrite($soubor, 'texput(derivace,["\\\\frac{\\\\partial}{\\\partial x}\\\\left(","\\\\right)"],matchfix)$ ' . "\n");
 		fwrite($soubor, 'texput(derivaceb,["\\\\frac{\\\\partial}{\\\\partial x}\\\\left(","\\\\right)"],matchfix)$' . "\n");
 
 	}
 }
 
-//fwrite($soubor,"trace(r6,r7,r8,r15,r16);");
 fwrite($soubor, "simp:false;\n formula_to_tex($funkce,\"\\\\zadani y=\");\n simp:true;\n");
 
 if ($suppose_linear == "on") {
@@ -180,10 +178,8 @@ if ($_REQUEST["output"] != "pdf"):
 
 	$outb = `cd $maw_tempdir; cat soubor.tex`;
 	$outb = str_replace("\n", " ", $outb);
-//echo "<pre>";
-//echo $outb;
-//die();
-//preg_match("/\"\\\\.*\\konec\";/" , $outb , $matches);
+
+
 	preg_match_all('/\"\\\\.*?konec/', $outb, $matches);
 
 	function fixderivative($str)
@@ -229,9 +225,8 @@ if ($_REQUEST["output"] != "pdf"):
 
 	array_shift($items);
 	foreach ($items as $value) {
-//$search=Array("\\(","\\)");
-//$replace=Array("<img src=\"http://um.mendelu.cz/mathtex/mathtex.php?","\">");
-//echo str_replace($search,$replace,$value);
+
+
 		if (substr($value, 0, 2) == "\\(") {
 			echo "<br>$value </div><div class=logickyBlok>\n";
 		} else {

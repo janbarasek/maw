@@ -35,10 +35,9 @@
  */
 class gettext_reader
 {
-	//public:
+
 	var $error = 0; // public variable that holds error code (0 if no error)
 
-	//private:
 	var $BYTEORDER = 0;        // 0: low endian, 1: big endian
 	var $STREAM = null;
 	var $short_circuit = false;
@@ -62,19 +61,17 @@ class gettext_reader
 	 */
 	function gettext_reader($Reader, $enable_cache = true)
 	{
-		// If there isn't a StreamReader, turn on short circuit mode.
+
 		if (!$Reader || isset($Reader->error)) {
 			$this->short_circuit = true;
 
 			return;
 		}
 
-		// Caching can be turned off
 		$this->enable_cache = $enable_cache;
 
-		// $MAGIC1 = (int)0x950412de; //bug in PHP 5
 		$MAGIC1 = (int) -1794895138;
-		// $MAGIC2 = (int)0xde120495; //bug
+
 		$MAGIC2 = (int) -569244523;
 
 		$this->STREAM = $Reader;
@@ -89,7 +86,6 @@ class gettext_reader
 			return false;
 		}
 
-		// FIXME: Do we care about revision? We should.
 		$revision = $this->readint();
 
 		$this->total = $this->readint();
@@ -106,10 +102,10 @@ class gettext_reader
 	function readint()
 	{
 		if ($this->BYTEORDER == 0) {
-			// low endian
+
 			return array_shift(unpack('V', $this->STREAM->read(4)));
 		} else {
-			// big endian
+
 			return array_shift(unpack('N', $this->STREAM->read(4)));
 		}
 	}
@@ -123,10 +119,10 @@ class gettext_reader
 	function readintarray($count)
 	{
 		if ($this->BYTEORDER == 0) {
-			// low endian
+
 			return unpack('V' . $count, $this->STREAM->read(4 * $count));
 		} else {
-			// big endian
+
 			return unpack('N' . $count, $this->STREAM->read(4 * $count));
 		}
 	}
@@ -214,32 +210,32 @@ class gettext_reader
 	function find_string($string, $start = -1, $end = -1)
 	{
 		if (($start == -1) or ($end == -1)) {
-			// find_string is called with only one parameter, set start end end
+
 			$start = 0;
 			$end = $this->total;
 		}
 		if (abs($start - $end) <= 1) {
-			// We're done, now we either found the string, or it doesn't exist
+
 			$txt = $this->get_original_string($start);
 			if ($string == $txt)
 				return $start;
 			else
 				return -1;
 		} else if ($start > $end) {
-			// start > end -> turn around and start over
+
 			return $this->find_string($string, $end, $start);
 		} else {
-			// Divide table in two parts
+
 			$half = (int) (($start + $end) / 2);
 			$cmp = strcmp($string, $this->get_original_string($half));
 			if ($cmp == 0)
-				// string is exactly in the middle => return it
+
 				return $half;
 			else if ($cmp < 0)
-				// The string is in the upper half
+
 				return $this->find_string($string, $start, $half);
 			else
-				// The string is in the lower half
+
 				return $this->find_string($string, $half, $end);
 		}
 	}
@@ -258,13 +254,13 @@ class gettext_reader
 		$this->load_tables();
 
 		if ($this->enable_cache) {
-			// Caching enabled, get translated string from cache
+
 			if (array_key_exists($string, $this->cache_translations))
 				return $this->cache_translations[$string];
 			else
 				return $string;
 		} else {
-			// Caching not enabled, try to find string
+
 			$num = $this->find_string($string);
 			if ($num == -1)
 				return $string;
@@ -281,11 +277,10 @@ class gettext_reader
 	 */
 	function get_plural_forms()
 	{
-		// lets assume message number 0 is header  
-		// this is true, right?
+
+
 		$this->load_tables();
 
-		// cache header field for plural forms
 		if (!is_string($this->pluralheader)) {
 			if ($this->enable_cache) {
 				$header = $this->cache_translations[""];
@@ -344,10 +339,8 @@ class gettext_reader
 				return $single;
 		}
 
-		// find out the appropriate form
 		$select = $this->select_string($number);
 
-		// this should contains all strings separated by NULLs
 		$key = $single . chr(0) . $plural;
 
 

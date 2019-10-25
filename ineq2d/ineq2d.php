@@ -44,8 +44,6 @@ $ymax = $_REQUEST["ymax"];
 
 check_for_security("$nerovnice, $xmin, $xmax, $ymin, $ymax");
 
-
-////// the output is a picture in png format
 if ($akce == "1") {
 	$maw_tempdir = "/tmp/MAW_ineq2d" . getmypid() . "xx" . RandomName(6);
 	system("mkdir " . $maw_tempdir . "; chmod oug+rwx " . $maw_tempdir);
@@ -94,8 +92,6 @@ if ($akce == "1") {
 	die();
 }
 
-
-///// test if the system is a system in one variable (x)
 if (stristr($nerovnice, "y")) {
 	$onevar = 0;
 } else {
@@ -110,7 +106,6 @@ $errmsg_ineq = "";
 $funkce = "8";
 $fce_array = [];
 
-///// the output is html or pdf page, we parse inequalities
 
 function find_inequalities($nerovnice)
 {
@@ -161,7 +156,7 @@ $numb_of_ineq = sizeof($ineq);
 $textable = "";
 if ($onevar == "1") {
 	$textable = $textable . "\\def\\insertpicture#1{\\includegraphics[width=\\hsize, clip, bb = 50 0 310 50]{#1.pdf}}";
-	//    $textable=$textable."\\def\\insertpicture#1{\\includegraphics[width=\\hsize]{#1.pdf}}";
+
 }
 $gnuplot_commands = "";
 $gnuplot_all = "splot 8";
@@ -261,10 +256,6 @@ if ($errmsg_ineq != "") {
 $tex_all_ineq = "\\begin{cases}$all \\end{cases}";
 $textable = $textable . "\\allineq{" . $tex_all_ineq . "}";
 
-//echo '<pre>';
-
-
-//echo $textable,$gnuplot_file;
 
 if ($pdfformat == "on") {
 	$maw_tempdir = "/tmp/MAW_ineq2d" . getmypid() . "xx" . RandomName(6);
@@ -370,8 +361,6 @@ if ($podmnez == "on") {
 }
 
 echo("<br>");
-//echo __("No images in the table? The system probably possesses no solution (or we have problems with server).");
-//echo ("<br>");
 
 
 $funkce = "8";

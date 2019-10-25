@@ -67,9 +67,7 @@ if ($polar == "") {
 	system("cd $maw_tempdir; $bash $mawhome/gnuplot/gnuplot_region_polar.bash \"$f\" \"$g\" \"$a\" \"$b\" \"$xmin\" \"$xmax\" \"$ymin\" \"$ymax\" \"$swap\"");
 }
 
-//header("Content-Type: image/png");
-//header("Content-Disposition: attachment; filename=".basename($file).";" );
-//header("Content-Transfer-Encoding: binary");
+
 header("Content-Type: image/svg+xml");
 header("Content-Disposition: attachment; filename=" . basename($file) . ";");
 readfile($file);

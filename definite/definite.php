@@ -118,7 +118,7 @@ if ($mawISAjax == 0) {
 $outputKeys = ["dolnimez", "hornimez", "funkce", "primitiveFunction", "primitiveAtB", "primitiveAtA", "substitutingLimits", "definiteintegral", "length", "meanValue", "floatresult", "floatmean", "meansgn"];
 foreach ($outputKeys as $value) {
 	$$value = remove_dollars(najdiretezec($value, $toutput));
-//printf("<br>$value: \$%s \$",$$value);
+
 }
 
 echo(str_replace("\\log", "\\ln", sprintf("<h3>%s</h4><div class=inlinediv><div class=logickyBlok>\\begin{align} \\int_{%s}^{%s}%s \\,\\mathrm{d}x&= \\left[%s\\right]_{%s}^{%s}\\\\ &=%s \\\\&=%s\\\\& \\approx %s \\end{align} <a target=\"_blank\" href=\"$mawphphome/integral/integralx.php?$fce;lang=$lang\">%s</a></div></div>",

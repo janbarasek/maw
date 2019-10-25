@@ -47,7 +47,7 @@ function math_to_GNUplot($vyraz)
 	global $logbasegnuplot, $formconv_bin;
 	$uprfunkceGNU = `echo "$vyraz" | $formconv_bin -r -O gnuplot`;
 	$uprfunkceGNU = chop($uprfunkceGNU);
-	//$uprfunkceGNU=str_replace("log(", "mylog($logbasegnuplot,", $uprfunkceGNU);
+
 	$uprfunkceGNU = str_replace("sqrt", "mysqrt", $uprfunkceGNU);
 
 	return ($uprfunkceGNU);
@@ -72,8 +72,8 @@ fwrite($souborobr, "set ytics axis nomirror \n");
 fwrite($souborobr, "set samples 1000 \n");
 fwrite($souborobr, "set term svg font 'Verdana,9' rounded solid\n");
 fwrite($souborobr, 'set output "graf.svg"' . "\n");
-//fwrite($souborobr,"set term png transparent \n");
-//fwrite($souborobr,'set output "graf.png"'."\n");
+
+
 fwrite($souborobr, 'unset key' . "\n");
 fwrite($souborobr, 'set style fill pattern 4 bo' . "\n");
 fwrite($souborobr, "set xrange [" . math_to_GNUplot($a) . ":" . math_to_GNUplot($b) . "]\n");
@@ -88,19 +88,13 @@ if ($ylabel != "") {
 	fwrite($souborobr, "set ylabel \" " . $ylabel . "\"\n");
 }
 fwrite($souborobr, "set style function lines\n");
-//  $funkcegnuplot=`$mawtimeout echo "$funkce" | $formconv_bin -r -O gnuplot`;
-//  $funkcegnuplot=chop($funkcegnuplot);	
+
+
 fwrite($souborobr, "plot " . $funkce . " with lines linewidth 3, \"data\" with filledcurves x1 rgb \"blue\"\n");
 fclose($souborobr);
 
 system("cd $maw_tempdir;  gnuplot vstup; cp * /tmp");
 
-//$file=$maw_tempdir."/graf.png"; 
-//header("Content-Type: image/png");
-//header("Content-Disposition: attachment; filename=".basename($file).";" );
-//header("Content-Transfer-Encoding: binary");
-//readfile($file);
-//die();
 
 $file = $maw_tempdir . "/graf.svg";
 header('Content-Type: image/svg+xml');

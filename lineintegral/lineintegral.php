@@ -43,7 +43,7 @@ check_for_security("$fx, $fx, $fz, $x, $y, $z, $tmin, $tmax, $kind");
 if ($kind != "2") {
 	$kind = "1";
 }
-//if ($dimension!="3") {$dimension="2";}
+
 
 $variables = "t";
 $parameters = " ";

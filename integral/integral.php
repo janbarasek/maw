@@ -84,7 +84,7 @@ function maw_integral_error()
 
 function maw_after_form()
 {
-	//echo "<div id='after-form' style='display:none;'>Your input is being processed. Wait few seconds to see the output.</div>";
+
 	echo "<div id='after-form' style='display:none;'>" . sprintf(__("Your input is being processed. Wait few seconds to see the output. Click %shere%s to reopen the form which has been submited."), "<a href=\"#\" onclick=\"document.getElementById('after-form').style.display='none';document.getElementById('form').style.display='block';\">", "</a>") . "</div>";
 
 }
@@ -92,7 +92,7 @@ function maw_after_form()
 
 $vystupmaximy = "";
 $all_hints2 = "";
-//$parameters=" ";
+
 
 $mimetex = $texrender;
 
@@ -169,7 +169,7 @@ if (ereg("PDF", $tlacitko)) {
 		$str = str_replace("\\fbox", "\\boxed", $str);
 	}
 	$str = str_replace("&nbsp;", "", $str);
-//  echo '<pre>'.$str; die();
+
 
 	$soubor = fopen("$maw_tempdir/integral.tex", "w");
 	$TeXfile = $TeXheader . '\newif\ifjeden
@@ -249,7 +249,6 @@ if ($substitucehint != "") {
 	$novapromennahint = "";
 }
 
-// variables
 if ($prom == "") {
 	$prom = "x";
 }
@@ -274,7 +273,6 @@ if ($secvar == "x") {
 	$maximainit = $maximainit . "declare(y,constant),";
 }
 
-// take a number from the integral
 if ($akce == "v") {
 	$variables = ' ';
 	input_to_maxima($cislo);
@@ -293,9 +291,7 @@ if (($logarcswitch == "on") && (preg_match('~asinh|acosh|atanh|acoth|asech|acsch
 	$logarc = "";
 }
 
-// method for the forms
-//$metoda="get";
-//if ($post=="on") {$metoda="post";}
+
 $metoda = "post";
 
 $operace = "";
@@ -353,7 +349,7 @@ function print_time_and_computations()
 	} else {
 		echo 'The transcript of Maxima session is too long';
 	}
-	//print_r($TeXstrings);
+
 	echo '</small></div><br><br><br><br>';
 	echo '<script type="text/javascript"> document.getElementById("maxima_session_transcription").style.display = "none"; </script> ';
 }
@@ -592,7 +588,7 @@ function math_to_maxima($vstup)
 
 function vypocitej($akcenotused, $fce, $promenna)
 {
-	// the first parameter is not used anymore, we use global variable instead
+
 	global $maw_tempdir, $krok, $u, $v, $substituce, $novapromenna, $prom, $formconv, $jsmath, $fbox, $fboxb, $fboxe, $vsechno, $cislo, $allprom, $variables, $akce, $rozsirit, $rozsiritradcan, $oriprom, $oriproblem, $substituce_back, $mawtimeout, $formconv_bin;
 
 	if ($akce == "soucet") {
@@ -638,14 +634,8 @@ function vypocitej($akcenotused, $fce, $promenna)
 		$komentar = __("Integrate terms in the sum") . ": ";
 		$ttt = chop($vypocet);
 		$ttt = str_replace(" ", "", $ttt);
-		//if ($ttt=="0") 
-		//	{
-		//	 $akce="i";
-		//         $ori_akce="soucet";
-		//         $hlaseni=sprintf("<span class=\"h3_error\">%s</span>%s",__("Error"),__("You choosed all terms for integration, which is not allowed. If you really want to integrate all the terms, use the choice \"ask the computer to finish the integration\" (in bold)."));
-		// die($hlaseni);
-		//	}
-		//else 
+
+
 		maxima_session_comment("Integration some parts of the sum - evaluating the rest of the integral");
 		{
 			$vsechno = maxima_command("(negsumdispflag:false,expand($temp))", "", "matchint_short");
@@ -805,7 +795,7 @@ function vypocitej($akcenotused, $fce, $promenna)
 			}
 			$u = input_to_maxima($u);
 			$vypocet = perpartesu($fce, $u, $promenna);
-			//$vypocetB=perpartesuB($fce,$u,$promenna);
+
 			$A = $u;
 			maxima_session_comment("integration by parts");
 			$B = maxima_command("integrate($u,$promenna)", "", "matchint_short");
@@ -826,7 +816,7 @@ function vypocitej($akcenotused, $fce, $promenna)
 			}
 			$v = input_to_maxima($v);
 			$vypocet = perpartesv($fce, $v, $promenna);
-			//$vypocetB=perpartesvB($fce,$v,$promenna);
+
 			maxima_session_comment("integration by parts");
 			$A = maxima_command("shorter(factor($fce)/($v))", "", "matchint_short");
 			maxima_session_comment("integration by parts");
@@ -1003,8 +993,8 @@ function substituce($fce, $substituce, $novapromenna)
 		maxima_session_comment("trying substitution, new variable is NOT assumed to be positive");
 		$answer = maxima_command("(load(\\\"$mawhome/common/changevar2.mac\\\"),logarc:false,$opt(rootscontract(diff(changevar2('integrate($fce,$prom),$substituce,$novapromenna,$prom),$novapromenna))))");
 	}
-	// if there is no hint for back substitution, we check if the user enters substitution in the form
-	// new_variable = f(old_variable)
+
+
 	$substituce = str_replace(" ", "", $substituce);
 	if ($substituce_back_orig == "") {
 		if (substr($substituce, 0, 2) == "$novapromenna=") {
@@ -1029,7 +1019,6 @@ function substituce($fce, $substituce, $novapromenna)
 		die (hide_message() . __("Sorry, the application cannot handle this substitution."));
 	}
 
-	// $prom=$novapromenna;
 	return ($answer);
 }
 
@@ -1185,10 +1174,6 @@ maw_html_headB();
 
 echo '<h2>' . __('Integral methods assistant') . '</h2>';
 
-//echo ($maw_processing_msg);
-//ob_flush();
-//flush();
-//if (function_exists("maw_after_flush")) {echo(maw_after_flush());}
 
 function hide_message($show_gray_comment = 0)
 {
@@ -1205,7 +1190,7 @@ function hide_message($show_gray_comment = 0)
 echo("\n" . '<div class="gray">');
 echo("\n" . '<div id="gray_comment">');
 if ($krok == 1) {
-	//echo '<b>'.__("If you can't see mathematical expressions, return to the previous page and change the method of rendering mathematics (the second checkbox).").'</b>';
+
 
 	$link = '<a href="' . $mawhtmlhome . '/index.php?form=integral&lang=' . $lang;
 	if ($oriprom == "x") {
@@ -1288,7 +1273,7 @@ if (($akce == "dokonceni") && ($postakce == "konec")) {
 	if ($jsmath == "on") {
 		echo("<SCRIPT type=\"text/javascript\" >jsMath.Process(document);</SCRIPT>");
 	}
-//       echo '<pre>',$vystupmaximy;
+
 	die(hide_message());
 }
 
@@ -1314,7 +1299,7 @@ if (($akce == "dokonceni") && ($postakce == "float")) {
 	if ($jsmath == "on") {
 		echo("<SCRIPT type=\"text/javascript\">jsMath.Process(document);</SCRIPT>");
 	}
-//       echo '<pre>',$vystupmaximy;
+
 
 	print_time_and_computations();
 	die(hide_message() . "\n</body></html>");
@@ -1449,7 +1434,7 @@ method="', $metoda, '" action="integral.php">
 	if ($jsmath == "on") {
 		echo("<SCRIPT type=\"text/javascript\">jsMath.Process(document);</SCRIPT>");
 	}
-//       echo '<pre>',$vystupmaximy;
+
 
 	print_time_and_computations();
 	die(hide_message() . "\n</body></html>");
@@ -1619,7 +1604,7 @@ function write_hints_for_substitution()
 			$output = $output . " checked=\"checked\"";
 		}
 		$output = $output . ">" . preview_result_subst($i) . maxima_to_html($value, "", "") . "&nbsp;&nbsp;&nbsp;" . __("and back substitution is") . " " . $temp_backarray[$i] . "</li>";
-		//$output=$output.">".preview_result_subst($i).maxima_to_html($value,"","")."</li>";
+
 	}
 	$output = $output . "\n<li><input name=\"substitucehint\" type=\"radio\" value=\"\"> " . __("custom") . ": ";
 

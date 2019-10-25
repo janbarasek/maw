@@ -110,7 +110,6 @@ if (($akce == 1) || (($akce == 2) && (str_replace(" ", "", $stacbody) == "")) ||
 	die();
 }
 
-// the code for domain has moved into another directory
 
 /* We use temporary directory                                           */
 /* ---------------------------------------------------------------------*/

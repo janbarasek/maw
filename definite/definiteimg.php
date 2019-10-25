@@ -40,7 +40,7 @@ function math_to_GNUplot($vyraz)
 	global $logbasegnuplot, $formconv_bin;
 	$uprfunkceGNU = `echo "$vyraz" | $formconv_bin -r -O gnuplot`;
 	$uprfunkceGNU = chop($uprfunkceGNU);
-	//$uprfunkceGNU=str_replace("log(", "mylog($logbasegnuplot,", $uprfunkceGNU);
+
 	$uprfunkceGNU = str_replace("sqrt", "mysqrt", $uprfunkceGNU);
 
 	return ($uprfunkceGNU);
@@ -75,15 +75,14 @@ fwrite($souborobr, "set xrange [" . math_to_GNUplot($xmin) . ":" . math_to_GNUpl
 fwrite($souborobr, "set table 'a.dat'\nplot " . $f1 . "\nmin(a,b) = (a < b) ? a : b\nstats 'a.dat' u 1:2 nooutput\nunset table\n");
 fwrite($souborobr, "set term svg font 'Verdana,9' rounded solid\n");
 fwrite($souborobr, 'set output "graf.svg"' . "\n");
-//fwrite($souborobr,"jiggle(x) = x+($ymax-$ymin)*(2*(rand(0)-0.5)*0.005)\n");
-//fwrite($souborobr,"unset key \n");
+
+
 fwrite($souborobr, "set yrange [min(0,STATS_min_y):]\n");
-//if ($dummy!="") {fwrite($souborobr,"set dummy ".$dummy."\n");}
-//if ($xlabel!="") {fwrite($souborobr,"set xlabel \" ".$xlabel."\"\n");}
-//if ($ylabel!="") {fwrite($souborobr,"set ylabel \" ".$ylabel."\"\n");}
+
+
 fwrite($souborobr, "set style function lines\n");
-//  $funkcegnuplot=`$mawtimeout echo "$funkce" | $formconv_bin -r -O gnuplot`;
-//  $funkcegnuplot=chop($funkcegnuplot);	
+
+
 fwrite($souborobr, "plot 'a.dat' with filledcurves x1 , " . $f2 . " with filledcurves x1 \n");
 fclose($souborobr);
 

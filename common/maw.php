@@ -24,8 +24,6 @@ along with Mathematical Assistant o Web.  If not, see
 <http://www.gnu.org/licenses/>.
 */
 
-
-//pdflatex and latex formater and tex renderer
 $texpath = "/usr/bin/";
 $pdflatex = $texpath . "pdflatex";
 $latex = $texpath . "latex";
@@ -35,18 +33,14 @@ $mpost = $texpath . "mpost";
 $ps2pdf = "/usr/bin/ps2pdf";
 $bash = "/bin/bash";
 
-// mathtex or mimetex service (used to put math on html in integral, 
-// inequlitites and domains)
-// you should setup your own, to be sure that everything works
+
 $texrender = "http://www.openmaths.org/cgi-bin/mathtex.cgi?";
 $texred = "red";  // color in hints in integral assistant
 
-// home directory for maw
 $mawhome = "/var/www/maw";
 $mawcat = $mawhome . "/common/mawcat";
 $mawtimeout = $mawhome . "/support/timeout";
 
-// home URL for maw forms and php files
 $mawphphome = "/maw";
 $mawhtmlhome = "/maw-html";
 
@@ -54,23 +48,18 @@ $formconv_bin = "/usr/local/bin/formconv ";
 $maxima = "maxima";
 
 $maxima2 = "maxima";   // maxima called from domf  - maxima 5.13 is fast but 
-// fails when parsing function like sqrt(x+2+y^2-4)
-// this allows to run different maxima programm than system default
+
 
 $load_limit = 5;  // no computation if the server load exceeds this limit
 $processes_limit = 70;  // no computation if the number of processes on server exceeds this limit
 
 $detect_mendelu = false;
 
-// Set to false (in the file mawconfig.php) to obey the cache
 $maw_allow_cache = true;
 
-// The name of directory with cache.  md5sum and ".php" is added to this path. Must be writeable for www user.
-// the default settings creates files like /tmp/MAWcache_1b8f986923fdfcbf43daff927f2bb015.php
-// note that /tmp (the default) is usualy deleted when restarting operation system.
+
 $maw_cache_directory = "/tmp/MAWcache_";
 
-//mathjax
 $maw_mathjax = <<<EOD
 
  <script type="text/x-mathjax-config">
@@ -106,7 +95,6 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </script>
 EOD;
 
-// Support for nonenglish languages in LaTeX
 $TeX_language = '';
 
 $maw_html_custom_head = "";
@@ -114,7 +102,6 @@ $maw_html_custom_body = "";
 
 $TeX_rgbcolor = "0.612,0.902,0.953";
 
-// language variable
 $lang = $_REQUEST["lang"];
 if ($lang == "cz") {
 	$lang = "cs";
@@ -130,7 +117,6 @@ if (!(in_array($lang, $lang_array))) {
 	$lang = "en";
 }
 
-// default variables, parameters and constants
 $variables = 'x|y';
 $parameters = 'a|b';
 $constants = '%e|%pi';
@@ -138,7 +124,6 @@ $constants = '%e|%pi';
 $maw_URI = $_SERVER["REQUEST_URI"];
 $maw_ip = $_REQUEST["ip"];
 
-// construct the direct URL to the computation if post method has been used
 if (!(stristr($maw_URI, '?'))) {
 	$maw_URI = $maw_URI . "?";
 	$tempflag = false;
@@ -151,7 +136,6 @@ if (!(stristr($maw_URI, '?'))) {
 	}
 }
 
-// gettext
 if ($lang == "cs") {
 	$langl = "cs_CZ";
 	$locale_file = "cs_CZ";
@@ -207,7 +191,6 @@ function __($text)
 
 $maw_processing_msg = "\n<div id=\"processing\"><img src=\"../common/loading.gif\" align=\"middle\" alt=\"processing\"> " . __("Processing request") . "...</div>";
 
-// you can redefine default settings in file mawconfig.php
 if (file_exists('../common/mawconfig.php')) {
 	require('../common/mawconfig.php');
 }
@@ -215,7 +198,6 @@ if (file_exists('../common/mawconfig.php')) {
 
 $catchmawerrors = "grep Incorrect output>errors; grep incorrect output>errors; grep error output >>errors; grep Error output >>errors; grep ERROR output>>errors";
 
-// from http://www.anyexample.com/programming/php/how_to_detect_internet_explorer_with_php.xml
 function ae_detect_ie()
 {
 	if (isset($_SERVER['HTTP_USER_AGENT']) &&
@@ -225,10 +207,6 @@ function ae_detect_ie()
 		return false;
 }
 
-//if (ae_detect_ie()) 
-//{
-//  $texrender="http://is.mendelu.cz/teximg.pl?";
-//}
 
 function mendelu_detect()
 {
@@ -262,7 +240,6 @@ function getmicrotime()
 
 $mawstarttime = getmicrotime();
 
-// head to html files
 $mawhead_used = 0;
 function maw_html_head($message = "")
 {
@@ -321,7 +298,7 @@ function maw_howto()
 	} else {
 		echo "<span class='bold'>" . __("no variables") . "</span>";
 	}
-	//allowed variables (<i>x</i> for functions in one variable and <i>x,y</i> for functions in two variables)
+
 	echo sprintf("</li>\n<li>%s</li>\n<li>%s</li>\n<li>%s</li>\n<li>%s</li>\n<li>%s %s</li>", __("constants %e and %pi"), __("addition, subtraction, multiplication and division, i.e. chars + - * /"), __("power ^ or **"), __("round parentheses"), __("functions"), $tempfun);
 	if ($parameters != ' ')
 		echo "\n<li>" . sprintf(__("parameters %s"), $temppar) . "</li>";
@@ -338,10 +315,6 @@ function maw_errmsgB($maw_string = "")
 }
 
 
-//////////////////////////////////////////////////////////////////////
-// function from maximaPHP project, list of insecure maxima commands. 
-// expanded by unsupported commands like limit, ....
-
 function check_for_security($maw_string)
 {
 	global $lang, $errDc;
@@ -350,7 +323,7 @@ function check_for_security($maw_string)
 
 	$insecureMaximaKeywords =
 		[
-			//	  'asinh','acosh','atanh','acoth','sinh','cosh','tanh','sec','csc',
+
 			'limit', 'integrate', 'derivative', 'matrix', 'integral',
 			'diff',
 			'to_lisp',
@@ -432,7 +405,6 @@ function maw_computing_time_string($str)
 	return (" (computing time " . $str . " s) ");
 }
 
-// load
 function current_server_load()
 {
 	$load = explode(' ', `uptime`);
@@ -440,17 +412,14 @@ function current_server_load()
 	return $load[count($load) - 3];
 }
 
-// number of processes
 function current_processes_running()
 {
 	global $mawtimeout, $formconv_bin;
 	$processes = `ps ax | grep $mawtimeout | grep -v /usr/bin/formconv | wc -l | tr -d " "`;
 
-	// /usr/bin/formconv is not counted into the unmber of processes
 	return $processes;
 }
 
-// function used to save log information
 function save_log($maw_string, $soubor)
 {
 	global $lang, $scriptname, $maw_URI, $maw_ip;
@@ -476,20 +445,16 @@ function save_log($maw_string, $soubor)
 	}
 }
 
-// function used to save log information if error occurred
 function save_log_err($maw_string, $soubor)
 {
-//  global $lang,$scriptname,$maw_URI;
+
 	save_log("<span style='color: rgb(255, 0, 0);'>" . $maw_string . " ERROR</span>", $soubor);
 	save_log("<span style='color: rgb(255, 0, 0);'>" . $maw_string . " ERROR</span>", "all-errors.log");
-//  $handleB = fopen("../common/log/all-errors.log","a");
-//  fwrite ($handleB, $scriptname." ".date("d.M.Y, H:i:s, ").": ".$maw_string." jazyk:$lang<br>\n");
-//  fclose($handleB);
+
+
 }
 
 
-// check that the char $znaky is not present in string $maw_string, 
-// otherwise dies with message $hlaskacz or $hlaskaen (CZ and EN)
 function check_char($znaky, $maw_string, $hlaska, $formconvswitch, $sprintf = 0)
 {
 	global $lang, $errDc;
@@ -510,11 +475,8 @@ function check_char($znaky, $maw_string, $hlaska, $formconvswitch, $sprintf = 0)
 	}
 }
 
-
-// all functions
 $functions = 'asinh|acosh|atanh|acoth|sinh|cosh|tanh|coth|abs|asin|acos|atan|acot|sin|cos|tan|cot|log|exp|sqrt|sec|csc';
 
-// functions which cannot be followed by h (e.g. "sin" is not here, since "sinh" is a supported function)
 $functionsh = 'asinh|acosh|atanh|acoth|sinh|cosh|tanh|coth|abs|log|exp|sqrt|sec|csc';
 
 function highlight_parentheses($maw_string, $error = false)
@@ -550,7 +512,6 @@ function check_math_errors($maw_string)
 	global $lang, $scriptname;
 	global $functions, $functionsh, $variables, $constants, $parameters, $check_char_match;
 
-	// are parentheses in pairs?
 	if (substr_count($maw_string, "(") != substr_count($maw_string, ")")) {
 		save_log($maw_string, "errors");
 		maw_html_head("MAWerror");
@@ -566,7 +527,6 @@ function check_math_errors($maw_string)
 	$functionsU = strtoupper($functions);
 	$functionshU = strtoupper($functionsh);
 
-	// bad phrases
 	$badMaximaKeywords
 		= [
 		'diff', 'int', 'lim', 'dx', 'dy', '\((\*|/)', '(\+|-|\*|/)\)',
@@ -595,7 +555,6 @@ function check_math_errors($maw_string)
 
 	$check_math = "";   // this variable can be probably deleted
 
-	//is the string empty string?
 	if ($maw_string == "") {
 		save_log("Prazdny retezec", "errors");
 		maw_html_head("MAWerror");
@@ -640,16 +599,12 @@ function check_math_errors($maw_string)
 
 	check_char("[\+\-/][\+\-/]", $maw_string, "<ul><li>" . __("You cannot write group of two or more characters like %s.") . " " . __("Delete one of these characters or use parentheses properly.") . "</li></ul>", 0, 1);
 
-	// is there backslah in the input?
 	check_char('\\\\', $maw_string, __("You used backslash or quote or double-quote or another insecure character in your input, which is not allowed. Do you try to enter the functions in TeX notation? Use notation of the Maxima program, please."), 0);
 
-	// is there another than natural logarithm?
 	check_char("(log10)|(log2)", $maw_string, "<br>" . __("Use only natural logarithm.") . "</b><br>" . __("Do not use decadic logarithm, please."), 0);
 
-	// is there power of a function written as sin^2(x) ?
 	check_char("($functions)\*\*", $maw_string, __("You used a name of a function followed by a power.<br>Do not use this notation. Write for example (sin(x))^2 instead of sin^2(x)."), 1);
 
-	// is each function followed by a parenthesis?
 	if ((preg_match("#($functions)([^(h]|\$)#", $maw_string, $problem_in_match)) || (preg_match("#($functionsh)([^(]|\$)#", $maw_string, $problem_in_match))) {
 		save_log($maw_string, "errors");
 		maw_html_head("MAWerror");
@@ -663,7 +618,6 @@ function check_math_errors($maw_string)
 		die($errDc . "</body></html>");
 	}
 
-	// dot should be preceeded and followed by a digit
 	if ((preg_match("~[^0-9]\.~", $maw_string)) || (preg_match("~\.[^0-9]~", $maw_string))) {
 		save_log($maw_string, "errors");
 		maw_html_head("MAWerror");
@@ -674,7 +628,6 @@ function check_math_errors($maw_string)
 		die("$errDc</body></html>");
 	}
 
-	// is the char "," in the input?
 	if (stristr($maw_string, ",")) {
 		save_log($maw_string, "errors");
 		maw_html_head("MAWerror");
@@ -710,8 +663,6 @@ function check_math_errors($maw_string)
 	}
 
 
-	// after removing allowed characters and groups of allowed characters, does 
-	// an empty strin remain?
 	$maw_stringC = preg_replace("~($functions|$constants|$variables|$parameters|[0-9+-/\*e|]|pi| |\(|\))~", "", $maw_string);
 	if ($maw_stringC != "") {
 		save_log($maw_string, "errors");
@@ -757,11 +708,11 @@ function input_to_maxima($inputtext, $fieldname = "")
 {
 	global $err_fieldname, $variables, $functions, $constants;
 	$err_fieldname = $fieldname;
-	//  is the input decimal number?
+
 	if (preg_match('~^-?[0-9]+\.[0-9]+$~', $inputtext)) {
 		return ($inputtext);
 	}
-	//  if not, we check mathematical expression
+
 	$inputtext = strtolower($inputtext);
 	$inputtext = str_replace(" ", "", $inputtext);
 	$inputtext = str_replace("ᶺ", "**", $inputtext);
@@ -784,7 +735,7 @@ function input_to_maxima($inputtext, $fieldname = "")
 	$inputtext = str_replace("√", "sqrt", $inputtext);
 	$inputtext = str_replace("〖", "(", $inputtext);
 	$inputtext = str_replace("〗", ")", $inputtext);
-	//$inputtext=str_replace('\\', '', $inputtext);
+
 	$inputtext = preg_replace("~([0-9])($variables|$functions|$constants)~", "\\1*\\2", $inputtext);
 	$inputtext = preg_replace("~($variables)($functions)~", "\\1*\\2", $inputtext);
 	check_math_errors($inputtext);
@@ -868,7 +819,7 @@ function formconv($vstup)
 
 function beautify_parentheses($str)
 {
-	// removes unnecessary parentheses sometimes introduced by formconv in maxima output
+
 	$str = chop($str);
 	$str = "[[($str)]]";
 	$trans = [];
@@ -877,20 +828,20 @@ function beautify_parentheses($str)
 	$a = str_split($str);
 
 	foreach ($a as $key => $value) {
-		// echo "$value: ";
+
 		if ($value == "(") {
-			// echo "opened at $key";
+
 			array_push($lastopening, $key);
 		} elseif ($value == ")") {
 			$trans[$key] = array_pop($lastopening);
-			// echo "par from $trans[$key] closed at $key";
+
 		}
-		// echo "\n";
+
 	}
-	// print_r($trans);
+
 	foreach ($trans as $key => $value) {
 		if (($trans[$key + 1]) && ($trans[$key + 1] + 1 == $value)) {
-			// echo "$key remove?";
+
 			$a[$trans[$key]] = "";
 			$a[$key] = "";
 		}
@@ -943,8 +894,6 @@ function RandomName($len)
 	return $randstr;
 }
 
-
-// checks that the argument is a decimal number
 function check_decimal($vstup, $decfieldname = "")
 {
 	global $lang;
@@ -972,17 +921,8 @@ function show_TeX($str)
 
 function check_last_call()
 {
-//if(isset($_COOKIE["mawcookie"])) 
-//{  
-//   SetCookie ("mawcookie", 1, time()-2);
-//   maw_html_head();
-//   save_log("too many requests","too_fast_error");
-//   die("<h3 style='color: rgb(255, 0, 0)';>Sorry, no more than 1 computation in 15 seconds. Wait at least 15 seconds.</h3>");
-//}
-//else
-//{
-//   SetCookie ("mawcookie", 1, time()+10);
-//}
+
+
 	return (0);
 }
 

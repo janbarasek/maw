@@ -52,7 +52,7 @@ if ($svg == "1") {
 
 	header("Content-Type: image/svg+xml");
 	header("Content-Disposition: attachment; filename=" . basename($file) . ";");
-	//header("Content-Transfer-Encoding: binary");
+
 
 	readfile($file);
 	system("rm -r " . $maw_tempdir);
@@ -93,8 +93,7 @@ if ($z != "") {
 	$curve_eqs = $curve_eqs . "\\\\z(t)=" . formconv($z);
 }
 
-//echo put_tex_to_html(sprintf("C\equiv \\begin{cases}%s\\end{cases}",$curve_eqs));
-//echo "&nbsp;&nbsp;&nbsp;&nbsp; ".put_tex_to_html(sprintf("t\\in \\left(%s,%s\\right)",formconv($tmin),formconv($tmax)));
+
 $x = rawurlencode($x);
 $y = rawurlencode($y);
 $z = rawurlencode($z);

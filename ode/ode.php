@@ -74,16 +74,14 @@ if ($akce == "1") {
 	check_for_security($rovniceinput2);
 	$rovniceinput2 = str_replace("y\'", "y'", $rovniceinput2);
 	$rovniceinput2 = str_replace("y\\\\\\'", "y'", $rovniceinput2);
-//    if (!(ereg("=",$rovniceinput2))) {$rovniceinput2=$rovniceinput2."=0";}
-//    $parameters='drvt';
+
+
 	if (!(stristr($rovniceinput2, "y'"))) {
 		maw_html_head();
 		die($rovniceinput2 . "<br><h2 class='red'>" . __("Error: Missing derivative") . " <i>y'</i>.</h2></body></html>");
 	}
-//    $rce=split("=",str_replace("y'","drvt",$rovniceinput2));
-//    $left=input_to_maxima($rce[0]); 
-//    $right=input_to_maxima($rce[1]); 
-//    $command=str_replace("drvt","'diff(y,x)",$left)."=".str_replace("drvt","'diff(y,x)",$right);
+
+
 	$outform = `$mawtimeout echo "$rovniceinput2" | $formconv_bin -O maxima`;
 	$command = str_replace("diff", "'diff", $outform);
 	if ($outform == "") {
@@ -112,7 +110,7 @@ if ($akce == "1") {
 		$expr = str_replace("\n", "", $expr);
 		$mathtexexpr = explode("soltex", $expr);
 		$rovniceinput = $mathtexexpr[0];
-//      redirect($mawphphome."/ode/ode.php?ode2=".rawurlencode($rovniceinput2)."&ode=".rawurlencode($mathtexexpr[0])."&akce=0&lang=".$lang);
+
 	} else {
 		maw_html_head();
 		echo("<h2>" . sprintf(__("We try to solve the equation %s with respect to the derivative."), $rovniceinput2) . "</h2>");
@@ -234,7 +232,6 @@ $soubor = fopen(SOUBB, "w");
 fwrite($soubor, $TeXcontents);
 fclose($soubor);
 
-//die("LANG=$locale_file.UTF-8 perl -s $mawhome/ode/ode.pl -mawhome=$mawhome -maxima=$maxima -ode='$rovnice' -lang='$lang' -fullode=\"$rovniceinput2\"");
 
 if (function_exists("ode_before_latex")) {
 	ode_before_latex();
@@ -242,16 +239,6 @@ if (function_exists("ode_before_latex")) {
 
 system("cd $maw_tempdir; echo '<h4>*** Maxima output ****</h4>'>>output; LANG=$locale_file.UTF-8 perl -s $mawhome/ode/ode.pl -mawhome=$mawhome -maxima=$maxima -ode='$rovnice' -lang='$lang' -fullode=\"$rovniceinput2\" ;  cat data.tex>>output ; echo '<h4>*** LaTeX ****</h4>'>>output; $pdflatex ode.tex>>output; cp * ..; $catchmawerrors");
 
-
-// function show_TeX2($str)
-// { 
-//   global $texrender;
-//   $str=preg_replace("/\\\$((.|\n)*?)\\\$/","<img src=\"".$texrender."\\1\">",$str);
-//   return(formconv_replacements($str));
-// }
-
-// echo ("<pre>".show_TeX2(file_get_contents($maw_tempdir."/data.tex")));
-// die();
 
 /* Errors in compilation? We send PDF file or log of errors              */
 /* ---------------------------------------------------------------------*/

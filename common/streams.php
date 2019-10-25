@@ -21,29 +21,24 @@
 */
 
 
-// Simple class to wrap file streams, string streams, etc.
-// seek is essential, and it should be byte stream
 class StreamReader
 {
-	// should return a string [FIXME: perhaps return array of bytes?]
+
 	function read($bytes)
 	{
 		return false;
 	}
 
-	// should return new position
 	function seekto($position)
 	{
 		return false;
 	}
 
-	// returns current position
 	function currentpos()
 	{
 		return false;
 	}
 
-	// returns length of entire stream (limit for seekto()s)
 	function length()
 	{
 		return false;
@@ -123,8 +118,7 @@ class FileReader
 		if ($bytes) {
 			fseek($this->_fd, $this->_pos);
 
-			// PHP 5.1.1 does not read more than 8192 bytes in one fread()
-			// the discussions at PHP Bugs suggest it's the intended behaviour
+
 			while ($bytes > 0) {
 				$chunk = fread($this->_fd, $bytes);
 				$data .= $chunk;
@@ -161,8 +155,7 @@ class FileReader
 
 }
 
-// Preloads entire file in memory first, then creates a StringReader 
-// over it (it assumes knowledge of StringReader internals)
+
 class CachedFileReader extends StringReader
 {
 	function CachedFileReader($filename)

@@ -103,7 +103,7 @@ if (($vars != "") && ($region == "1")) {
 
 		$parameters = "size=400x400&a=$a&b=$b&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&f=$c&g=$d&vars=$vars1";
 		echo("<span class=\"red\"><img src=\"../../maw/gnuplot/gnuplot_region.php?$parameters\" alt=\"" . __("Processing the picture. If the picture does not appear within few seconds, you may have error in your math expressions.") . " " . __(" Submit the form to check, if the region for integration is well defined.") . "\"></span>");
-		//echo ("<img src=\"$mawphphome/ineq2d/ineq2d.php?onevar=0&podmnez=&axislabels=on&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&akce=1&funkce=".rawurlencode("log(x-($a))+log(($b)-x)+log(($d)-y)+log(y-($c))")."\">");
+
 	} elseif ($vars == "dx dy") {
 		$variables = "y";
 		foreach (["c", "d"] as $value) {
@@ -114,7 +114,7 @@ if (($vars != "") && ($region == "1")) {
 
 		$parameters = "size=400x400&a=$a&b=$b&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&f=$c&g=$d&vars=$vars1";
 		echo("<span class=\"red\"><img src=\"../../maw/gnuplot/gnuplot_region.php?$parameters\" alt=\"" . __("Processing the picture. If the picture does not appear within few seconds, you may have error in your math expressions.") . " " . __(" Submit the form to check, if the region for integration is well defined.") . "\"></span>");
-		//echo ("<img src=\"$mawphphome/ineq2d/ineq2d.php?onevar=0&podmnez=&axislabels=on&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&akce=1&funkce=".rawurlencode("log(y-($a))+log(($b)-y)+log(($d)-x)+log(x-($c))")."\">");
+
 	} elseif ($vars == "r dphi dr") {
 		$variables = "r";
 		foreach (["c", "d"] as $value) {
@@ -124,7 +124,7 @@ if (($vars != "") && ($region == "1")) {
 		}
 		$parameters = "size=400x400&a=$a&b=$b&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&f=$c&g=$d&vars=$vars1";
 		echo("<span class=\"red\"><img src=\"../../maw/gnuplot/gnuplot_region.php?$parameters\" alt=\"" . __("Processing the picture. If the picture does not appear within few seconds, you may have error in your math expressions.") . " " . __(" Submit the form to check, if the region for integration is well defined.") . "\"></span>");
-		//echo ("<img src=\"$mawphphome/ineq2d/ineq2d.php?onevar=0&podmnez=&axislabels=on&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&akce=1&funkce=".rawurlencode("log(atan(y/x)-($a))+log(($b)-atan(y/x))+log(($d)^2-(x^2+y^2))+log(x^2+y^2-($c)^2)")."\">");
+
 	} elseif ($vars == "r dr dphi") {
 		$variables = "phi";
 		foreach (["c", "d"] as $value) {
@@ -134,7 +134,7 @@ if (($vars != "") && ($region == "1")) {
 		}
 		$parameters = "size=400x400&a=$a&b=$b&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&f=$c&g=$d&vars=$vars1";
 		echo("<span class=\"red\"><img src=\"../../maw/gnuplot/gnuplot_region.php?$parameters\" alt=\"" . __("Processing the picture. If the picture does not appear within few seconds, you may have error in your math expressions.") . " " . __(" Submit the form to check, if the region for integration is well defined.") . "\"></span>");
-		//echo ("<img src=\"$mawphphome/ineq2d/ineq2d.php?onevar=0&podmnez=&axislabels=on&xmin=$xmin&xmax=$xmax&ymin=$ymin&ymax=$ymax&akce=1&funkce=".rawurlencode("log(y-x*tan($a))+log(x*tan($b)-(y))+log(($d)^2-(x^2+y^2))+log(x^2+y^2-($c)^2)")."\">");
+
 	} else {
 		echo __("Under construction");
 	}

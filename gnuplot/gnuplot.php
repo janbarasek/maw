@@ -47,7 +47,7 @@ $mrizka = $_REQUEST["mrizka"];
 if ($out == "") {
 	$out = "png";
 }
-//$out="png";
+
 
 check_for_security($fce . $xmin . $xmax . $ymin . $ymax . $naturallog . $logbase . $xvar . $yvar . $dummy . $border);
 
@@ -113,9 +113,9 @@ if ($out == "png") {
 if ($out == "svg") {
 	fwrite($souborobr, "set term svg font 'Verdana,9' rounded solid\n");
 	fwrite($souborobr, 'set output "graf.svg"' . "\n");
-	//fwrite($souborobr,"jiggle(x) = x+($ymax-$ymin)*(2*(rand(0)-0.5)*0.005)\n");
+
 }
-//  fwrite($souborobr,"unset key \n");
+
 fwrite($souborobr, "set xrange [" . math_to_GNUplot($xmin) . ":" . math_to_GNUplot($xmax) . "]\n");
 fwrite($souborobr, "set yrange [" . $ymin . ":" . $ymax . "]\n");
 if ($dummy != "") {
@@ -128,8 +128,8 @@ if ($ylabel != "") {
 	fwrite($souborobr, "set ylabel \" " . $ylabel . "\"\n");
 }
 fwrite($souborobr, "set style function lines\n");
-//  $funkcegnuplot=`$mawtimeout echo "$funkce" | $formconv_bin -r -O gnuplot`;
-//  $funkcegnuplot=chop($funkcegnuplot);	
+
+
 fwrite($souborobr, "plot " . $funkce . " linewidth 3\n");
 fclose($souborobr);
 
@@ -152,7 +152,7 @@ if ($out == "svg") {
 	header("Content-Disposition: attachment; filename=" . basename($file) . ";");
 	readfile($file);
 }
-//echo("<img src=\"file://$maw_tempdir/obrazek.png\"></img>");
+
 
 $datcasip = "funkce: $fce, format: $out ";
 

@@ -62,14 +62,10 @@ check_for_security("$xmin, $xmax, $ymin, $ymax");
 
 $coords = "coord1min:$xmin\$ coord1max:$xmax\$ coord2min:$ymin\$ coord2max:$ymax\$ ";
 
-//if ($vars=="dx dy") {$variables="y";} 
-//elseif ($vars=="dy dx") {$variables="x";}
-//elseif ($vars=="dr dphi") {$variables="phi";}
-//else {$variables="r";}
+
 $c = input_to_maxima($c, __("lower limit for inside integral"));
 $d = input_to_maxima($d, __("upper limit for inside integral"));
 
-//$variables=' ';
 $a = input_to_maxima($a, __("lower limit for outside integral"));
 $b = input_to_maxima($b, __("upper limit for outside integral"));
 
