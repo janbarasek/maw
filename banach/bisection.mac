@@ -1,0 +1,67 @@
+print("### function",tex(f(x),false),"### end");
+print("### interval",tex([a,b],false),"### end");
+print("### initial",tex(c,false),"### end");
+
+printgnuplot(str):=print("### gnuplot",str,"### end");
+
+printgnuplot(sconcat("set xrange [",a,":",b,"]"));
+printgnuplot(sconcat("set size square"));
+printgnuplot(sconcat("unset key"));
+
+printarrow(x0,y0,x1,y1):=
+printgnuplot(sconcat("set arrow from ",ev(x0,numer),",graph ",ev(y0,numer)," to ",ev(x1,numer),", graph ",ev(y1,numer)," heads back nofilled linetype 3 linewidth 2.000 size screen 0.004,90.000,90.000"));
+
+fa:float(ev(f(a),numer));
+fb:float(ev(f(b),numer));
+
+if fa*fb > 0  then (print ("no change of sign"),quit());
+
+if not (freeof(%i,fa) and freeof(%i,fb)) then (print ("function is out of domain in one of the end points"),quit());
+
+print (fa);
+print (fb);
+
+one_iteration():=
+block(
+ c:ev((a+b)/2,numer),
+ fc:ev(f(c),numer),
+ print ("### step",i,",",a,",",c,",",b,",",fa,",",fc,",",fb,"### end"),
+ if (fc=0.0) or (fc=0) then (print ("### FOUND ZERO",c,"### end"),quit()),
+ if not freeof(%i,fc) then (print ("function is out of domain at",c),quit()),
+ if fa*fb>0 then (print ("more zeros"),quit()),
+ printarrow(a,i/(4*n),b,i/(4*n)),
+ if fa*fc<0 then (b:c, fb:fc) else (a:c, fa:fc)
+);
+
+
+/*
+printarrow(x0,y0,x1,y1):=
+printgnuplot(sconcat("set arrow from ",ev(x0,numer),", ",ev(y0,numer)," to ",ev(x1,numer),",  ",ev(y1,numer)," heads back nofilled linetype 3 linewidth 2.000 size screen 0.004,90.000,90.000"));
+
+one_iteration():=
+block(
+ c:ev((a+b)/2,numer),
+ fc:ev(f(c),numer),
+ if fa*fb>0 then (print ("more zeros"),quit()),
+ print ("### step",i,",",a,",",c,",",b,",",fa,",",fc,",",fb,"### end"),
+ if (fc=0) then (print ("### FOUND ZERO",c,"### end"),quit()),
+ if fa*fc<0 then 
+ ( 
+   printarrow(a,fa,b,fa),
+   b:c, 
+   fb:fc
+ ) 
+ else 
+ (
+   printarrow(a,fb,b,fb),
+   a:c, 
+   fa:fc
+ )
+);
+
+*/
+
+
+for i:1 step 1 thru n do (one_iteration());
+
+

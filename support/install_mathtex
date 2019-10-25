@@ -1,0 +1,23 @@
+
+mkdir mathtex
+chmod a+rwx mathtex
+
+cd mathtex
+
+wget http://www.forkosh.com/mathtex.zip
+unzip mathtex.zip
+#
+#cc mathtex.c -DLATEX=\"$(which latex)\" -DDVIPNG=\"$(which dvipng)\" -DCACHE=\"../../../tmp/mathtexcache/\" -DDPI=\"160\" -o mathtex.cgi cc mathtex.c -DLATEX=\"$(which latex)\" -DDVIPNG=\"$(which dvipng)\" -DCACHE=\"../../../tmp/mathtexcache/\" -DDPI=\"160\" -o mathtex.cgi
+#
+cc mathtex.c -DLATEX=\"/usr/bin/latex\" -DDVIPNG=\"/usr/bin/dvipng\" -DCACHE=\"../../../tmp/mathtexcache/\" -DDPI=\"160\" -o mathtex.cgi
+
+cp /var/www/maw/support/mathtex.php .
+
+echo "Finished, try http:localhost/mathtex/mathtex.php?x^2"
+echo "You may need to add the following lines to /etc/apache2/apache2.conf and restart apache2 server"
+echo "-----------------------------------"
+echo "<Directory /var/www/mathtex>"
+echo "Options ExecCGI"
+echo "AddHandler cgi-script cgi pl"
+echo "</Directory>"
+echo "-----------------------------------"

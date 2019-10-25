@@ -1,0 +1,32 @@
+print("### function",tex(f(x),false),"### end");
+print("### interval",tex([a,b],false),"### end");
+print("### initial",tex(c,false),"### end");
+
+printgnuplot(str):=print("### gnuplot",str,"### end");
+
+printgnuplot(sconcat("set xrange [",a,":",b,"]"));
+printgnuplot(sconcat("set size square"));
+printgnuplot(sconcat("unset key"));
+
+printarrow(x0,y0,x1,y1):=
+printgnuplot(sconcat("set arrow from ",ev(x0,numer),",",ev(y0,numer)," to ",ev(x1,numer),",",ev(y1,numer)," linetype 3  linewidth 2.000"));
+
+printarrow(c,0,c,f(c));
+
+one_iteration():=
+block(
+ if i=0 then tempc:c else tempc:ev(f(c),numer), 
+ if tempc<a or tempc >b then print ("function outside interval at",c),
+ print ("### iteration",i,"value",tempc,"### end"),
+ if i>1 then (
+   printarrow(prevc,c,c,c),
+   printarrow(c,c,c,tempc)
+ ),
+ prevc:c,
+ c:tempc
+);
+
+
+for i:0 step 1 thru n do (one_iteration());
+
+

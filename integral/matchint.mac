@@ -1,0 +1,751 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2008 Robert Marik, Miroslava Tihlarikova
+Copyright 2009-2011 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+subst_hints:[];
+subst_hints_back:[];
+declare(a,constant);
+declare(b,constant);
+/* assume(maw_var>0); */
+assume(new_maw_var>0);
+
+display2d:false;
+logabs:true;
+logconcoeffp:'logconfun;
+logconfun(m):=featurep(m,integer) or ratnump(m);
+
+polynomialpx(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)>0;
+polynomialpx_c(e):=polynomialp(e,[maw_var]);
+polynomialpx_2(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)=2 and lopow(e,maw_var)<2;
+polynomialpx_1(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)=1 and lopow(e,maw_var)<1;
+polynomialpx_11(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)=1;
+polynomialpx_linear(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)=1;
+rlf(e):=polynomialp(e,[maw_var],constantp,integerp);
+
+nonzero_constant(e):=constantp(e) and (e#0);
+nonzero_constant_not1e(e):=constantp(e) and (e#0) and (e#0) and (e#%e);
+positive_integer(e):=integerp(e) and (e>0);
+positive_constant_not_1(e):=constantp(e) and (e>0) and (e#1);
+constant_not_1(e):=constantp(e) and (e#1);
+integer_at_least_2(e):=integerp(e) and (e>1);
+
+
+matchdeclare(qq1,polynomialpx_c,
+[pp1,rr1],polynomialpx,
+pp11,polynomialpx_11,
+pp2,polynomialpx_2,
+[aa2,aa3],nonzero_constant,
+aa4,nonzero_constant_not1e,
+twoandmore,integer_at_least_2,
+posconstnot1,positive_constant_not_1,
+constnot1,constant_not_1,
+kk1,positive_integer,
+ratfunc,rlf,
+[linearpol,linearpol2],polynomialpx_linear,
+maw_anything,true);
+
+defmatch(polexp,pp1*exp(linearpol));
+defmatch(polsin,pp1*sin(linearpol));
+defmatch(polcos,pp1*cos(linearpol));
+defmatch(polsinh,pp1*sinh(linearpol));
+defmatch(polcosh,pp1*cosh(linearpol));
+defmatch(pollog,qq1*log(linearpol));
+defmatch(pollog2,qq1*log(linearpol)^kk1);
+defmatch(pollog3,qq1*log(ratfunc));
+defmatch(sinlog,aa2*sin(log(aa3*maw_var)));
+defmatch(sinexp,aa2*sin(linearpol)*exp(linearpol2));
+defmatch(coslog,aa2*cos(log(aa3*maw_var)));
+defmatch(cosexp,aa2*cos(linearpol)*exp(linearpol2));
+defmatch(polasin,qq1*asin(linearpol));
+defmatch(polacos,qq1*acos(linearpol));
+defmatch(polatan,qq1*atan(ratfunc));
+defmatch(polacot,qq1*acot(ratfunc));
+defmatch(polatanh,qq1*atanh(ratfunc));
+defmatch(polacoth,qq1*acoth(ratfunc));
+defmatch(atanover,aa3*atan(ratfunc)/((pp11)^posconstnot1));
+defmatch(acotover,aa3*acot(ratfunc)/((pp11)^posconstnot1));
+defmatch(logtimes,aa3*log(ratfunc)*((pp11)^aa2));
+defmatch(asinover,aa3*asin(linearpol)/((pp11)^twoandmore));
+defmatch(acosover,aa3*acos(linearpol)/((pp11)^twoandmore));
+defmatch(formsin,aa2*sin(linearpol));
+defmatch(formsinh,aa2*sinh(linearpol));
+defmatch(formsin2,aa2*sin(linearpol)^(-2));
+defmatch(formsin3,aa2*sin(linearpol)^(2));
+defmatch(formcos,aa2*cos(linearpol));
+defmatch(formcosh,aa2*cosh(linearpol));
+defmatch(formcos2,aa2*cos(linearpol)^(-2));
+defmatch(formcos3,aa2*cos(linearpol)^(2));
+defmatch(formpower,aa2*(linearpol)^(aa3));
+defmatch(formexp,aa2*exp(linearpol));
+defmatch(formexp_not_e,aa2*aa4^(linearpol));
+defmatch(formatan,aa2/pp1);
+defmatch(formasin,aa2/sqrt(pp1));
+/*     defmatch(rlf,qq1/rr1);  ---   removed and replaced by polynomialp*/
+defmatch(ostrograd1,pp1/sqrt(pp2));
+defmatch(ostrograd2,qq1*sqrt(pp2));
+defmatch(log_of_f,aa2*log(maw_anything));
+
+
+defrule(maw_find_sin_args, sin(pp11), 
+(
+print("FOUND: sine of ",pp11," in function ",f),
+sincosargs:maw_append(sincosargs,[pp11]),
+pp11));
+
+defrule(maw_find_cos_args, cos(pp11), 
+(
+print("FOUND: cos of ",pp11," in function ",f),
+sincosargs:maw_append(sincosargs,[pp11]),
+pp11));
+
+ 
+globalsolve:true;
+
+function_is_formula:false;
+msg_testformula(aaaa1):= (print (print_key,"testformula",aaaa1), 
+if aaaa1#7 and aaaa1#10 and aaaa1#11 and aaaa1#8 then 
+(
+ if coeff(linearpol,maw_var)#1 or at(linearpol,maw_var=0)#0 then 
+ (print(print_key,"formulawithlinear"),
+  if (print_key#"silent ") then (
+  subst_hints:[linearpol=new_maw_var],
+  subst_hints_back:[new_maw_var=linearpol]
+  ),
+  print(print_key,"forsubsthints",subst_hints),
+  print(print_key,"forsubstinvhints",subst_hints_back)
+ )
+)
+else
+ (
+  if coeff(pp1,maw_var,1)#0 then print (print_key,"completesquare")
+ ),
+if (print_key#"silent ") then function_is_formula:true,
+true);
+
+maw_discr(pol):=
+(
+pol:expand(pol),
+coeff(pol,maw_var,1)^2-4*coeff(pol,maw_var,2)*coeff(pol,maw_var,0)
+);
+
+linearpol:maw_var;
+
+
+testformula(f):=
+(
+if formpower(f)#false or formpower(ratsimp(f))#false 
+  then (print("f=",f,"linearpol=",linearpol),if aa3=-1 then msg_testformula(9) else  msg_testformula(5))
+elseif formsin(ratsimp(f))#false then msg_testformula(1)
+elseif formcos(ratsimp(f))#false then msg_testformula(2)
+elseif formsinh(ratsimp(f))#false then msg_testformula(15)
+elseif formcosh(ratsimp(f))#false then msg_testformula(16)
+elseif formsin2(ratsimp(f))#false then msg_testformula(3)
+elseif formcos2(ratsimp(f))#false then msg_testformula(4)
+elseif formsin3(ratsimp(f))#false then msg_testformula(12)
+elseif formcos3(ratsimp(f))#false then msg_testformula(13)
+elseif polynomialp(f,[maw_var]) then msg_testformula(0)
+elseif formexp(ratsimp(f))#false then  msg_testformula(6)
+elseif formexp_not_e(ratsimp(f))#false then  msg_testformula(14)
+elseif formatan(ratsimp(f))#false and (polynomialpx_2(pp1)) then  
+(
+  maw_D:maw_discr(pp1), 
+  if print_key#"silent " then 
+  (
+  if coeff(expand(pp1),maw_var,1)#0 then 
+  (	
+    print(print_key,"formulawithlinear"),
+    temp1:coeff(expand(pp1),maw_var,1)/(2*coeff(expand(pp1),maw_var,2)),
+    subst_hints:[maw_var+temp1=new_maw_var],
+    subst_hints_back:[new_maw_var=maw_var+temp1],
+    temp2:abs(ratsimp(coeff(expand(pp1),maw_var,0)/coeff(expand(pp1),maw_var,2)-(temp1)^2)),
+    if temp2#1 and temp2#0 then
+    (
+     subst_hints:subst_maw_append(subst_hints,[maw_var+temp1=sqrt(temp2)*new_maw_var],[new_maw_var=(maw_var+temp1)/sqrt(temp2)])
+)   
+  )
+  elseif abs(coeff(expand(pp1),maw_var,0))#abs(coeff(expand(pp1),maw_var,2)) then 
+  (
+    temp2:abs(coeff(expand(pp1),maw_var,0)/coeff(expand(pp1),maw_var,2)),
+    if temp2#0 then (
+      print(print_key,"formulawithlinear"),    
+      subst_hints:[maw_var=sqrt(temp2)*new_maw_var],
+      subst_hints_back:[new_maw_var=maw_var/sqrt(temp2)])
+  )),
+  if maw_D<0 then msg_testformula(7) 
+  elseif maw_D=0 then msg_testformula(5) 
+  else msg_testformula(10)
+)
+elseif formasin(ratsimp(f))#false and (polynomialpx_2(pp1)) then  
+(
+  if print_key#"silent " then 
+  (
+  if coeff(expand(pp1),maw_var,1)#0 then
+  (
+    temp1:coeff(expand(pp1),maw_var,1)/(2*coeff(expand(pp1),maw_var,2)),
+    subst_hints:[maw_var+temp1=new_maw_var],
+    subst_hints_back:[new_maw_var=maw_var+temp1],
+    temp2:abs(ratsimp(coeff(expand(pp1),maw_var,0)/coeff(expand(pp1),maw_var,2)-temp1^2)),
+    if ratsimp(temp2/coeff(expand(pp1),maw_var,2))#1
+    then
+    (
+     subst_hints:subst_maw_append(subst_hints,[maw_var+temp1=sqrt(temp2)*new_maw_var] ,[new_maw_var=(maw_var+temp1)/sqrt(temp2)])
+    )    
+  )
+  elseif abs(coeff(expand(pp1),maw_var,2))#abs(coeff(expand(pp1),maw_var,0)) then 
+  (
+    subst_hints:[maw_var*sqrt(abs(coeff(expand(pp1),maw_var,2)))=new_maw_var*sqrt(abs(coeff(expand(pp1),maw_var,0)))],
+    subst_hints_back:[new_maw_var=maw_var*sqrt(abs(coeff(expand(pp1),maw_var,2)))/sqrt(abs(coeff(expand(pp1),maw_var,0)))]
+  )
+  ),
+  if coeff(expand(pp1),maw_var,2)<0 then msg_testformula(8) 
+  else msg_testformula(11)
+)
+);
+
+
+testpart(f):= if (polexp(f)#false or polsin(f)#false or polcos(f)#false or pollog(f)#false or (pollog2(f)#false and at(linearpol,maw_var=0)=0) or pollog3(f)#false or polatan(f)#false or polacot(f)#false or polasin(f)#false or polacos(f)#false or polsinh(f)#false or polcosh(f)#false or polatanh(f)#false or polacoth(f)#false) then (print (print_key,"testbypart"), if (polexp(f)#false or polsin(f)#false or polcos(f)#false or polsinh(f)#false or polcosh(f)#false) then (print (print_key,"u",expand(pp1)),true) else (print (print_key,"v",shorter(qq1)),true)) 
+elseif (logtimes(f)#false and aa2#-1)then (print(print_key,"testbypart"),print(print_key,"u",log(ratfunc)),true) 
+elseif atanover(f)#false then (print(print_key,"testbypart"),print(print_key,"u",atan(ratfunc)),true) 
+elseif acotover(f)#false then (print(print_key,"testbypart"),print(print_key,"u",acot(ratfunc)),true) 
+elseif acosover(f)#false then (print(print_key,"testbypart"),print(print_key,"u",acos(linearpol)),true) 
+elseif asinover(f)#false then (print(print_key,"testbypart"),print(print_key,"u",asin(linearpol)),true) 
+elseif is(maw_var=maw_var_ori) then
+( 
+  if sinlog(f)#false or coslog(f)#false then (print(print_key,"testbypart"),print(print_key,"twotimesbyparts"),print(print_key,"v",1),true) 
+  elseif sinexp(f)#false or cosexp(f)#false then (print(print_key,"testbypart"),print(print_key,"twotimesbyparts"),print(print_key,"v",exp(linearpol2)),true)
+  else false
+)
+else false
+;
+
+testrlfimproper(f):= if (rlf(f)#false) and (hipow(expand(num(f)),maw_var)>=hipow(expand(denom(f)),maw_var)) then (print (print_key,"testrlfimproper"),true);
+
+testrlf(f):= 
+if (rlf(expand(f))#false and (not(hipow(num(expand(f)),maw_var)=0 and hipow(denom(expand(f)),maw_var)=1))) 
+then 
+(
+ f:ratsimp(f),
+ if (hipow(denom(f),maw_var)=2) and 
+   ((coeff(denom(f),maw_var,1))^2-4*coeff(denom(f),maw_var,2)*coeff(denom(f),maw_var,0)<0)
+   and (hipow(num(f),maw_var)<2)
+ then print (print_key,"rlftwofracs")
+ else print (print_key,"testrlf"),
+ true
+)else print(rlf(expand(f)));
+
+
+testrlfxthru(f):= if not atom(f) and op(f)=op(x/y) and rlf(xthru(f))#false and (xthru(f)#f) then (print (print_key,"xthru"),true,xthru(f));
+
+factor_with_solve_real(expr, n) := block(
+  [sol, fac, expr1],
+  sol : solve(expr, n),
+  expr : ratexpand(expr),
+  fac : ratcoef(expr, n, hipow(expr, n)),
+  for i:1 thru length(sol) do (
+    if not(freeof(n, rhs(sol[i]))) then error(),
+    if imagpart(rectform(rhs(sol[i])))=0 then
+      fac : fac * (n - rhs(sol[i]))^multiplicities[i]
+      else 
+        (if imagpart(rectform(rhs(sol[i])))>0 then 
+          fac: fac*(ratsimp(expand((n-rectform(rhs(sol[i])))*(n-conjugate(rectform(rhs(sol[i])))))))^multiplicities[i])	
+  ),
+  if not(zeroequiv(expr-fac,maw_var)) then error(),
+  fac
+)$
+
+my_partfrac(e, variable) := partfrac(num(e)/factor_with_solve_real(denom(e), variable), variable);
+
+testpartfrac(f):= 
+if polynomialp(f,[maw_var],constantp,integerp) 
+  and str(f)#str(my_partfrac(f,maw_var)) 
+  then 
+print (print_key,"testpartfrac");
+
+testmultiple(f):= (
+if not atom(f) and op(f)="-" and length(args(f))=1 then minus:-1 else minus:1,
+f:minus*f,
+if not atom(f) and op(f)=op(x/y) then 
+   (pom:find_multiple_in_quotient(f),
+   print(print_key,"constmul",minus*pom)),
+if not atom(f) and op(f)=op(x*y) then (
+   pom:find_multiple_in_product(f),
+   print(print_key,"constmul",minus*pom)),
+print(print_key,"constmul",minus)
+);
+
+find_multiple_in_product(f):=
+if not atom(f) and op(f)=op(x*y) then 
+block ([n],
+ answer:1,[n],
+ n:length(args(f)),
+ if listp(args(f)) then
+    product(if (diff(args(f)[i],maw_var)=0) then args(f)[i] else 1,i,1,n)
+) 
+else (if (diff(f,maw_var)=0) then f else 1);
+
+find_multiple_in_quotient(f):= find_multiple_in_product(args(f)[1])/find_multiple_in_product(args(f)[2]);
+
+maw_append(maw_a,maw_b):=if member(maw_b[1],maw_a) then maw_a else append(maw_a,maw_b);
+
+subst_maw_append(maw_a,maw_b,maw_c):=if member(maw_b[1],maw_a) then maw_a else (print("**** substituting ",maw_b),subst_hints_back:append(subst_hints_back,maw_c),append(maw_a,maw_b));
+
+/* function to test if the function is in the form R(sin(ax+b),cos(ax)+b)  */
+
+testsubstsincos(f):=
+block(
+maw_sincosp:false,
+sincosargs:[],
+tempf:f,
+errcatch(apply2(tempf,maw_find_cos_args)),
+errcatch(apply2(tempf,maw_find_sin_args)),
+if sincosargs=[] then return(false),
+if listp(sincosargs) and length(sincosargs)>1 then
+(print(print_key,"trigfunctions_with_different_arguments"), return(false)),
+maw_var2:trigsimp(sincosargs[1]),
+test:subst(var1,sin(maw_var2),subst(var2,cos(maw_var2),trigsimp(f))),
+if not polynomialp(test,[var1,var2],constantp,integerp) then return(false),
+if test=var1 or test=var2 or not freeof(maw_var,test) or diff(test)=0 then return(false),
+/* now we know that the funtction is R(sin(ax+b),cos(ax+b))  */
+/* and neither sin(x) nor cos(x)                       */
+print (print_key,"testsubst"),
+if zeroequiv(ratsimp(subst(-var1,var1,test)+test),maw_var) then 
+(
+ print (print_key,"testsubstoddwrtsin"),
+ maw_sincosp:true,
+ subst_hints:subst_maw_append(subst_hints,[cos(maw_var2)=new_maw_var],[new_maw_var=cos(maw_var2)])
+),
+if zeroequiv(ratsimp(subst(-var2,var2,test)+test),maw_var) then 
+(
+ print (print_key,"testsubstoddwrtcos"),
+ maw_sincosp:true,
+ subst_hints:subst_maw_append(subst_hints,[sin(maw_var2)=new_maw_var],[new_maw_var=sin(maw_var2)])
+),
+if zeroequiv(ratsimp(subst(-var2,var2,subst(-var1,var1,test))-test),maw_var) then 
+( 
+ print (print_key,"testsubstevenwrtsincos"),
+ maw_sincosp:true,
+ subst_hints:subst_maw_append(subst_hints,[tan(maw_var2)=new_maw_var],[new_maw_var=tan(maw_var2)])
+),
+subst_hints:subst_maw_append(subst_hints,[tan(maw_var2/2)=new_maw_var],[new_maw_var=tan(maw_var2/2)]),
+true
+);
+
+testsumform(f):=if not(atom(f)) and op(f)=op(x+y) then map(testformula,f);
+
+display2d:false;
+negsumdispflag:true;
+orderless(I);
+
+
+/* macros to find square roots of an expression */
+
+notfreeofx (e) := not freeof (maw_var, e);
+notfreeofx_notx (e) := not freeof (maw_var, e);
+plusminus_half (e) := e=1/2 or e=-1/2 or e=1/3 or e=-1/3 or e=2/3 or e=-2/3;
+rational_exponent (e) := ratnump(e) and not integerp(e);
+
+set_of_bases:set();
+
+matchdeclare(maw_p,notfreeofx,h , rational_exponent,maw_p2,notfreeofx_notx);
+
+maw_exponent:1,
+defrule(maw_findroots, maw_p^(h), (maw_exponent:lcm(maw_exponent,abs(denom(h))),set_of_bases:union(set_of_bases,set(maw_p)), print("FOUND: root of ",maw_p, "exponent ",abs(h)), maw_p));
+
+expfound:false;
+sinfound:false;
+cosfound:false;
+
+load("../common/changevar2.mac");
+trysubst(maw_f,maw_s,maw_v1,maw_v2):=
+(print ("MAW comment: Trying ",maw_s," in integral of ",maw_f),
+A:diff(changevar2('integrate(maw_f,maw_v2),maw_s,''maw_v1,maw_v2),maw_v1),
+print ("result after substitution: ",A),A);
+
+
+defrule(maw_findexp, posconstnot1^(maw_p), 
+(
+posconstnot1saved:posconstnot1,
+print("FOUND: exponential of ",maw_p," (base ",posconstnot1saved,") in function ",f),
+if maw_p#maw_var and  test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+expfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+if test_methods_for_integration(trysubst(f,(posconstnot1saved)^(maw_p)=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+expfound:true,
+print (print_key,"testsubst (posconstnot1saved)^(",maw_p,")=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[(posconstnot1saved)^(maw_p)= new_maw_var],[new_maw_var= (posconstnot1saved)^(maw_p)])),
+maw_p));
+
+defrule(maw_findpower, (maw_p2)^constnot1, 
+(
+print("FOUND: power of ",maw_p2," (exponent ",constnot1,") in function ",f),
+if maw_p2#maw_var and test_methods_for_integration(trysubst(f,maw_p2=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+powfound:true,
+print (print_key,"testsubst ",maw_p2,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p2= new_maw_var],[new_maw_var=maw_p2])),
+if test_methods_for_integration(trysubst(f,(maw_p2)^(constnot1)=new_maw_var,new_maw_var,maw_var),new_maw_var) then (
+powfound:true,
+print (print_key,"testsubst (maw_p2)^(",constnot1,")=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[(maw_p2)^(constnot1)= new_maw_var],[new_maw_var= (maw_p2)^(constnot1)])),
+maw_p2));
+
+
+defrule(maw_findsin, sin(maw_p), 
+(
+print("FOUND: sine of ",maw_p," in function ",f),
+if maw_p#maw_var and test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+sinfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+maw_p));
+
+defrule(maw_findcos, cos(maw_p), 
+(
+print("FOUND: cosine of ",maw_p," in function ",f),
+if maw_p#maw_var and test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+cosfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+maw_p));
+
+defrule(maw_findlog, log(maw_p), 
+(
+print("FOUND: log of ",maw_p," in function ",f),
+if maw_p#maw_var and test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+logfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+if test_methods_for_integration(trysubst(f,log(maw_p)=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+logfound:true,
+print (print_key,"testsubst ",log(maw_p),"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[log(maw_p)= new_maw_var],[new_maw_var=log(maw_p)])),
+maw_p));
+
+defrule(maw_findatan, atan(maw_p), 
+(
+print("FOUND: atan of ",maw_p," in function ",f),
+if maw_p#maw_var and test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+atanfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+if test_methods_for_integration(trigsimp(trysubst(f,atan(maw_p)=new_maw_var,new_maw_var,maw_var)),new_maw_var) then ( 
+atanfound:true,
+print (print_key,"testsubst ",atan(maw_p),"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[atan(maw_p)= new_maw_var],[new_maw_var=atan(maw_p)])),
+maw_p));
+
+defrule(maw_findacot, acot(maw_p), 
+(
+print("FOUND: acot of ",maw_p," in function ",f),
+if maw_p#maw_var and test_methods_for_integration(trysubst(f,maw_p=new_maw_var,new_maw_var,maw_var),new_maw_var) then ( 
+acotfound:true,
+print (print_key,"testsubst ",maw_p,"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[maw_p= new_maw_var],[new_maw_var=maw_p])),
+if test_methods_for_integration(trigsimp(trysubst(f,acot(maw_p)=new_maw_var,new_maw_var,maw_var)),new_maw_var) then ( 
+acotfound:true,
+print (print_key,"testsubst ",acot(maw_p),"=new_maw_var"), 
+subst_hints:subst_maw_append(subst_hints,[acot(maw_p)= new_maw_var],[new_maw_var=acot(maw_p)])),
+maw_p));
+
+
+test_subst_for_root(f):=(
+[tempf,maw_answer],
+tempf:f,
+maw_answer:false,
+set_of_bases:set(),
+errcatch(apply2(tempf,maw_findroots)),
+assume (new_maw_var>0),
+print("exponent",maw_exponent),
+/*                                                                 */
+/* as the first attempt we try to remove the root by substitution  */
+/*                                                                 */
+print ("set of bases: ",set_of_bases),
+if cardinality(set_of_bases)=1 and test_methods_for_integration(trysubst(f,listify(set_of_bases)[1]=new_maw_var^maw_exponent,new_maw_var,maw_var),new_maw_var) then 
+  (
+   new_subst_hint:listify(set_of_bases)[1]=new_maw_var^maw_exponent,
+   new_subst_hint_back:new_maw_var=(listify(set_of_bases)[1])^(1/maw_exponent),
+   subst_hints:subst_maw_append(subst_hints,[new_subst_hint],[new_subst_hint_back]),
+   print (print_key,"testsubst ",listify(set_of_bases)[1],"=new_maw_var^maw_exponent"),
+   maw_answer:true
+  ),
+if cardinality(set_of_bases)=1 and polynomialp(listify(set_of_bases)[1],[maw_var]) and hipow(expand(listify(set_of_bases)[1]),maw_var)=2 then
+  (
+   print ("root of quadratic function"),
+   under_root:listify(set_of_bases)[1],
+   /*                                                              */
+   /*   substition into sqrt(a^2-x^2),sqrt(a^2+x^2),sqrt(x^2-a^2)  */
+   /*                                                              */
+   if coeff(expand(listify(set_of_bases)[1]),maw_var,1) = 0 then
+    (
+      print (print_key,"testsubsttrigsimphint"),
+      coef_2:coeff(expand(listify(set_of_bases)[1]),maw_var,2),
+      coef_0:coeff(expand(listify(set_of_bases)[1]),maw_var,0),
+      print (coef_0,coef_2),	
+      if coef_2<0 and coef_0>0 then 
+       (subst_hints:subst_maw_append(subst_hints,[maw_var=sqrt(abs(coef_0/coef_2))*sin(new_maw_var),maw_var=sqrt(abs(coef_0/coef_2))*cos(new_maw_var)],[new_maw_var=asin(maw_var*sqrt(abs(coef_2/coef_0))),new_maw_var=acos(maw_var*sqrt(abs(coef_2/coef_0)))]),
+        print (subst_hints), 
+        maw_answer:true
+       ),
+      if coef_2>0 and coef_0>0 then 
+       (subst_hints:subst_maw_append(subst_hints,[maw_var=sqrt(abs(coef_0/coef_2))*tan(new_maw_var)],[new_maw_var=atan(maw_var*sqrt(abs(coef_2/coef_0)))]),
+        print (subst_hints), 
+        maw_answer:true
+       ),
+      if coef_2>0 and coef_0<0 then 
+       (
+       if (abs(coef_2)=abs(coef_0)) and (coef_2=1)
+          then subst_hints:subst_maw_append(subst_hints,[maw_var=sqrt(abs(coef_0/coef_2))/cos(new_maw_var)],[new_maw_var=acos(sqrt(abs(coef_0/coef_2))/(maw_var))]) 
+          else subst_hints:subst_maw_append(subst_hints,[maw_var=sqrt(abs(coef_0/coef_2))*(new_maw_var)],[new_maw_var=(sqrt(abs(coef_2/coef_0))*(maw_var))]),
+        print (subst_hints), 
+        maw_answer:true
+       )
+    )
+  ),
+maw_answer
+);
+
+test_subst_for_exp(f):=([tempf],
+expfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findexp)),
+expfound
+);
+
+test_subst_for_power(f):=([tempf],
+powfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findpower)),
+powfound
+);
+
+
+test_subst_for_sin(f):=([tempf],
+sinfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findsin)),
+sinfound
+);
+
+test_subst_for_cos(f):=([tempf],
+cosfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findcos)),
+cosfound
+);
+
+
+test_subst_for_log(f):=([tempf],
+logfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findlog)),
+logfound
+);
+
+test_subst_for_atan(f):=([tempf],
+atanfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findatan)),
+atanfound
+);
+
+test_subst_for_acot(f):=([tempf],
+acotfound:false,
+tempf:f,
+errcatch(apply2(tempf,maw_findacot)),
+acotfound
+);
+
+
+print_key:"\#\#\#\#";
+
+test_methods_for_integration(f,t):=
+block([tempf,output_test],
+can_be_integrated:false,
+if not freeof(maw_var,f) then return(false),
+if not freeof(%i,f) then return(false),
+if f#0 then 
+(
+ print_key:"silent ",
+ tempf:subst(maw_var,t,f),
+ output_test:(testrlf(tempf) or testpart(tempf) or testrlfimproper(tempf) or testformula(tempf) or test_fprime_over_f(tempf)),
+ print_key:"\#\#\#\#",
+ output_test)
+);
+
+test_subst_pollog2(f):=
+(
+[output_test],
+output_test:false,
+if (pollog2(f)#false) 
+then 
+(if (at(linearpol,maw_var=0)#0) then 
+ (
+   new_subst_hint:linearpol=new_maw_var,
+   subst_hints:subst_maw_append(subst_hints,[new_subst_hint],[new_maw_var=linearpol]),
+   print (print_key,"testsubst ",linearpol=new_maw_var),
+   output_test:true
+ )
+),
+output_test
+);
+
+testsubst(f):=block(
+if not function_is_formula then ( 
+mawt1:test_subst_pollog2(f),
+mawt1:test_subst_for_exp(f) or mawt1,
+print("***** looking for sine a cosine"),
+mawt1:test_subst_for_sin(f) or mawt1,
+mawt1:test_subst_for_cos(f) or mawt1, 
+print("***** looking for log and atan"),
+mawt1:test_subst_for_log(f) or mawt1, 
+mawt1:test_subst_for_atan(f) or mawt1, 
+mawt1:test_subst_for_acot(f) or mawt1, 
+print("***** looking for root"),
+mawt1:test_subst_for_root(f) or mawt1,
+print("***** looking for root with rootscontract"),
+mawt1:test_subst_for_root(rootscontract(f)) or mawt1,
+print("***** looking for R(sin(x),cos(x))"),
+mawt1:testsubstsincos(f) or mawt1,
+print("***** looking for powers"),
+mawt1:test_subst_for_power(f) or mawt1),
+mawt1:mawt1 or is (subst_hints#[]),
+print (mawt1,subst_hints),
+if mawt1
+then 
+(
+ print(print_key,"substhints",subst_hints),
+ print(print_key,"backsubst",subst_hints_back),
+ true
+)
+);
+
+
+test_ostrogradski_method(f):=
+(if ostrograd2(f)#false then 
+  (print(print_key,"ostrogradski"),
+  print(print_key,"ostrroot",pp2),
+  print(print_key,"ostrpoldegree",1+hipow(expand(qq1),maw_var)),
+  true)
+elseif ostrograd1(f)#false then 
+  (print(print_key,"ostrogradski"),
+  print(print_key,"ostrroot",pp2),
+  print(print_key,"ostrpoldegree",hipow(expand(pp1),maw_var)-1),
+  true)
+else false
+);
+
+test_fprime_over_f(f):=
+([int,temphint],
+if not atom(f) and op(f)=op(maw_1111/maw_2222) then 
+(
+ f_numerator:num(f),
+ simp:true,
+ errcatch(int:radcan(integrate(f,maw_var))),
+ if errcatch#[] and log_of_f(int)#false then 
+ (
+   print(print_key,"logofdenom"),
+   temphint:ratsimp(diff(maw_anything,maw_var)/f_numerator),
+   if not(freeof(maw_var,temphint)) 
+     then print(print_key,"multhruhint",temphint) 
+     else print(print_key,"constmul",1/temphint), 
+   true
+ )
+)
+);
+
+mapratsimp(expr):=map(ratsimp,expr);
+
+/* 
+completing square into 1/sqrt((x+a)^2+b) and 1/((x+a)^2+b) and
+and converting linear/quadratic into const*f'/f + const/((x+a)^2+b)
+*/
+
+completesquare(expr):=
+block( 
+  expr:expand(expr),
+  if not polynomialpx_2(expr) then return(expr), 
+  maw_a:coeff(expr,maw_var,2),
+  maw_b:coeff(expr,maw_var,1),
+  maw_c:coeff(expr,maw_var,0),
+  maw_expr_square:signum(maw_a)*(rectform(expand(ratsimp(sqrt(abs(maw_a))*maw_var+maw_b/signum(maw_a)/(2*sqrt(abs(maw_a)))))))^2-fullratsimp(radcan(rectform(maw_b^2*signum(maw_a)/(4*abs(maw_a))-(maw_c)))),
+  rectform(maw_expr_square)
+);
+
+completesquare_asin(expr):=num(expr)/sqrt(completesquare((denom(expr))^2));
+
+completesquare_frac(expr):=num(expr)/(completesquare(denom(expr)));
+
+split_fraction_for_integration(expr):=
+block(
+  pfeformat:true,
+  maw_numerator:expand(num(expr)),
+  maw_denominator:expand(denom(expr)),
+  if not polynomialpx_2(maw_denominator) or diff(maw_numerator,maw_var,2)#0 
+    then return(expr),
+  coefM:coeff(maw_denominator,maw_var,2),
+  coefN:coeff(maw_denominator,maw_var,1),
+  coefa:coeff(maw_numerator,maw_var,1),
+  coefb:coeff(maw_numerator,maw_var,0),
+  term_1:(coefa/(2*coefM))*(2*coefM*maw_var+coefN),
+  term_2:(coefb-(coefa*coefN/(2*coefM))),
+  if is(fullratsimp((term_1)+(term_2)-(maw_numerator))=0)
+  then (term_1)/maw_denominator +(term_2)/completesquare(maw_denominator)
+  else error()
+);
+
+
+matchdeclare(allexpr_2,true);
+
+test_expand_into_formulas(f):=
+(
+  if not atom(f) then 
+    (
+      print_key:"silent ",
+      if op(expand(f))=op(maw_1+maw_b) and (setify(maplist(testformula,expand(f)))={true}) then 
+      (
+        print_key:"\#\#\#\#",
+        print(print_key,"expands_into_formulas")
+       )
+       else
+       (
+         division:divide(num(f),denom(f)),
+         if op(division[1]+division[2]/denom(f))=op(maw_1+maw_b) and (setify(maplist(testformula,division[1]+division[2]/denom(f)))={true})
+         then 
+         (
+           print_key:"\#\#\#\#",
+           print(print_key,"divides_into_formulas")
+          )
+       ),
+      print_key:"\#\#\#\#"
+     ),
+  false
+);
+
+
+load("../common/shorter.mac");
+
+expandI(expr):=
+(
+ tempI:at(expand(expr),I=0),
+ (tempI)+radcan(expr-tempI)
+);

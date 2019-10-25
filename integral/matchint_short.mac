@@ -1,0 +1,150 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2008 Robert Marik, Miroslava Tihlarikova
+Copyright 2009-2011 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+declare(a,constant);
+declare(b,constant);
+/* assume(maw_var>0); */
+assume(new_maw_var>0);
+
+/*  common with matchint.mac - start */
+rlf(e):=polynomialp(e,[maw_var],constantp,integerp);
+polynomialpx_2(e):=polynomialp(e,[maw_var]) and hipow(expand(e),maw_var)=2 and lopow(e,maw_var)<2;
+
+completesquare(expr):=
+block( 
+  expr:expand(expr),
+  if not polynomialpx_2(expr) then return(expr), 
+  maw_a:coeff(expr,maw_var,2),
+  maw_b:coeff(expr,maw_var,1),
+  maw_c:coeff(expr,maw_var,0),
+  maw_expr_square:signum(maw_a)*(rectform(expand(ratsimp(sqrt(abs(maw_a))*maw_var+maw_b/signum(maw_a)/(2*sqrt(abs(maw_a)))))))^2-fullratsimp(radcan(rectform(maw_b^2*signum(maw_a)/(4*abs(maw_a))-(maw_c)))),
+  rectform(maw_expr_square)
+);
+
+completesquare_asin(expr):=num(expr)/sqrt(completesquare((denom(expr))^2));
+
+completesquare_frac(expr):=num(expr)/(completesquare(denom(expr)));
+
+split_fraction_for_integration(expr):=
+block(
+  pfeformat:true,
+  maw_numerator:expand(num(expr)),
+  maw_denominator:expand(denom(expr)),
+  if not polynomialpx_2(maw_denominator) or diff(maw_numerator,maw_var,2)#0 
+    then return(expr),
+  coefM:coeff(maw_denominator,maw_var,2),
+  coefN:coeff(maw_denominator,maw_var,1),
+  coefa:coeff(maw_numerator,maw_var,1),
+  coefb:coeff(maw_numerator,maw_var,0),
+  term_1:(coefa/(2*coefM))*(2*coefM*maw_var+coefN),
+  term_2:(coefb-(coefa*coefN/(2*coefM))),
+  if is(fullratsimp((term_1)+(term_2)-(maw_numerator))=0)
+  then (term_1)/maw_denominator +(term_2)/completesquare(maw_denominator)
+  else error()
+);
+
+factor_with_solve_real(expr, n) := block(
+  [sol, fac, expr1],
+  sol : solve(expr, n),
+  expr : ratexpand(expr),
+  fac : ratcoef(expr, n, hipow(expr, n)),
+  for i:1 thru length(sol) do (
+    if not(freeof(n, rhs(sol[i]))) then error(),
+    if imagpart(rectform(rhs(sol[i])))=0 then
+      fac : fac * (n - rhs(sol[i]))^multiplicities[i]
+      else 
+        (if imagpart(rectform(rhs(sol[i])))>0 then 
+          fac: fac*(ratsimp(expand((n-rectform(rhs(sol[i])))*(n-conjugate(rectform(rhs(sol[i])))))))^multiplicities[i])	
+  ),
+  if not(zeroequiv(expr-fac,maw_var)) then error(),
+  fac
+)$
+
+my_partfrac(e, variable) := partfrac(num(e)/factor_with_solve_real(denom(e), variable), variable);
+
+/*  common with matchint.mac - end */
+
+
+display2d:false;
+logabs:true;
+negsumdispflag:true;
+orderless(I);
+ 
+globalsolve:true;
+
+load("../common/shorter.mac");
+
+expandI(expr):=
+(
+ tempI:at(expand(expr),I=0),
+ (tempI)+radcan(expr-tempI)
+);
+
+
+maw_print_one_try(expr,key):=print("TeX",key,tex(expr,false),"XeT");
+ 
+try_float(expr):=maw_print_one_try(ev(expr,numer),floatint);
+
+try_functions(expr):=
+(
+if rlf(expr) then (
+maw_print_one_try(completesquare_frac(expr),sq1),
+maw_print_one_try(split_fraction_for_integration(expr),spl)
+),
+if rlf(num(expr)*denom(expr^2)) then maw_print_one_try(completesquare_asin(expr),sq2),
+maw_print_one_try(expand(expr),expand),
+maw_print_one_try(factor(expr),factor),
+maw_print_one_try(fullratsimp(expr),fullratsimp),
+errcatch(maw_print_one_try(map(fullratsimp,expr),mapfullratsimp)),
+maw_print_one_try(xthru(expr),xthru),
+errcatch(maw_print_one_try(map(xthru,expr),mapxthru)),
+maw_print_one_try(radcan(expr),radcan),
+maw_print_one_try(logarc(expr),logarc_),
+maw_print_one_try(rootscontract(expr),rootscontract),
+maw_print_one_try(logcontract(expr),logcontract),
+maw_print_one_try(trigsimp(expr),trigsimp),
+maw_print_one_try(trigreduce(expr),trigreduce),
+maw_print_one_try(trigexpand(expr),trigexp),
+maw_print_one_try((matchdeclare(maw_sin2,true),let (sin(maw_sin2)^2, 1 - cos(maw_sin2)^2),ratsimp(((letsimp((letsimp(expr))/sin(x))))*sin(x))),sin2cos),
+remlet(all),
+maw_print_one_try((matchdeclare(maw_cos2,true),let (cos(maw_cos2)^2, 1 - sin(maw_cos2)^2),ratsimp(((letsimp((letsimp(expr))/cos(x))))*cos(x))),cos2sin),
+remlet(all),
+block(
+  matchdeclare(allexpr_2,true),
+  tellsimp(sec(allexpr_2),1/cos(allexpr_2)),
+  tellsimp(csc(allexpr_2),1/sin(allexpr_2)),
+  maw_print_one_try(ev(expr),seccsc)
+),
+errcatch(maw_print_one_try(args(divide(num(expr),denom(expr)))[1]+(args(divide(num(expr),denom(expr)))[2])/denom(expr),divide)),
+if rlf(expr) then (
+  load(ntrig),
+  errcatch(maw_print_one_try(my_partfrac(expr,maw_var),partfrac))),
+true
+);
+
+mapfullratsimp(expr):=map(fullratsimp,expr);
+mapxthru(expr):=map(xthru,expr);
+
+
+

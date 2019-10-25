@@ -1,0 +1,60 @@
+#!/bin/bash
+#
+# Downloads Mathematical Assistant on Web and installs. 
+#
+# Best to run from /var/www
+# Installs into /var/www/maw and /var/www/maw-html
+
+echo "                     ---------- MAW Install script ---------- "
+echo "                     Downloading hg repositories ..."
+echo "                     ---------- MAW Install script ---------- "
+hg clone ssh://robertmarik@mathassistant.hg.sourceforge.net/hgroot/mathassistant/maw
+hg clone ssh://robertmarik@mathassistant.hg.sourceforge.net/hgroot/mathassistant/maw-html
+#hg clone http://mathassistant.hg.sourceforge.net:8000/hgroot/mathassistant/maw
+#hg clone http://mathassistant.hg.sourceforge.net:8000/hgroot/mathassistant/maw-html
+
+echo "                      ---------- MAW Install script ---------- "
+echo "                      Unzipping libraries ..."
+echo "                      ---------- MAW Install script ---------- "
+cd maw-html/
+unzip maw-libraries.zip
+
+echo "                      ---------- MAW Install script ---------- "
+echo "                      Creating log directories ..."
+echo "                      ---------- MAW Install script ---------- "
+mkdir log
+chmod a+w log
+cd ../maw/common/
+mkdir log
+chmod a+w log
+cd ../..
+
+echo "                       ---------- MAW Install script ---------- "
+echo "                       Updating .mo files and restarting apache ... "
+echo "                       ---------- MAW Install script ---------- "
+cd maw/
+bash update_mo
+cd ..
+
+echo "                       ---------- MAW Install script ---------- "
+echo "                       Updating .mo files and restarting apache ... "
+echo "                       You will be asked for root password to restart apache!"
+echo "                       ---------- MAW Install script ---------- "
+cd maw-html/
+bash update-mo
+cd ..
+
+echo "                       ---------- MAW Install script ---------- "
+echo "Finished."
+echo " "
+echo "* Copy the file maw/support/timeout into the PATH (like /usr/bin)"
+echo " "
+echo "* You may want (need) to write site specific informations into"
+echo "  maw/mawcofing.php and maw-html/mawconfightml.php files."
+echo "  The templates are maw/mawconfig.php.template and"
+echo "  maw-html/mawhtmlconfig.php.template"
+echo " "
+echo "* See also maw/INSTALL file "
+echo " "
+echo "* You may test you instalation: open the file maw/common/test.php in www browser"
+

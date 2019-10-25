@@ -1,0 +1,2625 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-12-22 02:15+0100\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: Minning Xiang <sdxmn@163.com>\n"
+        "Language-Team: SupperDog <sdxmn@163.com>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+msgid   " Change <i>xmin</i>."
+msgstr  " 改变 <i>xmin</i>。"
+
+msgid   " Submit the form to check, if the curve is well defined."
+msgstr  "提交表格以检查曲线定义是否明确"
+
+msgid   " Submit the form to check, if the region for integration is well "
+        "defined."
+msgstr  "提交表格以检查积分区间定义是否明确"
+
+msgid   "$ n$-degree  Taylor polynomial for the function  $ f(x)$ around  $ "
+        "x=x_0$"
+msgstr  "函数 $ f(x)$ 在点 $x=x_0$ 处的 $ n$ 次 Taylor 多项式展开"
+
+msgid   "$x$-intercepts"
+msgstr  ""
+
+#, php-format
+msgid   "%s degree polynomial"
+msgstr  "%s 次多项式"
+
+msgid   "(Click each equation to solve it using undetermined coefficients and "
+        "then sum up all particular solutions to and general solution of "
+        "associated homogeneous equation to get general solution. To find "
+        "solution of initial value problem use variation of constants.)"
+msgstr  ""
+
+msgid   "(Not including sets with zero measure, such as points, curves and "
+        "boundaries in the picture.)"
+msgstr  ""
+
+msgid   "(and remove odd power from denominator, if possible)"
+msgstr  "（并且从分母中移除奇数次幂，如果可能的话）"
+
+msgid   "(click the equation to solve it using undetermined coefficients)"
+msgstr  ""
+
+msgid   "(clicking the expression you get this part of integral in new window)"
+msgstr  "（单击表达式，可以在新窗口中求解该部分的积分）"
+
+msgid   "(not very useful in most cases)"
+msgstr  "（大部分情况下不是太有用）"
+
+msgid   "(remember to return to the original variable)"
+msgstr  "（记得代回原始变量）"
+
+msgid   "(the trigreduce function yields this step)"
+msgstr  "（三角消去后得到此步骤）"
+
+msgid   "(use radiobuttons to choose the next computation method)"
+msgstr  "（使用单选按钮选择下一步的计算方法）"
+
+msgid   "(with completing square in denominator)"
+msgstr  "（对分母进行配方）"
+
+msgid   "(with completing square under square root)"
+msgstr  "（根据平方根进行配方）"
+
+msgid   "(write an equation, e.g. x^2=t, this equation must involve new "
+        "variable and no parameter)"
+msgstr  "（填写一个等式，比如x^2=t。等式必须含有新的变量，并且不能含有参数）"
+
+msgid   "(you can remove a constant multiple from the integral to match the "
+        "formula exactly)"
+msgstr  "（从积分式中提出常数系数可以更好地匹配积分公式）"
+
+msgid   "(you have to write the fraction in the form which matches the "
+        "formula, consider multiplying both numerator and denominator by a "
+        "convenient expression)"
+msgstr  ""
+
+msgid   "- Horizontal deformation -"
+msgstr  "- 横向变形 -"
+
+msgid   "- Horizontal shift -"
+msgstr  "- 水平平移 -"
+
+msgid   "- Original function -"
+msgstr  "- 原函数 -"
+
+msgid   "- Turning about x -"
+msgstr  "- 围绕 x 周旋转 -"
+
+msgid   "- Turning about y -"
+msgstr  "- 围绕 y 轴旋转 -"
+
+msgid   "- Vertical deformation -"
+msgstr  "- 纵向变形 -"
+
+msgid   "<b>Error. The most general expression which you can remove from the "
+        "integral is  a nonzero number written with digits or a multiple of "
+        "constants pi and e.</b> Go back and revise your choice."
+msgstr  "<b>错误。可以从积分式中提出的最普遍的表达式是非零数字。必须写成数字形"
+        "式或者常数符号，比如 pi 和 e。</b>请返回并修改后重试。"
+
+msgid   "<b>Error. You cannot multiply numerator and denominator by zero or a "
+        "zero equivalent expression.</b> Go back and revise your choice."
+msgstr  "<b>错误。分子和分母不能同乘以零或者零的等效表达式。</b>请返回并修改后"
+        "重试。"
+
+msgid   "<b>Problems:</b> Infinitely many solutions, or some solutions cannot "
+        "be written using elementary functions."
+msgstr  "<b>错误：</b>有无穷多组解，或者某些解不能用初等函数来表示。"
+
+#, php-format
+msgid   "<b>Sorry, the answer contains function %s which is not supported on "
+        "output. <br> Still curious? The answer is %s."
+msgstr  "<b>抱歉，包含函数 %s 的答案无法输出。</b><br>仍然好奇？答案是 %s 。"
+
+#, php-format
+msgid   "<b>Sorry, the answer does not exist in the class of <a href=\"http://"
+        "en.wikipedia.org/wiki/Elementary_function\">elementary functions</a>."
+        "</b> From this reason the integral exceeds the level of primary "
+        "target students. <br> Still curious? The answer is %s."
+msgstr  "<b>抱歉，在 <a href=\"http://http://zh.wikipedia.org/wiki/%E5%88%9D"
+        "%E7%AD%89%E5%87%BD%E6%95%B0\">初等函数</a> 类别中没有答案。</b>此积分"
+        "超出了本应用主要面向的学生的水平。<br>仍然好奇？答案是 %s 。"
+
+#, php-format
+msgid   "<b>Sorry, unable to evaluate the integral %s using Maxima.</"
+        "b><br><br>You may try to help Maxima by performing some "
+        "simplification (radcan?) or substitution.<br><br>You may get the "
+        "answer using another Computer Algebra System, such as %s or %s which "
+        "is reported by %s to be most powerful in integration."
+msgstr  "<b>抱歉，无法使用 Maxima 计算积分 %s。</b><br><br>请先进行化间（比如 "
+        "radcan）或者换元，再用 Maxima 计算。<br><br>你也可以尝试使用其它的计"
+        "算机代数系统进行计算，例如 %s 或者 %s 。据 %s 报道，这是最强大的积分"
+        "工具。"
+
+msgid   "<b>This message usually appears also if you click link more times "
+        "than once.</b>"
+msgstr  "<b>请不要反复点击链接。</b>"
+
+msgid   "<b>Too long formula, sorry.</b> <ul><li>Try to install maxima on "
+        "your local computer or look at the formula on the page below.</"
+        "li><li>The problem is probably too difficult, but you can try "
+        "another method for integration.</li></ul>"
+msgstr  "<b>抱歉，表达式太长。</b> <ul><li>请尝试在你的计算机上安装 Maxima ，"
+        "或者检查页面下方所显示的公式。</li><li>或许这个题目太复杂，但你仍然可"
+        "以尝试其它的积分方法。</li></ul>"
+
+msgid   "<br><b>Instructions</b><br>Use only sharp inequalities, one "
+        "inequality per row and use variables <i>x</i> and <i>y</i>."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The degree of Taylor polynomial must be an "
+        "integer between 1 and 9."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be a "
+        "positive integer."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be an "
+        "integer between 1 and 20."
+msgstr  ""
+
+#, php-format
+msgid   "<h2>Error</h2>The interval for integration, %s, is not subset of the "
+        "interval for drawing picture %s."
+msgstr  "<h2>错误</h2>积分区间 %s 不是图像区间 %s 的子集。"
+
+#, php-format
+msgid   "<h2>Error</h2>The upper limit (%s) for the set (and for integration) "
+        "is bigger then the lower limit (%s). Interchange limits in the form "
+        "or clicking this %slink%s."
+msgstr  "<h2>错误</h2>集合（积分）上界 (%s) 比下界 (%s) 大。单击 %s这里%s 交换"
+        "上下届。"
+
+msgid   "<h2>Remarks</h2><ul> <li>You can load the function and computed "
+        "stationary points into the calculator for next calculations by "
+        "clicking the following link "
+msgstr  "<h2>备注</h2><ul> <li>单击下面链接，你可以将函数和求解的驻点转移到下"
+        "一计算模块中进行计算"
+
+#, php-format
+msgid   "<h2>Simplify your function first</h2>The numerator and denominator "
+        "can be divided by the common factor %s. Simplify the fraction first "
+        "and then write the function into the field again.<br><br> Remark: "
+        "Simplifying we get y=%s."
+msgstr  ""
+
+#, php-format
+msgid   "<h3>Error in mathematical notation</h3>Use lowercase letters only "
+        "and notation from the program <a href=\"http://maxima.sourceforge.net"
+        "\">Maxima</a>. <ul><li>Use star to denote multiplication, write for "
+        "example 3*x^3-6*x+1</li><li>Use parenthesis to denote the scope of "
+        "the operation, for example sin(2*x)+ln(x)</li><li>Do not use "
+        "notation  sin^2(x), but (sin(x))^2.</li><li>Use abs(x) for absolute "
+        "value, not |x|</li><li>Constants for the area of unit circle and the "
+        "euler number are %%pi and %%e (yes, with percent sign, read the  <a "
+        "href=\"http://maxima.sourceforge.net/docs/manual/en/maxima.html"
+        "\">manual</a> to the Maxima program, a computer algebra system used "
+        "for all computations).</li></ul><hr> Your input is (after omitting "
+        "spaces and conversion ^ into **): %s and the problem is with the "
+        "substring %s<br><br> Still in troubles? You can contact the authors. "
+        "Email address is on the main page."
+msgstr  ""
+
+msgid   "<h3>Incorrect input, use only (decimal) numbers to enter bounds for "
+        "the picture.</h3> You are allowed to use only decimal numbers "
+        "(character minus, digits and a dot as a separator of decimal places)."
+msgstr  ""
+
+#, php-format
+msgid   "<h3>You may mean %s.</h3> If yes, use Copy and Paste to move this "
+        "string into the input field.<br>To go back use the Back button in "
+        "your browser."
+msgstr  "<h3>你可能想输入 %s。</h3>如果是这样，使用复制、粘贴功能将下面字符串"
+        "输入到相应的文本框中。<br>单击浏览器的后退按钮返回上一页。"
+
+#, php-format
+msgid   "<ul><li> Choose the method for the next computation.  </li> <li> Try "
+        "to find the methods which simplify the integral. If your attempt "
+        "fails, you can return using Back button in you browser. You can also "
+        "return directly to the %s initial form%s.</li><li>You can use "
+        "computer to finish the integration. Educational value of such a this "
+        "step is minimal, so use this possibility with care, please.</"
+        "li><li>Questions marks |<b>?</b>| provide preview what you get when "
+        "using this function. Simply move the cursor over the question mark "
+        "and wait few seconds.</li><li>If the application gives incorrect or "
+        "unexpected results, let us know please.</li></ul><hr>"
+msgstr  "<ul><li> 选择下一步的计算方法。</li> <li> 尽量找出能化简积分式的方"
+        "法。如果尝试失败，可以通过浏览器的后退按钮返回重试。你也可以直接返回 "
+        "%s积分计算页面%s 。</li><li>你可以让计算机自动完成积分计算，但是这样"
+        "没有什么教育价值，所以，请小心使用这项功能。</li><li>带有有 |<b>?</"
+        "b>| 标记的选项提供了结果预览。将鼠标指针移至这个标记上并稍等几秒钟，"
+        "即可看到结果。</li><li>如果程序给出了错误的或预料之外的答案，请务必告"
+        "知我们。</li></ul><hr>"
+
+#, php-format
+msgid   "<ul><li>Error when checking continuity of functions and when "
+        "checking that lower bound is smaller than upper bound.<li> Are you "
+        "sure that both %s and %s are defined and continuous on the interval "
+        "%s and %s is bigger than %s on this interval?<li>Check your "
+        "functions on the following picture.</ul>"
+msgstr  "<ul><li>检查函数连续性出错。下界函数应当小于上界。<li> 请确认 %s 和 "
+        "%s 在区间 %s 上有定义并且均为连续函数，并且在给定区间内 %s 比 %s 大。"
+        "<li>请查看下面的函数图像。</ul>"
+
+#, php-format
+msgid   "<ul><li>The name of the function must be followed by its argument "
+        "enclosed in parenthesis. Write e.g. sin(x) instead of sin x and sin"
+        "(2*x) instead of sin 2*x</li><li>Remember that if you want to write "
+        "power of a function, you cannot write something like sin^2(x), but "
+        "(sin(x))^2.</li><li>For exponential function use exp(x) or %e^x or "
+        "e^x.</li></ul>"
+msgstr  ""
+
+#, php-format
+msgid   "<ul><li>Use numbers only, no functions are allowed.</li><li>Use "
+        "commas and semicolons to separate point coordinates and points in "
+        "the data file.</li><li>Use at least two and no more than six points. "
+        "If you really need to interpolate for bigger or more general data "
+        "file, use the full power of the <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a> software and the command lagrange on your local "
+        "computer.</li></ul><br>Your input was: %s"
+msgstr  "<ul><li>只能使用数字，不允许使用函数。</li><li>用逗号和分号分开数据中"
+        "每个点的坐标和各个不同点。</li><li>请输入至少两个最多六个点。如果你确"
+        "实需要插入更多插值，请在你的计算机上使用完整的 <a href=\"http://"
+        "maxima.sourceforge.net\">Maxima</a> 软件和拉格朗日命令。</li></ul>你"
+        "的输入为：%s"
+
+msgid   "<ul><li>integrate two times by parts and keep the choice of u and v' "
+        "suggested by this calculator</li><li>then remove constant multiple "
+        "(if necessary) and you get some terms and the same integral as the "
+        "original one</li><li>convert the problem into an algebraic equation "
+        "where the integral is the unknown and solve this equation</li></ul>"
+msgstr  "<ul><li>进行两次分部积分并且保持使用建议的 u 和 v' 。</li><li>然后提"
+        "出常数系数（如果有必要），然后即可得到一些项和与原来相同的积分式。</"
+        "li><li>积分式未知时将其转化为代数方程，然后进行求解。</li>"
+
+msgid   "<ul><li>the function has to be function in two variables, <li>the "
+        "limits for outside integral have to be numbers,<li>the limits for "
+        "the inside integral numbers or functions of variable which is used "
+        "for outside integration,<li>he lower limit must be smaller or equal "
+        "to the upper limit for integration for both integrals.</ul> One of "
+        "these conditions has been violated or Maxima failed to verify these "
+        "conditions (in most cases due to a typing error or bad mathematical "
+        "formula on input)."
+msgstr  "<ul><li>函数应当为二元函数；<li>外积分的界限应当为数字；<li>内积分的"
+        "界限应当为数字或者外积分的积分变量；<li>内外积分中积分下界必须小于或"
+        "者等于积分上界。</ul>上面条件中至少一个没有被满足，或者 Maxima 无法验"
+        "证这些条件（大部分情况下是输入错误或者使用公式错误导致的）。"
+
+msgid   "Accessing this script from a web page which is outside Mendel "
+        "University is not allowed. You either came from such a page, or your "
+        "browser blocks the HTTP_REFERER information.<br> Use official pages "
+        "of <a href=\"http://user.mendelu.cz/marik/maw/index.php?lang=en"
+        "\">Mathematical Assistant on Web</a> or setup your browser properly."
+msgstr  "从 Mendel 大学以外的网页访问脚本是不允许的。或许你的浏览器不支持 "
+        "HTTP_REFERER 属性。请通过下面链接 <a href=\"http://user.mendelu.cz/"
+        "marik/maw/index.php?lang=zh\">在线数学助理</a> 访问本系统，或者修改浏"
+        "览器设置。"
+
+#, php-format
+msgid   "After removing allowed strings we got redundant characters %s."
+msgstr  "去掉可以使用的字符后，以下字符是多余的： %s 。"
+
+msgid   "Algebraic modification"
+msgstr  "化简变形"
+
+msgid   "Algebraic modification (fullratsimp function)"
+msgstr  "化简变形（完全合理化简函数）"
+
+msgid   "Algebraic modification (fullratsimp function) for each term in a sum"
+msgstr  "所有项目求和后化简变形（完全合理化简函数）"
+
+msgid   "Algebraic modification (logarc function)"
+msgstr  "化简变形（logarc function）"
+
+msgid   "Algebraic modification (radcan function)"
+msgstr  "化简变形（radcan function）"
+
+msgid   "Algebraic modification (removing sec and csc)"
+msgstr  "化简变形（消去 sec 和 csc 函数）"
+
+msgid   "Algebraic modification (trigexpand function)"
+msgstr  "化简变形（三角展开） "
+
+msgid   "Algebraic modification (trigreduce function)"
+msgstr  "化简变形（三角函数消去）"
+
+msgid   "Algebraic modification (trigsimp function)"
+msgstr  "化简变形（三角化简）"
+
+msgid   "Algebraic modification (xthru function)"
+msgstr  "化简变形（通分）"
+
+msgid   "Algebraic modification (xthru function) for each term in a sum"
+msgstr  "所有项目求和后化简变形（通分）"
+
+msgid   "All x-coordiantes have to be mutually different numbers."
+msgstr  "x 坐标值不能重复。"
+
+msgid   "An error occurred when processing your input."
+msgstr  "处理输入数据时出错。"
+
+msgid   "An error occurred when processing your input.<br>Check your formulas "
+        "(perhaps using Preview button) and report the problem if you think "
+        "that your input is correct and should be processed without any error."
+msgstr  ""
+
+msgid   "Answer"
+msgstr  "答案"
+
+msgid   "Approximation"
+msgstr  "近似值"
+
+msgid   "Arithmetic overflow. Consider smaller bounds for the picture on the "
+        "<i>x</i> axis or bigger on the <i>y</i> axis."
+msgstr  "数据溢出。请尝试使用较小的 <i>x</i> 轴边界或者更大的 <i>y</i> 轴边"
+        "界。"
+
+msgid   "As a subproblem we have to integrate function with absolute value, "
+        "which is not supported well in our version of Maxima."
+msgstr  "某个子问题需要求解含有绝对值的函数，当前版本的 Maxima 并不能提供很好"
+        "的支持。"
+
+msgid   "Associated homogeneous equation"
+msgstr  "相伴齐次方程"
+
+msgid   "Associated homogeneous equation is"
+msgstr  "相伴齐次方程是"
+
+msgid   "At least one y-coordinate has to be nonzero."
+msgstr  "至少要有一个非零的 y 坐标值。"
+
+msgid   "Autonomous system"
+msgstr  "自治系统"
+
+msgid   "Autonomous system in plane"
+msgstr  "平面上的自治系统"
+
+msgid   "Auxiliary determinants are"
+msgstr  "辅助行列式为"
+
+#, php-format
+msgid   "Bad input in row %s"
+msgstr  "第 %s 行输入错误"
+
+msgid   "Bad input. Check your data."
+msgstr  "输入错误，请检查数据。"
+
+#, php-format
+msgid   "Binary operator %s found at the beginning of the string."
+msgstr  "在字符串开头发现二元运算符 %s"
+
+#, php-format
+msgid   "Binary operator %s found at the end of the string."
+msgstr  "在字符串结尾发现二元运算符 %s"
+
+msgid   "Bisection method"
+msgstr  "二分法"
+
+msgid   "Bisection of interval"
+msgstr  "等分间隔"
+
+msgid   "Build PDF"
+msgstr  "创建PDF"
+
+#, php-format
+msgid   "Building animations is available only, if the server load in the "
+        "last minute is smaller than %s. The current load %s. Return to the "
+        "previous page and try it later, please. (Or reload the page after 1 "
+        "minute.)"
+msgstr  "只有上一分钟的服务器负载小于 %s 的时候才可以创建动画。现在的负载为 "
+        "%s 。请返回前一页面稍后再试，或者一分钟后刷新当前页面。"
+
+msgid   "By clicking the integral you load the integral into an interactive "
+        "tool for integration."
+msgstr  "单击积分式可以使用交互式工具求解积分。"
+
+msgid   "Can't guess, what you actually mean. You may try to enter the "
+        "following inequalities"
+msgstr  "无法准确理解命令。您可以尝试输入以下不等式"
+
+msgid   "Change <i>xmax</i>."
+msgstr  "改变 <i>xmax</i>。"
+
+msgid   "Char π is not allowed. Write %pi or pi instead."
+msgstr  "不允许使用符号 π 。请使用 %pi 或者 pi 来代替。"
+
+msgid   "Char ∞ is not allowed. No part of MAW works with infinity. You are "
+        "doing something curious. If you want to evaluate limits or improper "
+        "integrals on computer, use some of computer algebra systems like "
+        "Sage or Maxima (both are free to install and also available to try "
+        "live on the Internet, without installing anything on your local "
+        "computer)."
+msgstr  ""
+
+msgid   "Characteristic equation"
+msgstr  "特征方程"
+
+msgid   "Characteristic equation has one double solution."
+msgstr  "特征方程有两个相同的解。"
+
+msgid   "Characteristic equation has two complex solutions."
+msgstr  "特征方程有两个复数解。"
+
+msgid   "Characteristic equation has two real solutions."
+msgstr  "特征方程有两个实数解。"
+
+msgid   "Characteristic polynomial"
+msgstr  "特征多项式"
+
+msgid   "Check also that both functions are continuous on the interval used "
+        "to evaluate the integral and to draw the picture."
+msgstr  "请检查两个函数在给定区间内是否都连续，以便进行积分并绘制图像。"
+
+msgid   "Check your formulas (perhaps using Preview button) and report the "
+        "problem if you think that your input is correct and should be "
+        "processed without any error."
+msgstr  ""
+
+msgid   "Check your input data"
+msgstr  "检查输入数据"
+
+msgid   "Choose the action for the next computation"
+msgstr  "选择下一步计算动作"
+
+msgid   "Clever expansion into two fractions"
+msgstr  "智能分解为两个分式"
+
+#, perl-format
+msgid   "Click %shere%s to find stationary points by computer."
+msgstr  "单击 %s这里%s 让计算机求解驻点。"
+
+msgid   "Click the integral to send the function to a tool which helps to "
+        "evaluate the indefinite integral."
+msgstr  "单击积分式可以将此函数提交至计算不定积分的页面。"
+
+msgid   "Close"
+msgstr  "关闭"
+
+msgid   "Comparing coefficients we get (the first equation is from the "
+        "highest power)"
+msgstr  ""
+
+msgid   "Comparison with other methods"
+msgstr  ""
+
+msgid   "Completing square"
+msgstr  "配方"
+
+msgid   "Computation opens in new panel or window."
+msgstr  ""
+
+msgid   "Conclusion"
+msgstr  "结论"
+
+msgid   "Condition"
+msgstr  "条件"
+
+msgid   "Condition for $x$-intercepts"
+msgstr  ""
+
+msgid   "Condition for critical points"
+msgstr  ""
+
+msgid   "Condition for points of discontinuity"
+msgstr  ""
+
+msgid   "Condition for stationary points"
+msgstr  ""
+
+msgid   "Conditions"
+msgstr  "条件"
+
+msgid   "Consider reasonable bounds for axes, please."
+msgstr  "请使用合理的坐标轴界限。"
+
+msgid   "Constant multiple rule"
+msgstr  "常数相乘规则"
+
+msgid   "Constant rule"
+msgstr  "常数规则"
+
+msgid   "Constant solution"
+msgstr  "常数解"
+
+msgid   "Contract product of roots (rootscontract)"
+msgstr  "将根的乘积转化为乘积的根 (rootscontract)"
+
+msgid   "Conversion into algebraic equation"
+msgstr  "转换为代数方程"
+
+msgid   "Conversion into exponential function"
+msgstr  "转换成指数函数"
+
+msgid   "Critical points"
+msgstr  "临界点"
+
+msgid   "Curve"
+msgstr  "曲线"
+
+msgid   "Curve derivatives"
+msgstr  "曲线的导数"
+
+msgid   "Decimal number (dot separates decimal places) cannot be a part of "
+        "another mathematical expression."
+msgstr  ""
+
+msgid   "Definite integral"
+msgstr  ""
+
+msgid   "Delete one of these characters or use parentheses properly."
+msgstr  "去掉多余的字符，或者适当使用括号。"
+
+#, perl-format
+msgid   "Denote %s and %s."
+msgstr  ""
+
+msgid   "Derivative"
+msgstr  "求导"
+
+#, php-format
+msgid   "Derivative of %s"
+msgstr  "%s 的导数"
+
+msgid   "Derivative of absolute value"
+msgstr  "绝对值函数的导数"
+
+msgid   "Derivative of acrcotan function"
+msgstr  "反余切 (arccot) 函数的导数"
+
+msgid   "Derivative of arccosine function"
+msgstr  "反余弦 (arccos) 函数的导数"
+
+msgid   "Derivative of arcsine function"
+msgstr  "反正弦 (arcsin) 函数的导数"
+
+msgid   "Derivative of arctan function"
+msgstr  "反正切 (arctan) 函数的导数"
+
+msgid   "Derivative of contangent function"
+msgstr  "余切 (cot) 函数的导数"
+
+msgid   "Derivative of cosine function"
+msgstr  "余弦 (cos) 函数的导数"
+
+msgid   "Derivative of csc function"
+msgstr  "余割(csc)函数的导数"
+
+msgid   "Derivative of exponential function"
+msgstr  "指数函数的导数"
+
+msgid   "Derivative of general solution is"
+msgstr  "通解的导数为"
+
+msgid   "Derivative of hyperbolic acrcotan function"
+msgstr  "双曲反余切 (arccoth) 函数的导数"
+
+msgid   "Derivative of hyperbolic arccosine function"
+msgstr  "双曲反余弦 (arccosh) 函数的导数"
+
+msgid   "Derivative of hyperbolic arcsine function"
+msgstr  "双曲反正弦 (arcsinh) 函数的导数"
+
+msgid   "Derivative of hyperbolic arctan function"
+msgstr  "双曲反正切 (arctanh) 函数的导数"
+
+msgid   "Derivative of hyperbolic contangent function"
+msgstr  "双曲余切 (coth) 函数的导数"
+
+msgid   "Derivative of hyperbolic cosine function"
+msgstr  "双曲余弦 (cosh) 函数的导数"
+
+msgid   "Derivative of hyperbolic sine function"
+msgstr  "双曲正弦 (sinh) 函数的导数"
+
+msgid   "Derivative of hyperbolic tangent function"
+msgstr  "双曲正切 (tanh) 函数的导数"
+
+msgid   "Derivative of logarithm"
+msgstr  "对数函数的导数"
+
+msgid   "Derivative of particular solution (simplified)"
+msgstr  "特解的导数（已化简）"
+
+msgid   "Derivative of power function"
+msgstr  "幂函数的导数"
+
+msgid   "Derivative of sec function"
+msgstr  "正割(sec)函数的导数"
+
+msgid   "Derivative of sine function"
+msgstr  "正弦 (sin) 函数的导数"
+
+msgid   "Derivative of tangent function"
+msgstr  "正切 (tan) 函数的导数"
+
+msgid   "Derivatives, derivatives at  $#1$ and coefficients of Taylor "
+        "polynomial"
+msgstr  ""
+
+#, php-format
+msgid   "Determinant of the coefficient matrix (wronskian of the solutions %s "
+        "and %s) is"
+msgstr  "系数矩阵的行列式（解 %s 和 %s 的Wronski行列式）为"
+
+#, php-format
+msgid   "Differentiate #1 with respect to %s"
+msgstr  "对 #1 关于 %s 求导"
+
+msgid   "Differentiate function #1"
+msgstr  "函数求导 #1"
+
+#, perl-format
+msgid   "Differentiating we get %s."
+msgstr  "求导，得到 %s。"
+
+#, perl-format
+msgid   "Differentiating with respect to $ x$ we get %s."
+msgstr  ""
+
+#, perl-format
+msgid   "Differentiating with respect to $ y$ we get %s."
+msgstr  ""
+
+msgid   "Division"
+msgstr  "约分"
+
+msgid   "Do not use comma."
+msgstr  "请不要使用逗号。"
+
+msgid   "Do not use comma. To separate decimal places use the dot. If you "
+        "wish to enter decimal number, this decimal number cannot be a part "
+        "of mathematical formula."
+msgstr  ""
+
+msgid   "Do not use decadic logarithm, please."
+msgstr  "请不要使用常用对数。"
+
+msgid   "Do not use dot for multiplication."
+msgstr  "请不要使用点作为乘号。"
+
+msgid   "Do not use equations. The application cannot draw such an input."
+msgstr  ""
+
+msgid   "Do not use this function. If you need to use this function in your "
+        "computation, run the computation in Maxima on your local computer."
+msgstr  ""
+
+msgid   "Domain (red region)"
+msgstr  "定义域（红色区域）"
+
+#, php-format
+msgid   "Domain of %s"
+msgstr  "%s 的定义域"
+
+msgid   "Domain where the inequality is valid"
+msgstr  ""
+
+msgid   "Double integral"
+msgstr  "二重积分"
+
+msgid   "Download html"
+msgstr  "下载 HTML 文件"
+
+msgid   "ERROR: Function is not bijection on the given interval."
+msgstr  "错误：在给定的区间里函数不是双射的。"
+
+msgid   "ERROR: No change in sign between end points of the interval"
+msgstr  "错误：区间端点函数值符号未改变。"
+
+msgid   "ERROR: function is out of domain at some point of the interval"
+msgstr  "错误：区间超出定义域。"
+
+msgid   "Eigenvalues"
+msgstr  "特征值"
+
+msgid   "Eigenvalues (numerically)"
+msgstr  "特征值（数值）"
+
+msgid   "Enter integrand only. Not the whole integral."
+msgstr  "请只输入被积函数，而不是整个积分式。"
+
+msgid   "Equation"
+msgstr  "方程"
+
+msgid   "Equation is homogeneous  -- we will use separation of variables and "
+        "write the solution in explicit form."
+msgstr  ""
+
+msgid   "Equation is linear"
+msgstr  "等式是线性的"
+
+msgid   "Error"
+msgstr  "错误"
+
+msgid   "Error in input data"
+msgstr  "输入数据错误"
+
+msgid   "Error in math or the given point does not belong to the domain."
+msgstr  ""
+
+msgid   "Error in math. Check your input."
+msgstr  "数值错误。请检查输入数据。"
+
+msgid   "Error in mathematical notation"
+msgstr  "数学符号错误"
+
+msgid   "Error in solving. (Bad input?)"
+msgstr  "求解出错。（输入有误？）"
+
+msgid   "Error in the function or in the bound for integration."
+msgstr  "被积函数或者积分界限有错误。"
+
+msgid   "Error in your expression"
+msgstr  "表达式出错"
+
+msgid   "Error in your formula"
+msgstr  "公式错误"
+
+msgid   "Error occurred when processing your formula."
+msgstr  "处理方程式时发生错误。"
+
+#, php-format
+msgid   "Error when processing input from the field %s."
+msgstr  "处理数据 %s 时出错。"
+
+msgid   "Error, empty string on input."
+msgstr  "错误，输入的字符串为空。"
+
+msgid   "Error, sorry. The name of the function is not followed by the "
+        "parentheses."
+msgstr  "很抱歉，出错了。函数名后面没有括号。"
+
+msgid   "Error, you typed unsupported chars or uppercase letters."
+msgstr  "错误。输入的字符不被支持，或者是大写字母。"
+
+msgid   "Error: Dimension too large."
+msgstr  "错误：数量过大。"
+
+msgid   "Error: Failed to evaluate integral of <i>v'</i>."
+msgstr  "错误：无法求解 <i>v'</i> 的积分。"
+
+msgid   "Error: Missing derivative"
+msgstr  "错误：缺少被求导函数"
+
+#, perl-format
+msgid   "Error: The Jacobian is zero, unable to clasify stationary point %s."
+msgstr  "错误：Jacobian为零，无法确定驻点 %s 类型"
+
+msgid   "Error: The equation cannot be solved."
+msgstr  "错误：方程无法求解"
+
+#, perl-format
+msgid   "Error: The point %s is not a stationary point of the function %s"
+msgstr  "错误：点 %s 不是函数 %s 的驻点"
+
+#, perl-format
+msgid   "Error: There is no stationary point at %s."
+msgstr  "错误：点 %s 处没有驻点。"
+
+msgid   "Error: incorrect operation"
+msgstr  "错误：非法操作"
+
+msgid   "Error: incorrect substitution"
+msgstr  "错误：不正确的换元"
+
+msgid   "Evaluation of $y'$"
+msgstr  "$y'$ 估计值"
+
+msgid   "Evaluation of $y''$"
+msgstr  "$y''$ 估计值"
+
+msgid   "Evaluation of definite integral"
+msgstr  "定积分估计值"
+
+msgid   "Even powers of cosine function replaced by sine"
+msgstr  "用正弦函数替换余弦函数的平方"
+
+msgid   "Even powers of sine function replaced by cosine"
+msgstr  "用余弦函数替换正弦函数的平方"
+
+msgid   "Expansion"
+msgstr  "展开"
+
+msgid   "Factorization"
+msgstr  "因式分解"
+
+msgid   "Final answer"
+msgstr  "最终结果"
+
+msgid   "Final result"
+msgstr  "最终结果"
+
+msgid   "Final simplifications"
+msgstr  "最终化简"
+
+msgid   "Find $ #1 $-degree Taylor polynomial for function $ f(x)=#2$ in $ "
+        "x_0=#3$."
+msgstr  ""
+
+msgid   "Finishing computation by Maxima"
+msgstr  "由 Maxima 完成计算"
+
+msgid   "First derivative"
+msgstr  "一阶导数"
+
+#, perl-format
+msgid   "For more general right hand sides use %svariation of constants%s."
+msgstr  ""
+
+msgid   "Formconv (program which parses your input) failed. Correct the "
+        "formula on your input."
+msgstr  "Formconv （用来解析表达式的程序）出错。请检查所输入的表达式。"
+
+msgid   "Formula"
+msgstr  "公式"
+
+msgid   "Found zero"
+msgstr  "发现零"
+
+#, php-format
+msgid   "From the determinant of %s"
+msgstr  "从行列式 %s"
+
+#, php-format
+msgid   "From trace and determinant of %s"
+msgstr  "从 %s 的轨迹和行列式"
+
+msgid   "Function"
+msgstr  "函数"
+
+msgid   "Function and value of the function"
+msgstr  "函数及其值"
+
+msgid   "Function grapher"
+msgstr  "函数作图"
+
+msgid   "Function to be integrated"
+msgstr  "被积函数"
+
+msgid   "Functions and characters available for mathematical notation"
+msgstr  "数学表达式中可以使用的函数和符号"
+
+msgid   "General solution"
+msgstr  "通解"
+
+msgid   "General solution is"
+msgstr  "通解为 "
+
+msgid   "General solution of the equation"
+msgstr  "方程的通解"
+
+msgid   "Geometrical application of definite integral"
+msgstr  "定积分的几何应用"
+
+msgid   "Given data files, we look for optimal linear approximation in the "
+        "form"
+msgstr  "正在拟合给定数据，求解最佳的线性近似形式。"
+
+msgid   "Given points in the plane, we look for the polynomial of "
+        "interpolation."
+msgstr  "对于平面中给定的点，求解拉格朗日插值。"
+
+msgid   "Go home"
+msgstr  "返回"
+
+msgid   "Graph"
+msgstr  "图像"
+
+msgid   "Graph and approximation by trapezoids"
+msgstr  "由梯形法则得到的图形和近似值"
+
+#, php-format
+msgid   "Graph deformation: we draw function %s."
+msgstr  ""
+
+msgid   "Graph of the function and mean value"
+msgstr  ""
+
+msgid   "Graphs of basic elementary functions"
+msgstr  "初等函数图像"
+
+msgid   "Help to find the primitive function"
+msgstr  ""
+
+#, perl-format
+msgid   "Hence %s."
+msgstr  "因此 %s。"
+
+msgid   "Hessian"
+msgstr  "Hessian矩阵"
+
+msgid   "Homogeneous equation"
+msgstr  "齐次方程"
+
+msgid   "However, the right hand side can be written as sum of two or more "
+        "right hand sides which are fine for undetermined coefficients as "
+        "follows."
+msgstr  ""
+
+msgid   "However, the right hand side can be written in the form as required."
+msgstr  ""
+
+msgid   "If the derivatives are not polynomials and if these derivative are "
+        "complicated, some stationary points may be missing."
+msgstr  ""
+
+#, perl-format
+msgid   "If the function %s satisfies %s and %s, then the solution is %s, "
+        "where %s."
+msgstr  ""
+
+msgid   "If the given function differs from the function which is actually "
+        "differentiated, then Maxima performed an automatical simplification "
+        "first."
+msgstr  "如果给定的函数不是最简型，Maxima 将首先对其进行自动化简。"
+
+msgid   "If the rendering of the formulas is bad, consider another browser "
+        "than Internet Explorer. The application has been tested with <a href="
+        "\"http://www.mozilla.com/firefox/\">Firefox</a>."
+msgstr  "如果公式展现有问题，请尝试使用除 Internet Explorer 之外的浏览器。本应"
+        "用在 <a href=\"http://www.mozilla.com/firefox/\">Firefox</a> 浏览器下"
+        "通过测试。"
+
+#, php-format
+msgid   "If you mean %s, you can try copy and paste the following string to "
+        "the input field:"
+msgstr  "如果你想输入 %s ，请将以下字符串复制到上一页面相应的文本框中："
+
+msgid   "If you use another logarithm than natural, use logarithm with "
+        "integer base."
+msgstr  "如果要使用除自然对数外的其它对数函数，请以整数作为对数的底。"
+
+msgid   "If you want to try various integration techniques, return to the "
+        "previous page and choose the required method."
+msgstr  "如果你想尝试其它的积分方法，请返回上一页面，选择所需要的方式。"
+
+msgid   "Ill posed problem, incorrect formulation of the problem or missing "
+        "informations"
+msgstr  "题目表述不清，题目公式化错误，或者缺少必要信息。"
+
+msgid   "In computer notation"
+msgstr  "计算机符号"
+
+msgid   "Incorrect input"
+msgstr  "输入错误"
+
+msgid   "Incorrect input (not a number or empty string)"
+msgstr  "输入错误（不是数字或者输入为空）"
+
+msgid   "Incorrect input, use only integers to enter number of steps."
+msgstr  "输入不正确。步数只能是整数。"
+
+msgid   "Incorrect problem"
+msgstr  "问题错误"
+
+msgid   "Inequalities"
+msgstr  "不等式"
+
+msgid   "Inequalities and systems of inequalities"
+msgstr  "不等式和不等式组"
+
+msgid   "Inequality"
+msgstr  "不等式"
+
+#, php-format
+msgid   "Inequality %s"
+msgstr  "不等式 %s"
+
+msgid   "Initial guess"
+msgstr  "初始近似值"
+
+#, php-format
+msgid   "Insecure or unsupported command or function %s. Do not use this "
+        "command, please. If you insist on this command, use the full Maxima "
+        "software."
+msgstr  ""
+
+msgid   "Integral"
+msgstr  "积分"
+
+msgid   "Integral methods assistant"
+msgstr  "积分助理"
+
+msgid   "Integrate terms in the sum"
+msgstr  "分别积分后相加"
+
+#, php-format
+msgid   "Integrating <b>by parts</b> with %s we get:"
+msgstr  "利用 %s 进行 <b>分部积分</b> 得到："
+
+msgid   "Integrating terms in a sum"
+msgstr  "分别积分后相加"
+
+#, perl-format
+msgid   "Integrating with respect to $ x$ we get %s."
+msgstr  ""
+
+#, perl-format
+msgid   "Integrating with respect to $ y$ we get %s."
+msgstr  ""
+
+#, php-format
+msgid   "Integration gives %s and %s (by clicking the integral you load the "
+        "integral into tool for indefinite integration)"
+msgstr  "积分得到 %s 和 %s （单击积分式将其转移到不定积分计算工具中求解）"
+
+msgid   "Interpolation with Lagrange polynomial"
+msgstr  "拉格朗日插值法"
+
+msgid   "Interval"
+msgstr  "区间"
+
+#, php-format
+msgid   "Invalid input in the field %s."
+msgstr  "表单 %s 输入非法。"
+
+#, php-format
+msgid   "Invalid limits for integration. Limits for the inside integral "
+        "cannot contain the variable %s, which is used for inside integration."
+        "<br>Bad limits or bad order of variables for integration."
+msgstr  "积分界限不正确。内积分的界限必须包含用于内积分的变量 %s。<br>界限错误"
+        "或者积分变量顺序错误。"
+
+msgid   "Invalid limits for integration. Limits for the outside integral must "
+        "be constants and the lower limit has to be smaller than upper limit."
+msgstr  "积分界限不正确。外积分的界限必须为常数，并且下界必须小于上界。"
+
+msgid   "Invalid limits for integration. One of the limits is becomes "
+        "undefined on the region of integration."
+msgstr  ""
+
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit."
+msgstr  "积分界限不正确。内积分的积分下界必须小于上界。"
+
+#, php-format
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit. If you want to "
+        "interchange limits, you can try the following %s."
+msgstr  "积分界限不正确。内积分的积分下界必须小于上界。交换积分界限，请点击这"
+        "个 %s 。"
+
+msgid   "Invalid limits for integration. The radial variable r must be "
+        "nonnegative."
+msgstr  "积分界限错误。极坐标变量 r 必须为非负值。"
+
+#, perl-format
+msgid   "Invalid point number %s."
+msgstr  "点坐标 %s 非法。"
+
+msgid   "Investigating function using Maxima CAS"
+msgstr  ""
+
+msgid   "Iteration scheme"
+msgstr  ""
+
+msgid   "Jacobi matrix"
+msgstr  "雅可比矩阵"
+
+msgid   "Jacobi matrix at stationary point"
+msgstr  "驻点处的雅克比矩阵"
+
+msgid   "Least squares method"
+msgstr  "最小二乘法"
+
+msgid   "Length of linear element"
+msgstr  ""
+
+msgid   "Line integral"
+msgstr  "曲线积分"
+
+msgid   "Linear solution"
+msgstr  "线性解"
+
+msgid   "Linear system for coefficients"
+msgstr  ""
+
+#, php-format
+msgid   "Load: %s, Running processes: %s"
+msgstr  ""
+
+msgid   "Local extrema in two variables"
+msgstr  "二元函数的局部极值"
+
+msgid   "Lower limit"
+msgstr  "下界"
+
+msgid   "MAW error: equal md5sum for different strings."
+msgstr  "MAW 出错：不同的字符串产生了相同的 MD5 校验和。"
+
+msgid   "Mathematical Assistant on Web"
+msgstr  "在线数学助理 (MAW)"
+
+msgid   "Maxima failed to find $x$-intercepts. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find critical points. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find points of discontinuity. They probably do not "
+        "exist."
+msgstr  ""
+
+msgid   "Maxima failed to find stationary points. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find the primitive function."
+msgstr  "Maxima 求解原函数失败。"
+
+msgid   "Maxima is using arc-trig functions to get a solution. Some solutions "
+        "will be lost."
+msgstr  "Maxima 正在使用 arc-trig 函数求解。部分解可能会丢失。"
+
+msgid   "Mean value"
+msgstr  ""
+
+msgid   "Method"
+msgstr  "方法"
+
+msgid   "Method of iterations"
+msgstr  "迭代法"
+
+msgid   "Method regula falsi"
+msgstr  "试位法"
+
+msgid   "Missing comma or more semicolons than expected."
+msgstr  "缺少逗号，或者输入了过多的分号。"
+
+#, perl-format
+msgid   "Missing coordinate for point number %s."
+msgstr  "缺少点坐标 %s。"
+
+msgid   "Missing semicolon or more commas than expected."
+msgstr  "缺少分号，或者输入了过多的逗号。"
+
+msgid   "Missing stationary points in your input. I'll try to find the "
+        "stationary points first."
+msgstr  "输入中缺少驻点。先尝试求解驻点。"
+
+msgid   "Multiplication is denoted by star, write e.g. 2*x."
+msgstr  "乘号用星号表示，比如 2*x 。"
+
+msgid   "Multiplying both numerator and denominator"
+msgstr  "分子和分母同乘"
+
+#, php-format
+msgid   "Multiplying both numerator and denominator by %s and simplification"
+msgstr  "分子和分母同乘以 %s 并且化间"
+
+msgid   "Newton--Raphson method"
+msgstr  ""
+
+msgid   "Newton-Raphson method"
+msgstr  ""
+
+msgid   "Next computation"
+msgstr  "下一步计算"
+
+msgid   "No isolated stationary point has been found. Either there are no "
+        "stationary points or the problem is too difficult for Maxima."
+msgstr  "没有找到孤立的驻点。可能是函数没有驻点，或者这个题目对于 Maxima 来说"
+        "太难了。"
+
+msgid   "No restriction on the domain of the function found. The function "
+        "seems to be defined everywhere."
+msgstr  ""
+
+msgid   "No stationary point has been found. Either there are no stationary "
+        "points or the problem is too difficult for Maxima."
+msgstr  "没有找到驻点。可能函数没有驻点，或者此问题对于 Maxima 来说太难了。"
+
+msgid   "Nonconstant solution"
+msgstr  "非常数解"
+
+msgid   "Nonhomogeneous equation"
+msgstr  "非齐次方程"
+
+msgid   "Not all brackets which are written by the computer are necessary. "
+        "Many of them can be safely omitted."
+msgstr  "并非所有计算机输出的括号都是必要的。许多括号可以被安全地去掉。"
+
+msgid   "Not found."
+msgstr  "未找到。"
+
+msgid   "Now we solve initial value problem"
+msgstr  "求解初值问题"
+
+msgid   "Number of subintervals"
+msgstr  "子区间数量"
+
+msgid   "Numerical computation"
+msgstr  "数值计算"
+
+#, php-format
+msgid   "On the next page you can find an animation which describes, how the "
+        "graph of %s is transformed into %s."
+msgstr  "下一页包含一个动画，展示了如何将函数 %s 的图像变形为 %s 。"
+
+msgid   "One of the functions has probably point of discontinuity on the "
+        "interval under consideration. Look on the picture below and check "
+        "your input."
+msgstr  "某个函数在区间上可能存在间断点。请查看下方的图像，并检查输入。"
+
+msgid   "Ordinary differential equation"
+msgstr  "常微分方程"
+
+#, perl-format
+msgid   "Our equation can be written in the form %s."
+msgstr  ""
+
+msgid   "Our hint: (Some automatical hints based on few heuristic tests. Do "
+        "not follow these hints blindly and use your mind instead.)"
+msgstr  "提示：（某些自动给出的提示基于少量的启发式测试产生。请自己判断思考，"
+        "不要盲目按照这些提示进行。）"
+
+msgid   "Parametric curve"
+msgstr  "参数曲线"
+
+msgid   "Partial fractions"
+msgstr  "部分分式"
+
+msgid   "Particular solution"
+msgstr  "特殊解"
+
+msgid   "Particular solution (after substitution and simplification)"
+msgstr  "特解（经过代换和化简）"
+
+msgid   "Particular solution of the equation"
+msgstr  ""
+
+msgid   "Picture"
+msgstr  "图像"
+
+msgid   "Points of discontinuity"
+msgstr  ""
+
+msgid   "Points on boundary"
+msgstr  "边界点"
+
+msgid   "Points on the boundary"
+msgstr  "边界点"
+
+msgid   "Preliminary"
+msgstr  "初步"
+
+msgid   "Primitive function"
+msgstr  "原函数"
+
+#, php-format
+msgid   "Probably exchanged f and g functions. Interchange these functions "
+        "either in the previous form or by clicking the following %s."
+msgstr  "函数 f 和 g 已经交换。可以在上一页面的表单中或者单击 %s 来交换这些函"
+        "数。"
+
+msgid   "Problem"
+msgstr  "问题"
+
+msgid   "Processing image"
+msgstr  "正在处理图像"
+
+msgid   "Processing request"
+msgstr  "正在处理请求"
+
+msgid   "Processing the picture. If the picture does not appear within few "
+        "seconds, you may have error in your math expressions."
+msgstr  ""
+
+msgid   "Product rule"
+msgstr  "乘法定则"
+
+msgid   "Program Maxima finishes the answer automatically"
+msgstr  "Maxima 程序自动完成求解"
+
+msgid   "Quotient rule"
+msgstr  "除法定则"
+
+msgid   "Read carefully the method and ignore other suggestions, such as "
+        "substitution"
+msgstr  "仔细阅读此方法，忽略其它的建议，比如换元法。"
+
+msgid   "Region for integration"
+msgstr  "积分界限"
+
+msgid   "Regula falsi method"
+msgstr  "试位法"
+
+msgid   "Remarks"
+msgstr  "备注"
+
+msgid   "Report bug"
+msgstr  "报告问题"
+
+msgid   "Second derivative"
+msgstr  "二阶导数"
+
+msgid   "Second order linear differential equation"
+msgstr  "二阶常微分方程"
+
+msgid   "Separation of variables"
+msgstr  "分离变量"
+
+msgid   "Server load too large"
+msgstr  "服务器压力过大"
+
+msgid   "Server overloaded"
+msgstr  "服务器过载"
+
+msgid   "Server refused to build more animations simultaneously."
+msgstr  "服务器拒绝同时进行多个操作。"
+
+#, php-format
+msgid   "Shift: horizontally %s units and vertically  %s units (positive "
+        "values mean move to the left or top, negative to the right or bottom)"
+msgstr  "平移：水平方向 %s 单位，竖直方向 %s 单位（正值为向左或者向上，负值为"
+        "向右或者向下）。"
+
+#, php-format
+msgid   "Shifting %s into %s."
+msgstr  "将 %s 平移为 %s 。"
+
+msgid   "Simplification"
+msgstr  "化简"
+
+msgid   "Simplifying we get"
+msgstr  "化简，得到"
+
+msgid   "Singular solution"
+msgstr  "奇解"
+
+msgid   "Solid of revolution"
+msgstr  "旋转体"
+
+msgid   "Solution"
+msgstr  "解"
+
+msgid   "Solution from Newton--Leibniz formula"
+msgstr  "由牛顿-莱布尼茨公式得到的解"
+
+msgid   "Solution of the linear system"
+msgstr  "线性方程组的解"
+
+#, php-format
+msgid   "Solution of the system for %s and %s is"
+msgstr  "方程组 %s 和 %s 的解是"
+
+msgid   "Solution of this equation"
+msgstr  "方程的解"
+
+msgid   "Something failed - report this to the authors of MAW, please."
+msgstr  "抱歉，发生错误。请将其报告给 MAW 的作者。"
+
+msgid   "Something is wrong. Probably too difficult integrals."
+msgstr  "发生错误。或许积分式太复杂了。"
+
+msgid   "Sometimes Maxima fails to find some constant solutions of the "
+        "equation with separated variables."
+msgstr  "有时候 Maxima 用分离变量法无法找到方程的某些常数解。"
+
+msgid   "Sorry, an error occurred when processing your input"
+msgstr  "抱歉，处理输入数据时发生错误"
+
+msgid   "Sorry, our server is overloaded, try it again after a reasonable "
+        "time (10 sec)."
+msgstr  "很抱歉，服务器超出负荷。请稍后重试。"
+
+msgid   "Sorry, report this problem please. We will investigate and (hope) we "
+        "fix it."
+msgstr  ""
+
+msgid   "Sorry, the application cannot handle this substitution."
+msgstr  "抱歉，程序无法完成此换元。"
+
+msgid   "Sorry, the evaluation of the integral failed."
+msgstr  "抱歉，求解积分失败。"
+
+msgid   "Sorry, we are unable to process your function. The problem has been "
+        "saved and we will investigate."
+msgstr  ""
+
+msgid   "Sorry. An explanation for this error is not known automatically. The "
+        "problem has been logged and will be investigated."
+msgstr  ""
+
+msgid   "Stationary point"
+msgstr  "驻点"
+
+#, php-format
+msgid   "Stationary point is %s."
+msgstr  "驻点是 %s。"
+
+msgid   "Stationary points"
+msgstr  "驻点"
+
+msgid   "Step"
+msgstr  "步骤"
+
+msgid   "Submit"
+msgstr  "提交"
+
+msgid   "Substituting initial values we get the following linear system"
+msgstr  "将初始值带入下面的线性方程组"
+
+msgid   "Substituting limits"
+msgstr  "带入界限"
+
+msgid   "Substituting these values into general solution we get particular "
+        "solution"
+msgstr  ""
+
+#, perl-format
+msgid   "Substituting we get linear equation  %s with general solution %s "
+        "(click %s to get more details)."
+msgstr  ""
+
+msgid   "Substitution"
+msgstr  "换元"
+
+msgid   "Substitution into equation"
+msgstr  "方程换元"
+
+msgid   "Substitution into equation (1) and simplifications"
+msgstr  "带入方程 (1) 然后化简"
+
+msgid   "Sum rule"
+msgstr  "加法定则"
+
+msgid   "Summary"
+msgstr  "概要"
+
+msgid   "Support request"
+msgstr  "请求支持"
+
+msgid   "Symbolic computation"
+msgstr  "符号计算"
+
+msgid   "System of equations"
+msgstr  "方程组"
+
+msgid   "System of inequalities"
+msgstr  "不等式组"
+
+msgid   "Table"
+msgstr  "表格"
+
+msgid   "Taylor polynomial"
+msgstr  "泰勒多项式"
+
+msgid   "Tested stationary points"
+msgstr  "检验过的驻点"
+
+#, php-format
+msgid   "The asymptote at both $ \\pm\\infty $ is the line $\\displaystyle  "
+        "%s $."
+msgstr  ""
+
+msgid   "The asymptote at both $\\pm\\infty$ is the line $\\asymptota$."
+msgstr  ""
+
+#, perl-format
+msgid   "The back substitution gives %s and %s"
+msgstr  "回代后得到 s% 和 s%。"
+
+msgid   "The boundary points for the subintervals on the picture are either "
+        "points of discontinuity, or the points in which one of the partial "
+        "inequalities becomes equality. In this version of MAW we are not "
+        "able to find out, if these points belong to the domain or not. This "
+        "problem is left to the user. Also ignore complex numbers, if present."
+msgstr  ""
+
+msgid   "The characteristic equation is"
+msgstr  "特征方程为"
+
+#, perl-format
+msgid   "The check that the particular solution %s is correct failed."
+msgstr  ""
+
+msgid   "The computation could be divided into more pages"
+msgstr  "计算过程可能不止一页"
+
+msgid   "The computation is usually divided into two pages. The first page "
+        "contains computations and the second page the graph."
+msgstr  ""
+
+#, perl-format
+msgid   "The equation %s is exact if and only if %s."
+msgstr  ""
+
+msgid   "The equation does not belong to the set of supported types. <br>You "
+        "may also have a typing error in your formula which changes the type "
+        "of the equation and makes the equation unsolvable for Maxima CAS.</"
+        "b> Check your data."
+msgstr  ""
+
+msgid   "The equation has been solved, but it is neither linear nor "
+        "separable, homogeneous or exact and no intermediate steps are shown. "
+        "The equation is #1."
+msgstr  "方程已被求解，但是它既不是线性的也不是离散的，齐次的或者精确的并且中"
+        "间步骤没有给出。方程是 #1 。"
+
+msgid   "The equation has integrating factor #1."
+msgstr  "方程含有积分因子 #1 。"
+
+#, perl-format
+msgid   "The equation has integrating factor %s."
+msgstr  ""
+
+msgid   "The equation solved with respect to the derivative"
+msgstr  "方程对导数求解完成"
+
+#, perl-format
+msgid   "The equation with right hand side %s cannot be solved by "
+        "undetermined coefficients"
+msgstr  ""
+
+msgid   "The first derivative"
+msgstr  "一阶导数"
+
+msgid   "The first derivatives"
+msgstr  "一阶导数"
+
+msgid   "The following messages have been reported by external programs and "
+        "they may help you to find the error.<br><br> Still in troubles? You "
+        "can contact the authors. Email address is on the main page."
+msgstr  ""
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local maximum} at %s. (Hessian is "
+        "positive and there are negative numbers in the main diagonal.)"
+msgstr  "函数 %s 上的点 %s 为一个\\textbf{局部最大值点} 。（海森矩阵为正值，并"
+        "且住对角线为负数。） "
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local minimum} at %s. (Hessian is "
+        "positive and there are positive numbers in the main diagonal.)"
+msgstr  "函数 %s 上的点 %s 为一个\\textbf{局部最小值点} 。（海森矩阵为正值，并"
+        "且住对角线为正数。） "
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{saddle point} at %s, there is no "
+        "local extremum at this point.  (Hessian is negative.)"
+msgstr  "函数 %s 上的点 %s 为一个\\textbf{鞍点} 。此点没有局部极值。（海森矩阵"
+        "为负值。）"
+
+#, php-format
+msgid   "The function %s has been transformed into %s."
+msgstr  "方程 %s 已被变形为 %s 。"
+
+#, php-format
+msgid   "The function %s is not continuous at %s and we cannot find this "
+        "Taylor polynomial."
+msgstr  ""
+
+#, perl-format
+msgid   "The function is either not well formatted mathematical expression or "
+        "it is not continuous or one of the derivatives at %s does not exist. "
+        "Check the Maxima output below."
+msgstr  ""
+
+msgid   "The function is even."
+msgstr  "函数为偶函数。"
+
+msgid   "The function is neither odd nor even."
+msgstr  "函数为非奇非偶函数。"
+
+#, php-format
+msgid   "The function is not a function in two variables. You have to enter "
+        "function in two variables x and y. If you want to investigate "
+        "functions in one variable, you can continue %s here %s."
+msgstr  "此函数不是二元二元函数。请输入包含变量 x 和 y 的函数。如果你想求解一"
+        "元函数，请单击 %s这里%s 。"
+
+msgid   "The function is odd."
+msgstr  "函数为奇函数。"
+
+msgid   "The functions have probably one or more intersection inside the "
+        "interval. Check the picture below. You can find the intersection by "
+        "choosing the corresponding option in the form on the previous page."
+msgstr  "给定区间内函数可能有一个或多个交点。参见如下图像。请在上一页面的表单"
+        "中选择相应的选项。"
+
+#, php-format
+msgid   "The general solution is %s."
+msgstr  "通解是 %s 。"
+
+msgid   "The general solution is sum of the particular solution (obtained "
+        "from (2)) and general solution of the associated homogeneous "
+        "equation obtained in the first part of the computation"
+msgstr  ""
+
+msgid   "The general solution is sum of the particular solution and general "
+        "solution of the associated homogeneous equation obtained in the "
+        "first part of the computation"
+msgstr  ""
+
+#, php-format
+msgid   "The general solution of the associated homogeneous equation is %s."
+msgstr  "相伴齐次方程的通解是 %s 。"
+
+msgid   "The graph can be drawn by shifting and resizing certain basic "
+        "elementary function"
+msgstr  ""
+
+msgid   "The length of one subinterval"
+msgstr  "每个子区间的长度"
+
+#, php-format
+msgid   "The multiplicity of this solution is %s."
+msgstr  ""
+
+#, perl-format
+msgid   "The normal form of the equation is %s."
+msgstr  "等式的一般形式为 %s。"
+
+#, php-format
+msgid   "The number %s is double zero of the characteristic equation and the "
+        "particular solution has the form %s."
+msgstr  "数字%s 是特征多项式的二重零点。特解的形式为 %s。"
+
+#, php-format
+msgid   "The number %s is not a zero of the characteristic equation and the "
+        "particular solution is in the form %s."
+msgstr  "数字 %s 不是特征方程的零点。特解的形式为 %s。"
+
+#, php-format
+msgid   "The number %s is zero of multiplicity 1 of the characteristic "
+        "equation and the particular solution has the form %s."
+msgstr  "数字 %s 是特征方程的一重零点。特解的形式为 %s。"
+
+#, php-format
+msgid   "The number %s takes the form %s and it is solution of the "
+        "characteristic equation %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s takes the value %s and it is not solution of the "
+        "characteristic equation %s."
+msgstr  ""
+
+#, php-format
+msgid   "The original function is %s."
+msgstr  "原是函数为 %s 。"
+
+msgid   "The problem either does not make any sense or it is too difficult "
+        "for Maxima. Check also, that the integral on the top matches your "
+        "problem."
+msgstr  "问题没有意义，或者对 Maxima 来说太难了。请检查上面的积分式是否与你的"
+        "问题匹配。"
+
+msgid   "The result of advanced numerical method"
+msgstr  ""
+
+msgid   "The result of symbolic computation"
+msgstr  "符号运算的结果"
+
+#, php-format
+msgid   "The right hand side has the form %s, where %s."
+msgstr  ""
+
+#, php-format
+msgid   "The right hand side is polynomial %s, the degree of this polynomial "
+        "is %s."
+msgstr  "右侧为多项式 %s，它的次数为 %s。"
+
+#, php-format
+msgid   "The right hand side is product of polynomial %s and exponential "
+        "function %s, the degree of the polynomial is %s."
+msgstr  "右侧为多项式的积 %s 和指数函数 %s，多项式的次数为 %s。"
+
+msgid   "The second derivative"
+msgstr  "二阶导数"
+
+msgid   "The second derivatives"
+msgstr  "二阶导数"
+
+msgid   "The second derivatives at stationary points"
+msgstr  "驻点处的二阶导数"
+
+#, perl-format
+msgid   "The solution is %s."
+msgstr  "解为 %s。"
+
+#, php-format
+msgid   "The solution is at the line starting with %o2"
+msgstr  "所求的解位于起始于 %o2 的直线上。"
+
+msgid   "The solution of this linear system is"
+msgstr  "此线性方程组的解为"
+
+msgid   "The x axis goes through the set from the formulation of the problem. "
+        "The problem is not well formulated."
+msgstr  "x 轴穿过了原问题中公式的集合。此题目不能被很好的公式化。"
+
+msgid   "There is no asymptote at $\\pm\\infty$."
+msgstr  ""
+
+msgid   "There should be no derivative  y' and no equality sign  = in your "
+        "input. Both are written on the left from the input field (you have "
+        "to enter the right hand side of the equation only)."
+msgstr  "不应当有导数 y' 并且输入中没有等号。两者都被写在左边的文本框中（你应"
+        "当仅在右边的文本框中输入等式）。"
+
+msgid   "There should be no higher derivative than first derivative."
+msgstr  "不应该有比一阶导数更高阶的导数。"
+
+#, perl-format
+msgid   "This equation can be written as %s."
+msgstr  "等式可写作 %s。"
+
+msgid   "This error occurs also if there are too many requests in a short "
+        "time, for example if somebody uses this server for teaching in "
+        "computer lab."
+msgstr  ""
+
+msgid   "This error occurs if somebody (you or another user) clicks the "
+        "submit button many times in a sort time. Don't do it, please. Click "
+        "the Submit button only once"
+msgstr  ""
+
+msgid   "This error should be fixed. You may report this error to the authors."
+msgstr  "此错误应当被修正。请将此错误反馈给作者。"
+
+msgid   "This is not supported in our integral assistant."
+msgstr  "积分助理目前不支持此功能。"
+
+msgid   "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+msgstr  ""
+
+msgid   "This message appears if somebody else is working with the same "
+        "calculator - try again after 1 min."
+msgstr  "抱歉，同时使用此功能的人太多，请一分钟后再试。"
+
+msgid   "To be independent on our server install MAW offline for yourselves "
+        "on your local computer."
+msgstr  ""
+
+msgid   "Too many requests"
+msgstr  "服务器请求过多"
+
+msgid   "Transformation to Riemann integral"
+msgstr  ""
+
+#, php-format
+msgid   "Transforming %s into %s."
+msgstr  "将 %s 变形为 %s 。"
+
+msgid   "Trapeziodal rule for definite integral"
+msgstr  "定积分的梯形法则"
+
+msgid   "Try something another."
+msgstr  "尝试其它方法。"
+
+#, php-format
+msgid   "Turning %s into %s."
+msgstr  "将 %s 旋转为 %s 。"
+
+#, php-format
+msgid   "Two independent solutions are %s and %s."
+msgstr  "两个独立的解是 %s 和 %s 。"
+
+msgid   "Under construction"
+msgstr  "建设中"
+
+msgid   "Unmatched parenthesis has been found. Correct the problem please."
+msgstr  "括号不匹配。请检查并更正。"
+
+#, php-format
+msgid   "Unsupported function %s."
+msgstr  "系统不支持 %s 函数。"
+
+msgid   "Upper limit"
+msgstr  "上界"
+
+msgid   "Use 1/2 to insert one half. Not ½."
+msgstr  "请使用 1/2 来表示二分之一。不要使用 ½。"
+
+msgid   "Use ^2 to insert second power. Not ²."
+msgstr  "请使用 ^2 来表达平方。不要使用 ²。"
+
+msgid   "Use dot only for decimal numbers, if necessary. Do not use dot for "
+        "multiplication. The operator for multiplication is star, write for "
+        "example 2*x for \"two eks\". If you wish to enter decimal number, "
+        "this decimal number cannot be a part of mathematical formula."
+msgstr  ""
+
+msgid   "Use numbers only. Use commas and semicolons to separate point "
+        "coordinates and points in the data file."
+msgstr  "请只使用数字。用逗号和分号分开数据中每个点的坐标和各个不同点。"
+
+msgid   "Use only integers or decimal numbers for coefficients on the left "
+        "hand side."
+msgstr  "左侧的系数请只输入整数或者小数。"
+
+msgid   "Use only natural logarithm."
+msgstr  "只能使用自然对数。"
+
+msgid   "Using $ x$ coordiantes, we write and simplify the small Lagrange "
+        "polynomials."
+msgstr  "使用 $ x$ 坐标，输出并化简小拉格朗日多项式。"
+
+msgid   "Variable for inside integration and limits for this variable"
+msgstr  "内积分的积分变量及其区间"
+
+msgid   "Variable for outside integration and limits for this variable"
+msgstr  "外积分的积分变量及其区间"
+
+msgid   "Variables aa or bb are not allowed."
+msgstr  "不允许使用变量 aa 或者 bb。"
+
+#, perl-format
+msgid   "Variant %s"
+msgstr  ""
+
+msgid   "Variation of constant:"
+msgstr  ""
+
+msgid   "Variation of constant: {\\color{blue}(the sum of blue expressions is "
+        "zero)}"
+msgstr  "常数变易法： {\\color{blue}（蓝色部分的表达式和为 0）}"
+
+msgid   "Vertical shift"
+msgstr  "竖直平移"
+
+msgid   "Wait a bit, return to the page with calculator form, fill again if "
+        "necessary and resend the form. Then you will be allowed to build "
+        "animation again. But click only once and be patient (about 20 sec)!"
+msgstr  "请稍等片刻，返回上一计算页面，重新填写表单并提交，才可以重新创建动"
+        "画。请只点击一次并耐心等待（大约20秒）。"
+
+msgid   "Warning: your input is not checked against the substitution used "
+        "during evaluation of the integral. If you use incorrect "
+        "substitution, your result will be incorrect."
+msgstr  "注意：程序不会验证你输入的数据与换元过程是否相符。如果你使用错误的回"
+        "代，你将得到错误的结果。"
+
+msgid   "We attempted to parse your input automatically"
+msgstr  "尝试自动修正输入的表达式"
+
+#, perl-format
+msgid   "We can \\textbf{neither proove nor disprove} existence of extrem for "
+        "the function %s and stationary point %s from second derivatives. "
+        "(Hessian is zero.)"
+msgstr  ""
+
+#, php-format
+msgid   "We draw the function %s."
+msgstr  "绘制函数 %s 的图像。"
+
+msgid   "We find area between curves #1 and #2 on the interval from #3 to #4."
+msgstr  "在区间 #3 到 #4 上求解曲线 #1 和 #2 之间的图形面积。"
+
+msgid   "We find area under the curve #1 on the interval from #2 to #3."
+msgstr  "在区间 #2 到 #3 上求解曲线 #1 下方的图形面积。"
+
+msgid   "We find the general solution first and then we use the initial "
+        "conditions to find particular solution."
+msgstr  "首先求通解，然后带入初始值求特解。"
+
+msgid   "We find undetermined coefficients"
+msgstr  "求解待定系数"
+
+msgid   "We find volume of solid of revolution formed by revolving area "
+        "between curves #1 and #2 on the interval from #3 to #4 around $ x$ "
+        "axis.."
+msgstr  "在区间 #3 到#4 上求解围绕 $ x$轴旋转曲线 #1 和 #2 之间的图形得到的旋"
+        "转体体积。"
+
+msgid   "We find volume of solid of revolution formed by revolving area under "
+        "the curve #1 on the interval from #2 to #3 around $ x$ axis."
+msgstr  "在区间 #2 到#3 上求解围绕 $ x$轴旋转曲线 #1 下方图形得到的旋转体体"
+        "积。"
+
+msgid   "We get the solution in its explicit form only for the linear "
+        "equations. For the equations with separated variables we get only "
+        "the implicit form."
+msgstr  "仅能求解明确形式的线性方程。对于带有分离变量的方程，仅能得到隐性形"
+        "式。"
+
+#, perl-format
+msgid   "We have %s"
+msgstr  "得到 %s"
+
+#, php-format
+msgid   "We have %s points, the degree of the polynomial is not greater than "
+        "%s."
+msgstr  "找到 %s 个点，多项式次数不超过 %s 。"
+
+#, perl-format
+msgid   "We have %s."
+msgstr  "得到 %s。"
+
+msgid   "We have to solve the linear system"
+msgstr  "求解线性系统"
+
+msgid   "We integrate"
+msgstr  "积分"
+
+#, php-format
+msgid   "We integrate the function %s on the set given by %s and %s."
+msgstr  "求解函数 %s 的积分，在区间 %s 和 %s 上。"
+
+msgid   "We investigate the function"
+msgstr  ""
+
+msgid   "We look for stationary points of the autonomous system."
+msgstr  "寻找自治系统的驻点。"
+
+#, php-format
+msgid   "We look for stationary points of the function %s."
+msgstr  "求解函数 %s 的驻点。"
+
+msgid   "We look for the particular solution of the nonhomogeneous equation."
+msgstr  "求解非齐次方程的特解"
+
+msgid   "We put corresponding\n"
+        "terms on left and right equal (from smallest power)"
+msgstr  ""
+
+msgid   "We remove absolute values"
+msgstr  "去掉绝对值"
+
+msgid   "We remove constant multiple from the integral"
+msgstr  "从积分式中提出常数系数。"
+
+#, php-format
+msgid   "We solve %s on the interval %s using bisection of interval."
+msgstr  "求解 %s 。求解区间 %s 。使用二分法。"
+
+#, php-format
+msgid   "We solve %s on the interval %s using regula falsi."
+msgstr  "求解 %s 。求解区间 %s 。使用试位法。"
+
+msgid   "We solve initial value problem"
+msgstr  "求解初值问题"
+
+msgid   "We solve the associated homogeneous equation first"
+msgstr  "先求解相关的齐次方程"
+
+#, php-format
+msgid   "We solve the equation %s using Newton--Raphson method with initial "
+        "guess %s."
+msgstr  ""
+
+#, php-format
+msgid   "We solve the equation %s using method of iterations on the interval "
+        "%s with initial guess %s."
+msgstr  "求解等式 %s。使用迭代法。求解区间 %s。初始近似值： %s。"
+
+msgid   "We solve the homogeneous differential equation"
+msgstr  "求解齐次常微分方程"
+
+msgid   "We solve the nonhomogeneous differential equation"
+msgstr  "求解非齐次常微分方程"
+
+msgid   "We solve the system in the first quadrant (for nonnegative variables)"
+msgstr  ""
+
+msgid   "We solve this system with respect to unknown coefficients and get"
+msgstr  ""
+
+#, php-format
+msgid   "We start with the function %s."
+msgstr  ""
+
+msgid   "We try to simplify the answer. (This is rather tricky step, "
+        "sometimes it simplifies the answer and sometimes not.)"
+msgstr  "尝试化简答案。（这是相当棘手的步骤。有时能化简答案，有时不能。）"
+
+#, php-format
+msgid   "We try to solve the equation %s with respect to the derivative."
+msgstr  "尝试求解关于导数的方程 %s 。"
+
+msgid   "We use small Lagrange polynomials in the interpolation formula and "
+        "sum up like powers of $ x$ (the final result is in the frame)."
+msgstr  ""
+
+#, perl-format
+msgid   "We use substitution %s."
+msgstr  "用 %s 换元。"
+
+msgid   "We use the variation of constants to find the particular solution in "
+        "the form"
+msgstr  "用常数变易法求解特解"
+
+#, php-format
+msgid   "We will look for the intercepts of  y=%s and y=%s, symbolically and "
+        "numerically."
+msgstr  "求 y=%s 和 y=%s 的截距、象限和数值。"
+
+msgid   "We write the form of the Lagrange polynomial from the $ y$ "
+        "coordinates."
+msgstr  "以 $ y$ 坐标的形式输入拉格朗日多项式。"
+
+msgid   "You are not allowed to enter more than six points."
+msgstr  "最多只能输入 6 个点。"
+
+#, php-format
+msgid   "You can check is somebody else is working with the tool by checking "
+        "%s history%s."
+msgstr  "单击“%s历史记录%s”可以查看其他用户使用这个工具计算过的问题。"
+
+msgid   "You can enter decimal number or mathematical formula which contains"
+msgstr  "你输入的数字或数学表达式可以包含"
+
+msgid   "You can use WYSIWYG editor <a href=\"http://user.mendelu.cz/tihlarik/"
+        "dragmath/DragMath.html\" target=\"_blank\">Dragmath</a> to edit "
+        "mathematical expressions and then move the expression into field in "
+        "the form by using clipboard in your operating system. This editor is "
+        "accessible at the end of some input fields, where we suppose "
+        "nontrivial input. In these cases it is not necessary to use the "
+        "clipboard and the transfer into field in our form is automatical."
+msgstr  ""
+
+#, php-format
+msgid   "You can use method of undetermined coefficients: the primitive "
+        "function has the form %s, where %s is %s and k is real number. The "
+        "application of this method in steps is not covered by this "
+        "application and from this reason you should leave the rest to Maxima "
+        "and evaluate the integral by computer. It is also possible in some "
+        "integrals of this type to remove the square root by a convenient "
+        "substitution."
+msgstr  ""
+
+#, php-format
+msgid   "You cannot write group of two or more characters like %s."
+msgstr  "不能使用两个或多个字符，比如 %s 。"
+
+msgid   "You choosed to integrate some terms but no term has been marked for "
+        "integration"
+msgstr  "即将对某些项目进行积分，但是没有标注被积分的项目。"
+
+msgid   "You did not choose any action"
+msgstr  "你没有选择任何操作"
+
+msgid   "You have to solve the equation with respect to the derivative first "
+        "and write the right hand side only. You may try also to write the "
+        "full equation to the second field and switch the radiobutton on the "
+        "left."
+msgstr  "请先解关于导数的方程，并且只填写右手边的文本框。也可以尝试在第二个文"
+        "本框中填写完整的方程，然后选中左侧的单选框。"
+
+#, php-format
+msgid   "You have to specify %s or %s for integration by parts."
+msgstr  "你必须指定 %s 或 %s 才能进行分部积分。"
+
+#, php-format
+msgid   "You have to use new name for the variable and you have to enter "
+        "which substitution you wish to use. The name of the variable "
+        "consists of one letter only. This name cannot be %s."
+msgstr  "必须指定用于换元积分的新变量名。变量名只能含有一个字母，并且不能"
+        "是%s。 "
+
+msgid   "You have to use the PDF file in Adobe Reader or Adobe Acrobat (do "
+        "not use xpdf, kpdf and other PDF viewers)."
+msgstr  "请使用 Adobe Reader 或者 Adobe Acrobat。（不要使用 xpdf、kpdf 或者其"
+        "它的 PDF 查看器）"
+
+#, perl-format
+msgid   "You may have a typing error in your mathematical expression or use "
+        "too general right hand side of the equation.  This interface works "
+        "only if the right hand side is in the form %s where P and Q are "
+        "polynomials of order at most 4."
+msgstr  ""
+
+msgid   "You may try to interchange the order of integration and submit "
+        "again. (Remember also to adjust limits for integration properly.)"
+msgstr  "请尝试改变积分顺序后再次提交。（不要忘记适当调整积分区间。）"
+
+#, php-format
+msgid   "You may try to pass your expression to %sWolframAlpha%s."
+msgstr  ""
+
+msgid   "You may want to continue and simplify your result ..."
+msgstr  "现在可以化简结果。"
+
+#, php-format
+msgid   "You probably reached the time limit, try simpler problem or %s."
+msgstr  "处理问题超时。请尝试简化问题，或者 %s。"
+
+msgid   "You probably use the <i>y</i> variable, which is not allowed here."
+msgstr  "不允许使用 <i>y</i> 作为变量。"
+
+msgid   "You probably want to integrate a function involving the absolute "
+        "value."
+msgstr  "你或许要求解含有绝对值的函数积分。"
+
+msgid   "You should turn JavaScript on to see popup informations."
+msgstr  "请允许 JavaScript 脚本运行以查看弹出信息。"
+
+#, php-format
+msgid   "You used %s opening and  %s closing parentheses."
+msgstr  "表达式中包含 %s 个左括号和 %s 个右括号。"
+
+msgid   "You used a name of a function followed by a power.<br>Do not use "
+        "this notation. Write for example (sin(x))^2 instead of sin^2(x)."
+msgstr  ""
+
+msgid   "You used backslash or quote or double-quote or another insecure "
+        "character in your input, which is not allowed. Do you try to enter "
+        "the functions in TeX notation? Use notation of the Maxima program, "
+        "please."
+msgstr  ""
+
+msgid   "Your bad input was"
+msgstr  "错误的输入为"
+
+#, php-format
+msgid   "Your incorrect input is: %s and %s."
+msgstr  "错误的输入是 %s 和 %s 。"
+
+#, php-format
+msgid   "Your input is (after deleting spaces and conversion ^ into **) %s "
+        "and the disallowed substring catched by the input filter is %s."
+msgstr  ""
+
+#, php-format
+msgid   "Your input is being processed. Wait few seconds to see the output. "
+        "Click %shere%s to reopen the form which has been submited."
+msgstr  ""
+
+msgid   "Zeros"
+msgstr  "零点。"
+
+msgid   "Zeros of 1st derivative"
+msgstr  "一阶导数的零点"
+
+msgid   "Zeros of 2nd derivative"
+msgstr  "二阶导数的零点"
+
+msgid   "Zeros of characteristic equation"
+msgstr  "特征方程的零点"
+
+msgid   "Zeros of function"
+msgstr  "函数的零点"
+
+msgid   "\\def\\nonneg{We solve the system in the first quadrant (for "
+        "nonnegative variables)}"
+msgstr  ""
+
+msgid   "absolute value causes problems in integration, but in most cases can "
+        "be eliminated by considering suitable subinterval for integration."
+msgstr  "进行积分时绝对值可能会导致问题。但是大多数情况下，可以通过考虑适当的"
+        "积分子区间来解决。"
+
+msgid   "addition, subtraction, multiplication and division, i.e. chars + - "
+        "* /"
+msgstr  "加号、减号、乘号、除号，即 +、-、*、/ 符号"
+
+msgid   "and add like powers of  $ x $ "
+msgstr  "并且提高$ x $的次数"
+
+msgid   "and back substitution is"
+msgstr  "，回代"
+
+msgid   "and collect the coefficients at the powers of $ x $ "
+msgstr  ""
+
+#, php-format
+msgid   "and divide by the common exponential factor %s and add like powers "
+        "of $x$"
+msgstr  "并且除以共同指数因子 %s 然后提高 $x$ 的次数。"
+
+msgid   "and simplify"
+msgstr  "并且化简"
+
+msgid   "and suppose that this variable is positive"
+msgstr  "假定这个变量为正值"
+
+msgid   "asinh(), acosh(), atanh(), .... -> log()"
+msgstr  ""
+
+msgid   "bold"
+msgstr  "加粗"
+
+msgid   "by parts (specify  <i>u</i> or <i>v'</i>, if you specify both, "
+        "Maxima will use <i>v'</i> for the next computation)"
+msgstr  "分部积分（指定 <i>u</i> 或 <i>v'</i>。如果二者均填写， Maxima 将会使"
+        "用 <i>v'</i> 进行下一步计算）"
+
+msgid   "clever expansion into two fractions"
+msgstr  "智能分解为两个分式"
+
+msgid   "click the equation to get step by step solution"
+msgstr  "单击等式查看分步解法"
+
+msgid   "click the point to get Jacobi matrix and clasify the stationary point"
+msgstr  "选择需要求雅可比矩阵和分类的点"
+
+msgid   "complete square in denominator"
+msgstr  "分母中的完全平方"
+
+msgid   "complete square under square root"
+msgstr  "平方根下的完全平方"
+
+msgid   "constant"
+msgstr  "常数"
+
+msgid   "constants %e and %pi"
+msgstr  "常量 %e 和 %pi"
+
+msgid   "contract products of roots"
+msgstr  "收缩根的积"
+
+msgid   "convert into an equation for the unknown integral and solve with "
+        "pure algebra"
+msgstr  "将未知的积分式转换成一个新的等式，然后用纯代数的方法求解"
+
+msgid   "convert into equation for the integral"
+msgstr  "为积分转化为等式"
+
+msgid   "cubic polynomial"
+msgstr  "三次多项式"
+
+msgid   "custom"
+msgstr  "自定义"
+
+msgid   "divide polynomials or partial fractions"
+msgstr  "分解多项式或部分分式"
+
+msgid   "division"
+msgstr  "约分"
+
+msgid   "expand"
+msgstr  "展开因式(expand)"
+
+msgid   "expand to partial fractions"
+msgstr  "展开部分分式"
+
+msgid   "factor"
+msgstr  "因式分解(factor)"
+
+msgid   "factorize"
+msgstr  "因式分解"
+
+msgid   "finished, show computations only"
+msgstr  "完成，只显示计算步骤"
+
+msgid   "formula"
+msgstr  "公式"
+
+msgid   "formula too long"
+msgstr  "公式太长"
+
+msgid   "function"
+msgstr  "函数"
+
+msgid   "functions"
+msgstr  "函数"
+
+msgid   "here"
+msgstr  ""
+
+msgid   "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+msgstr  "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+
+msgid   "in red"
+msgstr  "红色"
+
+msgid   "inside integration"
+msgstr  "内积分"
+
+msgid   "integers (no decimals)"
+msgstr  "整数（无小数位）"
+
+msgid   "integral of polynomial or constant"
+msgstr  "多项式或者常数的积分"
+
+msgid   "integrate terms in sum (mark terms to be integrated, you have to "
+        "mark at least one term)"
+msgstr  "分别积分后相加（选择需要积分的项目，至少选择一向）"
+
+msgid   "integration"
+msgstr  "积分"
+
+msgid   "integration by parts"
+msgstr  "分部积分"
+
+msgid   "linear polynomial"
+msgstr  "线性多项式"
+
+msgid   "link"
+msgstr  "链接"
+
+msgid   "logarc"
+msgstr  ""
+
+msgid   "logcontract"
+msgstr  "对数收缩(logcontract) - 将对数函数前的系数变换为指数形式。"
+
+msgid   "lower bound for integration"
+msgstr  "积分下界"
+
+msgid   "lower function"
+msgstr  "下限函数"
+
+msgid   "lower limit for"
+msgstr  "定积分下界"
+
+msgid   "lower limit for inside integral"
+msgstr  "内积分下限"
+
+msgid   "lower limit for outside integral"
+msgstr  "外积分下限"
+
+msgid   "lower limit of integration"
+msgstr  "积分下界"
+
+msgid   "map + fullratsimp"
+msgstr  "变换后完全合理化简(map + fullratsimp) - 适用于大型表达式"
+
+msgid   "map + xthru"
+msgstr  "变换后通分(map + xthru) - 适用于大型分式"
+
+msgid   "maximum"
+msgstr  "最大值"
+
+msgid   "minimum"
+msgstr  "最小值"
+
+msgid   "move a number from the integral"
+msgstr  "从积分式中提出常数"
+
+msgid   "multiply both numerator and denominator"
+msgstr  "分子与分母同乘"
+
+msgid   "no conclusion"
+msgstr  ""
+
+msgid   "no variables"
+msgstr  "没有变量"
+
+msgid   "not found"
+msgstr  "未找到"
+
+msgid   "notation"
+msgstr  "符号"
+
+msgid   "number of subintervals"
+msgstr  ""
+
+msgid   "numerical approximation"
+msgstr  "数字近似值"
+
+msgid   "our hint"
+msgstr  "提示"
+
+#, php-format
+msgid   "parameters %s"
+msgstr  "参数 %s"
+
+msgid   "partial fractions"
+msgstr  "部分分式"
+
+msgid   "partial fractions or"
+msgstr  "部分分式或者"
+
+msgid   "point of rotation or focus"
+msgstr  ""
+
+msgid   "power ^ or **"
+msgstr  "乘方，^ 或者 **"
+
+msgid   "put these point into the form"
+msgstr  "将这些点输入表单"
+
+msgid   "quadratic polynomial"
+msgstr  "二次多项式"
+
+msgid   "radcan"
+msgstr  "固定化简(radcan) - 结果仅包含根式、对数和指数"
+
+msgid   "rational function, but expansion into partial fractions failed (it "
+        "could be necessary to simplify first (radcan, xthru, ...), or the "
+        "function could be a <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">partial fraction with "
+        "repeated irreducible 2nd-degree polynomial in the denominator</a>)"
+msgstr  "函数为有理函数，但是无法将其分解为部分分式（或许需要先进行化简，或者"
+        "函数可能是一个 <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">分母中含有重复不可约二阶多项式"
+        "的部分分式</a>）"
+
+msgid   "ratsimp"
+msgstr  "合理化简(ratsimp) - 结果为约分后的有理函数的组合"
+
+msgid   "red"
+msgstr  "红色"
+
+msgid   "remove absolute values"
+msgstr  "去掉绝对值"
+
+msgid   "replace <b>even powers of cosine</b> function by sine function"
+msgstr  "用正弦函数代换<b>余弦函数的偶数次幂</b> "
+
+msgid   "replace <b>even powers of sine</b> function by cosine function"
+msgstr  "用余弦函数代换<b>正弦函数的偶数次幂</b>"
+
+msgid   "replace function <b>sec</b> and <b>csc</b> by equivalent functions "
+        "in terms <b>sin</b> and <b>cos</b>"
+msgstr  "用等价的 <b>sin</b> 和 <b>cos</b> 函数代换 <b>sec</b> and <b>csc</b> "
+        "函数。"
+
+msgid   "rootscontract"
+msgstr  "指数收缩(rootscontract) - 将根式的积转换为乘积的根式"
+
+msgid   "round parentheses"
+msgstr  "圆括号"
+
+msgid   "saddle point"
+msgstr  "鞍点"
+
+msgid   "should be checked for substitutions of the form"
+msgstr  "按照此换元形式检验"
+
+msgid   "simplification"
+msgstr  "化简"
+
+msgid   "simplify"
+msgstr  "化简"
+
+msgid   "simplify fraction"
+msgstr  "化简分式"
+
+msgid   "simplify fraction, each part separately"
+msgstr  "化简分式，每一部分分别化简"
+
+msgid   "simplify the fractions using xthru or fullratsimp"
+msgstr  "使用通分(xthru)或者完全合理化简(fullratsimp)化简分式"
+
+msgid   "simplify trigonometric functions"
+msgstr  "化简三角函数"
+
+msgid   "skipping the picture ... (as explained hereinabove)"
+msgstr  ""
+
+#, php-format
+msgid   "split in a clever way into two fractions of the form %s and use "
+        "formulas for integration (ignore also the hint in the next step and "
+        "finish the integration by Maxima)"
+msgstr  "用合理的方式将其分解成两个 %s 形式的分式，然后使用公式进行积分（忽略"
+        "下一步给出的提示，让 Maxima 自动完成积分）"
+
+msgid   "stable focus"
+msgstr  ""
+
+msgid   "stable node"
+msgstr  ""
+
+msgid   "substitute limits"
+msgstr  "带入界限"
+
+msgid   "substituting limits"
+msgstr  "带入界限"
+
+msgid   "substitution"
+msgstr  "换元积分"
+
+msgid   "substitution (the function is odd with respect to both sin and cos)"
+msgstr  "换元（函数是关于 sin 和 cos 的奇函数）"
+
+msgid   "substitution (the function is odd with respect to cos)"
+msgstr  "换元（函数是关于 cos 的奇函数）"
+
+msgid   "substitution (the function is odd with respect to sin)"
+msgstr  "换元（函数是关于 sin 的奇函数）"
+
+msgid   "substitution (use trigsimp function in the next step after "
+        "goniometric substitution)"
+msgstr  "换元（完成角代换后进行三角化简）"
+
+msgid   "the function can be divided into sum of formulas"
+msgstr  "该函数可以被分解为几个公式的和"
+
+msgid   "the function can be expanded into sum of formulas"
+msgstr  "该函数可以被展开为几个公式的和"
+
+msgid   "the intersection is red region"
+msgstr  ""
+
+msgid   "the numerator is derivative of denominator (or its constant multiple)"
+msgstr  ""
+
+msgid   "trigexpand"
+msgstr  "三角展开(trigexpand) - 展开三角函数和双曲函数"
+
+msgid   "trigonometric functions have different inside parts, you can try to "
+        "fix it by <b>trigexpand</b> or <b>trigreduce</b> command"
+msgstr  "三角函数包含不同的参数，请尝试通过 <b>trigexpand</b> 或者 "
+        "<b>trigreduce</b> 命令进行变形"
+
+msgid   "trigreduce"
+msgstr  "三角消去(trigreduce) - 将圆函数和三角函数化为线性函数"
+
+msgid   "trigsimp"
+msgstr  "三角化简(trigsimp) - 化简三角函数和双曲函数"
+
+msgid   "unable to find the answer"
+msgstr  "无法求解"
+
+msgid   "unstable focus"
+msgstr  ""
+
+msgid   "unstable node"
+msgstr  ""
+
+msgid   "upper bound for integration"
+msgstr  "积分上界"
+
+msgid   "upper function"
+msgstr  "上限函数"
+
+msgid   "upper limit for"
+msgstr  "定积分上界"
+
+msgid   "upper limit for inside integral"
+msgstr  "内积分上限"
+
+msgid   "upper limit for outside integral"
+msgstr  "外积分上限"
+
+msgid   "upper limit of integration"
+msgstr  "积分上界"
+
+msgid   "use formula or ask the computer to finish the integration"
+msgstr  "使用公式或者让计算机自动完成积分"
+
+msgid   "user expression"
+msgstr  "用户表达式"
+
+#, php-format
+msgid   "variable %s"
+msgstr  "变量 %s"
+
+#, php-format
+msgid   "variables %s"
+msgstr  "变量 %s"
+
+msgid   "we have to find derivatives and put into the equation"
+msgstr  "必须先求解导数然后将其带入方程"
+
+msgid   "we substitute into (1)"
+msgstr  "代入 (1)"
+
+msgid   "where the new variable is"
+msgstr  "新变量为"
+
+msgid   "with linear inside part (you can use also substitution)"
+msgstr  "可用于线性部分（也可以使用换元法）"
+
+msgid   "with new variable"
+msgstr  "新变量"
+
+#, php-format
+msgid   "with unknowns %s and %s."
+msgstr  "未知数为 %s 和 %s 。"
+
+msgid   "xthru"
+msgstr  "通分(xthru) - 不展开直接合并分式"
+
+msgid   "yields"
+msgstr  "得到"
+
+msgid   "you can convert the function to sine and cosine functions with the "
+        "<b>trigsimp</b> command"
+msgstr  "你可以使用 <b>三角化简(trigsimp)</b> 命令将函数转化为正弦和余弦函数的"
+        "形式。"
+
+msgid   "you can remove a constant multiple from the integral"
+msgstr  "从积分式中提出常数系数"

@@ -1,0 +1,2899 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid   ""
+msgstr  "Project-Id-Version: Mathematical Assistant\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-12-22 02:15+0100\n"
+        "PO-Revision-Date: 2010-04-19 01:59+0100\n"
+        "Last-Translator: Marti Ruiz-Altaba <marti.ruizaltaba@gmail.com>\n"
+        "Language-Team: marti RA <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "X-Poedit-Language: Catalan\n"
+        "X-Poedit-Country: ANDORRA\n"
+        "X-Poedit-SourceCharset: utf-8\n"
+
+msgid   " Change <i>xmin</i>."
+msgstr  "Canvia <i>xmin</i>."
+
+msgid   " Submit the form to check, if the curve is well defined."
+msgstr  ""
+
+msgid   " Submit the form to check, if the region for integration is well "
+        "defined."
+msgstr  ""
+
+msgid   "$ n$-degree  Taylor polynomial for the function  $ f(x)$ around  $ "
+        "x=x_0$"
+msgstr  "Polinomi de Taylor de grau $ n$ per la funció $ f(x)$ al voltant de "
+        "$ x=x_0$"
+
+msgid   "$x$-intercepts"
+msgstr  "Interseccions amb l'eix d'abscisses $x$"
+
+#, php-format
+msgid   "%s degree polynomial"
+msgstr  "polinomi de grau %s"
+
+msgid   "(Click each equation to solve it using undetermined coefficients and "
+        "then sum up all particular solutions to and general solution of "
+        "associated homogeneous equation to get general solution. To find "
+        "solution of initial value problem use variation of constants.)"
+msgstr  "(Feu clic a cadascuna de les equacions per resoldre-la amb el mètode "
+        "dels coeficients indeterminats. Després, per obtenir la solució "
+        "general, sumeu  la solució general de l'equació homogènia associada "
+        "amb la suma de cadascuna de les solucions particulars trobades. Per "
+        "trobar la solució amb unes condicions inicials donades, val més fer "
+        "servir el mètode de la variació de les constants.) "
+
+msgid   "(Not including sets with zero measure, such as points, curves and "
+        "boundaries in the picture.)"
+msgstr  "(Sense incloure a la gràfica cap conjunt de mesura zero, com ara "
+        "punts, línies i fronteres.)"
+
+msgid   "(and remove odd power from denominator, if possible)"
+msgstr  "( i lleva potència senar del denominador, si és possible)"
+
+msgid   "(click the equation to solve it using undetermined coefficients)"
+msgstr  "(cliqueu a l'equació per resoldre-la mitjançant coeficients "
+        "indeterminats)"
+
+msgid   "(clicking the expression you get this part of integral in new window)"
+msgstr  "(si feu clic a l'expressió us sortirà aquesta part de la integral en "
+        "una finestra nova)"
+
+msgid   "(not very useful in most cases)"
+msgstr  "(no gaire útil, ben sovint)"
+
+msgid   "(remember to return to the original variable)"
+msgstr  "(no oblideu tornar a la variable original)"
+
+msgid   "(the trigreduce function yields this step)"
+msgstr  "(la funció <b>trigreduce</b> és responsable d'aquesta etapa)"
+
+msgid   "(use radiobuttons to choose the next computation method)"
+msgstr  "(feu servir els botonets per triar quin mètode voleu emprar tot "
+        "seguit)"
+
+msgid   "(with completing square in denominator)"
+msgstr  "(completant el quadrat al denominador)"
+
+msgid   "(with completing square under square root)"
+msgstr  "(completant el quadrat dins l'arrel quadrada)"
+
+msgid   "(write an equation, e.g. x^2=t, this equation must involve new "
+        "variable and no parameter)"
+msgstr  "(escriviu una equació, com ara <i>x^2=t</i>, contenint la nova "
+        "variable i cap paràmetre)"
+
+msgid   "(you can remove a constant multiple from the integral to match the "
+        "formula exactly)"
+msgstr  "(podeu factoritzar una constant fora de la integral si voleu "
+        "retrobar la fòrmula exacta)"
+
+msgid   "(you have to write the fraction in the form which matches the "
+        "formula, consider multiplying both numerator and denominator by a "
+        "convenient expression)"
+msgstr  "(heu d'escriure la fracció com apareix a la fòrmula; potser cal "
+        "multiplicar el numerador i denominador per quelcom)"
+
+msgid   "- Horizontal deformation -"
+msgstr  "- Deformació horitzontal -"
+
+msgid   "- Horizontal shift -"
+msgstr  "- Desplaçament horitzontal -"
+
+msgid   "- Original function -"
+msgstr  "- Funció original -"
+
+msgid   "- Turning about x -"
+msgstr  "- Girant al voltant de x -"
+
+msgid   "- Turning about y -"
+msgstr  "- Girant al voltant de y - "
+
+msgid   "- Vertical deformation -"
+msgstr  "- Deformació vertical -"
+
+msgid   "<b>Error. The most general expression which you can remove from the "
+        "integral is  a nonzero number written with digits or a multiple of "
+        "constants pi and e.</b> Go back and revise your choice."
+msgstr  "<b>Error. L'expressió més general que podeu extreure de la integral "
+        "és un nombre diferent de zero (escrit en forma decimal) o un "
+        "múltiple de les constants pi i e.</b> Torneu enrera i corregiu la "
+        "vostra elecció."
+
+msgid   "<b>Error. You cannot multiply numerator and denominator by zero or a "
+        "zero equivalent expression.</b> Go back and revise your choice."
+msgstr  "<b>Error. No és legítim multiplicar el numerador i el denominador "
+        "per zero.</b> Trieu algun altre factor."
+
+msgid   "<b>Problems:</b> Infinitely many solutions, or some solutions cannot "
+        "be written using elementary functions."
+msgstr  "<b>Mal de cap:</b> Una infinitat de solucions, o bé algunes "
+        "solucions no poden ser expressades amb funcions elementals."
+
+#, php-format
+msgid   "<b>Sorry, the answer contains function %s which is not supported on "
+        "output. <br> Still curious? The answer is %s."
+msgstr  "<b>Perdoneu, la resposta conté la funció %s que no està implementada "
+        "als resultats finals. <br> Perquè pugueu dormir, sapigueu que la "
+        "resposta és %s."
+
+#, php-format
+msgid   "<b>Sorry, the answer does not exist in the class of <a href=\"http://"
+        "en.wikipedia.org/wiki/Elementary_function\">elementary functions</a>."
+        "</b> From this reason the integral exceeds the level of primary "
+        "target students. <br> Still curious? The answer is %s."
+msgstr  "<b>Perdoneu, la resposta no es pot escriure fent servir tan sols les "
+        "<a href=\"http://ca.wikipedia.org/wiki/Funció_elemental\">funcions "
+        "elementals</a>.</b> Per això, aquesta integral no correspon al "
+        "nivell de dificultat d'un curs d'anàlisi normal. <br> De debò voleu "
+        "saber la resposta? El resultat és %s."
+
+#, php-format
+msgid   "<b>Sorry, unable to evaluate the integral %s using Maxima.</"
+        "b><br><br>You may try to help Maxima by performing some "
+        "simplification (radcan?) or substitution.<br><br>You may get the "
+        "answer using another Computer Algebra System, such as %s or %s which "
+        "is reported by %s to be most powerful in integration."
+msgstr  "<b>Perdoneu, resulta impossible calcular la integral %s fent servir "
+        "Màxima.</b><br><br>Potser val la pena ajudar Màxima fent alguna "
+        "simplificació (radcan?) o substitució.<br><br>Potser es pot obtenir "
+        "la resposta amb un altre programa de càlcul simbòlic, com ara %s o "
+        "%s que segons %s gaudeix de més potència pel que fa a integrals."
+
+msgid   "<b>This message usually appears also if you click link more times "
+        "than once.</b>"
+msgstr  "<b>Això vol dir que heu clicat a l'enllaç més d'un cop.</b>"
+
+msgid   "<b>Too long formula, sorry.</b> <ul><li>Try to install maxima on "
+        "your local computer or look at the formula on the page below.</"
+        "li><li>The problem is probably too difficult, but you can try "
+        "another method for integration.</li></ul>"
+msgstr  "<b>Fòrmula massa llarga, perdoneu.</b> <ul><li>Instal.leu Máxima "
+        "localment al vostre ordinador o bé intenteu-ho amb la fòrmula a la "
+        "pàgina següent.</li><li>El problema sembla massa difícil, però el "
+        "podeu intentar integrar amb un altre mètode.</li></ul>"
+
+msgid   "<br><b>Instructions</b><br>Use only sharp inequalities, one "
+        "inequality per row and use variables <i>x</i> and <i>y</i>."
+msgstr  "<br><b>Instruccions</b><br>Feu servir tan sols inequacions estrictes "
+        "(&gt; i no pas &ge;, per exemple), una sola inequació a cada línia, "
+        "i les variables <i>x</i> i <i>y</i>."
+
+msgid   "<h2>Error on input</h2>The degree of Taylor polynomial must be an "
+        "integer between 1 and 9."
+msgstr  "<h2>Error a l'entrada</h2> El grau del polinomi de Taylor ha de ser "
+        "un nombre natural d'1 a 9."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be a "
+        "positive integer."
+msgstr  "<h2>Error a l'entrada</h2> El nombre de subintervals hauria de ser "
+        "un enter positiu."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be an "
+        "integer between 1 and 20."
+msgstr  "<h2>Error a l'entrada</h2> El nombre de subintervals hauria de ser "
+        "un enter entre 1 i 20."
+
+#, php-format
+msgid   "<h2>Error</h2>The interval for integration, %s, is not subset of the "
+        "interval for drawing picture %s."
+msgstr  "<h2>Error</h2>L' interval d' integració, %s, no està inclòs en "
+        "l'interval triat per fer-hi la gràfica %s."
+
+#, php-format
+msgid   "<h2>Error</h2>The upper limit (%s) for the set (and for integration) "
+        "is bigger then the lower limit (%s). Interchange limits in the form "
+        "or clicking this %slink%s."
+msgstr  "<h2>Error</h2>El límit inferior (%s) del conjunt (i doncs, de la "
+        "integral) és menor que el límit superior (%s). Intercanvieu els "
+        "límits al formulari o bé cliqueu aquest %senllaç%s."
+
+msgid   "<h2>Remarks</h2><ul> <li>You can load the function and computed "
+        "stationary points into the calculator for next calculations by "
+        "clicking the following link "
+msgstr  "<h2>Comentaris</h2><ul> <li>Podeu carregar la funció i els punts "
+        "estacionaris trobats a la calculadora per a les etapes següents si "
+        "cliqueu a l'enllaç "
+
+#, php-format
+msgid   "<h2>Simplify your function first</h2>The numerator and denominator "
+        "can be divided by the common factor %s. Simplify the fraction first "
+        "and then write the function into the field again.<br><br> Remark: "
+        "Simplifying we get y=%s."
+msgstr  "<h2>Primer, simplifiqueu la funció</h2> El numerador i el "
+        "denominador tenen el factor comú %s. Caldria simplificar primer la "
+        "fracció i després escriure el resultat al camp d'entrada.<br><br> De "
+        "fet, el resultat de la simplificació és y=%s."
+
+#, php-format
+msgid   "<h3>Error in mathematical notation</h3>Use lowercase letters only "
+        "and notation from the program <a href=\"http://maxima.sourceforge.net"
+        "\">Maxima</a>. <ul><li>Use star to denote multiplication, write for "
+        "example 3*x^3-6*x+1</li><li>Use parenthesis to denote the scope of "
+        "the operation, for example sin(2*x)+ln(x)</li><li>Do not use "
+        "notation  sin^2(x), but (sin(x))^2.</li><li>Use abs(x) for absolute "
+        "value, not |x|</li><li>Constants for the area of unit circle and the "
+        "euler number are %%pi and %%e (yes, with percent sign, read the  <a "
+        "href=\"http://maxima.sourceforge.net/docs/manual/en/maxima.html"
+        "\">manual</a> to the Maxima program, a computer algebra system used "
+        "for all computations).</li></ul><hr> Your input is (after omitting "
+        "spaces and conversion ^ into **): %s and the problem is with the "
+        "substring %s<br><br> Still in troubles? You can contact the authors. "
+        "Email address is on the main page."
+msgstr  "<h3>Error en la notació matemàtica</h3> Feu servir tan sols "
+        "minúscules, i la notació del programa <a href=\"http://maxima."
+        "sourceforge.net\">Màxima</a>. <ul><li>Feu servir l'asterisc com a "
+        "símbol de multiplicació; escriviu per exemple 3*x^3-6*x+1</"
+        "li><li>Feu servir parèntesis per indicar clarament l'abast de les "
+        "operacions, per exemple  sin(2*x)+ln(x)</li><li>No feu servir mai la "
+        "notació  sin^2(x), sinó (sin(x))^2.</li><li>feu servir abs(x) enlloc "
+        "de |x| si us cal la funció del valor absolut.</li><li>La constant "
+        "que mesura el quocient del perímetre i el diamètre d'un cercle "
+        "s'escriu %%pi  i la base dels logaritmes naturals s'escriu %%e (sí, "
+        "sí, amb el percent; consulteu el  <a href=\"http://maxima."
+        "sourceforge.net/docs/manual/en/maxima.html\">manual</a> de Màxima, "
+        "el programa de càlcul simbòlic utilitzat).</li></ul><hr> La vostra "
+        "entrada és (un cop fets fora els espais i convertits els ^ en **) %s "
+        "i no acabo d'entendre el troç que diu %s<br><br> Seguiu tenint "
+        "problemes? Contacteu els autors, l'adreça electrònica dels quals "
+        "apareix a la pàgina principal."
+
+msgid   "<h3>Incorrect input, use only (decimal) numbers to enter bounds for "
+        "the picture.</h3> You are allowed to use only decimal numbers "
+        "(character minus, digits and a dot as a separator of decimal places)."
+msgstr  "<h3>Entrada incorrecta. Heu de fer servir nombres (decimals, si cal) "
+        "per indicar les vores de la gràfica.</h3> Tan sols podeu fer-hi "
+        "servir els signes <b> 0 1 2 3 4 5 6 7 8 9 . -</b> "
+
+#, php-format
+msgid   "<h3>You may mean %s.</h3> If yes, use Copy and Paste to move this "
+        "string into the input field.<br>To go back use the Back button in "
+        "your browser."
+msgstr  "<h3>Segurament voleu dir %s.</h3> Si és així, copieu i enganxeu "
+        "aquesta expressió per fer-ne la vostra nova entrada.<br>Si voleu "
+        "tornar allà on éreu, feu servir el botó Enrera del vostre navegador."
+
+#, php-format
+msgid   "<ul><li> Choose the method for the next computation.  </li> <li> Try "
+        "to find the methods which simplify the integral. If your attempt "
+        "fails, you can return using Back button in you browser. You can also "
+        "return directly to the %s initial form%s.</li><li>You can use "
+        "computer to finish the integration. Educational value of such a this "
+        "step is minimal, so use this possibility with care, please.</"
+        "li><li>Questions marks |<b>?</b>| provide preview what you get when "
+        "using this function. Simply move the cursor over the question mark "
+        "and wait few seconds.</li><li>If the application gives incorrect or "
+        "unexpected results, let us know please.</li></ul><hr>"
+msgstr  "<ul><li> Trieu quin mètode cal fer servir per al càlcul següent.  </"
+        "li> <li> Us cal trobar un mètode que simplifiqui la integral. So no "
+        "hi reeixiu, torneu a la pàgina anterior amb el botó Enrera del "
+        "vostre navegador. O bé aneu directament al %s formulari inicial%s.</"
+        "li><li>Podeu demanar a l'ordinador que enllesteixi la integral tot "
+        "solet. La utilitat pedagògica d'aquest mètode és mínima, així que no "
+        "us el recomanem.</li><li>Els signes d'interrogació |<b>?</b>| us "
+        "donen una idea del que obtindreu fent servir aquesta funció. Només "
+        "cal posar el ratolí al damunt del signe d'interrogació i esperar uns "
+        "segons.</li><li>Si el programa un dona resultats erronis o "
+        "sorprenents, feu-nou-ho saber, si us plau.</li></ul><hr>"
+
+#, php-format
+msgid   "<ul><li>Error when checking continuity of functions and when "
+        "checking that lower bound is smaller than upper bound.<li> Are you "
+        "sure that both %s and %s are defined and continuous on the interval "
+        "%s and %s is bigger than %s on this interval?<li>Check your "
+        "functions on the following picture.</ul>"
+msgstr  "<ul><li>Error en verificar que les funcions són contínues i que el "
+        "límit inferior és menor que el límit superior.<li> Assegureu-vos que "
+        "totes dues %s i %s estan definides i són contínues a l'interval %s i "
+        "que %s és més gran que %s.<li>Verifiqueu les vostres funcions a la "
+        "gràfica següent.</ul>"
+
+#, php-format
+msgid   "<ul><li>The name of the function must be followed by its argument "
+        "enclosed in parenthesis. Write e.g. sin(x) instead of sin x and sin"
+        "(2*x) instead of sin 2*x</li><li>Remember that if you want to write "
+        "power of a function, you cannot write something like sin^2(x), but "
+        "(sin(x))^2.</li><li>For exponential function use exp(x) or %e^x or "
+        "e^x.</li></ul>"
+msgstr  "<ul><li>El nom de la funció ha de venir just abans del nom de la "
+        "variable independent, envoltada de parèntesis. Escriviu, per "
+        "exemple, sin(x) i no pas sin x,  sin(2*x) i no pas  sin 2*x</"
+        "li><li>Recordeu que si voleu la potència d'una funció, calen "
+        "parènteis als bons llocs: escriviu (sin(x))^2 i no pas sin^2(x) .</"
+        "li><li>La funció exponencial es pot escriure com a exp(x) o bé %e^x "
+        "o bé e^x.</li></ul>"
+
+#, php-format
+msgid   "<ul><li>Use numbers only, no functions are allowed.</li><li>Use "
+        "commas and semicolons to separate point coordinates and points in "
+        "the data file.</li><li>Use at least two and no more than six points. "
+        "If you really need to interpolate for bigger or more general data "
+        "file, use the full power of the <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a> software and the command lagrange on your local "
+        "computer.</li></ul><br>Your input was: %s"
+msgstr  "<ul><li>Nombres tan sols, funcions no són permeses.</li><li>Feu "
+        "servir comes per separar les coordenades dels punts i punt-i-comes "
+        "per separar els punts mateixos, a l'arxiu de dades.</li><li>Feu "
+        "servir pel cap baix dos punts, i no més de sis punts. Si de debò us "
+        "cal interpolar un arxiu de dades més gran o més general, us caldrà "
+        "tota la potència del programa <a href=\"http://maxima.sourceforge.net"
+        "\">Màxima</a> en local al vostre ordinador.</li></ul><br>La vostra "
+        "entrada ha estat: %s"
+
+msgid   "<ul><li>integrate two times by parts and keep the choice of u and v' "
+        "suggested by this calculator</li><li>then remove constant multiple "
+        "(if necessary) and you get some terms and the same integral as the "
+        "original one</li><li>convert the problem into an algebraic equation "
+        "where the integral is the unknown and solve this equation</li></ul>"
+msgstr  "<ul><li>integreu per parts dos cops i feu servir els suggeriments de "
+        "l'ordinador per triar u i v'</li><li>després (si cal) treieu els "
+        "factors constants i obtindreu uns quants termes a més d'un terme "
+        "contenint la integral original</li><li>convertiu el problema en una "
+        "equació algebraica on la integral que voleu calcular n'és la "
+        "incògnita, i resoleu l'equació</li></ul>"
+
+msgid   "<ul><li>the function has to be function in two variables, <li>the "
+        "limits for outside integral have to be numbers,<li>the limits for "
+        "the inside integral numbers or functions of variable which is used "
+        "for outside integration,<li>he lower limit must be smaller or equal "
+        "to the upper limit for integration for both integrals.</ul> One of "
+        "these conditions has been violated or Maxima failed to verify these "
+        "conditions (in most cases due to a typing error or bad mathematical "
+        "formula on input)."
+msgstr  "<ul><li>la funció ha d'ésser una funció de dues variables, <li>els "
+        "límits de la integral exterior han de ser nombres,<li>els límits de "
+        "la integral interior han de ser nombres o bé funcions de la variable "
+        "sobre la qual feu la integral exterior,<li>el límit inferior ha de "
+        "ser menor o igual al límit superior, per a totes dues integrals.</"
+        "ul> Alguna d'aquestes conditions no es satisfà, o bé Màxima no les "
+        "ha pogut verificar totes (el més sovint, hi ha un error d'escriptura "
+        "a la fòrmula matemàtica que heu entrat)."
+
+msgid   "Accessing this script from a web page which is outside Mendel "
+        "University is not allowed. You either came from such a page, or your "
+        "browser blocks the HTTP_REFERER information.<br> Use official pages "
+        "of <a href=\"http://user.mendelu.cz/marik/maw/index.php?lang=en"
+        "\">Mathematical Assistant on Web</a> or setup your browser properly."
+msgstr  "No teniu dret a accedir directament a aquest script des d'una pàgina "
+        "web fora de la Universitat Mendel, o (més probablement) el vostre "
+        "navegador està bloquejant la informació HTTP_REFERER.<br> Feu servir "
+        "la pàgina oficial de l'<a href=\"http://user.mendelu.cz/marik/maw/"
+        "index.php?lang=ca\">Assistent Matemàtic al Web</a> o bé configureu "
+        "altrament el vostre navegador."
+
+#, php-format
+msgid   "After removing allowed strings we got redundant characters %s."
+msgstr  "Després de tenir compte dels símbols legals em sembla que sobren els "
+        "signes %s."
+
+msgid   "Algebraic modification"
+msgstr  "Transformació algebraica"
+
+msgid   "Algebraic modification (fullratsimp function)"
+msgstr  "Transformació algebraica (funció <b>fullratsimp</b>)"
+
+msgid   "Algebraic modification (fullratsimp function) for each term in a sum"
+msgstr  "Transformació algebraica (funció <b>fullratsimp</b>) per a cada "
+        "terme de la suma"
+
+msgid   "Algebraic modification (logarc function)"
+msgstr  ""
+
+msgid   "Algebraic modification (radcan function)"
+msgstr  "Transformació algebraica (funció <b>radcan</b>)"
+
+msgid   "Algebraic modification (removing sec and csc)"
+msgstr  "Transformació algebraica (elimino secants i cosecants)"
+
+msgid   "Algebraic modification (trigexpand function)"
+msgstr  "Transformació algebraica (funció <b>trigexpand</b>)"
+
+msgid   "Algebraic modification (trigreduce function)"
+msgstr  "Transformació  algebraica (funció <b>trigreduce</b>)"
+
+msgid   "Algebraic modification (trigsimp function)"
+msgstr  "Transformació algebraica (funció <b>xthru</b>)"
+
+msgid   "Algebraic modification (xthru function)"
+msgstr  "Transformació algebraica (funció <b>xthru</b>)"
+
+msgid   "Algebraic modification (xthru function) for each term in a sum"
+msgstr  "Transformació algebraica (funció <b>xthru</b>) per a cada terme de "
+        "la suma"
+
+msgid   "All x-coordiantes have to be mutually different numbers."
+msgstr  "Totes les abscisses x han de ser diferents."
+
+msgid   "An error occurred when processing your input."
+msgstr  "Error mentre processava la vostra entrada."
+
+msgid   "An error occurred when processing your input.<br>Check your formulas "
+        "(perhaps using Preview button) and report the problem if you think "
+        "that your input is correct and should be processed without any error."
+msgstr  "Error mentre processava la vostra entrada. <br>Verifiqueu les "
+        "vostres expressions (el botó <b>Preview</b> pot ser molt útil) i, si "
+        "us plau, aviseu-nos si creieu que la vostra entrada s'hauria d'haver "
+        "processat sense error. "
+
+msgid   "Answer"
+msgstr  "Resposta"
+
+msgid   "Approximation"
+msgstr  "Aproximació"
+
+msgid   "Arithmetic overflow. Consider smaller bounds for the picture on the "
+        "<i>x</i> axis or bigger on the <i>y</i> axis."
+msgstr  "Overflow aritmètic. Potser us calen vores no tan amples a l'eix de "
+        "les <i>x</i> de la gràfica, o bé vores a l'eix <i>y</i> més "
+        "allunyades entre elles.  "
+
+msgid   "As a subproblem we have to integrate function with absolute value, "
+        "which is not supported well in our version of Maxima."
+msgstr  "Com a subproblema ens cal integrar una funció que conté valors "
+        "absoluts, que causen algunes dificultats a aquesta versió de Màxima."
+
+msgid   "Associated homogeneous equation"
+msgstr  "Equació homogènia associada"
+
+msgid   "Associated homogeneous equation is"
+msgstr  "L'equació homogènia que hi és associada és"
+
+msgid   "At least one y-coordinate has to be nonzero."
+msgstr  "Pel cap baix, una de les ordenades y ha de ser diferent de zero."
+
+msgid   "Autonomous system"
+msgstr  "Sistema autònom"
+
+msgid   "Autonomous system in plane"
+msgstr  "Sistema autònom al pla"
+
+msgid   "Auxiliary determinants are"
+msgstr  "Els determinants auxiliars són"
+
+#, php-format
+msgid   "Bad input in row %s"
+msgstr  "Entrada incomprensible a la fila %s"
+
+msgid   "Bad input. Check your data."
+msgstr  "Entrada incomprensible. Verifiqueu-la."
+
+#, php-format
+msgid   "Binary operator %s found at the beginning of the string."
+msgstr  ""
+
+#, php-format
+msgid   "Binary operator %s found at the end of the string."
+msgstr  ""
+
+msgid   "Bisection method"
+msgstr  "Mètode de bisecció"
+
+msgid   "Bisection of interval"
+msgstr  "Bisecció de l'interval"
+
+msgid   "Build PDF"
+msgstr  "Construeix l'arxiu PDF"
+
+#, php-format
+msgid   "Building animations is available only, if the server load in the "
+        "last minute is smaller than %s. The current load %s. Return to the "
+        "previous page and try it later, please. (Or reload the page after 1 "
+        "minute.)"
+msgstr  "Podem generar animacions només quan la càrrega al servidor ha estat "
+        "menor que %s durant el darrer minut. Ara mateix la càrrega és %s. "
+        "Torneu a la pàgina anterior i torneu-ho a intentar més tard, si us "
+        "plau. (O torneu a carregar aquesta pàgina passat un minut.)"
+
+msgid   "By clicking the integral you load the integral into an interactive "
+        "tool for integration."
+msgstr  "Si cliqueu la integral, apareixerà en una finestra interactiva on "
+        "podreu calcular-la a part."
+
+msgid   "Can't guess, what you actually mean. You may try to enter the "
+        "following inequalities"
+msgstr  "No puc acabar d'entendre què voleu dir. Potser volieu entrar alguna "
+        "de les inequacions següents "
+
+msgid   "Change <i>xmax</i>."
+msgstr  "Canvia <i>xmax</i>."
+
+msgid   "Char π is not allowed. Write %pi or pi instead."
+msgstr  "El símbol π no és legítim. Escriviu %pi o senzillament pi."
+
+msgid   "Char ∞ is not allowed. No part of MAW works with infinity. You are "
+        "doing something curious. If you want to evaluate limits or improper "
+        "integrals on computer, use some of computer algebra systems like "
+        "Sage or Maxima (both are free to install and also available to try "
+        "live on the Internet, without installing anything on your local "
+        "computer)."
+msgstr  "No es permet el signe ∞. Cap part de l'Assistent Matemàtic MAW no fa "
+        "servir mai l'línfinit. Esteu fent quelcom de ben curiós. Si voleu "
+        "calcular límits o integrals impròpies amb l'ordinador, feu servir un "
+        "programa de càlcul simbòlic com ara Sage o Maxima (tots dos gratuits "
+        "per instal.lar localment, i que també es poden fer servir "
+        "directament al Web, sense instal.lar no res al vostre ordinador)."
+
+msgid   "Characteristic equation"
+msgstr  "Polinomi característic"
+
+msgid   "Characteristic equation has one double solution."
+msgstr  "L'equació característica té una solució doble (real)"
+
+msgid   "Characteristic equation has two complex solutions."
+msgstr  "L'equació característica té dues solucions complexes (conjugades una "
+        "de l'altra)"
+
+msgid   "Characteristic equation has two real solutions."
+msgstr  "L'equació característica té dues solucions reals"
+
+msgid   "Characteristic polynomial"
+msgstr  "Polinomi característic"
+
+msgid   "Check also that both functions are continuous on the interval used "
+        "to evaluate the integral and to draw the picture."
+msgstr  "Verifiqueu també que les dues funcions siguin contínues a l'interval "
+        "on voleu avaluar la integral i fer la gràfica."
+
+msgid   "Check your formulas (perhaps using Preview button) and report the "
+        "problem if you think that your input is correct and should be "
+        "processed without any error."
+msgstr  "Verifiqueu les vostres fòrmules (amb l'ajuda del botó Preview, per "
+        "exemple) i aviseu-nos del problema si creieu que la vostra entrada "
+        "és correcta i s'hauria de poder processar sense cap error."
+
+msgid   "Check your input data"
+msgstr  "Verifiqueu la vostra entrada"
+
+msgid   "Choose the action for the next computation"
+msgstr  "Trieu què cal fer al càlcul següent."
+
+msgid   "Clever expansion into two fractions"
+msgstr  "Expansió elegant en dues fraccions"
+
+#, perl-format
+msgid   "Click %shere%s to find stationary points by computer."
+msgstr  "Cliqueu %saquí%s i l'ordinador trobarà els punts estacionaris."
+
+msgid   "Click the integral to send the function to a tool which helps to "
+        "evaluate the indefinite integral."
+msgstr  "Cliqueu a la integral per enviar-la a un subprograma que us ajudarà "
+        "a trobar la integral indefinida."
+
+msgid   "Close"
+msgstr  "Tanca"
+
+msgid   "Comparing coefficients we get (the first equation is from the "
+        "highest power)"
+msgstr  "Comparant els coeficients obtenim (la primera equació prové de la "
+        "poténcia mès gran)"
+
+msgid   "Comparison with other methods"
+msgstr  ""
+
+msgid   "Completing square"
+msgstr  "Completant el quadrat"
+
+msgid   "Computation opens in new panel or window."
+msgstr  ""
+
+msgid   "Conclusion"
+msgstr  "Conclusió"
+
+msgid   "Condition"
+msgstr  "Condició"
+
+msgid   "Condition for $x$-intercepts"
+msgstr  "Condició per les interseccions amb l'eix d'abscisses $x$"
+
+msgid   "Condition for critical points"
+msgstr  "Condició de punts crítics"
+
+msgid   "Condition for points of discontinuity"
+msgstr  "Condició per als punts de discontinuïtat"
+
+msgid   "Condition for stationary points"
+msgstr  "Condició de punt estacionari"
+
+msgid   "Conditions"
+msgstr  "Condicions"
+
+msgid   "Consider reasonable bounds for axes, please."
+msgstr  "Valors raonables per les vores dels eixos, si us plau."
+
+msgid   "Constant multiple rule"
+msgstr  "Múltiple constant"
+
+msgid   "Constant rule"
+msgstr  "Constant"
+
+msgid   "Constant solution"
+msgstr  "Solució constant"
+
+msgid   "Contract product of roots (rootscontract)"
+msgstr  "Ajuntem les arrels (<b>rootcontract</b>)"
+
+msgid   "Conversion into algebraic equation"
+msgstr  "Conversió en una equació algebraica"
+
+msgid   "Conversion into exponential function"
+msgstr  "Converteix en exponencial"
+
+msgid   "Critical points"
+msgstr  "Punts crítics"
+
+msgid   "Curve"
+msgstr  ""
+
+msgid   "Curve derivatives"
+msgstr  ""
+
+msgid   "Decimal number (dot separates decimal places) cannot be a part of "
+        "another mathematical expression."
+msgstr  "Un nombre en notació decimal (el punt és l'indicador de decimals) no "
+        "pot pas fer part d'una altra expressió matemàtica."
+
+msgid   "Definite integral"
+msgstr  ""
+
+msgid   "Delete one of these characters or use parentheses properly."
+msgstr  ""
+
+#, perl-format
+msgid   "Denote %s and %s."
+msgstr  "Escrivim %s i %s."
+
+msgid   "Derivative"
+msgstr  "Derivada"
+
+#, php-format
+msgid   "Derivative of %s"
+msgstr  "Derivada de %s"
+
+msgid   "Derivative of absolute value"
+msgstr  "Derivada del valor absolut"
+
+msgid   "Derivative of acrcotan function"
+msgstr  "Derivada de l'arc cotangent"
+
+msgid   "Derivative of arccosine function"
+msgstr  "Derivada de l'arc cosinus"
+
+msgid   "Derivative of arcsine function"
+msgstr  "Derivada de l'arc sinus"
+
+msgid   "Derivative of arctan function"
+msgstr  "Derivada de l'arc tangent"
+
+msgid   "Derivative of contangent function"
+msgstr  "Derivada de la cotangent"
+
+msgid   "Derivative of cosine function"
+msgstr  "Derivada del cosinus"
+
+#, fuzzy
+msgid   "Derivative of csc function"
+msgstr  "Derivada del cosinus"
+
+msgid   "Derivative of exponential function"
+msgstr  "Derivada de l'exponencial"
+
+msgid   "Derivative of general solution is"
+msgstr  "La derivada de la solució general és"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic acrcotan function"
+msgstr  "Derivada de l'arc cotangent"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic arccosine function"
+msgstr  "Derivada de l'arc cosinus"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic arcsine function"
+msgstr  "Derivada de l'arc sinus"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic arctan function"
+msgstr  "Derivada de l'arc tangent"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic contangent function"
+msgstr  "Derivada de la cotangent"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic cosine function"
+msgstr  "Derivada de l'arc cosinus"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic sine function"
+msgstr  "Derivada de l'arc sinus"
+
+#, fuzzy
+msgid   "Derivative of hyperbolic tangent function"
+msgstr  "Derivada de la tangent"
+
+msgid   "Derivative of logarithm"
+msgstr  "Derivada del logaritme"
+
+msgid   "Derivative of particular solution (simplified)"
+msgstr  "Derivada de la solució particular (simplificada)"
+
+msgid   "Derivative of power function"
+msgstr  "Derivada d'una potència"
+
+#, fuzzy
+msgid   "Derivative of sec function"
+msgstr  "Derivada del sinus"
+
+msgid   "Derivative of sine function"
+msgstr  "Derivada del sinus"
+
+msgid   "Derivative of tangent function"
+msgstr  "Derivada de la tangent"
+
+msgid   "Derivatives, derivatives at  $#1$ and coefficients of Taylor "
+        "polynomial"
+msgstr  "Derivades, valors de les derivades a $#1$ i coeficients del polinomi "
+        "de Taylor"
+
+#, php-format
+msgid   "Determinant of the coefficient matrix (wronskian of the solutions %s "
+        "and %s) is"
+msgstr  "El determinant de la matriu de coeficients (wronskià de les "
+        "solucions %s i %s) és "
+
+#, php-format
+msgid   "Differentiate #1 with respect to %s"
+msgstr  "Derivem #1 respecte a %s"
+
+msgid   "Differentiate function #1"
+msgstr  "Derivem la funció #1"
+
+#, perl-format
+msgid   "Differentiating we get %s."
+msgstr  "Derivant, obtenim %s."
+
+#, perl-format
+msgid   "Differentiating with respect to $ x$ we get %s."
+msgstr  "Derivant respecte a $ x$ obtenim %s. "
+
+#, perl-format
+msgid   "Differentiating with respect to $ y$ we get %s."
+msgstr  "Derivant respecte a $ y$ obtenim %s. "
+
+msgid   "Division"
+msgstr  "Divisió"
+
+msgid   "Do not use comma."
+msgstr  "No feu servir la coma."
+
+msgid   "Do not use comma. To separate decimal places use the dot. If you "
+        "wish to enter decimal number, this decimal number cannot be a part "
+        "of mathematical formula."
+msgstr  "No feu servir la coma: el separador decimal és el punt. Un nombre en "
+        "notació decimal no pot fer part d'una expressió matemàtica."
+
+msgid   "Do not use decadic logarithm, please."
+msgstr  "No feu servir el logaritme en base 10, si us plau."
+
+msgid   "Do not use dot for multiplication."
+msgstr  "No feu servir el punt per multiplicar."
+
+msgid   "Do not use equations. The application cannot draw such an input."
+msgstr  "No feu servir equacions. No puc fer-ne la gràfica."
+
+msgid   "Do not use this function. If you need to use this function in your "
+        "computation, run the computation in Maxima on your local computer."
+msgstr  "No feu servir aquesta funció. Si necessiteu fer servir aquesta "
+        "funció al vostre càlcul, us caldrà utilitzar Màxima localment al "
+        "vostre ordinador."
+
+msgid   "Domain (red region)"
+msgstr  "Domini (vermell)"
+
+#, php-format
+msgid   "Domain of %s"
+msgstr  "Domini de %s"
+
+msgid   "Domain where the inequality is valid"
+msgstr  "Domini on l'inequació és vàlida"
+
+msgid   "Double integral"
+msgstr  "Integral doble"
+
+msgid   "Download html"
+msgstr  ""
+
+msgid   "ERROR: Function is not bijection on the given interval."
+msgstr  "Error: la funció no és bijectiva a l'interval."
+
+msgid   "ERROR: No change in sign between end points of the interval"
+msgstr  "Error: el signe no canvia entre les vores de l'interval."
+
+msgid   "ERROR: function is out of domain at some point of the interval"
+msgstr  "Error: la funció surt del domini a algun punt de l'interval"
+
+msgid   "Eigenvalues"
+msgstr  "Valors propis"
+
+msgid   "Eigenvalues (numerically)"
+msgstr  "Valors propis (numèricament)"
+
+msgid   "Enter integrand only. Not the whole integral."
+msgstr  "Entreu només l'integrand, no pas tota la integral."
+
+msgid   "Equation"
+msgstr  "Equació"
+
+msgid   "Equation is homogeneous  -- we will use separation of variables and "
+        "write the solution in explicit form."
+msgstr  "L'equació és homogènia. Farem servir la separació de variables i "
+        "trobarem la solució en forma implícita."
+
+msgid   "Equation is linear"
+msgstr  "L'equació és lineal"
+
+msgid   "Error"
+msgstr  "Error"
+
+msgid   "Error in input data"
+msgstr  "Error en l'entrada"
+
+msgid   "Error in math or the given point does not belong to the domain."
+msgstr  "Error d'enunciat o el punt donat no pertany al domini de definició."
+
+msgid   "Error in math. Check your input."
+msgstr  "Error en l'enunciat. Verifiqueu la vostra entrada."
+
+msgid   "Error in mathematical notation"
+msgstr  "Error en la notació matemàtica"
+
+msgid   "Error in solving. (Bad input?)"
+msgstr  "Error en resoldre. Potser cal verificar l'entrada."
+
+msgid   "Error in the function or in the bound for integration."
+msgstr  "Error en la funció o en els límits d'integració."
+
+msgid   "Error in your expression"
+msgstr  "Error a la vostra expressió"
+
+msgid   "Error in your formula"
+msgstr  "Error en la vostra expressió"
+
+msgid   "Error occurred when processing your formula."
+msgstr  "Error mentre digeria la vostra fórmula."
+
+#, php-format
+msgid   "Error when processing input from the field %s."
+msgstr  "Error mentre processava l'entrada %s."
+
+msgid   "Error, empty string on input."
+msgstr  "Error, entrada buida."
+
+msgid   "Error, sorry. The name of the function is not followed by the "
+        "parentheses."
+msgstr  "Ai, ai, ai. El nom de la funció no va seguit de parèntesis."
+
+msgid   "Error, you typed unsupported chars or uppercase letters."
+msgstr  "Error, heu escrit símbols que no reconec o lletres majúscules."
+
+msgid   "Error: Dimension too large."
+msgstr  "Error: dimensió massa gran"
+
+msgid   "Error: Failed to evaluate integral of <i>v'</i>."
+msgstr  "Error: No he pogut calcular la integral de  <i>v'</i>."
+
+msgid   "Error: Missing derivative"
+msgstr  "Error: hi manca una derivada"
+
+#, perl-format
+msgid   "Error: The Jacobian is zero, unable to clasify stationary point %s."
+msgstr  "Error: el jacobià és zero, no puc classificar el punt estacionari %s."
+
+msgid   "Error: The equation cannot be solved."
+msgstr  "Error: no puc resoldre l'equació %s"
+
+#, perl-format
+msgid   "Error: The point %s is not a stationary point of the function %s"
+msgstr  "Error: el punt %s no és un punt estacionari de la funció %s"
+
+#, perl-format
+msgid   "Error: There is no stationary point at %s."
+msgstr  "Error: no hi ha cap punt estacionari a %s."
+
+msgid   "Error: incorrect operation"
+msgstr  "Error: operació invàlida"
+
+msgid   "Error: incorrect substitution"
+msgstr  "Error: substitució incorrecta"
+
+msgid   "Evaluation of $y'$"
+msgstr  "Evaluant $y'$"
+
+msgid   "Evaluation of $y''$"
+msgstr  "Evaluant $y''$"
+
+msgid   "Evaluation of definite integral"
+msgstr  ""
+
+msgid   "Even powers of cosine function replaced by sine"
+msgstr  "Potències parells del cosinus remplaçades per sinus"
+
+msgid   "Even powers of sine function replaced by cosine"
+msgstr  "Potències parells del sinus remplaçades per cosinus"
+
+msgid   "Expansion"
+msgstr  "Expansió"
+
+msgid   "Factorization"
+msgstr  "Factorització"
+
+msgid   "Final answer"
+msgstr  ""
+
+msgid   "Final result"
+msgstr  "Resultat final"
+
+msgid   "Final simplifications"
+msgstr  "Simplificacions finals"
+
+msgid   "Find $ #1 $-degree Taylor polynomial for function $ f(x)=#2$ in $ "
+        "x_0=#3$."
+msgstr  "Trobem el polinomi de Taylor de grau $ #1 $ de la funció $ f(x)=#2$ "
+        "al voltant del punt $ x_0=#3$."
+
+msgid   "Finishing computation by Maxima"
+msgstr  "Màxima esta enllestint el càlcul"
+
+msgid   "First derivative"
+msgstr  "Primera derivada"
+
+#, perl-format
+msgid   "For more general right hand sides use %svariation of constants%s."
+msgstr  "Si voleu expressions més generals a la dreta, feu servir %svariació "
+        "de constants%s."
+
+msgid   "Formconv (program which parses your input) failed. Correct the "
+        "formula on your input."
+msgstr  "<b>Formconv</b> (el programa que dexifra la vostra entrada) ha "
+        "fallat. Corregiu la fòrmula que heu escrit."
+
+msgid   "Formula"
+msgstr  "Fòrmula"
+
+msgid   "Found zero"
+msgstr  "Trobat un zero"
+
+#, php-format
+msgid   "From the determinant of %s"
+msgstr  "Del determinant de %s"
+
+#, php-format
+msgid   "From trace and determinant of %s"
+msgstr  "De la traça i del determinant de %s"
+
+msgid   "Function"
+msgstr  "Funció"
+
+msgid   "Function and value of the function"
+msgstr  "Funció i valor de la funció"
+
+msgid   "Function grapher"
+msgstr  ""
+
+msgid   "Function to be integrated"
+msgstr  "Funció que cal integrar"
+
+msgid   "Functions and characters available for mathematical notation"
+msgstr  "Funcions i símbols disponibles per la notació matemàtica"
+
+msgid   "General solution"
+msgstr  "Solució general"
+
+msgid   "General solution is"
+msgstr  "La solució general és"
+
+msgid   "General solution of the equation"
+msgstr  "Solució general de l'equació"
+
+msgid   "Geometrical application of definite integral"
+msgstr  "Aplicació geomètrica de la integral"
+
+msgid   "Given data files, we look for optimal linear approximation in the "
+        "form"
+msgstr  "Tenint compte dels arxius de dades, cerquem una aproximació lineal "
+        "òptima de la forma"
+
+msgid   "Given points in the plane, we look for the polynomial of "
+        "interpolation."
+msgstr  "Cerquem el polinomi d'interpolació, donats els punts al pla."
+
+msgid   "Go home"
+msgstr  ""
+
+msgid   "Graph"
+msgstr  "Gràfica"
+
+msgid   "Graph and approximation by trapezoids"
+msgstr  "Gràfic i aproximació amb trapezis"
+
+#, php-format
+msgid   "Graph deformation: we draw function %s."
+msgstr  ""
+
+msgid   "Graph of the function and mean value"
+msgstr  ""
+
+msgid   "Graphs of basic elementary functions"
+msgstr  "Gràfiques de funcions elementals"
+
+msgid   "Help to find the primitive function"
+msgstr  ""
+
+#, perl-format
+msgid   "Hence %s."
+msgstr  "I llavors %s."
+
+msgid   "Hessian"
+msgstr  "L´hessià"
+
+msgid   "Homogeneous equation"
+msgstr  "Equació homogènia"
+
+msgid   "However, the right hand side can be written as sum of two or more "
+        "right hand sides which are fine for undetermined coefficients as "
+        "follows."
+msgstr  "Tot i això, la mà dreta es pot trencar en dos o més termes que sí "
+        "que permeten variar-ne els coeficients, cosa que farem. "
+
+msgid   "However, the right hand side can be written in the form as required."
+msgstr  "Tot i això, la dreta de l'expressió sí que es pot escriure en la "
+        "forma que cal."
+
+msgid   "If the derivatives are not polynomials and if these derivative are "
+        "complicated, some stationary points may be missing."
+msgstr  "Si les derivades no són polinomis i a més són complicades, se'ns "
+        "poden haver escapat alguns punts estacionaris."
+
+#, perl-format
+msgid   "If the function %s satisfies %s and %s, then the solution is %s, "
+        "where %s."
+msgstr  "Si la funció %s satisfà %s i %s, llavors la solució és %s, amb %s."
+
+msgid   "If the given function differs from the function which is actually "
+        "differentiated, then Maxima performed an automatical simplification "
+        "first."
+msgstr  "Si la funció donada és diferent de la funció que de fet es deriva, "
+        "llavors Màxima ha efectuat una simplificació automàtica abans de "
+        "derivar."
+
+msgid   "If the rendering of the formulas is bad, consider another browser "
+        "than Internet Explorer. The application has been tested with <a href="
+        "\"http://www.mozilla.com/firefox/\">Firefox</a>."
+msgstr  "Si les fòrmules són lletges, feu servir un bon navegador, i no pas "
+        "Internet Explorer. El programari funciona perfectament amb <a href="
+        "\"http://www.mozilla-europe.org/ca/firefox/\">Firefox</a>."
+
+#, php-format
+msgid   "If you mean %s, you can try copy and paste the following string to "
+        "the input field:"
+msgstr  "Si voleu dir %s, podeu copiar i enganxar el text següent a l'entrada:"
+
+msgid   "If you use another logarithm than natural, use logarithm with "
+        "integer base."
+msgstr  "Si voleu fer servir un logaritme que no sigui el natural, empreu com "
+        "a base un nombre natural."
+
+msgid   "If you want to try various integration techniques, return to the "
+        "previous page and choose the required method."
+msgstr  "Si voleu provar diverses tècniques d'integració, torneu a la pàgina "
+        "anterior i trieu-hi un dels mètodes."
+
+msgid   "Ill posed problem, incorrect formulation of the problem or missing "
+        "informations"
+msgstr  "Problema mal formulat o amb dades mancants."
+
+msgid   "In computer notation"
+msgstr  "En notació de l'ordinador"
+
+msgid   "Incorrect input"
+msgstr  "Entrada invàlida"
+
+msgid   "Incorrect input (not a number or empty string)"
+msgstr  "Entrada incorrecta (buida o bé no és un nombre)"
+
+msgid   "Incorrect input, use only integers to enter number of steps."
+msgstr  "Mal teclejat: feu servir sols nombres enters positius per comptar "
+        "els passos."
+
+msgid   "Incorrect problem"
+msgstr  "Problema mal formulat"
+
+msgid   "Inequalities"
+msgstr  "Inequacions"
+
+msgid   "Inequalities and systems of inequalities"
+msgstr  "Inequacions i sistemes d'inequacions"
+
+msgid   "Inequality"
+msgstr  ""
+
+#, php-format
+msgid   "Inequality %s"
+msgstr  "Inequació %s"
+
+msgid   "Initial guess"
+msgstr  "Estimació inicial"
+
+#, php-format
+msgid   "Insecure or unsupported command or function %s. Do not use this "
+        "command, please. If you insist on this command, use the full Maxima "
+        "software."
+msgstr  "La comanda %s  és insegura o no està implementada. No la feu servir, "
+        "si us plau. Si de debò la voleu fer servir, us cal emprar tota la "
+        "potència de Màxima directament."
+
+msgid   "Integral"
+msgstr  "Integral"
+
+msgid   "Integral methods assistant"
+msgstr  "Assistent de mètodes d'integració"
+
+msgid   "Integrate terms in the sum"
+msgstr  "Integra els termes de la suma"
+
+#, php-format
+msgid   "Integrating <b>by parts</b> with %s we get:"
+msgstr  "Integrant <b>per parts</b> amb %s obtenim:"
+
+msgid   "Integrating terms in a sum"
+msgstr  "Integrant els termes de la suma"
+
+#, perl-format
+msgid   "Integrating with respect to $ x$ we get %s."
+msgstr  "Integrant respecte a $ x$ obtenim %s. "
+
+#, perl-format
+msgid   "Integrating with respect to $ y$ we get %s."
+msgstr  "Integrant respecte a $ y$ obtenim %s. "
+
+#, php-format
+msgid   "Integration gives %s and %s (by clicking the integral you load the "
+        "integral into tool for indefinite integration)"
+msgstr  "El resultat de la integral és %s i %s (si cliqueu a la integral, la "
+        "carregareu a la calculadora per fer integrals indefinides)"
+
+msgid   "Interpolation with Lagrange polynomial"
+msgstr  "Interpolació amb polinomis de Lagrange"
+
+msgid   "Interval"
+msgstr  "Interval"
+
+#, php-format
+msgid   "Invalid input in the field %s."
+msgstr  "Entrada incomprensible a %s."
+
+#, php-format
+msgid   "Invalid limits for integration. Limits for the inside integral "
+        "cannot contain the variable %s, which is used for inside integration."
+        "<br>Bad limits or bad order of variables for integration."
+msgstr  "Els límits d'integració no són vàlids. Els límits de la integral "
+        "interior no poden contenir %s, que és la variable d'integració. "
+        "<br>Límits erronis o bé l'ordre d'integració no té sentit."
+
+msgid   "Invalid limits for integration. Limits for the outside integral must "
+        "be constants and the lower limit has to be smaller than upper limit."
+msgstr  "Els límits d'integració no són vàlids. Els límits de la integral "
+        "exterior han de ser constants, i el límit inferior ha de ser més "
+        "petit que el límit superior."
+
+msgid   "Invalid limits for integration. One of the limits is becomes "
+        "undefined on the region of integration."
+msgstr  ""
+
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit."
+msgstr  "Els límits d'integració no són vàlids. El límit inferior de la "
+        "integral interna ha de ser més petit que el límit superior."
+
+#, php-format
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit. If you want to "
+        "interchange limits, you can try the following %s."
+msgstr  "Els límits d'integració no són vàlids. El límit inferior de la "
+        "integral interna ha de ser més petit que el límit superior. Si voleu "
+        "intercanviar els límits, podeu intentar %s."
+
+msgid   "Invalid limits for integration. The radial variable r must be "
+        "nonnegative."
+msgstr  "Els límits d'integració no són vàlids. La variable radial no pot ser "
+        "negativa."
+
+#, perl-format
+msgid   "Invalid point number %s."
+msgstr  "El punt número %s no és vàlid."
+
+msgid   "Investigating function using Maxima CAS"
+msgstr  "Estudant la funció amb Màxima"
+
+msgid   "Iteration scheme"
+msgstr  ""
+
+msgid   "Jacobi matrix"
+msgstr  "Jacobià"
+
+msgid   "Jacobi matrix at stationary point"
+msgstr  "Jacobià al punt estacionari"
+
+msgid   "Least squares method"
+msgstr  "Mètode dels mínims quadrats"
+
+msgid   "Length of linear element"
+msgstr  ""
+
+msgid   "Line integral"
+msgstr  ""
+
+msgid   "Linear solution"
+msgstr  "Solució lineal"
+
+msgid   "Linear system for coefficients"
+msgstr  "Sistema lineal per als coeficients"
+
+#, php-format
+msgid   "Load: %s, Running processes: %s"
+msgstr  "Càrrega: %s. Nombre de processos en execució: %s."
+
+msgid   "Local extrema in two variables"
+msgstr  "Punt crític en dues variables"
+
+msgid   "Lower limit"
+msgstr  "Límit superior"
+
+msgid   "MAW error: equal md5sum for different strings."
+msgstr  ""
+
+msgid   "Mathematical Assistant on Web"
+msgstr  "L'Assistent Matemàtic al Web (MAW)"
+
+msgid   "Maxima failed to find $x$-intercepts. They probably do not exist."
+msgstr  "Màxima no ha trobat interseccions amb l'eix d'abscisses $x$. "
+        "Probablement no existeixien."
+
+msgid   "Maxima failed to find critical points. They probably do not exist."
+msgstr  "Màxima no ha trobat punts crítics. Probablement no existeixien."
+
+msgid   "Maxima failed to find points of discontinuity. They probably do not "
+        "exist."
+msgstr  "Màxima no ha trobat cap punt de discontinuïtat. Probablement, no n"
+        "´hi ha cap."
+
+msgid   "Maxima failed to find stationary points. They probably do not exist."
+msgstr  "Màxima no ha trobat punts estacionaris. Probablement no existeixien."
+
+msgid   "Maxima failed to find the primitive function."
+msgstr  "Màxima no ha pogut trobar la integral indefinida."
+
+msgid   "Maxima is using arc-trig functions to get a solution. Some solutions "
+        "will be lost."
+msgstr  "Màxima fa servir les funcions d'arc trigonomètriques per trobar una "
+        "solució. Algunes solucions es poden perdre."
+
+msgid   "Mean value"
+msgstr  ""
+
+msgid   "Method"
+msgstr  "Mètode"
+
+msgid   "Method of iterations"
+msgstr  "Mètode d'iteracions"
+
+msgid   "Method regula falsi"
+msgstr  ""
+
+msgid   "Missing comma or more semicolons than expected."
+msgstr  "Hi manca una coma, o bé hi ha més punt-i-comes dels que m'esperava."
+
+#, perl-format
+msgid   "Missing coordinate for point number %s."
+msgstr  "Hi manca una de les coordenades per al punt número %s."
+
+msgid   "Missing semicolon or more commas than expected."
+msgstr  "Hi manca un punt-i-coma, o bé hi ha més comes de les que m'esperava."
+
+msgid   "Missing stationary points in your input. I'll try to find the "
+        "stationary points first."
+msgstr  "A la vostrada entrada hi manquen els punts estacionaris. Miraré de "
+        "trobar-los abans de res."
+
+msgid   "Multiplication is denoted by star, write e.g. 2*x."
+msgstr  "La mutiplicació es representa amb un asterisc, escriviu per exemple "
+        "2*x"
+
+msgid   "Multiplying both numerator and denominator"
+msgstr  "Multiplicant tant el numerador com el denominador"
+
+#, php-format
+msgid   "Multiplying both numerator and denominator by %s and simplification"
+msgstr  "Multiplicant tant el numerador com el denominador per %s i "
+        "simplificant"
+
+msgid   "Newton--Raphson method"
+msgstr  ""
+
+msgid   "Newton-Raphson method"
+msgstr  ""
+
+msgid   "Next computation"
+msgstr  "Càlcul següent"
+
+msgid   "No isolated stationary point has been found. Either there are no "
+        "stationary points or the problem is too difficult for Maxima."
+msgstr  "Cap punt estacionari no ha estat trobat. O bé no hi ha punts "
+        "estacionaris, o Màxima no pot amb el problema."
+
+msgid   "No restriction on the domain of the function found. The function "
+        "seems to be defined everywhere."
+msgstr  "No trobem cap restricció al domini de definició de la funció, que "
+        "sembla estar ben definida per tot arreu."
+
+msgid   "No stationary point has been found. Either there are no stationary "
+        "points or the problem is too difficult for Maxima."
+msgstr  "Ho he trobat cap punt estacionari. O bé no n'hi ha, o bé el problema "
+        "és massa difícil per Màxima."
+
+msgid   "Nonconstant solution"
+msgstr  "Solució que no és una constant"
+
+msgid   "Nonhomogeneous equation"
+msgstr  "Equació inhomogènia"
+
+msgid   "Not all brackets which are written by the computer are necessary. "
+        "Many of them can be safely omitted."
+msgstr  "No calen totes les parèntesis que l'ordinador fa servir. Moltes són "
+        "redundants."
+
+msgid   "Not found."
+msgstr  "Introbable"
+
+msgid   "Now we solve initial value problem"
+msgstr  "Resolem ara el problema de condicions inicials"
+
+msgid   "Number of subintervals"
+msgstr  "Nombre de sots-intervals"
+
+msgid   "Numerical computation"
+msgstr  "Càlcul numèric"
+
+#, php-format
+msgid   "On the next page you can find an animation which describes, how the "
+        "graph of %s is transformed into %s."
+msgstr  "A la pàgina següent hi veureu una animació que mostra com la gràfica "
+        "%s esdevé la gràfica %s."
+
+msgid   "One of the functions has probably point of discontinuity on the "
+        "interval under consideration. Look on the picture below and check "
+        "your input."
+msgstr  "Probablement, una de les funcions no és contínua a tot l'interval "
+        "considerat. Mireu la gràfica i verifiqueu les vostres entrades."
+
+msgid   "Ordinary differential equation"
+msgstr  "Equació diferencial ordinària"
+
+#, perl-format
+msgid   "Our equation can be written in the form %s."
+msgstr  "La nostra equació pot ésser escrita com %s."
+
+msgid   "Our hint: (Some automatical hints based on few heuristic tests. Do "
+        "not follow these hints blindly and use your mind instead.)"
+msgstr  "Pistes: (pistes automátiques basades en consideracions heurístiques. "
+        "No les seguiu pas enlloc de fer servir el vostre cervell.)"
+
+msgid   "Parametric curve"
+msgstr  ""
+
+msgid   "Partial fractions"
+msgstr  "Fraccions parcials"
+
+msgid   "Particular solution"
+msgstr  "Solució particular"
+
+msgid   "Particular solution (after substitution and simplification)"
+msgstr  "La solució particular (després de substituir i simplificar) és"
+
+msgid   "Particular solution of the equation"
+msgstr  "Solució particular de l'equació"
+
+msgid   "Picture"
+msgstr  "Gràfica"
+
+msgid   "Points of discontinuity"
+msgstr  "Punts de discontinuïtat"
+
+msgid   "Points on boundary"
+msgstr  "Punts a la frontera"
+
+msgid   "Points on the boundary"
+msgstr  "Punts a la frontera"
+
+msgid   "Preliminary"
+msgstr  "Preliminar"
+
+msgid   "Primitive function"
+msgstr  ""
+
+#, php-format
+msgid   "Probably exchanged f and g functions. Interchange these functions "
+        "either in the previous form or by clicking the following %s."
+msgstr  "Probablement, us cal intercanviar les funcions f i g. Feu-ho al "
+        "formulari precedent o clicant a %s. "
+
+msgid   "Problem"
+msgstr  "Problema"
+
+msgid   "Processing image"
+msgstr  ""
+
+msgid   "Processing request"
+msgstr  ""
+
+msgid   "Processing the picture. If the picture does not appear within few "
+        "seconds, you may have error in your math expressions."
+msgstr  ""
+
+msgid   "Product rule"
+msgstr  "Multiplicació"
+
+msgid   "Program Maxima finishes the answer automatically"
+msgstr  "Màxima enllesteix la resposta automàticament"
+
+msgid   "Quotient rule"
+msgstr  "Divisió"
+
+msgid   "Read carefully the method and ignore other suggestions, such as "
+        "substitution"
+msgstr  "Llegiu atentament les instruccions del mètode i ignoreu cap altre "
+        "suggeriment, com ara fer una substitució"
+
+#, fuzzy
+msgid   "Region for integration"
+msgstr  "límit inferior de la integral"
+
+#, fuzzy
+msgid   "Regula falsi method"
+msgstr  "Mètode dels mínims quadrats"
+
+msgid   "Remarks"
+msgstr  "Comentaris"
+
+msgid   "Report bug"
+msgstr  "Anuncio un bog"
+
+msgid   "Second derivative"
+msgstr  "Segona derivada"
+
+msgid   "Second order linear differential equation"
+msgstr  "Equació diferencial lineal de segon grau"
+
+msgid   "Separation of variables"
+msgstr  "Separació de variables"
+
+msgid   "Server load too large"
+msgstr  "El servidor va massa carregat"
+
+msgid   "Server overloaded"
+msgstr  "El servidor va massa carregat"
+
+msgid   "Server refused to build more animations simultaneously."
+msgstr  "El servidor es nega a preparar més animacions simultàniament."
+
+#, php-format
+msgid   "Shift: horizontally %s units and vertically  %s units (positive "
+        "values mean move to the left or top, negative to the right or bottom)"
+msgstr  "Fem una traslació de %s unitats horitzontals i %s unitats verticals "
+        "(valors positius mouen la gràfica cap a l'esquerra o cap amunt, "
+        "valors negatives cap a la dreta o cap avall)"
+
+#, php-format
+msgid   "Shifting %s into %s."
+msgstr  "Desplaçant %s cap a %s."
+
+msgid   "Simplification"
+msgstr  "Simplificació"
+
+msgid   "Simplifying we get"
+msgstr  "Simplificant, obtenim"
+
+msgid   "Singular solution"
+msgstr  "Solució singular"
+
+msgid   "Solid of revolution"
+msgstr  "Volum de revolució"
+
+msgid   "Solution"
+msgstr  "Solució"
+
+msgid   "Solution from Newton--Leibniz formula"
+msgstr  "Solució amb la fòrmula de Newton-Leibniz"
+
+msgid   "Solution of the linear system"
+msgstr  "Solució del sistema lineal"
+
+#, php-format
+msgid   "Solution of the system for %s and %s is"
+msgstr  "La solució del sistems per %s i %s és"
+
+msgid   "Solution of this equation"
+msgstr  "Solució de l'equació"
+
+msgid   "Something failed - report this to the authors of MAW, please."
+msgstr  "Quelcom ha fallat - transmeteu la informació als autors de MAW, si "
+        "us plau."
+
+msgid   "Something is wrong. Probably too difficult integrals."
+msgstr  "Quelcom no rutlla. Probablement les integrals són massa difícils."
+
+msgid   "Sometimes Maxima fails to find some constant solutions of the "
+        "equation with separated variables."
+msgstr  "De vegades Màxima no aconsegueix trobar algunes solucions constants "
+        "de l'equació amb variables separades."
+
+msgid   "Sorry, an error occurred when processing your input"
+msgstr  "Perdoneu, error mentre processava la vostra entrada."
+
+msgid   "Sorry, our server is overloaded, try it again after a reasonable "
+        "time (10 sec)."
+msgstr  "Perdoneu, el nostre servidor va massa carregat. Torneu-ho a intentar "
+        "d'aquí deu segons."
+
+msgid   "Sorry, report this problem please. We will investigate and (hope) we "
+        "fix it."
+msgstr  "Perdoneu. Senyaleu-nos aquest entrebanc i mirarem de resoldre'n la "
+        "causa."
+
+msgid   "Sorry, the application cannot handle this substitution."
+msgstr  "Perdoneu, no puc dur a terme aquesta substitució."
+
+msgid   "Sorry, the evaluation of the integral failed."
+msgstr  "Perdoneu, no he pogut avaluar la integral."
+
+msgid   "Sorry, we are unable to process your function. The problem has been "
+        "saved and we will investigate."
+msgstr  "Perdoneu, no hem pogut entendre la vostra funció. Hem pres nota del "
+        "problema i l'investigarem."
+
+msgid   "Sorry. An explanation for this error is not known automatically. The "
+        "problem has been logged and will be investigated."
+msgstr  ""
+
+msgid   "Stationary point"
+msgstr  "Punt estacionari"
+
+#, php-format
+msgid   "Stationary point is %s."
+msgstr  "El punt estacionari és %s."
+
+msgid   "Stationary points"
+msgstr  "Punts estacionaris"
+
+msgid   "Step"
+msgstr  "Pas"
+
+msgid   "Submit"
+msgstr  "Envia-ho"
+
+msgid   "Substituting initial values we get the following linear system"
+msgstr  "Substituïnt els valors inicials obtenim el sistema lineal"
+
+msgid   "Substituting limits"
+msgstr  "Substituïnt els límits"
+
+msgid   "Substituting these values into general solution we get particular "
+        "solution"
+msgstr  "Substituïnt aquests valors a la solució general obtenim la solució "
+        "particular"
+
+#, perl-format
+msgid   "Substituting we get linear equation  %s with general solution %s "
+        "(click %s to get more details)."
+msgstr  "Substituïnt, obtenim l'equació lineal %s amb solució general %s "
+        "(cliqueu a %s per a més detalls)."
+
+msgid   "Substitution"
+msgstr  "Substitució"
+
+msgid   "Substitution into equation"
+msgstr  "Substitució en l'equació"
+
+msgid   "Substitution into equation (1) and simplifications"
+msgstr  "Substitució a l'equació (1) i simplificacions"
+
+msgid   "Sum rule"
+msgstr  "Suma"
+
+msgid   "Summary"
+msgstr  "Resum"
+
+msgid   "Support request"
+msgstr  "Demano ajuda"
+
+msgid   "Symbolic computation"
+msgstr  "Càlcul simbòlic"
+
+msgid   "System of equations"
+msgstr  "Sistema d'equacions"
+
+msgid   "System of inequalities"
+msgstr  "Sistema d'inequacions"
+
+msgid   "Table"
+msgstr  "Taula"
+
+msgid   "Taylor polynomial"
+msgstr  "Polinomi de Taylor"
+
+msgid   "Tested stationary points"
+msgstr  "Punts estacionaris investigats"
+
+#, php-format
+msgid   "The asymptote at both $ \\pm\\infty $ is the line $\\displaystyle  "
+        "%s $."
+msgstr  ""
+
+msgid   "The asymptote at both $\\pm\\infty$ is the line $\\asymptota$."
+msgstr  "L'asímptota a tots dos $\\pm\\infty$ és la recta $\\asymptota$."
+
+#, perl-format
+msgid   "The back substitution gives %s and %s"
+msgstr  "La substitució a l'equació original dóna %s i %s."
+
+msgid   "The boundary points for the subintervals on the picture are either "
+        "points of discontinuity, or the points in which one of the partial "
+        "inequalities becomes equality. In this version of MAW we are not "
+        "able to find out, if these points belong to the domain or not. This "
+        "problem is left to the user. Also ignore complex numbers, if present."
+msgstr  "Alguna de les vores dels sots-intervals per a la gràfica és un punt "
+        "de discontinuïtat, o un punt on alguna inequació esdevé igualtat. "
+        "Amb aquesta versió de l'Assitent Matemàtic al Web no podem "
+        "determinar si aquest punt pertany al domini de definició o no. El "
+        "problema pot ser enllestit a la má. (Ignoreu els nombres complexos "
+        "que hagin pogut aparèixer.)"
+
+msgid   "The characteristic equation is"
+msgstr  "L'equació característica és"
+
+#, perl-format
+msgid   "The check that the particular solution %s is correct failed."
+msgstr  "La verificació que la solució particular %s és correcta ha fallat."
+
+msgid   "The computation could be divided into more pages"
+msgstr  "Ha calgut més d'una pàgina per aquest càlcul."
+
+msgid   "The computation is usually divided into two pages. The first page "
+        "contains computations and the second page the graph."
+msgstr  "El càlcul es sol dividir en dues pàgines. La primera conté els "
+        "càlculs i la segona la gràfica."
+
+#, perl-format
+msgid   "The equation %s is exact if and only if %s."
+msgstr  "L'equació %s és exacta si i solament si %s."
+
+msgid   "The equation does not belong to the set of supported types. <br>You "
+        "may also have a typing error in your formula which changes the type "
+        "of the equation and makes the equation unsolvable for Maxima CAS.</"
+        "b> Check your data."
+msgstr  "L'equació no és de cap de les formes implementades. <br>Podria ser "
+        "que hi hagués algun error d'escriptura a la vostra fòrmula, canviant-"
+        "ne prou la forma per convertir-la en massa difícil, del punt de "
+        "vista de Màxima.</b> Verifiqueu amb cura la vostra entrada (el botó "
+        "Preview us pot ajudar)."
+
+msgid   "The equation has been solved, but it is neither linear nor "
+        "separable, homogeneous or exact and no intermediate steps are shown. "
+        "The equation is #1."
+msgstr  "L'equació ha pogut ésser resolta, però no és ni lineal, ni "
+        "separable, ni homogènia, ni exacta, i no mostrem els passos "
+        "intermediaris. L'equació és #1."
+
+msgid   "The equation has integrating factor #1."
+msgstr  "El factor d'integració de l'equació és #1."
+
+#, perl-format
+msgid   "The equation has integrating factor %s."
+msgstr  "L'equació té el factor d'integració %s."
+
+msgid   "The equation solved with respect to the derivative"
+msgstr  "Derivada resolta a partir de l'equació"
+
+#, perl-format
+msgid   "The equation with right hand side %s cannot be solved by "
+        "undetermined coefficients"
+msgstr  "L'equació que a mà dreta té %s no es pot resoldre amb el mètode dels "
+        "coeficients indeterminats."
+
+msgid   "The first derivative"
+msgstr  "La derivada primera"
+
+msgid   "The first derivatives"
+msgstr  "Derivades primeres"
+
+msgid   "The following messages have been reported by external programs and "
+        "they may help you to find the error.<br><br> Still in troubles? You "
+        "can contact the authors. Email address is on the main page."
+msgstr  "Els missatges següents provenen d'altres programes i potser us "
+        "ajudaran a descobrir l'error. <br><br> Seguiu tenint problemes? "
+        "Contacteu els autors! En trobareu l'adreça electrònica a la pàgina "
+        "principal."
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local maximum} at %s. (Hessian is "
+        "positive and there are negative numbers in the main diagonal.)"
+msgstr  "La funció %s  té un  \\textbf{màxim local} a %s. (L'hessià és "
+        "positiu i a la diagonal hi ha nombres negatius.)"
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local minimum} at %s. (Hessian is "
+        "positive and there are positive numbers in the main diagonal.)"
+msgstr  "La funció %s  té un  \\textbf{mínim local} a %s. (L'hessià és "
+        "positiu i a la diagonal hi ha nombres positius.)"
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{saddle point} at %s, there is no "
+        "local extremum at this point.  (Hessian is negative.)"
+msgstr  "La funció %s  té un \\textbf{punt de sella} a %s; no hi ha ni màxim "
+        "ni mìnim a aquest punt.  (L'hessià és negatiu.)"
+
+#, php-format
+msgid   "The function %s has been transformed into %s."
+msgstr  "La funció %s ha estat transformada en %s."
+
+#, php-format
+msgid   "The function %s is not continuous at %s and we cannot find this "
+        "Taylor polynomial."
+msgstr  "La funció %s no és contínua a %s i no podem fer-hi l'expansió de "
+        "Taylor."
+
+#, perl-format
+msgid   "The function is either not well formatted mathematical expression or "
+        "it is not continuous or one of the derivatives at %s does not exist. "
+        "Check the Maxima output below."
+msgstr  "La funció no és pas una expressió matemàtica amb format correcte, o "
+        "bé no és contínua, o bé no existeix alguna de les derivades a %s. "
+        "Estudieu el comentari de Màxima:"
+
+msgid   "The function is even."
+msgstr  "Funció parell, de paritat positiva."
+
+msgid   "The function is neither odd nor even."
+msgstr  "La funció no té paritat definida."
+
+#, php-format
+msgid   "The function is not a function in two variables. You have to enter "
+        "function in two variables x and y. If you want to investigate "
+        "functions in one variable, you can continue %s here %s."
+msgstr  "La funció no és pas una funció de dues variables. Heu d'introduïr "
+        "una funció de les dues variables x i y. Si voleu estudiar funcions "
+        "d'una variable, podeu continuar amb %s aquí %s."
+
+msgid   "The function is odd."
+msgstr  "Funció senar, de paritat negativa."
+
+msgid   "The functions have probably one or more intersection inside the "
+        "interval. Check the picture below. You can find the intersection by "
+        "choosing the corresponding option in the form on the previous page."
+msgstr  "Les funcions es creuen una o més vegades a l'interior de l'interval. "
+        "Mireu la gráfica aquí baix. Podeu trobar el(s) punt(s) d'intersecció "
+        "si trieu l'opció corresponent al formulari de la pàgina anterior."
+
+#, php-format
+msgid   "The general solution is %s."
+msgstr  "La solució general és %s."
+
+msgid   "The general solution is sum of the particular solution (obtained "
+        "from (2)) and general solution of the associated homogeneous "
+        "equation obtained in the first part of the computation"
+msgstr  "La solució general és la suma de la solució particular (obtinguda a "
+        "partir de (2)) i de la solució general de l'equació homogènia "
+        "associada, obtinguda a la primera part del nostre càlcul"
+
+msgid   "The general solution is sum of the particular solution and general "
+        "solution of the associated homogeneous equation obtained in the "
+        "first part of the computation"
+msgstr  "La solució general és la suma de la solució particular i de la "
+        "solució general de l'equació homogènia associada, obtinguda a la "
+        "primera part del càlcul."
+
+#, php-format
+msgid   "The general solution of the associated homogeneous equation is %s."
+msgstr  "La solució general de l'equació homogènia associada és %s."
+
+msgid   "The graph can be drawn by shifting and resizing certain basic "
+        "elementary function"
+msgstr  ""
+
+msgid   "The length of one subinterval"
+msgstr  "Amplada d'un sots-interval"
+
+#, php-format
+msgid   "The multiplicity of this solution is %s."
+msgstr  "La multiplicitat d'aquesta solució és %s."
+
+#, perl-format
+msgid   "The normal form of the equation is %s."
+msgstr  "La forma normalitzada d'aquesta equació és %s."
+
+#, php-format
+msgid   "The number %s is double zero of the characteristic equation and the "
+        "particular solution has the form %s."
+msgstr  "El nombre %s és un zero doble del polinomi característic, i la "
+        "solució particular és de la forma %s."
+
+#, php-format
+msgid   "The number %s is not a zero of the characteristic equation and the "
+        "particular solution is in the form %s."
+msgstr  "El nombre %s no és un zero del polinomi característic, i la solució "
+        "particular és de la forma %s."
+
+#, php-format
+msgid   "The number %s is zero of multiplicity 1 of the characteristic "
+        "equation and the particular solution has the form %s."
+msgstr  "El nombre %s és un zero de multiplicitat senzilla del polinomi "
+        "característic, i la solució particular és de la forma %s."
+
+#, php-format
+msgid   "The number %s takes the form %s and it is solution of the "
+        "characteristic equation %s."
+msgstr  "El nombre %s val %s i sí que és solució del polinomi característic "
+        "%s."
+
+#, php-format
+msgid   "The number %s takes the value %s and it is not solution of the "
+        "characteristic equation %s."
+msgstr  "El nombre %s val %s i no és pas solució del polinomi característic "
+        "%s."
+
+#, php-format
+msgid   "The original function is %s."
+msgstr  "La funció original és %s."
+
+msgid   "The problem either does not make any sense or it is too difficult "
+        "for Maxima. Check also, that the integral on the top matches your "
+        "problem."
+msgstr  "El problema no té ni cap ni peus o bé és massa difícil per Màxima. "
+        "Verifiqueu que la integral a dalt de tot correspon al vostre "
+        "problema."
+
+msgid   "The result of advanced numerical method"
+msgstr  "Resultat amb un mètode numèric avançat"
+
+msgid   "The result of symbolic computation"
+msgstr  "Resultat del càlcul simbòlic"
+
+#, php-format
+msgid   "The right hand side has the form %s, where %s."
+msgstr  "El terme a la dreta és de la forma %s, amb %s."
+
+#, php-format
+msgid   "The right hand side is polynomial %s, the degree of this polynomial "
+        "is %s."
+msgstr  "El terme a la dreta és el polinomi %s, de grau %s."
+
+#, php-format
+msgid   "The right hand side is product of polynomial %s and exponential "
+        "function %s, the degree of the polynomial is %s."
+msgstr  "La mà dreta és el producte del polinomi %s i l'exponencial %s; el "
+        "grau del polinomi és %s."
+
+msgid   "The second derivative"
+msgstr  "La derivada segona"
+
+msgid   "The second derivatives"
+msgstr  "Derivades segones"
+
+msgid   "The second derivatives at stationary points"
+msgstr  "Derivades segones als punts estacionaris"
+
+#, perl-format
+msgid   "The solution is %s."
+msgstr  "La solució és %s."
+
+#, php-format
+msgid   "The solution is at the line starting with %o2"
+msgstr  "La solució és a la línia que comença amb %o2"
+
+msgid   "The solution of this linear system is"
+msgstr  "La solució d'aquest sistema lineal és"
+
+msgid   "The x axis goes through the set from the formulation of the problem. "
+        "The problem is not well formulated."
+msgstr  "L'eix d'abscisses x travessa el conjunt de punts del problema, que "
+        "no està ben formulat."
+
+msgid   "There is no asymptote at $\\pm\\infty$."
+msgstr  "No existeixen asímptotes a $\\pm\\infty$."
+
+msgid   "There should be no derivative  y' and no equality sign  = in your "
+        "input. Both are written on the left from the input field (you have "
+        "to enter the right hand side of the equation only)."
+msgstr  "No hi hauria d'haver cap derivada y' ni tampoc cap igual = a la "
+        "vostra entrada. Us cal escriure només el que va a la dreta de la "
+        "igualtat."
+
+msgid   "There should be no higher derivative than first derivative."
+msgstr  "No hi hauria d'haver cap derivada múltiple (tan sols derivades "
+        "primeres)."
+
+#, perl-format
+msgid   "This equation can be written as %s."
+msgstr  "Aquesta equació pot ser rescrita com a %s."
+
+msgid   "This error occurs also if there are too many requests in a short "
+        "time, for example if somebody uses this server for teaching in "
+        "computer lab."
+msgstr  "Aquest error també pot produir-se si el servidor rep moltes "
+        "requestes gairebé simultànies, com ara quan tota una classe fa "
+        "servir l'Assistent Matemàtic MAW alhora en sala d'informàtica."
+
+msgid   "This error occurs if somebody (you or another user) clicks the "
+        "submit button many times in a sort time. Don't do it, please. Click "
+        "the Submit button only once"
+msgstr  "Aquest error es deu a que algú (vós o una altra persona a algun "
+        "altre lloc del món) ha clicat el botó <b Envia-ho</b>  moltes "
+        "vegades seguides en poc temps. No ho feu, si us plau. Cliqueu "
+        "<b>Envia-ho</b> només un cop, i espereu."
+
+msgid   "This error should be fixed. You may report this error to the authors."
+msgstr  ""
+
+msgid   "This is not supported in our integral assistant."
+msgstr  ""
+
+msgid   "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+msgstr  "Això és particularment senzill a Linux. Tant a Linux com a Windows "
+        "podeu fer servir el programa en binari precompilat (cliqueu a sota "
+        "del títol principal de qualsevol pàgina).  "
+
+msgid   "This message appears if somebody else is working with the same "
+        "calculator - try again after 1 min."
+msgstr  "Això vol dir que algú altre esta treballant amb la mateixa "
+        "calculadora: torneu-ho a intentar d'aquí a 60 segons."
+
+msgid   "To be independent on our server install MAW offline for yourselves "
+        "on your local computer."
+msgstr  "Si voleu la independència del nostre servidor, instal.leu "
+        "l'Assistent Matemàtic al Web MAW al vostre propi ordinador."
+
+msgid   "Too many requests"
+msgstr  "Massa tràfic"
+
+msgid   "Transformation to Riemann integral"
+msgstr  ""
+
+#, php-format
+msgid   "Transforming %s into %s."
+msgstr  "Transformant %s en %s."
+
+msgid   "Trapeziodal rule for definite integral"
+msgstr  "Aproximació de la integral per suma de trapezis"
+
+msgid   "Try something another."
+msgstr  "Intenteu alguna altra cosa."
+
+#, php-format
+msgid   "Turning %s into %s."
+msgstr  "Girant %s cap a %s."
+
+#, php-format
+msgid   "Two independent solutions are %s and %s."
+msgstr  "Dues solucions independents són %s i %s."
+
+#, fuzzy
+msgid   "Under construction"
+msgstr  "dins de la integral"
+
+msgid   "Unmatched parenthesis has been found. Correct the problem please."
+msgstr  "Parèntesis dretes i esquerres no quadren. Redreceu la vostra "
+        "expressió, si us plau."
+
+#, php-format
+msgid   "Unsupported function %s."
+msgstr  "Funció no implementada %s."
+
+msgid   "Upper limit"
+msgstr  "Límit inferior"
+
+msgid   "Use 1/2 to insert one half. Not ½."
+msgstr  "Feu servir 1/2 per dir la meitat, i no pas ½."
+
+msgid   "Use ^2 to insert second power. Not ²."
+msgstr  "Feu servir ^2 per indicar un quadrat, no pas ²."
+
+msgid   "Use dot only for decimal numbers, if necessary. Do not use dot for "
+        "multiplication. The operator for multiplication is star, write for "
+        "example 2*x for \"two eks\". If you wish to enter decimal number, "
+        "this decimal number cannot be a part of mathematical formula."
+msgstr  "Feu servir el punt com a separador decimal exclusivament (no la "
+        "coma). No feu servir el punt per indicar la multiplicació: el signe "
+        "de multiplicació és un asterisc. Escriviu, per exemple, 2*x in pas 2."
+        "x ni 2x. Si us cal  un nombre en notació decimal,  recordeu que "
+        "aquest nombre no pot pas aparèixer a una fòrmula matemàtica (els "
+        "enters sí, però)."
+
+msgid   "Use numbers only. Use commas and semicolons to separate point "
+        "coordinates and points in the data file."
+msgstr  "Feu servir només expressions numèriques. Separeu les coordenades "
+        "d'un punt amb comes, i els punts amb punt-i-comes."
+
+msgid   "Use only integers or decimal numbers for coefficients on the left "
+        "hand side."
+msgstr  "Feu servir tan sols nombres (enters o decimals) per als coeficients "
+        "de l'esquerra."
+
+msgid   "Use only natural logarithm."
+msgstr  "Feu servir tan sols el logaritme natural."
+
+msgid   "Using $ x$ coordiantes, we write and simplify the small Lagrange "
+        "polynomials."
+msgstr  "Fent servir les coordenades $ x$, escrivim i simplifiquem els "
+        "polinomis de Lagrange petits."
+
+msgid   "Variable for inside integration and limits for this variable"
+msgstr  "Variable d'integració interior i els seus límits d'integració"
+
+msgid   "Variable for outside integration and limits for this variable"
+msgstr  "Variable d'integració exterior i els seus límits d'integració"
+
+msgid   "Variables aa or bb are not allowed."
+msgstr  "No feu servir variables de la forma aa ni bb"
+
+#, perl-format
+msgid   "Variant %s"
+msgstr  "Variant %s"
+
+msgid   "Variation of constant:"
+msgstr  ""
+
+msgid   "Variation of constant: {\\color{blue}(the sum of blue expressions is "
+        "zero)}"
+msgstr  "Variació de coeficients: {\\color{blue}(la suma de les expressions "
+        "en blau fa zero)}"
+
+msgid   "Vertical shift"
+msgstr  "- Desplaçament vertical -"
+
+msgid   "Wait a bit, return to the page with calculator form, fill again if "
+        "necessary and resend the form. Then you will be allowed to build "
+        "animation again. But click only once and be patient (about 20 sec)!"
+msgstr  "Espereu una estoneta, torneu a la pàgina amb el formulari d'entrada, "
+        "torneu-lo a omplir si cal, i envieu altre cop el formulari. Llavors "
+        "podreu engendrar l'animació altre cop. Però cliqueu tan sols un cop "
+        "i tingueu paciència! (Triga uns 20 segons)."
+
+msgid   "Warning: your input is not checked against the substitution used "
+        "during evaluation of the integral. If you use incorrect "
+        "substitution, your result will be incorrect."
+msgstr  "Compte: no heu verificat la vostra entrada pel que fa a la "
+        "substitució emprada en resoldre la integral. Si feu servir una "
+        "substitució errònia, el vostre resultat serà incorrecte."
+
+msgid   "We attempted to parse your input automatically"
+msgstr  "Hem intentat entendre la vostra entrada automàticament."
+
+#, perl-format
+msgid   "We can \\textbf{neither proove nor disprove} existence of extrem for "
+        "the function %s and stationary point %s from second derivatives. "
+        "(Hessian is zero.)"
+msgstr  "No podem demostrar \\textbf{si existeixen o no} máxims o mínims de "
+        "la funciò %s ni si el punt %s és estacionari a partir de les "
+        "derivades segones. (L'hessià val zero.)"
+
+#, php-format
+msgid   "We draw the function %s."
+msgstr  "Fem la gràfica de la funció %s."
+
+msgid   "We find area between curves #1 and #2 on the interval from #3 to #4."
+msgstr  "Trobem l'àrea entre les corbes #1 i #2 a l'interval de #3 fins a #4."
+
+msgid   "We find area under the curve #1 on the interval from #2 to #3."
+msgstr  "Calculem l'àrea sota la corba #1 a l'interval de #2 fins a #3."
+
+msgid   "We find the general solution first and then we use the initial "
+        "conditions to find particular solution."
+msgstr  "Primer trobem la solució general, i després imposem les condicions "
+        "inicials per trobar una solució particular."
+
+msgid   "We find undetermined coefficients"
+msgstr  "Trobem els coeficients indeterminats"
+
+msgid   "We find volume of solid of revolution formed by revolving area "
+        "between curves #1 and #2 on the interval from #3 to #4 around $ x$ "
+        "axis.."
+msgstr  "Trobem el volum de revolució engendrat fent girar l'àrea entre les "
+        "corbes #1 i #2 a l'interval entre #3 i #4 al voltant de l'eix "
+        "d'abscisses $ x$."
+
+msgid   "We find volume of solid of revolution formed by revolving area under "
+        "the curve #1 on the interval from #2 to #3 around $ x$ axis."
+msgstr  "Trobem el volum de revolució obtingut fent girar l'àrea sota la "
+        "corba #1 a l'interval de #2 fins a #3 al voltant de l'eix "
+        "d'abscisses $ x$."
+
+msgid   "We get the solution in its explicit form only for the linear "
+        "equations. For the equations with separated variables we get only "
+        "the implicit form."
+msgstr  "Obtenim la solució de forma explícita només si l'equació és lineal. "
+        "De les equacions amb variables separades obtenim la solució tan sols "
+        "en forma implícita."
+
+#, perl-format
+msgid   "We have %s"
+msgstr  "Tenim %s."
+
+#, php-format
+msgid   "We have %s points, the degree of the polynomial is not greater than "
+        "%s."
+msgstr  "Tenim %s punts, per la qual cosa és impossible que el grau del "
+        "polinomi sigui més gran que %s."
+
+#, perl-format
+msgid   "We have %s."
+msgstr  "Tenim %s."
+
+msgid   "We have to solve the linear system"
+msgstr  "Hem de resoldre el sistema lineal"
+
+msgid   "We integrate"
+msgstr  "Integrem"
+
+#, php-format
+msgid   "We integrate the function %s on the set given by %s and %s."
+msgstr  "Integrarem la funció %s sobre el conjunt definit per %s i %s."
+
+msgid   "We investigate the function"
+msgstr  "Estudiem la funció"
+
+msgid   "We look for stationary points of the autonomous system."
+msgstr  "Cerquem punts estacionaris del sistema autònom."
+
+#, php-format
+msgid   "We look for stationary points of the function %s."
+msgstr  "Cerquem els punts estacionaris de la funció %s."
+
+msgid   "We look for the particular solution of the nonhomogeneous equation."
+msgstr  "Cerquem una solució particular de l'equació inhomogènia."
+
+msgid   "We put corresponding\n"
+        "terms on left and right equal (from smallest power)"
+msgstr  "Igualem terme a terme els  \n"
+        "termes a l'esquerra i a la dreta (començant amb la potència més "
+        "petita)"
+
+msgid   "We remove absolute values"
+msgstr  "Ens lliurem dels valors absoluts"
+
+msgid   "We remove constant multiple from the integral"
+msgstr  "Treiem la constant multiplicativa de la integral"
+
+#, php-format
+msgid   "We solve %s on the interval %s using bisection of interval."
+msgstr  "Trobem la solució de %s a l'interval %s fent servir la bisecció de "
+        "l'interval."
+
+#, fuzzy, php-format
+msgid   "We solve %s on the interval %s using regula falsi."
+msgstr  "Trobem la solució de %s a l'interval %s fent servir la bisecció de "
+        "l'interval."
+
+msgid   "We solve initial value problem"
+msgstr  "Resolem el problema de condicions inicials"
+
+msgid   "We solve the associated homogeneous equation first"
+msgstr  "Primer resolem l'equació homogènia associada"
+
+#, php-format
+msgid   "We solve the equation %s using Newton--Raphson method with initial "
+        "guess %s."
+msgstr  ""
+
+#, php-format
+msgid   "We solve the equation %s using method of iterations on the interval "
+        "%s with initial guess %s."
+msgstr  "Resolem l'equació %s amb el mètode d'iteracions a l'interval %s amb "
+        "estimació inicial %s."
+
+msgid   "We solve the homogeneous differential equation"
+msgstr  "Trobem la solució de l'equació diferencial homogènia"
+
+msgid   "We solve the nonhomogeneous differential equation"
+msgstr  "Trobem la solució de l'equació diferencial inhomogènia"
+
+msgid   "We solve the system in the first quadrant (for nonnegative variables)"
+msgstr  "Resolem el sistema al primer quadrant (valors no negatius de les "
+        "variables)"
+
+msgid   "We solve this system with respect to unknown coefficients and get"
+msgstr  "Trobem la solució d'aquest sistema amb coeficients indeterminats:"
+
+#, php-format
+msgid   "We start with the function %s."
+msgstr  ""
+
+msgid   "We try to simplify the answer. (This is rather tricky step, "
+        "sometimes it simplifies the answer and sometimes not.)"
+msgstr  "Intentarem simplificar la resposta. (De vegades assoleix una "
+        "simplificació, i de vegades no.)"
+
+#, php-format
+msgid   "We try to solve the equation %s with respect to the derivative."
+msgstr  "Intentem resoldre a derivada a partir de l'equació %s."
+
+msgid   "We use small Lagrange polynomials in the interpolation formula and "
+        "sum up like powers of $ x$ (the final result is in the frame)."
+msgstr  "Fem servir polinomis de Lagrange per a la interpolació, i després "
+        "ajuntem les potències de $ x$ (el resultat final apareix enquadrat)."
+
+#, perl-format
+msgid   "We use substitution %s."
+msgstr  "Fem servir la substitució %s."
+
+msgid   "We use the variation of constants to find the particular solution in "
+        "the form"
+msgstr  "Fem variar els coeficients i trobem així la solució particular "
+
+#, php-format
+msgid   "We will look for the intercepts of  y=%s and y=%s, symbolically and "
+        "numerically."
+msgstr  "Cercarem les interseccions de y=%s i y=%s, de forma smbòlica i també "
+        "numèricament."
+
+msgid   "We write the form of the Lagrange polynomial from the $ y$ "
+        "coordinates."
+msgstr  "Trobem la forma del polinomi de Lagrange a partir de les coordenades "
+        "$y$."
+
+msgid   "You are not allowed to enter more than six points."
+msgstr  "No podeu introduïr més de 6 punts"
+
+#, php-format
+msgid   "You can check is somebody else is working with the tool by checking "
+        "%s history%s."
+msgstr  "Podeu veure si algú altre està fent servir aquesta calculadora quan "
+        "cliqueu a %s historial%s."
+
+msgid   "You can enter decimal number or mathematical formula which contains"
+msgstr  "Podeu entrar un nombre en notació decimal o bé una fòrmula "
+        "matemàtica contenent tan sols"
+
+msgid   "You can use WYSIWYG editor <a href=\"http://user.mendelu.cz/tihlarik/"
+        "dragmath/DragMath.html\" target=\"_blank\">Dragmath</a> to edit "
+        "mathematical expressions and then move the expression into field in "
+        "the form by using clipboard in your operating system. This editor is "
+        "accessible at the end of some input fields, where we suppose "
+        "nontrivial input. In these cases it is not necessary to use the "
+        "clipboard and the transfer into field in our form is automatical."
+msgstr  "Podeu fer servir l'editor WYSIWYG en línia <a href=\"http://user."
+        "mendelu.cz/tihlarik/dragmath/DragMath.html\" target=\"_blank"
+        "\">Dragmath</a> per editar expressions matemàtiques, i després "
+        "copiar-les i enganxar-les a l'entrada del formulari. (no tingueu pas "
+        "por del títol en txec i espereu que el programet en Java es "
+        "carregui). Aquest editor és accessible automàticament a segons "
+        "quines entrades, on ens esperem una entrada complicada. En aquest "
+        "cas, no cal copiar ni enganxar res: allò que editeu apareixerà "
+        "automàticament al vostre formulari."
+
+#, php-format
+msgid   "You can use method of undetermined coefficients: the primitive "
+        "function has the form %s, where %s is %s and k is real number. The "
+        "application of this method in steps is not covered by this "
+        "application and from this reason you should leave the rest to Maxima "
+        "and evaluate the integral by computer. It is also possible in some "
+        "integrals of this type to remove the square root by a convenient "
+        "substitution."
+msgstr  "Mètode de la variació de constants: la integral indefinida és de la "
+        "forma %s, on %s és %s i <i>k</i> és real. L'aplicació d'aquest "
+        "mètode per etapes no cau dins de les possibilitats d'aquesta "
+        "calculadora: deixeu fer a Màxima i l'ordinador avaluarà la integral. "
+        "En algunes integrals d'aquesta mena, de vegades es pot eliminar "
+        "l'arrel amb un canvi de variable adient."
+
+#, fuzzy, php-format
+msgid   "You cannot write group of two or more characters like %s."
+msgstr  "No teniu dret d'escriure un agregat de dos o més símbols com ara %s."
+
+msgid   "You choosed to integrate some terms but no term has been marked for "
+        "integration"
+msgstr  "Heu dit que volieu integrar alguns dels termes però no n'heu marcat "
+        "cap per integrar-lo(s)"
+
+msgid   "You did not choose any action"
+msgstr  "No heu triat cap acció"
+
+msgid   "You have to solve the equation with respect to the derivative first "
+        "and write the right hand side only. You may try also to write the "
+        "full equation to the second field and switch the radiobutton on the "
+        "left."
+msgstr  "Primer heu de resoldre explícitament l'equació per a la derivada, i "
+        "aquí hi heu d'entrar només el que va a la dreta de y'=. Altrament, "
+        "podeu escriure tota l'equació i canviar el botonet a l'esquerra."
+
+#, php-format
+msgid   "You have to specify %s or %s for integration by parts."
+msgstr  "Heu d'especificar %s o bé %s si voleu integrar per parts."
+
+#, php-format
+msgid   "You have to use new name for the variable and you have to enter "
+        "which substitution you wish to use. The name of the variable "
+        "consists of one letter only. This name cannot be %s."
+msgstr  "Us cal un nom nou per a la nova variable, i heu de dir quina "
+        "substitució voleu fer servir. El nom de la variable ha de tenir una "
+        "sola lletra, diferent de %s. "
+
+msgid   "You have to use the PDF file in Adobe Reader or Adobe Acrobat (do "
+        "not use xpdf, kpdf and other PDF viewers)."
+msgstr  "Probablement, heu d'obrir l'arxiu PDF amb Adobe Reader (no amb xpdf, "
+        "kpdf o altres lectors)."
+
+#, perl-format
+msgid   "You may have a typing error in your mathematical expression or use "
+        "too general right hand side of the equation.  This interface works "
+        "only if the right hand side is in the form %s where P and Q are "
+        "polynomials of order at most 4."
+msgstr  "Hi ha algun error en la vostra expressió matemàtica, o heu fet "
+        "servir una expressió massa general per al terme de la dreta. Aquesta "
+        "calculadora funciona només si el terme de dreta és de la forma %s, "
+        "on P i Q són polinomis de grau 4 o menys."
+
+msgid   "You may try to interchange the order of integration and submit "
+        "again. (Remember also to adjust limits for integration properly.)"
+msgstr  ""
+
+#, php-format
+msgid   "You may try to pass your expression to %sWolframAlpha%s."
+msgstr  ""
+
+msgid   "You may want to continue and simplify your result ..."
+msgstr  "Tal volta voleu continuar i simplificar el vostre resultat..."
+
+#, php-format
+msgid   "You probably reached the time limit, try simpler problem or %s."
+msgstr  "Heu assolit el límit de temps; intenteu un problema més senzill o %s."
+
+msgid   "You probably use the <i>y</i> variable, which is not allowed here."
+msgstr  "Em sembla que heu fet servir la variable <i>y</i>, cosa que no és "
+        "permesa aquí."
+
+msgid   "You probably want to integrate a function involving the absolute "
+        "value."
+msgstr  ""
+
+msgid   "You should turn JavaScript on to see popup informations."
+msgstr  "Engegueu JavaScript per veure les informacions dins les finestres "
+        "emergents."
+
+#, php-format
+msgid   "You used %s opening and  %s closing parentheses."
+msgstr  ""
+
+msgid   "You used a name of a function followed by a power.<br>Do not use "
+        "this notation. Write for example (sin(x))^2 instead of sin^2(x)."
+msgstr  "Heu entrat una funció seguida d'una potència.<br>No feu servir "
+        "aquesta notació. Escriviu, per exemple,  (sin(x))^2 i no pas sin^2"
+        "(x)."
+
+msgid   "You used backslash or quote or double-quote or another insecure "
+        "character in your input, which is not allowed. Do you try to enter "
+        "the functions in TeX notation? Use notation of the Maxima program, "
+        "please."
+msgstr  "Heu fet servir la barra enrera o l'apòstrof o les cometes o algun "
+        "altre signe poc seriós a la vostra entrada. Potser esteu intentant "
+        "entrar les funcions amb la notació de TeX?  Feu servir la notació "
+        "del programa Màxima exclusivament."
+
+msgid   "Your bad input was"
+msgstr  "La vostra entrada incomprensible és"
+
+#, php-format
+msgid   "Your incorrect input is: %s and %s."
+msgstr  "Entrades errònies: %s i %s."
+
+#, php-format
+msgid   "Your input is (after deleting spaces and conversion ^ into **) %s "
+        "and the disallowed substring catched by the input filter is %s."
+msgstr  "La vostra entrada és (un cop havent eliminat els espais i convertit "
+        "^ en **) %s  i els signes incomprensibles que hi he pescat són %s."
+
+#, php-format
+msgid   "Your input is being processed. Wait few seconds to see the output. "
+        "Click %shere%s to reopen the form which has been submited."
+msgstr  ""
+
+msgid   "Zeros"
+msgstr  "Zeros"
+
+msgid   "Zeros of 1st derivative"
+msgstr  "Zeros de la primera derivada"
+
+msgid   "Zeros of 2nd derivative"
+msgstr  "Zeros de la segona derivada"
+
+msgid   "Zeros of characteristic equation"
+msgstr  "Zeros de l'equació característica"
+
+msgid   "Zeros of function"
+msgstr  "Zeros de la funció"
+
+msgid   "\\def\\nonneg{We solve the system in the first quadrant (for "
+        "nonnegative variables)}"
+msgstr  "\\def\\nonneg{Resolem el sistema al primer quadrant (per variables "
+        "no negatives)}"
+
+msgid   "absolute value causes problems in integration, but in most cases can "
+        "be eliminated by considering suitable subinterval for integration."
+msgstr  "els valors absoluts donen molts mals de cap en integrar, però sovint "
+        "es poden eliminar triant convenientment sots-intervals per fer-hi la "
+        "integral. "
+
+msgid   "addition, subtraction, multiplication and division, i.e. chars + - "
+        "* /"
+msgstr  "suma, resta, multiplicació i divisió, o sigui els signes + - * /"
+
+msgid   "and add like powers of  $ x $ "
+msgstr  "afegim els termes amb les mateixes potències de $ x $"
+
+msgid   "and back substitution is"
+msgstr  "i subtituïnt això a l'expressió anterior"
+
+msgid   "and collect the coefficients at the powers of $ x $ "
+msgstr  "i apleguem els coeficients a les potències de $x$"
+
+#, php-format
+msgid   "and divide by the common exponential factor %s and add like powers "
+        "of $x$"
+msgstr  "i dividim pel factor comú exponencial %s i ajuntem les potències de "
+        "$x$"
+
+msgid   "and simplify"
+msgstr  "i simplifica"
+
+msgid   "and suppose that this variable is positive"
+msgstr  "i suposa que aquesta variable és positiva"
+
+msgid   "asinh(), acosh(), atanh(), .... -> log()"
+msgstr  ""
+
+msgid   "bold"
+msgstr  "negreta"
+
+msgid   "by parts (specify  <i>u</i> or <i>v'</i>, if you specify both, "
+        "Maxima will use <i>v'</i> for the next computation)"
+msgstr  "per parts (especifiqueu  <i>u</i> o bé <i>v'</i>.  Si els "
+        "especifiqueu tots dos, Màxima dona preferència a l'expressió de "
+        "<i>v'</i> per als càlculs subseqüents)"
+
+msgid   "clever expansion into two fractions"
+msgstr  "fés una expansió astuta en dues fraccions"
+
+msgid   "click the equation to get step by step solution"
+msgstr  "cliqueu a l'equació per trobar la solució etapa per etapa"
+
+msgid   "click the point to get Jacobi matrix and clasify the stationary point"
+msgstr  "Clica per calcular el jacobià i classificar el punt estacionari."
+
+msgid   "complete square in denominator"
+msgstr  "completa el quadrat al denominador"
+
+msgid   "complete square under square root"
+msgstr  "completa el quadrat dins l'arrel quadrada"
+
+msgid   "constant"
+msgstr  "constant"
+
+msgid   "constants %e and %pi"
+msgstr  "constants %e i %pi"
+
+msgid   "contract products of roots"
+msgstr  "contrau els productes d'arrels"
+
+msgid   "convert into an equation for the unknown integral and solve with "
+        "pure algebra"
+msgstr  "transformeu-ho en una equació algebraica on la integral n'és la "
+        "incògnita i resoleu-la algebraicament"
+
+msgid   "convert into equation for the integral"
+msgstr  "converteix-ho en equació per la integral"
+
+msgid   "cubic polynomial"
+msgstr  "polinomi de tercer grau"
+
+msgid   "custom"
+msgstr  "manual"
+
+msgid   "divide polynomials or partial fractions"
+msgstr  "divideix polinomis o fraccions parcials"
+
+msgid   "division"
+msgstr  "divisió"
+
+msgid   "expand"
+msgstr  "expand"
+
+msgid   "expand to partial fractions"
+msgstr  "fés l'expansió en fraccions parcials"
+
+msgid   "factor"
+msgstr  "factor"
+
+msgid   "factorize"
+msgstr  "factoritza"
+
+msgid   "finished, show computations only"
+msgstr  "enllestit, mostra tan sols els càlculs"
+
+msgid   "formula"
+msgstr  "fòrmula"
+
+msgid   "formula too long"
+msgstr  "expressió massa llarga"
+
+msgid   "function"
+msgstr  "funció"
+
+msgid   "functions"
+msgstr  "funcions"
+
+msgid   "here"
+msgstr  "aquí"
+
+msgid   "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+msgstr  ""
+
+msgid   "in red"
+msgstr  "en vermell"
+
+msgid   "inside integration"
+msgstr  "dins de la integral"
+
+msgid   "integers (no decimals)"
+msgstr  "nombres sencers (sense punt decimal)"
+
+msgid   "integral of polynomial or constant"
+msgstr  "integral d'un polinomi o d'una constant"
+
+msgid   "integrate terms in sum (mark terms to be integrated, you have to "
+        "mark at least one term)"
+msgstr  "integra els termes de la suma (cal marcar els termes que seran "
+        "integrats, com a mínim cal marcar-ne un)"
+
+msgid   "integration"
+msgstr  "integració"
+
+msgid   "integration by parts"
+msgstr  "integració per parts"
+
+msgid   "linear polynomial"
+msgstr  "polinomi de primer grau (lineal)"
+
+msgid   "link"
+msgstr  "enllaç"
+
+msgid   "logarc"
+msgstr  ""
+
+msgid   "logcontract"
+msgstr  "logcontract"
+
+msgid   "lower bound for integration"
+msgstr  "límit inferior de la integral"
+
+msgid   "lower function"
+msgstr  "funció inferior"
+
+msgid   "lower limit for"
+msgstr  "límit inferior de"
+
+msgid   "lower limit for inside integral"
+msgstr  "límit inferior per la integral interior"
+
+msgid   "lower limit for outside integral"
+msgstr  "límit inferior per la integral exterior"
+
+msgid   "lower limit of integration"
+msgstr  "límit inferior d'integració"
+
+msgid   "map + fullratsimp"
+msgstr  "map i fullratsimp"
+
+msgid   "map + xthru"
+msgstr  "map i xthru"
+
+msgid   "maximum"
+msgstr  "màxim"
+
+msgid   "minimum"
+msgstr  "mínim"
+
+msgid   "move a number from the integral"
+msgstr  "treu una constant de la integral"
+
+msgid   "multiply both numerator and denominator"
+msgstr  "multiplica tant el numerador com el denominador"
+
+msgid   "no conclusion"
+msgstr  "cap conclusió"
+
+msgid   "no variables"
+msgstr  "no hi ha variables"
+
+msgid   "not found"
+msgstr  "no trobat"
+
+msgid   "notation"
+msgstr  "notació"
+
+msgid   "number of subintervals"
+msgstr  "nombre de sots-intervals"
+
+msgid   "numerical approximation"
+msgstr  "aproximació numèrica"
+
+msgid   "our hint"
+msgstr  "pista de sortida"
+
+#, php-format
+msgid   "parameters %s"
+msgstr  "paràmetres %s"
+
+msgid   "partial fractions"
+msgstr  "fraccions parcials"
+
+msgid   "partial fractions or"
+msgstr  "fraccions parcials o bé"
+
+msgid   "point of rotation or focus"
+msgstr  "focus o punt de rotació"
+
+msgid   "power ^ or **"
+msgstr  "potència ^ o bé **"
+
+msgid   "put these point into the form"
+msgstr  "rescrivim aquests punts de la forma  "
+
+msgid   "quadratic polynomial"
+msgstr  "polinomi de segon grau"
+
+msgid   "radcan"
+msgstr  "radcan"
+
+msgid   "rational function, but expansion into partial fractions failed (it "
+        "could be necessary to simplify first (radcan, xthru, ...), or the "
+        "function could be a <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">partial fraction with "
+        "repeated irreducible 2nd-degree polynomial in the denominator</a>)"
+msgstr  "funció racional, efectivament, però l'expansió en fraccions parcials "
+        "ha fallat. Potser primer cal simplificar (radcan, xthru, ...), o "
+        "potser la funció és un <a href=\"http://ca.wikipedia.org/wiki/"
+        "Integració_de_fraccions_racionals#Polinomi_irreductible_de_segon_grau_al_denominador"
+        "\">polinomi irreductible de segon grau al denominador</a>)"
+
+msgid   "ratsimp"
+msgstr  "ratsimp"
+
+msgid   "red"
+msgstr  "vermell"
+
+msgid   "remove absolute values"
+msgstr  "treu els valors absoluts"
+
+msgid   "replace <b>even powers of cosine</b> function by sine function"
+msgstr  "remplaça les <b>potències parells de cosinus</b> per sinus"
+
+msgid   "replace <b>even powers of sine</b> function by cosine function"
+msgstr  "remplaça les <b>potències parells de sinus</b> per cosinus"
+
+msgid   "replace function <b>sec</b> and <b>csc</b> by equivalent functions "
+        "in terms <b>sin</b> and <b>cos</b>"
+msgstr  "remplaça les <b>secants</b> i <b>cosecants</b> per sinus i cosinus"
+
+msgid   "rootscontract"
+msgstr  "rootscontract"
+
+msgid   "round parentheses"
+msgstr  "parèntesis"
+
+msgid   "saddle point"
+msgstr  "punt de sella"
+
+msgid   "should be checked for substitutions of the form"
+msgstr  "on hi voldriem fer la substitució"
+
+msgid   "simplification"
+msgstr  "simplificació"
+
+msgid   "simplify"
+msgstr  "simplifica"
+
+msgid   "simplify fraction"
+msgstr  "simplifica la fracció"
+
+msgid   "simplify fraction, each part separately"
+msgstr  "simplifica la fracció, cada part separadament"
+
+msgid   "simplify the fractions using xthru or fullratsimp"
+msgstr  "simplifica les fraccions amb <b>xthru</b> o <b>fullratsimp</b>"
+
+msgid   "simplify trigonometric functions"
+msgstr  "simplifica les funcions trigonomètriques"
+
+msgid   "skipping the picture ... (as explained hereinabove)"
+msgstr  "ens saltem el gràfic... (lleguin-ne l'explicació més amunt)"
+
+#, php-format
+msgid   "split in a clever way into two fractions of the form %s and use "
+        "formulas for integration (ignore also the hint in the next step and "
+        "finish the integration by Maxima)"
+msgstr  "separeu-ho astutament en dues fraccions de la forma %s i feu servir "
+        "les fòrmules d'integració (ignoreu també la proposta del pas "
+        "següent, i deixeu que Màxima enllestixi la integral) "
+
+msgid   "stable focus"
+msgstr  "focus estable"
+
+msgid   "stable node"
+msgstr  "node estable"
+
+msgid   "substitute limits"
+msgstr  "substitueix els límits"
+
+msgid   "substituting limits"
+msgstr  "substituïnt els límits"
+
+msgid   "substitution"
+msgstr  "substitution"
+
+msgid   "substitution (the function is odd with respect to both sin and cos)"
+msgstr  "substitució (funció senar del sinus i del cosinus)"
+
+msgid   "substitution (the function is odd with respect to cos)"
+msgstr  "substitució (funció senar del cosinus)"
+
+msgid   "substitution (the function is odd with respect to sin)"
+msgstr  "substitució (funció senar del sinus)"
+
+msgid   "substitution (use trigsimp function in the next step after "
+        "goniometric substitution)"
+msgstr  "substitució (feu servir <b>trigsimp</b> a l'etapa següent després de "
+        "la substitució angular)"
+
+msgid   "the function can be divided into sum of formulas"
+msgstr  "la funció pot ésser separada en una suma de fòrmules"
+
+msgid   "the function can be expanded into sum of formulas"
+msgstr  "la funció pot ésser expandida en una suma d'expressions"
+
+msgid   "the intersection is red region"
+msgstr  "la intersecció és la zona vermella"
+
+msgid   "the numerator is derivative of denominator (or its constant multiple)"
+msgstr  "el numerador és la derivada del denominador (potser amb algun factor "
+        "constant)"
+
+msgid   "trigexpand"
+msgstr  "trigexpand"
+
+msgid   "trigonometric functions have different inside parts, you can try to "
+        "fix it by <b>trigexpand</b> or <b>trigreduce</b> command"
+msgstr  "les funcions trigonomètriques tenen arguments diferents; podeu "
+        "intentar arreglar-ho amb les comandes <b>trigexpand</b> o "
+        "<b>trigreduce</b>"
+
+msgid   "trigreduce"
+msgstr  "trigreduce"
+
+msgid   "trigsimp"
+msgstr  "trigsimp"
+
+msgid   "unable to find the answer"
+msgstr  "no he pogut trobar la resposta"
+
+msgid   "unstable focus"
+msgstr  "focus inestable"
+
+msgid   "unstable node"
+msgstr  "node inestable"
+
+msgid   "upper bound for integration"
+msgstr  "límit superior de la integral"
+
+msgid   "upper function"
+msgstr  "funció superior"
+
+msgid   "upper limit for"
+msgstr  "límit superior de"
+
+msgid   "upper limit for inside integral"
+msgstr  "límit superior per la integral interior"
+
+msgid   "upper limit for outside integral"
+msgstr  "límit superior per la integral exterior"
+
+msgid   "upper limit of integration"
+msgstr  "límit superior d'integració"
+
+msgid   "use formula or ask the computer to finish the integration"
+msgstr  "feu servir alguna fòrmula o demaneu a l'ordinador que enllesteixi el "
+        "càlcul tot solet"
+
+msgid   "user expression"
+msgstr  "expressió de l'usuari"
+
+#, php-format
+msgid   "variable %s"
+msgstr  "variable %s"
+
+#, php-format
+msgid   "variables %s"
+msgstr  "variables %s"
+
+msgid   "we have to find derivatives and put into the equation"
+msgstr  "hem de trobar les derivades per inserir-les en l'equació"
+
+msgid   "we substitute into (1)"
+msgstr  "substituïm a (1)"
+
+msgid   "where the new variable is"
+msgstr  "on la nova variable és"
+
+msgid   "with linear inside part (you can use also substitution)"
+msgstr  "amb part interna lineal (o bé podeu fer servir <b>substitute</b>)"
+
+msgid   "with new variable"
+msgstr  "amb nova variable"
+
+#, php-format
+msgid   "with unknowns %s and %s."
+msgstr  "amb incògnites %s i %s."
+
+msgid   "xthru"
+msgstr  "xthru"
+
+msgid   "yields"
+msgstr  "dóna"
+
+msgid   "you can convert the function to sine and cosine functions with the "
+        "<b>trigsimp</b> command"
+msgstr  "podeu expressar la funció en termes de sinus i cosinus amb la "
+        "comanda <b>trigsimp</b>"
+
+msgid   "you can remove a constant multiple from the integral"
+msgstr  "podeu factoritzar una constant fora de la integral"

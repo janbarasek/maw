@@ -1,0 +1,2890 @@
+# Czech translations for MAW package.
+# Copyright (C) 2008 Robert Marik
+# This file is distributed under the same license as the MAW package.
+#
+msgid   ""
+msgstr  "Project-Id-Version: messages\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-12-22 11:03+0100\n"
+        "PO-Revision-Date: 2013-12-12 00:20+0100\n"
+        "Last-Translator: Robert Marik <marik@mendelu.cz>\n"
+        "Language-Team:  <cs@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : "
+        "2;\n"
+        "X-Generator: KBabel 1.9.1\n"
+
+msgid   " Change <i>xmin</i>."
+msgstr  "Opravte prosím mez <i>xmin</i> pro kreslení obrázku."
+
+msgid   " Submit the form to check, if the curve is well defined."
+msgstr  "Odešlete formulář pro kontrolu, zda je křivka korektně definována."
+
+msgid   " Submit the form to check, if the region for integration is well "
+        "defined."
+msgstr  "Odešlete formulář pro kontrolu, zda je oblast integrace korektně "
+        "zadána."
+
+msgid   "$ n$-degree  Taylor polynomial for the function  $ f(x)$ around  $ "
+        "x=x_0$"
+msgstr  "Taylorův polynom $n$-tého stupně pro funkci $ f(x)$ se středem v "
+        "bodě $ x=x_0$"
+
+msgid   "$x$-intercepts"
+msgstr  "Průsečíky s osou $x$"
+
+#, php-format
+msgid   "%s degree polynomial"
+msgstr  "polynom stupně %s"
+
+msgid   "(Click each equation to solve it using undetermined coefficients and "
+        "then sum up all particular solutions to and general solution of "
+        "associated homogeneous equation to get general solution. To find "
+        "solution of initial value problem use variation of constants.)"
+msgstr  "(Klikněte na jednotlivé rovnice pro vyřešení metodou variace "
+        "konstant a poté sečtěte všechna partikulární řešení a obecné řešení "
+        "asociované homogenní rovnice abyste získali obecné řešení rovnice "
+        "zadané. Pro případné nalezení řešení počáteční úlohy použijte metodu "
+        "variace konstant nebo dosaďte počáteční podmínky ručně.)"
+
+msgid   "(Not including sets with zero measure, such as points, curves and "
+        "boundaries in the picture.)"
+msgstr  " (V obrázcích nejsou graficky zahrnuty podmínky na množinu míry "
+        "nula, tj. body a křivky. V důsledku toho není graficky znázorněno, "
+        "zda hranice patří nebo nepatří do řešení.)"
+
+msgid   "(and remove odd power from denominator, if possible)"
+msgstr  "(a odstranit lichou mocninu, pokud je ve jmenovateli)"
+
+msgid   "(click the equation to solve it using undetermined coefficients)"
+msgstr  "(klikněte na rovnici pro její vyřešení metodou neurčitých "
+        "koeficientů)"
+
+msgid   "(clicking the expression you get this part of integral in new window)"
+msgstr  "(kliknutím na vzorec se Vám otevře v novém okně aplikace, kde můžete "
+        "s daným sčítancem pracovat samostatně)"
+
+msgid   "(not very useful in most cases)"
+msgstr  "(není příliš užitečné pro většinu integrálů)"
+
+msgid   "(remember to return to the original variable)"
+msgstr  "(nezapomeňte se po substituci vrátit k původní proměnné)"
+
+msgid   "(the trigreduce function yields this step)"
+msgstr  "(tuto úpravu zajistí volba trigreduce)"
+
+msgid   "(use radiobuttons to choose the next computation method)"
+msgstr  "(vyberte pomocí radiobuttonů, odkazy vedou na popis jednotlivých "
+        "funkcí)"
+
+msgid   "(with completing square in denominator)"
+msgstr  "(s doplněním na čtverec ve jmenovateli)"
+
+msgid   "(with completing square under square root)"
+msgstr  "(s doplněním na čtverec pod odmocninou)"
+
+msgid   "(write an equation, e.g. x^2=t, this equation must involve new "
+        "variable and no parameter)"
+msgstr  "(napište rovnici obsahující novou proměnnou a žádný parametr, "
+        "například x^2=t)"
+
+msgid   "(you can remove a constant multiple from the integral to match the "
+        "formula exactly)"
+msgstr  "(můžete vytknout konstantu, abyste tam ten vzorec pěkně viděli)"
+
+msgid   "(you have to write the fraction in the form which matches the "
+        "formula, consider multiplying both numerator and denominator by a "
+        "convenient expression)"
+msgstr  "(musíte ale nejprve vhodně rozšířit zlomek)"
+
+msgid   "- Horizontal deformation -"
+msgstr  "Vodorovna deformace"
+
+msgid   "- Horizontal shift -"
+msgstr  "Vodorovny posun"
+
+msgid   "- Original function -"
+msgstr  "Původní funkce"
+
+msgid   "- Turning about x -"
+msgstr  "Otoceni okolo x"
+
+msgid   "- Turning about y -"
+msgstr  "Otoceni okolo y"
+
+msgid   "- Vertical deformation -"
+msgstr  "Svisla deformace"
+
+msgid   "<b>Error. The most general expression which you can remove from the "
+        "integral is  a nonzero number written with digits or a multiple of "
+        "constants pi and e.</b> Go back and revise your choice."
+msgstr  "<b>Chyba. Vytýkat se může jenom nenulové číslo, zapsané pomocí "
+        "číslic, nebo násobek čísla pi nebo mocnin čísla e.</b> Vraťte se "
+        "zpět a zkuste něco jiného."
+
+msgid   "<b>Error. You cannot multiply numerator and denominator by zero or a "
+        "zero equivalent expression.</b> Go back and revise your choice."
+msgstr  "<b>Chyba. Nesmíte rozšiřovat nulou nebo výrazem, který je s nulou "
+        "ekvivalentní.</b> Vraťte se zpět a zkuste něco jiného."
+
+msgid   "<b>Problems:</b> Infinitely many solutions, or some solutions cannot "
+        "be written using elementary functions."
+msgstr  "<b>Problém:</b> Nekonečně mnoho řešení, nebo některá řešení nejdou "
+        "vyjádřit pomocí elementárních funkcí."
+
+#, php-format
+msgid   "<b>Sorry, the answer contains function %s which is not supported on "
+        "output. <br> Still curious? The answer is %s."
+msgstr  "<b>Omlouváme se, ale integrál obsahuje funkci %s, která není na "
+        "výstupu našeho programu implementována.  <br>Pro zvědavce: výsledek "
+        "je %s."
+
+#, php-format
+msgid   "<b>Sorry, the answer does not exist in the class of <a href=\"http://"
+        "en.wikipedia.org/wiki/Elementary_function\">elementary functions</a>."
+        "</b> From this reason the integral exceeds the level of primary "
+        "target students. <br> Still curious? The answer is %s."
+msgstr  "<b>Omlouváme se, ale integrál není možné vyjádřit v konečném tvaru "
+        "pomocí <a href=\"http://en.wikipedia.org/wiki/Elementary_function"
+        "\">elementárních funkcí</a></b> a je tudíž nad síly cílové skupiny, "
+        "pro kterou je tato aplikace zamýšlena. <br>Pro zvědavce: výsledek je "
+        "%s."
+
+#, php-format
+msgid   "<b>Sorry, unable to evaluate the integral %s using Maxima.</"
+        "b><br><br>You may try to help Maxima by performing some "
+        "simplification (radcan?) or substitution.<br><br>You may get the "
+        "answer using another Computer Algebra System, such as %s or %s which "
+        "is reported by %s to be most powerful in integration."
+msgstr  "<b>Omlouváme se, ale integrál %s je příliš těžký pro výpočet "
+        "programem Maxima.</b> <br><br>Můžete zkusit programu pomoci úpravou "
+        "výrazu (např. radcan) nebo ručně zadanou vhodnou substitucí."
+        "<br><br>Je možné že vám ve výpočtu nepomůže žádný software, ale "
+        "můžete zkusit program  %s nebo program %s. Viz též encyklopedie %s."
+
+msgid   "<b>This message usually appears also if you click link more times "
+        "than once.</b>"
+msgstr  "<b>Tato chybová hláška se objeví, pokud s nástrojem na tvorbu "
+        "animací pracuje současně ještě další uživatel.</b>"
+
+msgid   "<b>Too long formula, sorry.</b> <ul><li>Try to install maxima on "
+        "your local computer or look at the formula on the page below.</"
+        "li><li>The problem is probably too difficult, but you can try "
+        "another method for integration.</li></ul>"
+msgstr  "<b>Omlouváme se, ale výraz je moc dlouhý pro zobrazení v prohlížeči."
+        "</b> <ul><li>Můžete si nainstalovat program Maxima na svůj lokální "
+        "počítač, nebo si prohlédnou výstup dole na stránce.</li> <li>Možná "
+        "je problém příliš složitý, ale možná jenom používáte nevhodnou "
+        "metodou.</li></ul>"
+
+msgid   "<br><b>Instructions</b><br>Use only sharp inequalities, one "
+        "inequality per row and use variables <i>x</i> and <i>y</i>."
+msgstr  "<br><b>Instrukce</b><ul><li>Zapisujte do textového do pole "
+        "nerovnice, vždy jednu nerovnici na každý řádek.</li><li> Používejte "
+        "jenom ostré nerovnosti a proměnné <i>x</i> a <i>y</i>.</li></ul>"
+
+msgid   "<h2>Error on input</h2>The degree of Taylor polynomial must be an "
+        "integer between 1 and 9."
+msgstr  "<h2>Neplatné zadání</h2>Řád Taylorova polynomu musí být celé číslo "
+        "od jedné do devíti."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be a "
+        "positive integer."
+msgstr  "<h2>Neplatné zadání</h2>Počet dílků musí být kladné celé číslo."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be an "
+        "integer between 1 and 20."
+msgstr  "<h2>Neplatné zadání</h2>Počet dílků musí být celé číslo větší než "
+        "nula a nejvýše 20."
+
+#, php-format
+msgid   "<h2>Error</h2>The interval for integration, %s, is not subset of the "
+        "interval for drawing picture %s."
+msgstr  "<h2>Chyba</h2>Interval %s, přes který se integruje, není podmnožinou "
+        "intervalu %s, na kterém chcete kreslit obrázek."
+
+#, php-format
+msgid   "<h2>Error</h2>The upper limit (%s) for the set (and for integration) "
+        "is bigger then the lower limit (%s). Interchange limits in the form "
+        "or clicking this %slink%s."
+msgstr  "<h2>Chyba</h2>Horní mez (%s) je menší než mez dolní (%s). Vyměňte "
+        "meze ve formuláři nebo kliknutím na následující %sodkaz%s."
+
+msgid   "<h2>Remarks</h2><ul> <li>You can load the function and computed "
+        "stationary points into the calculator for next calculations by "
+        "clicking the following link "
+msgstr  "<h2>Komentáře</h2><ul> <li>Vaši zadanou funkci a vypočtené "
+        "stacionární body můžete vložit do formuláře pro další výpočty "
+        "kliknutím na následující odkaz "
+
+#, php-format
+msgid   "<h2>Simplify your function first</h2>The numerator and denominator "
+        "can be divided by the common factor %s. Simplify the fraction first "
+        "and then write the function into the field again.<br><br> Remark: "
+        "Simplifying we get y=%s."
+msgstr  "<h2>Upravte nejprve zadání</h2>Čitatel a jmenovatel jdou zkrátit "
+        "výrazem %s. Nejdřív je zkraťte a potom je zadejte ve zkrácené formě "
+        "znovu do formuláře.<br><br> Pozn: po krácení vychází y=%s."
+
+#, php-format
+msgid   "<h3>Error in mathematical notation</h3>Use lowercase letters only "
+        "and notation from the program <a href=\"http://maxima.sourceforge.net"
+        "\">Maxima</a>. <ul><li>Use star to denote multiplication, write for "
+        "example 3*x^3-6*x+1</li><li>Use parenthesis to denote the scope of "
+        "the operation, for example sin(2*x)+ln(x)</li><li>Do not use "
+        "notation  sin^2(x), but (sin(x))^2.</li><li>Use abs(x) for absolute "
+        "value, not |x|</li><li>Constants for the area of unit circle and the "
+        "euler number are %%pi and %%e (yes, with percent sign, read the  <a "
+        "href=\"http://maxima.sourceforge.net/docs/manual/en/maxima.html"
+        "\">manual</a> to the Maxima program, a computer algebra system used "
+        "for all computations).</li></ul><hr> Your input is (after omitting "
+        "spaces and conversion ^ into **): %s and the problem is with the "
+        "substring %s<br><br> Still in troubles? You can contact the authors. "
+        "Email address is on the main page."
+msgstr  "<h3>Chyba při zápise matematického výrazu</h3>Používejte jenom malá "
+        "písmena a notaci jako v programu <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a>. <ul><li>Násobení důsledně označujte hvězdičkou, "
+        "např.: 3*x^3-6*x+1</li><li>Za funkce vždy pište argument do závorky, "
+        "např sin(2*x)+ln(x)</li><li>Nepište sin^2(x) ale (sin(x))^2.</"
+        "li><li>Absolutní hodnotu označujte abs(x) a ne |x|</li><li>Konstanty "
+        "pro Ludolfovo a Eulerovo číslo označujte %%pi a %%e (ano, opravdu "
+        "tam je procento, prostudujte si <a href=\"http://people.tuke.sk/jan."
+        "busa/kega/maxima.html\">návod</a> k programu Maxima, což je Computer "
+        "Algera System použitý pro tyto výpočty).</li></ul><hr> Vaše zadáni "
+        "bylo (po odmazání mezer a konverzi znaku ^ na **): <b><span "
+        "style='color: rgb(255, 0, 0)';>%s</span></b> a problém způsobila "
+        "skupina znaků <b><span style='color: rgb(255, 0, 0)';> %s</span></"
+        "b><br><br>Pokud si přesto myslíte, že zadáváte platný matematický "
+        "výraz, nahlaste prosím podezření na chybu tvůrcům této webové "
+        "stránky."
+
+msgid   "<h3>Incorrect input, use only (decimal) numbers to enter bounds for "
+        "the picture.</h3> You are allowed to use only decimal numbers "
+        "(character minus, digits and a dot as a separator of decimal places)."
+msgstr  "<h3>Neplatný vstup, pro stanovení mezí používejte jenom (desetinná) "
+        "čísla.</h3> Pro zadání mezí můžete použít nanejvýš znaménko minus "
+        "(jako první znak) následované desetinným číslem."
+
+#, php-format
+msgid   "<h3>You may mean %s.</h3> If yes, use Copy and Paste to move this "
+        "string into the input field.<br>To go back use the Back button in "
+        "your browser."
+msgstr  "<h3>Možná jste měla/měl na mysli %s</h3> Pokud ano, použijte obvyklé "
+        "Copy a Paste pro překopírování tohoto výrazu do políčka ve "
+        "formuláři. <br>Na předchozí stránku se vrátíte kliknutím na tlačítko "
+        "zpět (Back) ve Vašem prohlížeči."
+
+#, php-format
+msgid   "<ul><li> Choose the method for the next computation.  </li> <li> Try "
+        "to find the methods which simplify the integral. If your attempt "
+        "fails, you can return using Back button in you browser. You can also "
+        "return directly to the %s initial form%s.</li><li>You can use "
+        "computer to finish the integration. Educational value of such a this "
+        "step is minimal, so use this possibility with care, please.</"
+        "li><li>Questions marks |<b>?</b>| provide preview what you get when "
+        "using this function. Simply move the cursor over the question mark "
+        "and wait few seconds.</li><li>If the application gives incorrect or "
+        "unexpected results, let us know please.</li></ul><hr>"
+msgstr  "<ul><li> Vyberte si vždy akci, která má následovat.  </li> <li> "
+        "Snažte se použít volbu která integrál zjednoduší. Pokud se Vám to "
+        "nepodaří, tak se můžete vrátit libovolný počet kroků zpět pomocí "
+        "tlačítka \"Zpět\" ve Vašem prohlížeči. Můžete se  také vrátit přímo "
+        "do  %s úvodního  formuláře%s</li><li>V libovolném okamžiku si také "
+        "můžete nechat integrál dopočítat počítačem. Tuto volbu však moc "
+        "nepoužívejte, protože se tím nic nenaučíte. Použijte ji až v "
+        "okamžiku, kdy na zintegrování stačí základní vzorce.</"
+        "li><li>Otazníky |<b>?</b>| za funkcemi zpřístupňují náhled, co "
+        "dostanete po dané úpravě. Přemístěte kurzor nad tento objekt a "
+        "chvíli počkejte.</li><li>Na případné nekorektní chování aplikace "
+        "nás  prosím upozorněte, děkujeme.</li></ul>"
+
+#, php-format
+msgid   "<ul><li>Error when checking continuity of functions and when "
+        "checking that lower bound is smaller than upper bound.<li> Are you "
+        "sure that both %s and %s are defined and continuous on the interval "
+        "%s and %s is bigger than %s on this interval?<li>Check your "
+        "functions on the following picture.</ul>"
+msgstr  "<ul><li>Chyba při kontrole spojitosti funkcí a při kontrole, zda je "
+        "horní ohraničující funkce nad dolní ohraničující funkcí. (Přečtěte "
+        "si konec výpisu z logu pod obrázkem, abyste věděli, kde nastala "
+        "chyba.)<li>Jste si jistá/jistý, že funkce obě funkce %s a %s jsou "
+        "definované a spojité na intervalu %s a %s je na tomto intervalu nad "
+        "funkcí %s? <li>Prohlédněte si obrázek (případně opravte meze, pokud "
+        "grafy funkcí jsou mimo obrázek, meze pro proměnnou y můžete vynechat "
+        "a budou potom nastaveny automaticky).</ul>"
+
+#, php-format
+msgid   "<ul><li>The name of the function must be followed by its argument "
+        "enclosed in parenthesis. Write e.g. sin(x) instead of sin x and sin"
+        "(2*x) instead of sin 2*x</li><li>Remember that if you want to write "
+        "power of a function, you cannot write something like sin^2(x), but "
+        "(sin(x))^2.</li><li>For exponential function use exp(x) or %e^x or "
+        "e^x.</li></ul>"
+msgstr  "<ul><li>Za jménem funkce musí následovat závorka, ve které je "
+        "argument, musíte psát například sin(2*x) a ne sin 2*x, musíte psát "
+        "sin(x) a ne sin x.</li><li>Pokud chcete zadat například sinus na "
+        "druhou pište (sin(x))^2 nebo (sin(x))**2 a ne sin^2(x) ani sin**2(x)."
+        "</li><li>Pro exponenciální funkce používejte zápis exp(x) nebo %e^x "
+        "nebo e^x a ne exp**(x) ani nic podobného.</li></ul> "
+
+#, php-format
+msgid   "<ul><li>Use numbers only, no functions are allowed.</li><li>Use "
+        "commas and semicolons to separate point coordinates and points in "
+        "the data file.</li><li>Use at least two and no more than six points. "
+        "If you really need to interpolate for bigger or more general data "
+        "file, use the full power of the <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a> software and the command lagrange on your local "
+        "computer.</li></ul><br>Your input was: %s"
+msgstr  "<ul><li>Používejte jenom celá nebo desetinná čísla, nepoužívejte "
+        "žádné funkce.</li><li>Používejte čárky pro oddělení souřadnic a "
+        "středníky pro oddělení bodů.</li><li>Nepoužívejte hranaté závorky "
+        "pro vyznačování bodů.</li><li>Můžete zadat nejméně dva a nejvýše "
+        "šest bodů.</li></ul> Potřebujete-li zadat více bodů nebo obecnější "
+        "body, použijte plnou sílu programu <a href=\"http://maxima."
+        "sourceforge.net\">Maxima</a> a příkazu lagrange na svém lokálním "
+        "počítači.<br><hr><br>Váš vstup byl: %s"
+
+msgid   "<ul><li>integrate two times by parts and keep the choice of u and v' "
+        "suggested by this calculator</li><li>then remove constant multiple "
+        "(if necessary) and you get some terms and the same integral as the "
+        "original one</li><li>convert the problem into an algebraic equation "
+        "where the integral is the unknown and solve this equation</li></ul>"
+msgstr  "<ul><li>integrujte dvakrát metodou per partés a případně vytkněte "
+        "konstantu, zachovejte přitom volbu u a v' která se nabídne "
+        "automaticky</li><li>po dvojím zintegrování a po případném vytknutí "
+        "konstanty obdržíte stejný integrál jako je integrál výchozí a navíc "
+        "nějaké dodatečné členy</li><li>poté budete moci sestavit rovnici pro "
+        "hledaný integrál (objeví se v pravou chvíli jako předposlední volba) "
+        "a integrál najdete ryze algebraicky jako řešení lineární rovnice</"
+        "li></ul>"
+
+msgid   "<ul><li>the function has to be function in two variables, <li>the "
+        "limits for outside integral have to be numbers,<li>the limits for "
+        "the inside integral numbers or functions of variable which is used "
+        "for outside integration,<li>he lower limit must be smaller or equal "
+        "to the upper limit for integration for both integrals.</ul> One of "
+        "these conditions has been violated or Maxima failed to verify these "
+        "conditions (in most cases due to a typing error or bad mathematical "
+        "formula on input)."
+msgstr  "<ul><li>funkce musí být nejvýše funkcí dvou proměnných, <li>meze pro "
+        "vnější integrál musí být konstanty <li> meze pro vnitřní integrál "
+        "buď konstanty nebo funkce proměnné, která je použita pro vnější "
+        "integraci,<li> pro oba integrály nesmí být dolní mez vetší než horní."
+        "</ul> Zadání porušuje některou z těchto podmínek, nebo se tyto "
+        "podmínky nepodařilo ověřit (například díky překlepu nebo chybě v "
+        "zápise matematického výrazu)."
+
+msgid   "Accessing this script from a web page which is outside Mendel "
+        "University is not allowed. You either came from such a page, or your "
+        "browser blocks the HTTP_REFERER information.<br> Use official pages "
+        "of <a href=\"http://user.mendelu.cz/marik/maw/index.php?lang=en"
+        "\">Mathematical Assistant on Web</a> or setup your browser properly."
+msgstr  "Stránka, ze které jste přišli, je mimo Mendelovu univerzitu, nebo "
+        "Váš prohlížeč blokuje název stránky, ze kterých přistupujete na náš "
+        "server. <br>Použijte oficiální přístup ze stránek aplikace <a href="
+        "\"http://user.mendelu.cz/marik/maw\">Mathematical Assistant on Web</"
+        "a>, nebo si změňte nastavení prohlížeče."
+
+#, php-format
+msgid   "After removing allowed strings we got redundant characters %s."
+msgstr  "Po odstranění povolených znaků zůstal řetězec %s."
+
+msgid   "Algebraic modification"
+msgstr  "Úprava"
+
+msgid   "Algebraic modification (fullratsimp function)"
+msgstr  "Úprava (funkce fullratsimp)"
+
+msgid   "Algebraic modification (fullratsimp function) for each term in a sum"
+msgstr  "Úprava (funkce fullratsimp) na každý sčítanec samostatně"
+
+msgid   "Algebraic modification (logarc function)"
+msgstr  "Úprava (funkce logarc)"
+
+msgid   "Algebraic modification (radcan function)"
+msgstr  "Úprava (funkce radcan)"
+
+msgid   "Algebraic modification (removing sec and csc)"
+msgstr  "Úprava (funkce odstranění sec a csc)"
+
+msgid   "Algebraic modification (trigexpand function)"
+msgstr  "Úprava (funkce trigexpand)"
+
+msgid   "Algebraic modification (trigreduce function)"
+msgstr  "Úprava (funkce trigreduce)"
+
+msgid   "Algebraic modification (trigsimp function)"
+msgstr  "Úprava (funkce trigsimp)"
+
+msgid   "Algebraic modification (xthru function)"
+msgstr  "Úprava (funkce xthru)"
+
+msgid   "Algebraic modification (xthru function) for each term in a sum"
+msgstr  "Úprava (funkce xthru) na každý sčítanec samostatně"
+
+msgid   "All x-coordiantes have to be mutually different numbers."
+msgstr  "Všechny x-ové souřadnice musí být navzájem různá čísla."
+
+msgid   "An error occurred when processing your input."
+msgstr  "Chyba při zpracování výsledku."
+
+msgid   "An error occurred when processing your input.<br>Check your formulas "
+        "(perhaps using Preview button) and report the problem if you think "
+        "that your input is correct and should be processed without any error."
+msgstr  "Došlo k chybě během zpracování vašich dat.<br>Zkontrolujte si "
+        "výrazy, které zadáváte do vstupních polí (případně ke kontrole "
+        "využijte tlačítko Preview). Pokud jste přesvědčeni, že problém je na "
+        "straně MAWu, nahlaste to prosím vývojářům."
+
+msgid   "Answer"
+msgstr  "Výsledek"
+
+msgid   "Approximation"
+msgstr  "Numerická aproximace"
+
+msgid   "Arithmetic overflow. Consider smaller bounds for the picture on the "
+        "<i>x</i> axis or bigger on the <i>y</i> axis."
+msgstr  "Arithmetic overflow. Zkuste pro obrázek použít menší meze na ose "
+        "<i>x</i> nebo větší na ose <i>y</i>."
+
+msgid   "As a subproblem we have to integrate function with absolute value, "
+        "which is not supported well in our version of Maxima."
+msgstr  "V mezivýpočtech se objevila nutnost integrovat funkci s absolutní "
+        "hodnotou, což způsobuje problémy při výpočtu určitého integrálu."
+
+msgid   "Associated homogeneous equation"
+msgstr  "Asociovaná homogenní rovnice"
+
+msgid   "Associated homogeneous equation is"
+msgstr  "Asociovaná homogenní rovnice je"
+
+msgid   "At least one y-coordinate has to be nonzero."
+msgstr  "Alespoň jedna y-ová souřadnice nesmí být nula."
+
+msgid   "Autonomous system"
+msgstr  "Autonomní systém"
+
+msgid   "Autonomous system in plane"
+msgstr  "Autonomní systém v rovině"
+
+msgid   "Auxiliary determinants are"
+msgstr  "Pomocné determinanty jsou"
+
+#, php-format
+msgid   "Bad input in row %s"
+msgstr  "Nekorektní data na řádku %s"
+
+msgid   "Bad input. Check your data."
+msgstr  "Chyba na vstupu. Zkontrolujte vstupní data."
+
+#, php-format
+msgid   "Binary operator %s found at the beginning of the string."
+msgstr  "Na začátku řetězce se vyskytuje znaménko binární operace %s. Toto "
+        "není korektní zápis. Opravte výraz prosím."
+
+#, php-format
+msgid   "Binary operator %s found at the end of the string."
+msgstr  "Na konci řetězce se vyskytuje znaménko binární operace %s. Toto není "
+        "korektní zápis. Opravte výraz prosím."
+
+msgid   "Bisection method"
+msgstr  "Metoda půlení intervalu"
+
+msgid   "Bisection of interval"
+msgstr  "Metoda půlení intervalu"
+
+msgid   "Build PDF"
+msgstr  "Vytvořit PDF"
+
+#, php-format
+msgid   "Building animations is available only, if the server load in the "
+        "last minute is smaller than %s. The current load %s. Return to the "
+        "previous page and try it later, please. (Or reload the page after 1 "
+        "minute.)"
+msgstr  "Generování animací je dostupné pouze, pokud je zatížení serveru za "
+        "poslední minutu menší než %s. Současná zátěž je %s. Vraťte se prosím "
+        "na předchozí stranu a zkuste akci později. (Nebo za minutu zkuste "
+        "znovunačtení této stránky.)"
+
+msgid   "By clicking the integral you load the integral into an interactive "
+        "tool for integration."
+msgstr  "Kliknutím na integrál tento integrál nahrajete do aplikace "
+        "usnadňující výpočet neurčitých integrálů."
+
+msgid   "Can't guess, what you actually mean. You may try to enter the "
+        "following inequalities"
+msgstr  "Těžko říct, co se pokoušíte zadat ... Možná máte na mysli "
+        "následující nerovnice (pokud ano, použijte ctrl+C a ctrl+V pro "
+        "nakopírování do formuláře)"
+
+msgid   "Change <i>xmax</i>."
+msgstr  "Opravte prosím mez <i>xmax</i> pro kreslení obrázku."
+
+msgid   "Char π is not allowed. Write %pi or pi instead."
+msgstr  "Znak π není povolen. Pište %pi nebo pi."
+
+msgid   "Char ∞ is not allowed. No part of MAW works with infinity. You are "
+        "doing something curious. If you want to evaluate limits or improper "
+        "integrals on computer, use some of computer algebra systems like "
+        "Sage or Maxima (both are free to install and also available to try "
+        "live on the Internet, without installing anything on your local "
+        "computer)."
+msgstr  "Znak ∞ se na vstupu nesmí vyskytovat. Žádná část MAWu nepodporuje "
+        "práci s nekonečnem. Děláte něco podivného. Pokud chcete vypočítat "
+        "limitu nebo nevlastní integrál, použijte některý z volně šiřitelných "
+        "systémů počítačové algebry, které se dají buď nainstalovat na váš "
+        "počítač, nebo použít přímo přes internetové rozhraní (například Sage "
+        "nebo Maxima)."
+
+msgid   "Characteristic equation"
+msgstr  "Charakteristická rovnice"
+
+msgid   "Characteristic equation has one double solution."
+msgstr  "Charakteristická rovnice má jeden dvojnásobný kořen."
+
+msgid   "Characteristic equation has two complex solutions."
+msgstr  "Charakteristická rovnice má dva komplexně sdružené kořeny."
+
+msgid   "Characteristic equation has two real solutions."
+msgstr  "Charakteristická rovnice má dva reálné kořeny."
+
+msgid   "Characteristic polynomial"
+msgstr  "Charakteristický polynom"
+
+msgid   "Check also that both functions are continuous on the interval used "
+        "to evaluate the integral and to draw the picture."
+msgstr  "Zkontrolujte si také, že funkce které chcete nakreslit jsou spojité "
+        "na celém intervalu, na kterém je integrovat a chcete kreslit."
+
+msgid   "Check your formulas (perhaps using Preview button) and report the "
+        "problem if you think that your input is correct and should be "
+        "processed without any error."
+msgstr  "Zkontrolujte si výrazy, které zadáváte do vstupních polí (případně "
+        "ke kontrole využijte tlačítko Preview). Pokud jste přesvědčeni, že "
+        "problém je na straně MAWu, nahlaste to prosím vývojářům."
+
+msgid   "Check your input data"
+msgstr  "Zkontrolujte si vstupní data"
+
+msgid   "Choose the action for the next computation"
+msgstr  "Není vybrána žádná akce. Vraťte se zpátky a vyberte se pomocí "
+        "tlačítka."
+
+msgid   "Clever expansion into two fractions"
+msgstr  "Chytré rozdělení na dva zlomky"
+
+#, perl-format
+msgid   "Click %shere%s to find stationary points by computer."
+msgstr  "Klikněte na %stento odkaz%s pro nalezení stacionárních bodů pomocí "
+        "počítače."
+
+msgid   "Click the integral to send the function to a tool which helps to "
+        "evaluate the indefinite integral."
+msgstr  "Klikněte na integrál pro předání funkce online aplikaci, která Vás "
+        "provede výpočtem neurčitého integrálu."
+
+msgid   "Close"
+msgstr  "Zavřít"
+
+msgid   "Comparing coefficients we get (the first equation is from the "
+        "highest power)"
+msgstr  "Porovnáním koeficientů získáváme (od nejvyšší mocniny)"
+
+msgid   "Comparison with other methods"
+msgstr  "Srovnání s dalšími metodami"
+
+msgid   "Completing square"
+msgstr  "Doplnění na čtverec"
+
+msgid   "Computation opens in new panel or window."
+msgstr  "Výpočet se otevře v novém panelu nebo okně."
+
+msgid   "Conclusion"
+msgstr  "Závěr"
+
+msgid   "Condition"
+msgstr  "Podmínka"
+
+msgid   "Condition for $x$-intercepts"
+msgstr  "Podmínka na průsečík s osou $x$"
+
+msgid   "Condition for critical points"
+msgstr  "Podmínka pro kritické body"
+
+msgid   "Condition for points of discontinuity"
+msgstr  "Podmínka na body nespojitosti"
+
+msgid   "Condition for stationary points"
+msgstr  "Podmínka pro stacionární body"
+
+msgid   "Conditions"
+msgstr  "Podmínky"
+
+msgid   "Consider reasonable bounds for axes, please."
+msgstr  "Pokuste se chybu eliminovat vhodnější volbou mezí."
+
+msgid   "Constant multiple rule"
+msgstr  "Derivace konstantního násobku"
+
+msgid   "Constant rule"
+msgstr  "Derivace konstanty"
+
+msgid   "Constant solution"
+msgstr  "Konstantní řešení"
+
+msgid   "Contract product of roots (rootscontract)"
+msgstr  "Sloučit součiny odmocnin (funkce rootscontract)"
+
+msgid   "Conversion into algebraic equation"
+msgstr  "Převod na algebraickou rovnici"
+
+msgid   "Conversion into exponential function"
+msgstr  "Převod na exponenciální funkci"
+
+msgid   "Critical points"
+msgstr  "Kritické body"
+
+msgid   "Curve"
+msgstr  "Křivka"
+
+msgid   "Curve derivatives"
+msgstr  "Derivace křivky"
+
+msgid   "Decimal number (dot separates decimal places) cannot be a part of "
+        "another mathematical expression."
+msgstr  "Desetinnou tečku můžete použít pouze, pokud desetinné číslo není "
+        "součástí jiného matematického výrazu."
+
+msgid   "Definite integral"
+msgstr  "Určitý integrál"
+
+msgid   "Delete one of these characters or use parentheses properly."
+msgstr  "Jeden ze znaků je nutno smazat, nebo je nutno správně použít závorky."
+
+#, perl-format
+msgid   "Denote %s and %s."
+msgstr  "Označme %s a %s."
+
+msgid   "Derivative"
+msgstr  "Derivace"
+
+#, php-format
+msgid   "Derivative of %s"
+msgstr  "Derivace %s"
+
+msgid   "Derivative of absolute value"
+msgstr  "Derivace absolutní hodnoty"
+
+msgid   "Derivative of acrcotan function"
+msgstr  "Derivace funkce arkuskotangens"
+
+msgid   "Derivative of arccosine function"
+msgstr  "Derivace funkce arkuskosinus"
+
+msgid   "Derivative of arcsine function"
+msgstr  "Derivace funkce arkussinus"
+
+msgid   "Derivative of arctan function"
+msgstr  "Derivace funkce arkustangens"
+
+msgid   "Derivative of contangent function"
+msgstr  "Derivace funkce kotangens"
+
+msgid   "Derivative of cosine function"
+msgstr  "Derivace kosinu"
+
+msgid   "Derivative of csc function"
+msgstr  "Derivace funkce kosecans"
+
+msgid   "Derivative of exponential function"
+msgstr  "Derivace exponenciální funkce"
+
+msgid   "Derivative of general solution is"
+msgstr  "Derivace obecného řešení je"
+
+msgid   "Derivative of hyperbolic acrcotan function"
+msgstr  "Derivace funkce hyperbolický arkuskotangens"
+
+msgid   "Derivative of hyperbolic arccosine function"
+msgstr  "Derivace funkce hyperbolický arkuskosinus"
+
+msgid   "Derivative of hyperbolic arcsine function"
+msgstr  "Derivace funkce hyperbolický arkussinus"
+
+msgid   "Derivative of hyperbolic arctan function"
+msgstr  "Derivace funkce hyperbolický arkustangens"
+
+msgid   "Derivative of hyperbolic contangent function"
+msgstr  "Derivace funkce hyperbolický kotangens"
+
+msgid   "Derivative of hyperbolic cosine function"
+msgstr  "Derivace funkce hyperbolický kosinus"
+
+msgid   "Derivative of hyperbolic sine function"
+msgstr  "Derivace funkce hyperbolický sinus"
+
+msgid   "Derivative of hyperbolic tangent function"
+msgstr  "Derivace funkce hyperbolický tangens"
+
+msgid   "Derivative of logarithm"
+msgstr  "Derivace logaritmu"
+
+msgid   "Derivative of particular solution (simplified)"
+msgstr  "Derivace partikulárního řešení (po úpravě)"
+
+msgid   "Derivative of power function"
+msgstr  "Derivace mocninné funkce"
+
+msgid   "Derivative of sec function"
+msgstr  "Derivace funkce sekans"
+
+msgid   "Derivative of sine function"
+msgstr  "Derivace sinu"
+
+msgid   "Derivative of tangent function"
+msgstr  "Derivace funkce tangens"
+
+msgid   "Derivatives, derivatives at  $#1$ and coefficients of Taylor "
+        "polynomial"
+msgstr  "Derivace, derivace v bodě $#1$ a koeficienty Taylorova polynomu"
+
+#, php-format
+msgid   "Determinant of the coefficient matrix (wronskian of the solutions %s "
+        "and %s) is"
+msgstr  "Determinant matice soustavy (wronskián funkcí %s a %s) "
+
+#, php-format
+msgid   "Differentiate #1 with respect to %s"
+msgstr  "Derivujte #1 podle proměnné %s"
+
+msgid   "Differentiate function #1"
+msgstr  "Derivujte funkci #1"
+
+#, perl-format
+msgid   "Differentiating we get %s."
+msgstr  "Derivací obdržíme %s."
+
+#, perl-format
+msgid   "Differentiating with respect to $ x$ we get %s."
+msgstr  "Derivací podle $ x$ obdržíme %s."
+
+#, perl-format
+msgid   "Differentiating with respect to $ y$ we get %s."
+msgstr  "Derivací podle $ y$ obdržíme %s."
+
+msgid   "Division"
+msgstr  "Dělení"
+
+msgid   "Do not use comma."
+msgstr  "Nepoužívejte čárku."
+
+msgid   "Do not use comma. To separate decimal places use the dot. If you "
+        "wish to enter decimal number, this decimal number cannot be a part "
+        "of mathematical formula."
+msgstr  "Nepoužívejte čárku. Pro oddělení desetinných míst nepoužívejte "
+        "desetinnou čárku ale tečku. Desetinné číslo nemůže být součástí "
+        "žádného jiného matematického výrazu.<br>"
+
+msgid   "Do not use decadic logarithm, please."
+msgstr  "Nepoužívejte dvojkový nebo dekadický logaritmus."
+
+msgid   "Do not use dot for multiplication."
+msgstr  "Nepoužívejte tečku pro násobení."
+
+msgid   "Do not use equations. The application cannot draw such an input."
+msgstr  "Nepoužívejte rovnice. Aplikace neumí zpracovat takový vstup."
+
+msgid   "Do not use this function. If you need to use this function in your "
+        "computation, run the computation in Maxima on your local computer."
+msgstr  "Nepoužívejte tuto funkci, nebo ji používejte přímo v programu Maxima "
+        "na Vašem lokálním počítači."
+
+msgid   "Domain (red region)"
+msgstr  "Definiční obor (vyznačen červeně)"
+
+#, php-format
+msgid   "Domain of %s"
+msgstr  "Definiční obor funkce %s"
+
+msgid   "Domain where the inequality is valid"
+msgstr  "Obor pravdivosti"
+
+msgid   "Double integral"
+msgstr  "Dvojný integrál"
+
+msgid   "Download html"
+msgstr  "Download HTML"
+
+msgid   "ERROR: Function is not bijection on the given interval."
+msgstr  "CHYBA: Funkce nezobrazuje zadaný interval do sebe."
+
+msgid   "ERROR: No change in sign between end points of the interval"
+msgstr  "CHYBA: Mezi koncovými body intervalu není znaménková změna"
+
+msgid   "ERROR: function is out of domain at some point of the interval"
+msgstr  "CHYBA: Funkce je někde na zadaném intervalu mimo definiční obor."
+
+msgid   "Eigenvalues"
+msgstr  "Vlastní hodnoty"
+
+msgid   "Eigenvalues (numerically)"
+msgstr  "Vlastní hodnoty (numericky)"
+
+msgid   "Enter integrand only. Not the whole integral."
+msgstr  "Zadávejte pouze integrovanou funkci. Nezadávejte celý integrál."
+
+msgid   "Equation"
+msgstr  "Rovnice"
+
+msgid   "Equation is homogeneous  -- we will use separation of variables and "
+        "write the solution in explicit form."
+msgstr  "Rovnice je homogenní -- použijeme separaci proměnných a najdeme "
+        "řešení v explicitním tvaru."
+
+msgid   "Equation is linear"
+msgstr  "Rovnice je lineární"
+
+msgid   "Error"
+msgstr  "Chyba"
+
+msgid   "Error in input data"
+msgstr  "Chyba ve vstupních datech"
+
+msgid   "Error in math or the given point does not belong to the domain."
+msgstr  "Špatně zadaný matematický výraz, nebo zadaný bod neleží v definičním "
+        "oboru funkce."
+
+msgid   "Error in math. Check your input."
+msgstr  "Chyba v zápise matematického výrazu. Zkontrolujte svá vstupní data."
+
+msgid   "Error in mathematical notation"
+msgstr  "Chyba při zápisu matematického výrazu"
+
+msgid   "Error in solving. (Bad input?)"
+msgstr  "Chyba při řešení. (Špatně napsané zadání?)"
+
+msgid   "Error in the function or in the bound for integration."
+msgstr  "Chyba v zadání funkce nebo meze pro integraci."
+
+msgid   "Error in your expression"
+msgstr  "Chyba v zápise matematického výrazu"
+
+msgid   "Error in your formula"
+msgstr  "Chyba při zápise matematického výrazu"
+
+msgid   "Error occurred when processing your formula."
+msgstr  "Chyba v zápise matematického výrazu."
+
+#, php-format
+msgid   "Error when processing input from the field %s."
+msgstr  "Chyba při zpracování vstupu z políčka %s."
+
+msgid   "Error, empty string on input."
+msgstr  "Chyba, zadala/zadal jste prázdný řetězec"
+
+msgid   "Error, sorry. The name of the function is not followed by the "
+        "parentheses."
+msgstr  "Chyba, za jménem funkce musí následovat agrument uzavřený v kulatých "
+        "závorkách."
+
+msgid   "Error, you typed unsupported chars or uppercase letters."
+msgstr  "Chyba, zadala/zadal jste řetězec obsahující nepovolné znaky nebo "
+        "velká písmena."
+
+msgid   "Error: Dimension too large."
+msgstr  "Chyba: příliš velké délky v obrázku."
+
+msgid   "Error: Failed to evaluate integral of <i>v'</i>."
+msgstr  "Chyba v použití per-partés: Nepodařilo se zintegrovat <i>v'</i>."
+
+msgid   "Error: Missing derivative"
+msgstr  "Chyba: V zadání chybí derivace"
+
+#, perl-format
+msgid   "Error: The Jacobian is zero, unable to clasify stationary point %s."
+msgstr  "Chyba: Jakobián je nula, nelze rozhodnout pomocí prvních derivací o "
+        "chování systému v okolí bodu %s."
+
+msgid   "Error: The equation cannot be solved."
+msgstr  "Chyba: Nepodařilo se vyřešit rovnici."
+
+#, perl-format
+msgid   "Error: The point %s is not a stationary point of the function %s"
+msgstr  "Chyba: V bodě %s nemá funkce %s stacionární bod."
+
+#, perl-format
+msgid   "Error: There is no stationary point at %s."
+msgstr  "Chyba: V bodě %s nemá autonomní systém stacionární bod."
+
+msgid   "Error: incorrect operation"
+msgstr  "Chyba: Nekorektní použití"
+
+msgid   "Error: incorrect substitution"
+msgstr  "Chyba: Nekorektní substituce"
+
+msgid   "Evaluation of $y'$"
+msgstr  "Výpočet $y'$"
+
+msgid   "Evaluation of $y''$"
+msgstr  "Výpočet $y''$"
+
+msgid   "Evaluation of definite integral"
+msgstr  "Výpočet určitého integrálu"
+
+msgid   "Even powers of cosine function replaced by sine"
+msgstr  "Sudé mocniny funkce kosinus nahradíme funkcí sinus"
+
+msgid   "Even powers of sine function replaced by cosine"
+msgstr  "Sudé mocniny funkce sinus nahradíme funkcí kosinus"
+
+msgid   "Expansion"
+msgstr  "Roznásobení závorek"
+
+msgid   "Factorization"
+msgstr  "Rozklad na součin"
+
+msgid   "Final answer"
+msgstr  "Konečný výsledek"
+
+msgid   "Final result"
+msgstr  "Vysledek"
+
+msgid   "Final simplifications"
+msgstr  "Závěrečné úpravy"
+
+msgid   "Find $ #1 $-degree Taylor polynomial for function $ f(x)=#2$ in $ "
+        "x_0=#3$."
+msgstr  "Najděte Taylorův polynom stupně $ #1 $ pro funkci$ f(x)=#2$ se "
+        "středem v bodě $ x_0=#3$."
+
+msgid   "Finishing computation by Maxima"
+msgstr  "Dokončení integrace programem Maxima"
+
+msgid   "First derivative"
+msgstr  "První derivace"
+
+#, perl-format
+msgid   "For more general right hand sides use %svariation of constants%s."
+msgstr  "Pro obecnější pravou stranu použijte %smetodu variace konstant%s."
+
+msgid   "Formconv (program which parses your input) failed. Correct the "
+        "formula on your input."
+msgstr  "Program formconv pro rozpoznání výrazu na vstupu skončil chybou. "
+        "Opravte prosím matematický výraz ve vstupním poli."
+
+msgid   "Formula"
+msgstr  "Matematický výraz"
+
+msgid   "Found zero"
+msgstr  "Nalezen kořen"
+
+#, php-format
+msgid   "From the determinant of %s"
+msgstr  "Pomocí determinantu matice %s"
+
+#, php-format
+msgid   "From trace and determinant of %s"
+msgstr  "Pomocí stopy a determinantu matice %s"
+
+msgid   "Function"
+msgstr  "Funkce"
+
+msgid   "Function and value of the function"
+msgstr  "Funkce a funkční hodnota"
+
+msgid   "Function grapher"
+msgstr  "Grafy funkcí"
+
+msgid   "Function to be integrated"
+msgstr  "Integrovaná funkce"
+
+msgid   "Functions and characters available for mathematical notation"
+msgstr  "Funkce a pravidla pro zápis matematických výrazů"
+
+msgid   "General solution"
+msgstr  "Obecné řešení"
+
+msgid   "General solution is"
+msgstr  "Obecné řešení je"
+
+msgid   "General solution of the equation"
+msgstr  "Obecné řešení rovnice"
+
+msgid   "Geometrical application of definite integral"
+msgstr  "Geometrické aplikace určitého integrálu"
+
+msgid   "Given data files, we look for optimal linear approximation in the "
+        "form"
+msgstr  "Zadaný soubor bodů prokládáme lineární závislostí ve tvaru"
+
+msgid   "Given points in the plane, we look for the polynomial of "
+        "interpolation."
+msgstr  "Pro zadané body hledáme polynom, co nejmenšího stupně, který "
+        "prochází všemi těmito body."
+
+msgid   "Go home"
+msgstr  "Na začátek"
+
+msgid   "Graph"
+msgstr  "Graf"
+
+msgid   "Graph and approximation by trapezoids"
+msgstr  "Graf a aproximace plochy pod grafem funkce lichoběžníky"
+
+#, php-format
+msgid   "Graph deformation: we draw function %s."
+msgstr  "Deformace grafu: nakreslíme funkci %s."
+
+msgid   "Graph of the function and mean value"
+msgstr  "Graf funkce a střední hodnoty"
+
+msgid   "Graphs of basic elementary functions"
+msgstr  "Grafy základních elementárních funkcí"
+
+msgid   "Help to find the primitive function"
+msgstr  "Pomoc s hledáním primitivní funkce"
+
+#, perl-format
+msgid   "Hence %s."
+msgstr  "Odsud %s."
+
+msgid   "Hessian"
+msgstr  "Hessián"
+
+msgid   "Homogeneous equation"
+msgstr  "Homogenní rovnice"
+
+msgid   "However, the right hand side can be written as sum of two or more "
+        "right hand sides which are fine for undetermined coefficients as "
+        "follows."
+msgstr  "Nezoufejte však, pravou stranu je možno rozdělit na součet několika "
+        "pravých stran, které jsou již vhodné pro další výpočet metodou "
+        "neurčitých koeficientů."
+
+msgid   "However, the right hand side can be written in the form as required."
+msgstr  "Nezoufejte však, pravou stranu je možno pomocí algebraických operací "
+        "do požadovaného tvaru upravit."
+
+msgid   "If the derivatives are not polynomials and if these derivative are "
+        "complicated, some stationary points may be missing."
+msgstr  "Pokud derivace funkce nejsou polynomy a jsou příliš komplikované, "
+        "nemusí program najít všechny stacionární body."
+
+#, perl-format
+msgid   "If the function %s satisfies %s and %s, then the solution is %s, "
+        "where %s."
+msgstr  "Pokud funkce %s splňuje %s a %s, potom řešení je %s, kde %s."
+
+msgid   "If the given function differs from the function which is actually "
+        "differentiated, then Maxima performed an automatical simplification "
+        "first."
+msgstr  "Pokud se zadaná funkce neshoduje s funkcí, která je uvedena na "
+        "začátku řetězce derivování, znamená to, že došlo k automatickým "
+        "úpravám vedoucím k přepsání zadané funkce do ekvivalentního, ale "
+        "jednoduššího tvaru."
+
+msgid   "If the rendering of the formulas is bad, consider another browser "
+        "than Internet Explorer. The application has been tested with <a href="
+        "\"http://www.mozilla.com/firefox/\">Firefox</a>."
+msgstr  "Pokud špatně vidíte matematické vzorce, nepoužívejte Internet "
+        "Explorer. Použijte například <a href=\"http://www.mozilla-europe.org/"
+        "cs/products/firefox/\">Firefox</a>."
+
+#, php-format
+msgid   "If you mean %s, you can try copy and paste the following string to "
+        "the input field:"
+msgstr  "Pokud se snažíte zadat výraz %s, zkuste zadat do vstupního pole "
+        "následující vstupní data:"
+
+msgid   "If you use another logarithm than natural, use logarithm with "
+        "integer base."
+msgstr  "Pokud  volíte jiný základ logaritmu než <i>e</i>, použijte celé "
+        "číslo."
+
+msgid   "If you want to try various integration techniques, return to the "
+        "previous page and choose the required method."
+msgstr  "Chcete-li vyzkoušet různé integrační metody, můžete se vrátit na "
+        "předchozí stránku a zvolit vhodnou akci pro další krok."
+
+msgid   "Ill posed problem, incorrect formulation of the problem or missing "
+        "informations"
+msgstr  "Nekorektní formulace úlohy nebo nedostatek informací pro výpočet"
+
+msgid   "In computer notation"
+msgstr  "Zápis pro počítač"
+
+msgid   "Incorrect input"
+msgstr  "Nekorektní data na vstupu"
+
+msgid   "Incorrect input (not a number or empty string)"
+msgstr  "Nekorektní data na vstupu, nebo prázdný řetězec v některém políčku."
+
+msgid   "Incorrect input, use only integers to enter number of steps."
+msgstr  "Nekorektní vstup. K zadávání počtu kroků používejte pouze přirozená "
+        "čísla."
+
+msgid   "Incorrect problem"
+msgstr  "Nekorektní zadání"
+
+msgid   "Inequalities"
+msgstr  "Nerovnice"
+
+msgid   "Inequalities and systems of inequalities"
+msgstr  "Nerovnice a soustavy nerovnic"
+
+msgid   "Inequality"
+msgstr  "Nerovnost"
+
+#, php-format
+msgid   "Inequality %s"
+msgstr  "Nerovnice %s"
+
+msgid   "Initial guess"
+msgstr  "Počáteční odhad"
+
+#, php-format
+msgid   "Insecure or unsupported command or function %s. Do not use this "
+        "command, please. If you insist on this command, use the full Maxima "
+        "software."
+msgstr  "Nebezpečný nebo nepodporovaný příkaz nebo funkce %s.<br> Tento "
+        "kalkulátor není určen pro použití s tímto příkazem. Jestli na "
+        "použití tohoto  příkazu trváte, použijte plnohodnotný program Maxima "
+        "nebo wxMaxima, který si můžete volně nainstalovat na svém počítači."
+
+msgid   "Integral"
+msgstr  "Integrál"
+
+msgid   "Integral methods assistant"
+msgstr  "Integrální počet s asistencí"
+
+msgid   "Integrate terms in the sum"
+msgstr  "Integrujeme sčítance"
+
+#, php-format
+msgid   "Integrating <b>by parts</b> with %s we get:"
+msgstr  "Integrací <b>per partés</b> při volbě %s dostaneme:"
+
+msgid   "Integrating terms in a sum"
+msgstr  "Integrace jednotlivých sčítanců"
+
+#, perl-format
+msgid   "Integrating with respect to $ x$ we get %s."
+msgstr  "Integrací vzhledem k $ x$ dostáváme %s."
+
+#, perl-format
+msgid   "Integrating with respect to $ y$ we get %s."
+msgstr  "Integrací vzhledem k $ y$ dostáváme %s."
+
+#, php-format
+msgid   "Integration gives %s and %s (by clicking the integral you load the "
+        "integral into tool for indefinite integration)"
+msgstr  "Integrací dostaneme %s a %s (kliknutím na integrál tento integrál "
+        "nahrajete do aplikace usnadňující výpočet neurčitých integrálů)"
+
+msgid   "Interpolation with Lagrange polynomial"
+msgstr  "Interpolace pomocí Lagrangeova polynomu"
+
+msgid   "Interval"
+msgstr  "Interval"
+
+#, php-format
+msgid   "Invalid input in the field %s."
+msgstr  "Neplatný vstup v políčku %s."
+
+#, php-format
+msgid   "Invalid limits for integration. Limits for the inside integral "
+        "cannot contain the variable %s, which is used for inside integration."
+        "<br>Bad limits or bad order of variables for integration."
+msgstr  "Nekorektní meze pro vnitřní integrál. Meze pro vnitřní integrál "
+        "nesmí obsahovat proměnnou %s, přes kterou se integruje vnitřní "
+        "integrál.<br>Buď máte špatně meze, nebo pořadí integrace."
+
+msgid   "Invalid limits for integration. Limits for the outside integral must "
+        "be constants and the lower limit has to be smaller than upper limit."
+msgstr  "Nekorektní meze pro vnější integrál. Meze pro vnější integrál musí "
+        "být konstanty a dolní mez musí být menší než horní mez."
+
+msgid   "Invalid limits for integration. One of the limits is becomes "
+        "undefined on the region of integration."
+msgstr  "Špatné meze integrálu. Některá z funkcí použitých jako meze pro "
+        "vnitřní integrál není definována na celé množině, kde chcete "
+        "integrovat."
+
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit."
+msgstr  "Nekorektní meze pro vnitřní integrál. Dolní mez vnitřního integrálu "
+        "musí být menší než mez horní. V tomto případě tato podmínka není "
+        "splněna, funkce zadané mezemi se protínají."
+
+#, php-format
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit. If you want to "
+        "interchange limits, you can try the following %s."
+msgstr  "Nekorektní meze pro vnitřní integrál. Dolní mez vnitřního integrálu "
+        "musí být menší než mez horní. V tomto případě tato podmínka není "
+        "splněna, meze jsou přehozeny. Meze prohodíte kliknutím na "
+        "následující %s."
+
+msgid   "Invalid limits for integration. The radial variable r must be "
+        "nonnegative."
+msgstr  "Nekorektní meze pro proměnnou r. Tato proměnná musí být nezáporná."
+
+#, perl-format
+msgid   "Invalid point number %s."
+msgstr  "Chyba v zadání bodu číslo %s."
+
+msgid   "Investigating function using Maxima CAS"
+msgstr  "Průběh funkce programem Maxima"
+
+msgid   "Iteration scheme"
+msgstr  "Iterační schema"
+
+msgid   "Jacobi matrix"
+msgstr  "Jacobiho matice"
+
+msgid   "Jacobi matrix at stationary point"
+msgstr  "Jacobiho matice ve stacionárním bodě"
+
+msgid   "Least squares method"
+msgstr  "Metoda nejmenších čtverců"
+
+msgid   "Length of linear element"
+msgstr  "Délka lineárního elementu"
+
+msgid   "Line integral"
+msgstr  "Křivkový integrál"
+
+msgid   "Linear solution"
+msgstr  "Lineární řešení"
+
+msgid   "Linear system for coefficients"
+msgstr  "Soustava lineárních rovnic pro neurčité koeficienty"
+
+#, php-format
+msgid   "Load: %s, Running processes: %s"
+msgstr  "Zátěž: %s, Počet sledovaných procesů: %s"
+
+msgid   "Local extrema in two variables"
+msgstr  "Lokální extrémy funkce dvou proměnných"
+
+msgid   "Lower limit"
+msgstr  "Dolní mez"
+
+msgid   "MAW error: equal md5sum for different strings."
+msgstr  "Kritická chyba: stejný md5 součet pro různé řetězce."
+
+msgid   "Mathematical Assistant on Web"
+msgstr  "Matematické výpočty online (MAW)"
+
+msgid   "Maxima failed to find $x$-intercepts. They probably do not exist."
+msgstr  "Programu Maxima se nepodařilo najít body průsečíky s osou $x$. "
+        "Pravděpodobně žádné nejsou."
+
+msgid   "Maxima failed to find critical points. They probably do not exist."
+msgstr  "Program Maxima nenalezl kritické body. Pravděpodobně žádné nejsou."
+
+msgid   "Maxima failed to find points of discontinuity. They probably do not "
+        "exist."
+msgstr  "Programu Maxima se nepodařilo najít body nespojitosti. Pravděpodobně "
+        "žádné nejsou."
+
+msgid   "Maxima failed to find stationary points. They probably do not exist."
+msgstr  "Program Maxima nenalezl žádné stacionární body, pravděpodobně žádné "
+        "nejsou."
+
+msgid   "Maxima failed to find the primitive function."
+msgstr  "Program Maxima nenalezl primitivní funkci."
+
+msgid   "Maxima is using arc-trig functions to get a solution. Some solutions "
+        "will be lost."
+msgstr  "Program Maxima použil při řešení rovnice inverzní goniometrické "
+        "funkce a některá řešení proto mohla být vynechána."
+
+msgid   "Mean value"
+msgstr  "Střední hodnota"
+
+msgid   "Method"
+msgstr  "Postup"
+
+msgid   "Method of iterations"
+msgstr  "Metoda prosté iterace"
+
+msgid   "Method regula falsi"
+msgstr  "Metoda regula falsi"
+
+msgid   "Missing comma or more semicolons than expected."
+msgstr  "Chybí čárka nebo přebývá středník."
+
+#, perl-format
+msgid   "Missing coordinate for point number %s."
+msgstr  "Chybí některá souřadnice u bodu číslo %s."
+
+msgid   "Missing semicolon or more commas than expected."
+msgstr  "Chybí středník nebo přebývá čárka."
+
+msgid   "Missing stationary points in your input. I'll try to find the "
+        "stationary points first."
+msgstr  "Nejsou zadány stacionární body, pokusím se je nejprve najít."
+
+msgid   "Multiplication is denoted by star, write e.g. 2*x."
+msgstr  "Násobení označujte hvězdičkou, například 2*x."
+
+msgid   "Multiplying both numerator and denominator"
+msgstr  "Rozšíření zlomku"
+
+#, php-format
+msgid   "Multiplying both numerator and denominator by %s and simplification"
+msgstr  "Rozšíření zlomku výrazem %s a úprava"
+
+msgid   "Newton--Raphson method"
+msgstr  "Newtonova metoda"
+
+msgid   "Newton-Raphson method"
+msgstr  "Newtonova metoda"
+
+msgid   "Next computation"
+msgstr  "Další akce"
+
+msgid   "No isolated stationary point has been found. Either there are no "
+        "stationary points or the problem is too difficult for Maxima."
+msgstr  "Nepodařilo se najít žádný izolovaný stacionární bod. Možná žádný "
+        "stacionární bod není, možná však jsou rovnice příliš obtížné a "
+        "musíte si je vyřešit ručně."
+
+msgid   "No restriction on the domain of the function found. The function "
+        "seems to be defined everywhere."
+msgstr  "Nebyla nalezena žádná omezení na definiční obor. Funkce je "
+        "definovaná všude."
+
+msgid   "No stationary point has been found. Either there are no stationary "
+        "points or the problem is too difficult for Maxima."
+msgstr  "Nepodařilo se najít žádný stacionární bod. Možná žádný stacionární "
+        "bod není, možná však jsou rovnice příliš obtížné a musíte si je "
+        "vyřešit ručně."
+
+msgid   "Nonconstant solution"
+msgstr  "Nekonstantní řešení"
+
+msgid   "Nonhomogeneous equation"
+msgstr  "Nehomogenní rovnice"
+
+msgid   "Not all brackets which are written by the computer are necessary. "
+        "Many of them can be safely omitted."
+msgstr  "Ne vždy jsou všechny závorky napsané z přehnané opatrnosti, nutné."
+
+msgid   "Not found."
+msgstr  "Nenalezeno."
+
+msgid   "Now we solve initial value problem"
+msgstr  "Nyní řešíme počáteční úlohu"
+
+msgid   "Number of subintervals"
+msgstr  "Počet podintervalů v dělení"
+
+msgid   "Numerical computation"
+msgstr  "Výsledek numerického vypočtu"
+
+#, php-format
+msgid   "On the next page you can find an animation which describes, how the "
+        "graph of %s is transformed into %s."
+msgstr  "Na následující straně najdete animaci ukazující, jak se graf funkce "
+        "%s transformuje na graf funkce %s."
+
+msgid   "One of the functions has probably point of discontinuity on the "
+        "interval under consideration. Look on the picture below and check "
+        "your input."
+msgstr  "Některá z funkcí má pravděpodobně bod nespojitosti na zadaném "
+        "intervalu. Zkontrolujte situaci podle obrázku."
+
+msgid   "Ordinary differential equation"
+msgstr  "Obyčejné diferenciální rovnice"
+
+#, perl-format
+msgid   "Our equation can be written in the form %s."
+msgstr  "Rovnici je možno přepsat do tvaru %s."
+
+msgid   "Our hint: (Some automatical hints based on few heuristic tests. Do "
+        "not follow these hints blindly and use your mind instead.)"
+msgstr  "Náš tip: (Návrhy sestavené na základě několika automatických "
+        "heuristických testů. Nesnažte se slepě poslouchat tyto rady (někdy "
+        "nejsou optimální) a raději používejte své nápady.)"
+
+msgid   "Parametric curve"
+msgstr  "Parametricky zadaná křivka"
+
+msgid   "Partial fractions"
+msgstr  "Rozklad na parciální zlomky"
+
+msgid   "Particular solution"
+msgstr  "Partikulární řešení"
+
+msgid   "Particular solution (after substitution and simplification)"
+msgstr  "Partikulární řešení (po dosazení a úpravě)"
+
+msgid   "Particular solution of the equation"
+msgstr  "Partikulární řešení rovnice"
+
+msgid   "Picture"
+msgstr  "Obrázek"
+
+msgid   "Points of discontinuity"
+msgstr  "Body nespojitosti"
+
+msgid   "Points on boundary"
+msgstr  "Výpočet krajních bodů"
+
+msgid   "Points on the boundary"
+msgstr  "Výpočet krajních bodů"
+
+msgid   "Preliminary"
+msgstr  "Přípravné výpočty"
+
+msgid   "Primitive function"
+msgstr  "Primitivní funkce"
+
+#, php-format
+msgid   "Probably exchanged f and g functions. Interchange these functions "
+        "either in the previous form or by clicking the following %s."
+msgstr  "Pravděpodobně prohozené funkce, které ohraničují množinu shora a "
+        "zdola. Vyměňte funkce buď ve formuláři nebo kliknutím na následující "
+        "%s."
+
+msgid   "Problem"
+msgstr  "Zadání"
+
+msgid   "Processing image"
+msgstr  "Generuji obrázek"
+
+msgid   "Processing request"
+msgstr  "Probíhá výpočet"
+
+msgid   "Processing the picture. If the picture does not appear within few "
+        "seconds, you may have error in your math expressions."
+msgstr  "Probíhá generování obrázku. Pokud se obrázek neobjeví během tří "
+        "sekund, je možné, že v zápise vašeho matematického výrazu je chyba."
+
+msgid   "Product rule"
+msgstr  "Derivace součinu"
+
+msgid   "Program Maxima finishes the answer automatically"
+msgstr  "Program Maxima dokončí integraci samostatně, bez zobrazení postupu."
+
+msgid   "Quotient rule"
+msgstr  "Derivace podílu"
+
+msgid   "Read carefully the method and ignore other suggestions, such as "
+        "substitution"
+msgstr  "Přečtěte si pozorně postup a případné jiné návrhy (např substituci) "
+        "ignorujte"
+
+msgid   "Region for integration"
+msgstr  "Oblast pro integraci"
+
+msgid   "Regula falsi method"
+msgstr  "Metoda regula falsi"
+
+msgid   "Remarks"
+msgstr  "Poznámky"
+
+msgid   "Report bug"
+msgstr  "Nahlásit chybu"
+
+msgid   "Second derivative"
+msgstr  "Druhá derivace"
+
+msgid   "Second order linear differential equation"
+msgstr  "Lineární diferenciální rovnice druhého řádu"
+
+msgid   "Separation of variables"
+msgstr  "Separace proměnných"
+
+msgid   "Server load too large"
+msgstr  "Ochrana proti přetížení serveru"
+
+msgid   "Server overloaded"
+msgstr  "Přetížený server"
+
+msgid   "Server refused to build more animations simultaneously."
+msgstr  "Server je nastaven tak, aby negeneroval více animací současně."
+
+#, php-format
+msgid   "Shift: horizontally %s units and vertically  %s units (positive "
+        "values mean move to the left or top, negative to the right or bottom)"
+msgstr  "Posun grafu: vodorovně o %s a svisle o %s (kladná čísla značí posun "
+        "doleva nebo nahoru, záporná naopak)"
+
+#, php-format
+msgid   "Shifting %s into %s."
+msgstr  "Posunujeme %s na %s."
+
+msgid   "Simplification"
+msgstr  "Úprava"
+
+msgid   "Simplifying we get"
+msgstr  "Úpravou obdržíme"
+
+msgid   "Singular solution"
+msgstr  "Singulární řešení"
+
+msgid   "Solid of revolution"
+msgstr  "Rotační těleso"
+
+msgid   "Solution"
+msgstr  "Řešení"
+
+msgid   "Solution from Newton--Leibniz formula"
+msgstr  "Řešení pomocí Newtonovy--Leibnizovy věty"
+
+msgid   "Solution of the linear system"
+msgstr  "Řešení soustavy lineárních rovnic"
+
+#, php-format
+msgid   "Solution of the system for %s and %s is"
+msgstr  "Řešení soustavy rovnic pro %s a %s je"
+
+msgid   "Solution of this equation"
+msgstr  "Řešení této rovnice"
+
+msgid   "Something failed - report this to the authors of MAW, please."
+msgstr  "Nastala chyba při zpracování úlohy. Nahlaste prosím tuto chybu "
+        "autorům aplikace. Děkujeme."
+
+msgid   "Something is wrong. Probably too difficult integrals."
+msgstr  "Výpočet selhal a něco je špatně. Pravděpodobně vycházejí příliš "
+        "obtížné integrály."
+
+msgid   "Sometimes Maxima fails to find some constant solutions of the "
+        "equation with separated variables."
+msgstr  "U separovatelných rovnic není jistota, že Maxima nalezla všechna "
+        "řešení."
+
+msgid   "Sorry, an error occurred when processing your input"
+msgstr  "Za běhu programu nastala nějaká chyba"
+
+msgid   "Sorry, our server is overloaded, try it again after a reasonable "
+        "time (10 sec)."
+msgstr  "Omlouváme se, server je přetížený. Zkuste zopakovat dotaz později "
+        "(cca za 10 vteřin)."
+
+msgid   "Sorry, report this problem please. We will investigate and (hope) we "
+        "fix it."
+msgstr  "Litujeme, někde nastala chyba. Nahlaste nám prosím tento problém a "
+        "my se budeme snažit ho řešit."
+
+msgid   "Sorry, the application cannot handle this substitution."
+msgstr  "Bohužel, program neumí tento typ substituce."
+
+msgid   "Sorry, the evaluation of the integral failed."
+msgstr  "Omlouváme se, nepodařilo se integrál vypočítat."
+
+msgid   "Sorry, we are unable to process your function. The problem has been "
+        "saved and we will investigate."
+msgstr  "Omlouváme se, funkci se nepodařilo zpracovat. Problém byl zalogován "
+        "a zkusíme na něm pracovat."
+
+msgid   "Sorry. An explanation for this error is not known automatically. The "
+        "problem has been logged and will be investigated."
+msgstr  "Litujeme. Tato chyba není autoamticky ošetřena. Byla zalogována a "
+        "budeme se jí věnovat."
+
+msgid   "Stationary point"
+msgstr  "Stacionární bod"
+
+#, php-format
+msgid   "Stationary point is %s."
+msgstr  "Stacionární bod je %s."
+
+msgid   "Stationary points"
+msgstr  "Stacionární body"
+
+msgid   "Step"
+msgstr  "Krok"
+
+msgid   "Submit"
+msgstr  "Odeslat"
+
+msgid   "Substituting initial values we get the following linear system"
+msgstr  "Dosazením počátečních podmínek dostáváme soustavu lineárních rovnic"
+
+msgid   "Substituting limits"
+msgstr  "Dosazení mezí"
+
+msgid   "Substituting these values into general solution we get particular "
+        "solution"
+msgstr  "Dosazením vypočtených hodnot do obecného řešení získáme partikulární "
+        "řešení"
+
+#, perl-format
+msgid   "Substituting we get linear equation  %s with general solution %s "
+        "(click %s to get more details)."
+msgstr  "Po substituci obdržíme lineární diferenciální rovnici %s s obecným "
+        "řešením %s (klikněte %s pro detailní postup)."
+
+msgid   "Substitution"
+msgstr  "Substituce"
+
+msgid   "Substitution into equation"
+msgstr  "Dosazení do rovnice"
+
+msgid   "Substitution into equation (1) and simplifications"
+msgstr  "Dosazení do rovnice (1) a úprava"
+
+msgid   "Sum rule"
+msgstr  "Derivace součtu"
+
+msgid   "Summary"
+msgstr  "Celkem"
+
+msgid   "Support request"
+msgstr  "Podpora, diskusní fórum"
+
+msgid   "Symbolic computation"
+msgstr  "Výsledek symbolického výpočtu"
+
+msgid   "System of equations"
+msgstr  "Soustava rovnic"
+
+msgid   "System of inequalities"
+msgstr  "Soustava nerovnic"
+
+msgid   "Table"
+msgstr  "Tabulka"
+
+msgid   "Taylor polynomial"
+msgstr  "Taylorův polynom"
+
+msgid   "Tested stationary points"
+msgstr  "Testované stacionární body"
+
+#, php-format
+msgid   "The asymptote at both $ \\pm\\infty $ is the line $\\displaystyle  "
+        "%s $."
+msgstr  "Asymptota v $ \\pm\\infty $ je přímka $ \\displaystyle %s$."
+
+msgid   "The asymptote at both $\\pm\\infty$ is the line $\\asymptota$."
+msgstr  "Asymptotou v $\\pm\\infty$ je přímka $\\asymptota$."
+
+#, perl-format
+msgid   "The back substitution gives %s and %s"
+msgstr  "Po zpětné substituci získáváme %s a %s"
+
+msgid   "The boundary points for the subintervals on the picture are either "
+        "points of discontinuity, or the points in which one of the partial "
+        "inequalities becomes equality. In this version of MAW we are not "
+        "able to find out, if these points belong to the domain or not. This "
+        "problem is left to the user. Also ignore complex numbers, if present."
+msgstr  "Krajní body definičního oboru a také krajní body řešení každé z "
+        "dílčích nerovností jsou buď řešení příslušné rovnice kterou "
+        "dostaneme nahrazením nerovnítka rovnítkem, nebo body nespojitosti, "
+        "které jsou zachyceny v některém z dalších řádků tabulky. Pokud jsou "
+        "mezi řešeními komplexní čísla, tak si jich pochopitelně nevšímáme"
+
+msgid   "The characteristic equation is"
+msgstr  "Charakteristická rovnice je"
+
+#, perl-format
+msgid   "The check that the particular solution %s is correct failed."
+msgstr  "Selhala kontrola, že funkce %s je partikulárním řešením rovnice."
+
+msgid   "The computation could be divided into more pages"
+msgstr  "Výpočet může být rozdělen na více stran"
+
+msgid   "The computation is usually divided into two pages. The first page "
+        "contains computations and the second page the graph."
+msgstr  "Výpočet je zpravidla rozdělen na dvě strany. Na první straně jsou "
+        "výpočty derivací, na druhé straně graf."
+
+#, perl-format
+msgid   "The equation %s is exact if and only if %s."
+msgstr  "Rovnice %s je exaktní pokud %s."
+
+msgid   "The equation does not belong to the set of supported types. <br>You "
+        "may also have a typing error in your formula which changes the type "
+        "of the equation and makes the equation unsolvable for Maxima CAS.</"
+        "b> Check your data."
+msgstr  "Rovnice nepatří mezi typy podporované programem MAW nebo Maxima.<br> "
+        "Možná máte jenom překlep v rovnici, který způsobil, že rovnice není "
+        "to, co jste zamýšleli. Zkontrolujte si svá vstupní data."
+
+msgid   "The equation has been solved, but it is neither linear nor "
+        "separable, homogeneous or exact and no intermediate steps are shown. "
+        "The equation is #1."
+msgstr  "Rovnici se podařilo vyřešit, ale rovnice není ani lineární, ani se "
+        "separovanými proměnnými, ani homogenní a ani exaktní a proto "
+        "nezobrazujeme postup řešení. Rovnice je typu: #1."
+
+msgid   "The equation has integrating factor #1."
+msgstr  "Rovnice má integrační faktor #1."
+
+#, perl-format
+msgid   "The equation has integrating factor %s."
+msgstr  "Rovnice má integrační faktor %s."
+
+msgid   "The equation solved with respect to the derivative"
+msgstr  "Rovnice rozřešená vzhledem k derivaci"
+
+#, perl-format
+msgid   "The equation with right hand side %s cannot be solved by "
+        "undetermined coefficients"
+msgstr  "Rovnici s pravou stranou %s neumíme řešit pomocí metody neurčitých "
+        "koeficientů"
+
+msgid   "The first derivative"
+msgstr  "První derivace"
+
+msgid   "The first derivatives"
+msgstr  "První derivace"
+
+msgid   "The following messages have been reported by external programs and "
+        "they may help you to find the error.<br><br> Still in troubles? You "
+        "can contact the authors. Email address is on the main page."
+msgstr  "Následující výpis hlášení programů vám snad pomůže najít chybu. "
+        "Pokud ne, můžete, obraťte se prosím mailem na tvůrce aplikace s "
+        "dotazem, proč není Váš příklad zpracován."
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local maximum} at %s. (Hessian is "
+        "positive and there are negative numbers in the main diagonal.)"
+msgstr  "Funkce %s má v bodě %s \\textbf{lokální maximum}. (Hessián je kladný "
+        "a v hlavní diagonále jsou záporná čísla.)"
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local minimum} at %s. (Hessian is "
+        "positive and there are positive numbers in the main diagonal.)"
+msgstr  "Funkce %s má v bodě %s \\textbf{lokální minimum}. (Hessián je kladný "
+        "a v hlavní diagonále jsou kladná čísla.)"
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{saddle point} at %s, there is no "
+        "local extremum at this point.  (Hessian is negative.)"
+msgstr  "Funkce %s nemá v bodě %s lokální extrém. (Hessián je záporný.)  "
+
+#, php-format
+msgid   "The function %s has been transformed into %s."
+msgstr  "Transformovali jsme %s na %s."
+
+#, php-format
+msgid   "The function %s is not continuous at %s and we cannot find this "
+        "Taylor polynomial."
+msgstr  "Funkce %s není spojitá v bodě %s a nemůžeme zde určovat její "
+        "Taylorův polynom."
+
+#, perl-format
+msgid   "The function is either not well formatted mathematical expression or "
+        "it is not continuous or one of the derivatives at %s does not exist. "
+        "Check the Maxima output below."
+msgstr  "Funkce není zadána jako korektní matematický výraz, nebo není "
+        "spojitá, nebo nemá některou z derivací v bodě %s. Zkontrolujte výpis "
+        "programu Maxima (viz níže)."
+
+msgid   "The function is even."
+msgstr  "Funkce je sudá."
+
+msgid   "The function is neither odd nor even."
+msgstr  "Funkce není ani sudá ani lichá."
+
+#, php-format
+msgid   "The function is not a function in two variables. You have to enter "
+        "function in two variables x and y. If you want to investigate "
+        "functions in one variable, you can continue %s here %s."
+msgstr  "Zadaná funkce není funkce dvou proměnných. Musíte zadat funkci "
+        "proměnných x a y. Pokud chcete studovat funkce jedné proměnné, "
+        "pokračujte na %s průběh funkce%s."
+
+msgid   "The function is odd."
+msgstr  "Funkce je lichá."
+
+msgid   "The functions have probably one or more intersection inside the "
+        "interval. Check the picture below. You can find the intersection by "
+        "choosing the corresponding option in the form on the previous page."
+msgstr  "Funkce mají pravděpodobně průsečíky uvnitř zadaného intervalu a "
+        "budete muset integrovat na každém pod-intervalu samostatně. "
+        "Zkontrolujte situaci podle obrázku. Průsečíky můžete najít po "
+        "zvolení příslušné akce v předchozím formuláři."
+
+#, php-format
+msgid   "The general solution is %s."
+msgstr  "Obecné řešení je %s."
+
+msgid   "The general solution is sum of the particular solution (obtained "
+        "from (2)) and general solution of the associated homogeneous "
+        "equation obtained in the first part of the computation"
+msgstr  "Obecné řešení je součtem partikulárního řešení získaného z (2) a "
+        "obecného řešení asociované homogenní rovnice, získaného v první "
+        "části výpočtu."
+
+msgid   "The general solution is sum of the particular solution and general "
+        "solution of the associated homogeneous equation obtained in the "
+        "first part of the computation"
+msgstr  "Obecné řešení je součtem partikulárního řešení a obecného řešení "
+        "asociované homogenní rovnice"
+
+#, php-format
+msgid   "The general solution of the associated homogeneous equation is %s."
+msgstr  "Obecné řešení asociované homogenní rovnice je %s."
+
+msgid   "The graph can be drawn by shifting and resizing certain basic "
+        "elementary function"
+msgstr  "Graf je možné nakreslit pomocí transformací grafu základní "
+        "elementární funkce."
+
+msgid   "The length of one subinterval"
+msgstr  "Délka jednoho podintervalu v dělení"
+
+#, php-format
+msgid   "The multiplicity of this solution is %s."
+msgstr  "Tento kořen má násobnost %s."
+
+#, perl-format
+msgid   "The normal form of the equation is %s."
+msgstr  "Normalizovaný tvar rovnice je %s."
+
+#, php-format
+msgid   "The number %s is double zero of the characteristic equation and the "
+        "particular solution has the form %s."
+msgstr  "Číslo %s je dvojnásobným kořenem charakteristické rovnice a "
+        "partikulární řešení je tvaru %s."
+
+#, php-format
+msgid   "The number %s is not a zero of the characteristic equation and the "
+        "particular solution is in the form %s."
+msgstr  "Číslo %s není kořenem charakteristické rovnice a partikulární řešení "
+        "je tvaru %s."
+
+#, php-format
+msgid   "The number %s is zero of multiplicity 1 of the characteristic "
+        "equation and the particular solution has the form %s."
+msgstr  "Číslo %s je jednoduchým kořenem charakteristické rovnice a "
+        "partikulární řešení je tvaru %s."
+
+#, php-format
+msgid   "The number %s takes the form %s and it is solution of the "
+        "characteristic equation %s."
+msgstr  "Číslo %s je číslo %s a toto číslo je kořenem charakteristické "
+        "rovnice %s."
+
+#, php-format
+msgid   "The number %s takes the value %s and it is not solution of the "
+        "characteristic equation %s."
+msgstr  "Číslo %s je číslo %s a toto číslo není kořenem charakteristické "
+        "rovnice %s."
+
+#, php-format
+msgid   "The original function is %s."
+msgstr  "Původní funkce je %s."
+
+msgid   "The problem either does not make any sense or it is too difficult "
+        "for Maxima. Check also, that the integral on the top matches your "
+        "problem."
+msgstr  "Integrál není korektně zadán, nebo je příliš těžký pro výpočet "
+        "programem Maxima. Je též možné, že jste omylem zadala/zadal jiný "
+        "integrál, než jste měla/měl skutečně na mysli."
+
+msgid   "The result of advanced numerical method"
+msgstr  "Výsledek po aplikaci sofistikovanějších numerických metod"
+
+msgid   "The result of symbolic computation"
+msgstr  "Výsledek symbolického výpočtu"
+
+#, php-format
+msgid   "The right hand side has the form %s, where %s."
+msgstr  "Pravá strana rovnice má tvar %s, kde %s."
+
+#, php-format
+msgid   "The right hand side is polynomial %s, the degree of this polynomial "
+        "is %s."
+msgstr  "Pravá strana rovnice je polynom %s, stupeň tohoto polynomu je %s."
+
+#, php-format
+msgid   "The right hand side is product of polynomial %s and exponential "
+        "function %s, the degree of the polynomial is %s."
+msgstr  "Pravá strana je součinem polynomu %s a exponenciální funkce %s, "
+        "stupeň polynomu je %s."
+
+msgid   "The second derivative"
+msgstr  "Druhá derivace"
+
+msgid   "The second derivatives"
+msgstr  "Druhé derivace"
+
+msgid   "The second derivatives at stationary points"
+msgstr  "Druhé derivace ve stacionárních bodech"
+
+#, perl-format
+msgid   "The solution is %s."
+msgstr  "Obecné řešení je %s."
+
+#, php-format
+msgid   "The solution is at the line starting with %o2"
+msgstr  "Všímejte si řádku začínajícího symbolem %o2"
+
+msgid   "The solution of this linear system is"
+msgstr  "Řešení soustavy lineárních rovnic"
+
+msgid   "The x axis goes through the set from the formulation of the problem. "
+        "The problem is not well formulated."
+msgstr  "Osa x protíná zadanou množinu. Úloha na objem rotačního tělesa proto "
+        "není korektně zadána."
+
+msgid   "There is no asymptote at $\\pm\\infty$."
+msgstr  "Funkce nemá asymptotu v $\\pm\\infty$."
+
+msgid   "There should be no derivative  y' and no equality sign  = in your "
+        "input. Both are written on the left from the input field (you have "
+        "to enter the right hand side of the equation only)."
+msgstr  "V zadání se nesmí vyskytovat derivace y' ani relace =, obojí již je "
+        "předepsáno před formulářem (levá strana rovnice)."
+
+msgid   "There should be no higher derivative than first derivative."
+msgstr  "Na vstupu nesmí být vyšší než první derivace."
+
+#, perl-format
+msgid   "This equation can be written as %s."
+msgstr  "Rovnici je možno přepsat do tvaru %s."
+
+msgid   "This error occurs also if there are too many requests in a short "
+        "time, for example if somebody uses this server for teaching in "
+        "computer lab."
+msgstr  "Tato chyba se objevuje také v případě, že server obdrží příliš mnoho "
+        "dotazů během krátké chvilky. Například pokud někdo používá MAW ve "
+        "výuce a nasměruje sem během jednoho okamžiku všechny studenty v "
+        "počítačové učebně."
+
+msgid   "This error occurs if somebody (you or another user) clicks the "
+        "submit button many times in a sort time. Don't do it, please. Click "
+        "the Submit button only once"
+msgstr  "Toto chybové hlášení se objevuje například, pokud někdo (Vy nebo "
+        "jiný uživatel který je právě online) odešle jeden dotaz mnohokrát "
+        "během krátké chvilky. Nedělejte to prosím, klikejte na tlačítko "
+        "Odeslat jenom jednou."
+
+msgid   "This error should be fixed. You may report this error to the authors."
+msgstr  "Tato chyba by měla být odstraněna. Můžete ji nahlásit autorům "
+        "aplikace. Děkujeme."
+
+msgid   "This is not supported in our integral assistant."
+msgstr  "Toto není v naší aplikaci podporováno."
+
+msgid   "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+msgstr  "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+
+msgid   "This message appears if somebody else is working with the same "
+        "calculator - try again after 1 min."
+msgstr  "Tato chybová hláška se objeví, pokud někdo stejný pracuje se stejným "
+        "kalkulátorem - zkuste se vrátit později."
+
+msgid   "To be independent on our server install MAW offline for yourselves "
+        "on your local computer."
+msgstr  "Aby se Vám toto nestávalo, můžete si nainstalovat MAW na svůj server "
+        "nebo na svůj lokální počítač. Nejjednodušší možnost je stáhnout "
+        "offline verzi, která je virtuálním počítačem pro VMWare a je možné "
+        "ji spouštět na všech běžných platformách. Odkaz pro stažení offline "
+        "verze je na všech stránkách MAWu, hned pod nadpisem."
+
+msgid   "Too many requests"
+msgstr  "Příliš mnoho dotazů na server."
+
+msgid   "Transformation to Riemann integral"
+msgstr  "Transformace na Riemannův integrál"
+
+#, php-format
+msgid   "Transforming %s into %s."
+msgstr  "Transformujeme %s na %s."
+
+msgid   "Trapeziodal rule for definite integral"
+msgstr  "Lichoběžníkové pravidlo pro určitý integrál"
+
+msgid   "Try something another."
+msgstr  "Zkuste něco jiného."
+
+#, php-format
+msgid   "Turning %s into %s."
+msgstr  "Otáčíme %s na %s."
+
+#, php-format
+msgid   "Two independent solutions are %s and %s."
+msgstr  "Dvě lineárně nezávislá řešení jsou %s a %s."
+
+msgid   "Under construction"
+msgstr  "Tato funkce zatím není dostupná"
+
+msgid   "Unmatched parenthesis has been found. Correct the problem please."
+msgstr  "Jiný počet otevíracích a uzavíracích závorek. Opravte tento problém "
+        "prosím."
+
+#, php-format
+msgid   "Unsupported function %s."
+msgstr  "Nepodporovaná funkce %s."
+
+msgid   "Upper limit"
+msgstr  "Horní mez"
+
+msgid   "Use 1/2 to insert one half. Not ½."
+msgstr  "Pro zápis čísla jedna polovina použijte klasické dělení, tj. 1/2 "
+        "(celkem tři znaky). Nepoužívejte znak ½."
+
+msgid   "Use ^2 to insert second power. Not ²."
+msgstr  "Pro zápis druhé mocniny používejte ^2. Nepište ²."
+
+msgid   "Use dot only for decimal numbers, if necessary. Do not use dot for "
+        "multiplication. The operator for multiplication is star, write for "
+        "example 2*x for \"two eks\". If you wish to enter decimal number, "
+        "this decimal number cannot be a part of mathematical formula."
+msgstr  "Nepoužívejte tečku jinak než jako desetinnou čárku (musí kolem ní "
+        "být čísla). Násobení zapisujte pomocí hvězdičky, např 2*x. Desetinné "
+        "číslo nemůže být součástí žádného jiného matematického výrazu."
+
+msgid   "Use numbers only. Use commas and semicolons to separate point "
+        "coordinates and points in the data file."
+msgstr  "Používejte jenom čísla. Používejte čárky pro oddělení souřadnic a "
+        "středníky pro oddělení bodů."
+
+msgid   "Use only integers or decimal numbers for coefficients on the left "
+        "hand side."
+msgstr  "Pro koeficienty na levé straně používejte jenom celá nebo desetinná "
+        "čísla."
+
+msgid   "Use only natural logarithm."
+msgstr  "Používejte jenom přirozený logaritmus."
+
+msgid   "Using $ x$ coordiantes, we write and simplify the small Lagrange "
+        "polynomials."
+msgstr  "Pomocí $ x$-ových souřadnic sestavíme a upravíme pomocné Lagrangeovy "
+        "polynomy."
+
+msgid   "Variable for inside integration and limits for this variable"
+msgstr  "Vnitřní proměnná a její meze"
+
+msgid   "Variable for outside integration and limits for this variable"
+msgstr  "Vnější proměnná a její meze"
+
+msgid   "Variables aa or bb are not allowed."
+msgstr  "Proměnné aa a bb nejsou povoleny."
+
+#, perl-format
+msgid   "Variant %s"
+msgstr  "Varianta %s"
+
+msgid   "Variation of constant:"
+msgstr  "Variace konstant:"
+
+msgid   "Variation of constant: {\\color{blue}(the sum of blue expressions is "
+        "zero)}"
+msgstr  "Variace konstant: {\\color{blue}(součet modrých výrazů je nula)}"
+
+msgid   "Vertical shift"
+msgstr  "Svisly posun"
+
+msgid   "Wait a bit, return to the page with calculator form, fill again if "
+        "necessary and resend the form. Then you will be allowed to build "
+        "animation again. But click only once and be patient (about 20 sec)!"
+msgstr  "Počkejte několik okamžiků, vraťte se zpět (úplně zpět, až do "
+        "formuláře,který jste vyplňovali), odešlete formulář opětovně. Potom "
+        "můžete odeslat požadavek na sestavení animace. Klikněte na odkaz "
+        "jenom jednou (!) a buďte trpěliví (může trvat až 20 sekund)."
+
+msgid   "Warning: your input is not checked against the substitution used "
+        "during evaluation of the integral. If you use incorrect "
+        "substitution, your result will be incorrect."
+msgstr  "Varování: Neprobíhá test, zda Vaše zadání odpovídá použité "
+        "substituci (použitým substitucím). Nesprávné vyplnění tohoto políčka "
+        "může mít za následek nesprávný výsledek."
+
+msgid   "We attempted to parse your input automatically"
+msgstr  "Pokusili jsme se automaticky rozpoznat váš výraz"
+
+#, perl-format
+msgid   "We can \\textbf{neither proove nor disprove} existence of extrem for "
+        "the function %s and stationary point %s from second derivatives. "
+        "(Hessian is zero.)"
+msgstr  "\\textbf{Neumíme pomocí druhých derivací rozhodnout} o existenci "
+        "extrému funkce %s v bodě %s.  (Hessián je roven nule.)"
+
+#, php-format
+msgid   "We draw the function %s."
+msgstr  "Kreslíme graf funkce %s."
+
+msgid   "We find area between curves #1 and #2 on the interval from #3 to #4."
+msgstr  "Hledáme obsah obrazce mezi grafy funkcí #1 a #2 na intervalu od #3 "
+        "do #4. "
+
+msgid   "We find area under the curve #1 on the interval from #2 to #3."
+msgstr  "Hledáme obsah obrazce pod grafem funkce #1 na intervalu od #2 do #3."
+
+msgid   "We find the general solution first and then we use the initial "
+        "conditions to find particular solution."
+msgstr  "Nejprve nalezneme obecné řešení rovnice a potom použijeme počáteční "
+        "podmínky pro nalezení řešení partikulárního."
+
+msgid   "We find undetermined coefficients"
+msgstr  "Vypočítáme neurčité koeficienty"
+
+msgid   "We find volume of solid of revolution formed by revolving area "
+        "between curves #1 and #2 on the interval from #3 to #4 around $ x$ "
+        "axis.."
+msgstr  "Hledáme objem rotačního těles, které vznikne rotací množiny mezi "
+        "grafy funkce #1 a #2 okolo osy $ x$ na intervalu od #3 do #4."
+
+msgid   "We find volume of solid of revolution formed by revolving area under "
+        "the curve #1 on the interval from #2 to #3 around $ x$ axis."
+msgstr  "Hledáme objem rotačního těles, které vznikne rotací množiny pod "
+        "grafem funkce #1 okolo osy $ x$ na intervalu od #2 do #3."
+
+msgid   "We get the solution in its explicit form only for the linear "
+        "equations. For the equations with separated variables we get only "
+        "the implicit form."
+msgstr  "S výjimkou lineárních rovnic řešení dostaneme většinou pouze v "
+        "implicitním tvaru. Případný převod do explicitního tvaru proveďte "
+        "sami."
+
+#, perl-format
+msgid   "We have %s"
+msgstr  "Platí %s"
+
+#, php-format
+msgid   "We have %s points, the degree of the polynomial is not greater than "
+        "%s."
+msgstr  "Protože je počet zadaných bodů %s, bude stupeň interpolačního "
+        "polynomu nejvýše o jedničku nižší, tj. nejvýše %s."
+
+#, perl-format
+msgid   "We have %s."
+msgstr  "Platí %s."
+
+msgid   "We have to solve the linear system"
+msgstr  "Řešíme soustavu rovnic"
+
+msgid   "We integrate"
+msgstr  "Integrujeme"
+
+#, php-format
+msgid   "We integrate the function %s on the set given by %s and %s."
+msgstr  "Integrujeme funkci %s na množině zadané nerovnostmi %s a %s."
+
+msgid   "We investigate the function"
+msgstr  "Vyšetřujeme průběh funkce"
+
+msgid   "We look for stationary points of the autonomous system."
+msgstr  "Budeme hledat stacionární body, je to nejistá operace ale snad "
+        "budeme mít štěstí."
+
+#, php-format
+msgid   "We look for stationary points of the function %s."
+msgstr  "Hledáme stacionární body funkce %s."
+
+msgid   "We look for the particular solution of the nonhomogeneous equation."
+msgstr  "Hledáme partikulární řešení nehomogenní rovnice."
+
+msgid   "We put corresponding\n"
+        "terms on left and right equal (from smallest power)"
+msgstr  "Porovnáme koeficienty na levé a pravé straně (od nejnižší mocniny)"
+
+msgid   "We remove absolute values"
+msgstr  "Odstraníme absolutní hodnoty"
+
+msgid   "We remove constant multiple from the integral"
+msgstr  "Vytkneme konstantu"
+
+#, php-format
+msgid   "We solve %s on the interval %s using bisection of interval."
+msgstr  "Hledáme řešení rovnice %s na intervalu %s pomocí metody půlení "
+        "intervalu."
+
+#, php-format
+msgid   "We solve %s on the interval %s using regula falsi."
+msgstr  "Hledáme řešení rovnice %s na intervalu %s pomocí metody regula falsi."
+
+msgid   "We solve initial value problem"
+msgstr  "Řešíme počáteční úlohu"
+
+msgid   "We solve the associated homogeneous equation first"
+msgstr  "Vyřešíme nejprve asociovanou homogenní rovnici"
+
+#, php-format
+msgid   "We solve the equation %s using Newton--Raphson method with initial "
+        "guess %s."
+msgstr  "Řešíme rovnici %s pomocí Newtonovy metody s počátečním odhadem %s."
+
+#, php-format
+msgid   "We solve the equation %s using method of iterations on the interval "
+        "%s with initial guess %s."
+msgstr  "Hledáme řešení rovnice %s na intervalu %s pomocí metody prosté "
+        "iterace s počátečním odhadem %s."
+
+msgid   "We solve the homogeneous differential equation"
+msgstr  "Řešíme homogenní rovnici"
+
+msgid   "We solve the nonhomogeneous differential equation"
+msgstr  "Řešíme nehomogenní rovnici"
+
+msgid   "We solve the system in the first quadrant (for nonnegative variables)"
+msgstr  "Soustavu řešíme v prvním kvadrantu (s podmínkami nezápornosti)"
+
+msgid   "We solve this system with respect to unknown coefficients and get"
+msgstr  "Řešíme soustavu rovnic pro neurčité koeficienty. Řešením získáme"
+
+#, php-format
+msgid   "We start with the function %s."
+msgstr  "Vyjdeme z funkce %s."
+
+msgid   "We try to simplify the answer. (This is rather tricky step, "
+        "sometimes it simplifies the answer and sometimes not.)"
+msgstr  "Pokusíme se třemi různými způsoby automaticky upravit vypočtenou "
+        "derivaci, Všechny varianty jsou ekvivalentní matematické výrazy, "
+        "vyberte si proto tu úpravu, která působí opticky nejpřijatelněji "
+        "(může se stát, že jsou některé tvary výsledku po úpravách stejné, v "
+        "tom případě se snažíme ty co se opakují vynechat a nemusí tu proto "
+        "být uvedeny všechny tři úpravy)."
+
+#, php-format
+msgid   "We try to solve the equation %s with respect to the derivative."
+msgstr  "Pokusíme se vyřešit rovnici %s vzhledem k derivaci."
+
+msgid   "We use small Lagrange polynomials in the interpolation formula and "
+        "sum up like powers of $ x$ (the final result is in the frame)."
+msgstr  "Dosadíme pomocné Lagrangeovy polynomy a sečteme členy se stejnou "
+        "mocninou (výsledek je uveden v rámečku)."
+
+#, perl-format
+msgid   "We use substitution %s."
+msgstr  "Použijeme substituci %s."
+
+msgid   "We use the variation of constants to find the particular solution in "
+        "the form"
+msgstr  "Metodou variace konstant hledáme řešení ve tvaru"
+
+#, php-format
+msgid   "We will look for the intercepts of  y=%s and y=%s, symbolically and "
+        "numerically."
+msgstr  "Budeme hledat průsečíky funkcí y=%s a y=%s, zkusíme je hledat "
+        "symbolicky i numericky, snad budeme mít aspoň jednou štěstí."
+
+msgid   "We write the form of the Lagrange polynomial from the $ y$ "
+        "coordinates."
+msgstr  "Pomocí $ y$-ových souřadnic sestavíme tvar Lagrangeova polynomu."
+
+msgid   "You are not allowed to enter more than six points."
+msgstr  "Bodů může být nejvýše šest."
+
+#, php-format
+msgid   "You can check is somebody else is working with the tool by checking "
+        "%s history%s."
+msgstr  "Jestli s nástrojem skutečně pracuje i někdo jiný poznáte pohledem do "
+        "%s historie%s."
+
+msgid   "You can enter decimal number or mathematical formula which contains"
+msgstr  "Na vstup můžete zapsat buď desetinné číslo, nebo výraz sestavený "
+        "podle následujících pravidel. Povolené funkce, proměnné a operace "
+        "jsou "
+
+msgid   "You can use WYSIWYG editor <a href=\"http://user.mendelu.cz/tihlarik/"
+        "dragmath/DragMath.html\" target=\"_blank\">Dragmath</a> to edit "
+        "mathematical expressions and then move the expression into field in "
+        "the form by using clipboard in your operating system. This editor is "
+        "accessible at the end of some input fields, where we suppose "
+        "nontrivial input. In these cases it is not necessary to use the "
+        "clipboard and the transfer into field in our form is automatical."
+msgstr  "<br><br>Matematické výrazy můžete také editovat WYSIWYG editorem <a "
+        "href=\"http://user.mendelu.cz/tihlarik/dragmath/DragMath.html\" "
+        "target=\"_blank\">Dragmath</a> a přenést přes schránku operačního "
+        "systému do formuláře. V případech, kde předpokládáme zadávání "
+        "netriviálních výrazů, máte tento editor přístupný po stisku tlačítka "
+        "\"Editor matematiky\" za políčkem formuláře a matematický výraz se z "
+        "tohoto editoru do formuláře přenáší automaticky."
+
+#, php-format
+msgid   "You can use method of undetermined coefficients: the primitive "
+        "function has the form %s, where %s is %s and k is real number. The "
+        "application of this method in steps is not covered by this "
+        "application and from this reason you should leave the rest to Maxima "
+        "and evaluate the integral by computer. It is also possible in some "
+        "integrals of this type to remove the square root by a convenient "
+        "substitution."
+msgstr  "Můžete použít metodu neurčitých koeficientů: primitivní funkce má "
+        "tvar %s, kde %s je %s a k je reálné číslo. Tuto metodu nemůžete v "
+        "této aplikaci krokovat, proto máte předvoleno dokončení integrace "
+        "počítačem. Někdy je možno zvolit i vhodnou substituci, která "
+        "odstraní odmocninu."
+
+#, php-format
+msgid   "You cannot write group of two or more characters like %s."
+msgstr  "Skupina znaků %s není povolena (nedává smysl v zápise matematického "
+        "výrazu)."
+
+msgid   "You choosed to integrate some terms but no term has been marked for "
+        "integration"
+msgstr  "Volíte-li integraci jednotlivých sčítanců, musíte označit, které "
+        "sčítance chcete integrovat"
+
+msgid   "You did not choose any action"
+msgstr  "Není vybrána žádná akce."
+
+msgid   "You have to solve the equation with respect to the derivative first "
+        "and write the right hand side only. You may try also to write the "
+        "full equation to the second field and switch the radiobutton on the "
+        "left."
+msgstr  "Nejprve musíte Vaši rovnici rozřešit vzhledem k derivaci a potom "
+        "zapsat do formuláře pouze pravou stranu. Nebo můžete zapsat celou "
+        "rovnici do druhého vstupního políčka a použít přepínač vlevo."
+
+#, php-format
+msgid   "You have to specify %s or %s for integration by parts."
+msgstr  "Při metodě per-partés musíte zadat buď funkci %s nebo %s."
+
+#, php-format
+msgid   "You have to use new name for the variable and you have to enter "
+        "which substitution you wish to use. The name of the variable "
+        "consists of one letter only. This name cannot be %s."
+msgstr  "<ul><li>musíte zadat jakou substituci chcete použít</li><li>nová "
+        "proměnná musí mít jiné jméno než kterákoliv stará proměnná a musí se "
+        "v substituci vyskytovat</li><li>proměnná může být pouze "
+        "jednopísmenná a nesmí to být %s.</li></ul><br> Vraťte se zpět a "
+        "opravte substituci. "
+
+msgid   "You have to use the PDF file in Adobe Reader or Adobe Acrobat (do "
+        "not use xpdf, kpdf and other PDF viewers)."
+msgstr  "Abyste animaci viděli a mohli ovládat, musíte mít soubor otevřen v "
+        "programu Adobe Reader nebo Adobe Acrobat (nepoužívejte xpdf, kpdf a "
+        "podobné alternativní prohlížeče)."
+
+#, perl-format
+msgid   "You may have a typing error in your mathematical expression or use "
+        "too general right hand side of the equation.  This interface works "
+        "only if the right hand side is in the form %s where P and Q are "
+        "polynomials of order at most 4."
+msgstr  "Možná máte chybu nebo překlep ve vstupní straně formuláře nebo "
+        "používáte příliš obecnou funkci na pravé straně. Toto rozhraní umí "
+        "řešit rovnice pouze s pravou stranou ve tvaru %s, kde P a Q jsou "
+        "polynomy stupně nejvýše 4."
+
+msgid   "You may try to interchange the order of integration and submit "
+        "again. (Remember also to adjust limits for integration properly.)"
+msgstr  "Můžete zaměnit pořadí integrace a odeslat formulář znovu. "
+        "Nezapomeňte však při záměně pořadí integrace upravit meze integrálů."
+
+#, php-format
+msgid   "You may try to pass your expression to %sWolframAlpha%s."
+msgstr  "Můžete zkusit vstup předat serveru %sWolframAlpha%s, který by s "
+        "tímto výrazem mohl poradit lépe."
+
+msgid   "You may want to continue and simplify your result ..."
+msgstr  "Zde si můžete funkci ještě dále upravit ..."
+
+#, php-format
+msgid   "You probably reached the time limit, try simpler problem or %s."
+msgstr  "Pravděpodobně byl překročen časový limit pro zpracování problému. "
+        "Zkuste jednodušší problém nebo %s."
+
+msgid   "You probably use the <i>y</i> variable, which is not allowed here."
+msgstr  "Pravděpodobně používáte proměnnou <i>y</i>, což není v tomto "
+        "kontextu povoleno."
+
+msgid   "You probably want to integrate a function involving the absolute "
+        "value."
+msgstr  "Pravděpodobně se pokoušíte integrovat funkci obsahující absolutní "
+        "hodnotu."
+
+msgid   "You should turn JavaScript on to see popup informations."
+msgstr  "Zapněte si prosím JavaScripty."
+
+#, php-format
+msgid   "You used %s opening and  %s closing parentheses."
+msgstr  "Vstupní data obsahují celkem %s levých a %s pravých závorek."
+
+msgid   "You used a name of a function followed by a power.<br>Do not use "
+        "this notation. Write for example (sin(x))^2 instead of sin^2(x)."
+msgstr  "V řetězci se vyskytuje <b>jméno funkce následované mocninou</b>. "
+        "<br>Možná se snažíte zadávat mocninu funkce hned za názvem funkce. "
+        "Pište například (sin(x))^2 místo sin^2(x)."
+
+msgid   "You used backslash or quote or double-quote or another insecure "
+        "character in your input, which is not allowed. Do you try to enter "
+        "the functions in TeX notation? Use notation of the Maxima program, "
+        "please."
+msgstr  "V řetězci se vyskytuje zpětné lomítko, apostrof, uvozovky, nebo jiný "
+        "nebezpečný znak. Možná se snažíte zadávat funkce jako v TeXu. "
+        "Používejte zápis programu Maxima."
+
+msgid   "Your bad input was"
+msgstr  "Váš neplatný vstup byl"
+
+#, php-format
+msgid   "Your incorrect input is: %s and %s."
+msgstr  "Váš vstup byl: %s a %s."
+
+#, php-format
+msgid   "Your input is (after deleting spaces and conversion ^ into **) %s "
+        "and the disallowed substring catched by the input filter is %s."
+msgstr  "Vaše zadání bylo (po odmazání mezer a konverzi znaku ^ na **) %s a "
+        "podřetězec který nevyhověl vstupnímu filtru je %s."
+
+#, php-format
+msgid   "Your input is being processed. Wait few seconds to see the output. "
+        "Click %shere%s to reopen the form which has been submited."
+msgstr  "Probíhá výpočet. Klikněte %ssem%s pro znovuotevření odeslaného "
+        "formuláře."
+
+msgid   "Zeros"
+msgstr  "Kořeny"
+
+msgid   "Zeros of 1st derivative"
+msgstr  "Kořeny první derivace"
+
+msgid   "Zeros of 2nd derivative"
+msgstr  "Kořeny druhé derivace"
+
+msgid   "Zeros of characteristic equation"
+msgstr  "Kořeny charakteristické rovnice"
+
+msgid   "Zeros of function"
+msgstr  "Nulové body funkce"
+
+msgid   "\\def\\nonneg{We solve the system in the first quadrant (for "
+        "nonnegative variables)}"
+msgstr  "\\def\\noneg{Soustavu \\v re\\v s\\'ime v prvn\\'im kvadrantu (s~pod"
+        "\\-m\\'in\\-kami nez\\'apornosti)}"
+
+msgid   "absolute value causes problems in integration, but in most cases can "
+        "be eliminated by considering suitable subinterval for integration."
+msgstr  "absolutní hodnota často působí problémy při integraci, ale pokud "
+        "pracujeme na vhodném intervalu, jde zpravidla odstranit."
+
+msgid   "addition, subtraction, multiplication and division, i.e. chars + - "
+        "* /"
+msgstr  "operace sčítání, odečítání, násobení a dělení vyjádřené znaky + - * /"
+
+msgid   "and add like powers of  $ x $ "
+msgstr  "a sečteme odpovídající mocniny $x$"
+
+msgid   "and back substitution is"
+msgstr  "zpětná substituce je"
+
+msgid   "and collect the coefficients at the powers of $ x $ "
+msgstr  "a sečteme koeficienty u jednotlivých mocnin proměnné $x$"
+
+#, php-format
+msgid   "and divide by the common exponential factor %s and add like powers "
+        "of $x$"
+msgstr  "vydělíme společným faktorem %s a sečteme odpovídající mocniny "
+        "proměnné $x$"
+
+msgid   "and simplify"
+msgstr  "a upravit"
+
+msgid   "and suppose that this variable is positive"
+msgstr  "a tato proměnná je kladná"
+
+msgid   "asinh(), acosh(), atanh(), .... -> log()"
+msgstr  "asinh(), acosh(), atanh(), .... -> log()"
+
+msgid   "bold"
+msgstr  "tučně"
+
+msgid   "by parts (specify  <i>u</i> or <i>v'</i>, if you specify both, "
+        "Maxima will use <i>v'</i> for the next computation)"
+msgstr  "per partes (zadejte <i>u</i> nebo <i>v'</i>, pokud zadáte obojí, má "
+        "přednost <i>v'</i> a <i>u</i> se dopočítá)"
+
+msgid   "clever expansion into two fractions"
+msgstr  "chytře rozdělit na dva zlomky"
+
+msgid   "click the equation to get step by step solution"
+msgstr  "kliknutím na rovnici obdržíte řešení krok za krokem"
+
+msgid   "click the point to get Jacobi matrix and clasify the stationary point"
+msgstr  "kliknutím na stacionární bod zjistíte Jacobiho matici a typ "
+        "stacionárního bodu"
+
+msgid   "complete square in denominator"
+msgstr  "doplnit ve jmenovateli na čtverec"
+
+msgid   "complete square under square root"
+msgstr  "doplnit pod odmocninou na čtverec"
+
+msgid   "constant"
+msgstr  "konstanta"
+
+msgid   "constants %e and %pi"
+msgstr  "konstanty %e a %pi"
+
+msgid   "contract products of roots"
+msgstr  "seskupit součiny odmocnin"
+
+msgid   "convert into an equation for the unknown integral and solve with "
+        "pure algebra"
+msgstr  "převést na rovnici pro hledaný integrál a dořešit čistě algebraicky"
+
+msgid   "convert into equation for the integral"
+msgstr  "převést na rovnici pro hledaný integrál"
+
+msgid   "cubic polynomial"
+msgstr  "polynom třetího stupně"
+
+msgid   "custom"
+msgstr  "vlastní"
+
+msgid   "divide polynomials or partial fractions"
+msgstr  "vydělit polynomy nebo rozložit na parciální zlomky"
+
+msgid   "division"
+msgstr  "dělení"
+
+msgid   "expand"
+msgstr  "expandovat: roznásobit závorky nebo rozdělit zlomek na sčítance"
+
+msgid   "expand to partial fractions"
+msgstr  "rozložit na parciální zlomky"
+
+msgid   "factor"
+msgstr  "factor"
+
+msgid   "factorize"
+msgstr  "na součin"
+
+msgid   "finished, show computations only"
+msgstr  "hotovo, dál neupravovat, zobrazit pouze výpočet"
+
+msgid   "formula"
+msgstr  "vzorec"
+
+msgid   "formula too long"
+msgstr  "příliš dlouhý výraz"
+
+msgid   "function"
+msgstr  "funkce"
+
+msgid   "functions"
+msgstr  "funkce"
+
+msgid   "here"
+msgstr  "zde"
+
+msgid   "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+msgstr  "http://forum.matweb.cz/viewforum.php?id=39"
+
+msgid   "in red"
+msgstr  "červeně"
+
+msgid   "inside integration"
+msgstr  "vnitřní integrace"
+
+msgid   "integers (no decimals)"
+msgstr  "celá čísla (ne desetinná)"
+
+msgid   "integral of polynomial or constant"
+msgstr  "integrál z polynomu nebo konstanty"
+
+msgid   "integrate terms in sum (mark terms to be integrated, you have to "
+        "mark at least one term)"
+msgstr  "integrovat jednotlivé sčítance (označte které, musíte označit aspoň "
+        "jeden sčítanec, jinak výpočet skončí chybou)"
+
+msgid   "integration"
+msgstr  "integrace"
+
+msgid   "integration by parts"
+msgstr  "integrace per partés"
+
+msgid   "linear polynomial"
+msgstr  "lineární polynom"
+
+msgid   "link"
+msgstr  "odkaz"
+
+msgid   "logarc"
+msgstr  "logarc"
+
+msgid   "logcontract"
+msgstr  "logcontract"
+
+msgid   "lower bound for integration"
+msgstr  "dolní mez"
+
+msgid   "lower function"
+msgstr  "dolní ohraničující funkce"
+
+msgid   "lower limit for"
+msgstr  "dolní mez pro"
+
+msgid   "lower limit for inside integral"
+msgstr  "vnitřní dolní mez"
+
+msgid   "lower limit for outside integral"
+msgstr  "vnější dolní mez"
+
+msgid   "lower limit of integration"
+msgstr  "dolní mez"
+
+msgid   "map + fullratsimp"
+msgstr  "map + fullratsimp"
+
+msgid   "map + xthru"
+msgstr  "map + xthru"
+
+msgid   "maximum"
+msgstr  "maximum"
+
+msgid   "minimum"
+msgstr  "minimum"
+
+msgid   "move a number from the integral"
+msgstr  "vytknout číslo"
+
+msgid   "multiply both numerator and denominator"
+msgstr  "rozšířit zlomek"
+
+msgid   "no conclusion"
+msgstr  "nelze rozhodnout"
+
+msgid   "no variables"
+msgstr  "žádné proměnné"
+
+msgid   "not found"
+msgstr  "nenalezeno"
+
+msgid   "notation"
+msgstr  "označení"
+
+msgid   "number of subintervals"
+msgstr  "počet dílků v dělení"
+
+msgid   "numerical approximation"
+msgstr  "aproximovat numericky"
+
+msgid   "our hint"
+msgstr  "použít náš návrh"
+
+#, php-format
+msgid   "parameters %s"
+msgstr  "parametry %s"
+
+msgid   "partial fractions"
+msgstr  "rozklad na parciální zlomky"
+
+msgid   "partial fractions or"
+msgstr  "parciální zlomky nebo"
+
+msgid   "point of rotation or focus"
+msgstr  "bod rotace nebo ohnisko"
+
+msgid   "power ^ or **"
+msgstr  "mocnina ^ nebo **"
+
+msgid   "put these point into the form"
+msgstr  "přenést výpočet do formuláře"
+
+msgid   "quadratic polynomial"
+msgstr  "kvadratický polynom"
+
+msgid   "radcan"
+msgstr  "radcan"
+
+msgid   "rational function, but expansion into partial fractions failed (it "
+        "could be necessary to simplify first (radcan, xthru, ...), or the "
+        "function could be a <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">partial fraction with "
+        "repeated irreducible 2nd-degree polynomial in the denominator</a>)"
+msgstr  "racionální funkce, ale nepodařilo se rozložit na parciální zlomky "
+        "(možná je potřeba upravit funkci (radcan, xthru, ...), ale možná je "
+        "to přímo  <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">parciální zlomek s násobnými "
+        "komplexními kořeny ve jmenovateli</a>)"
+
+msgid   "ratsimp"
+msgstr  "ratsimp"
+
+msgid   "red"
+msgstr  "červeně"
+
+msgid   "remove absolute values"
+msgstr  "odstranit absolutní hodnoty"
+
+msgid   "replace <b>even powers of cosine</b> function by sine function"
+msgstr  "nahradit <b>sudé mocniny funkce konsius</b> funkcí sinus"
+
+msgid   "replace <b>even powers of sine</b> function by cosine function"
+msgstr  "nahradit <b>sudé mocniny funkce sinus</b> funkcí kosinus"
+
+msgid   "replace function <b>sec</b> and <b>csc</b> by equivalent functions "
+        "in terms <b>sin</b> and <b>cos</b>"
+msgstr  "nahradit funkce <b>sec</b> a <b>csc</b> ekvivalentním vyjádřením "
+        "pomocí <b>sin</b> a <b>cos</b>"
+
+msgid   "rootscontract"
+msgstr  "rootscontract"
+
+msgid   "round parentheses"
+msgstr  "kulaté závorky"
+
+msgid   "saddle point"
+msgstr  "sedlo"
+
+msgid   "should be checked for substitutions of the form"
+msgstr  "toto políčko by mělo být zaškrtnuté u substitucí typu"
+
+msgid   "simplification"
+msgstr  "úprava"
+
+msgid   "simplify"
+msgstr  "upravit"
+
+msgid   "simplify fraction"
+msgstr  "upravit zlomek"
+
+msgid   "simplify fraction, each part separately"
+msgstr  "upravit zlomek, každou část samostatně"
+
+msgid   "simplify the fractions using xthru or fullratsimp"
+msgstr  "upravit zlomek pomocí xthru nebo fullratsimp"
+
+msgid   "simplify trigonometric functions"
+msgstr  "upravit goniometrické funkce"
+
+msgid   "skipping the picture ... (as explained hereinabove)"
+msgstr  "Obrázek přeskakuji (viz komentář nad tabulkou)..."
+
+#, php-format
+msgid   "split in a clever way into two fractions of the form %s and use "
+        "formulas for integration (ignore also the hint in the next step and "
+        "finish the integration by Maxima)"
+msgstr  "chytře rozdělit na součet dvou zlomků do tvaru %s a použít vzorce "
+        "(radu v následujícím kroku ignorujte a volte dokončení integrace)"
+
+msgid   "stable focus"
+msgstr  "stabilní ohnisko"
+
+msgid   "stable node"
+msgstr  "stabilní uzel"
+
+msgid   "substitute limits"
+msgstr  "dosadit meze (určitý integrál pomocí Newtonovy-Leibnizovy formule)"
+
+msgid   "substituting limits"
+msgstr  "dosazení mezí"
+
+msgid   "substitution"
+msgstr  "substituce"
+
+msgid   "substitution (the function is odd with respect to both sin and cos)"
+msgstr  "substituce (funkce je lichá vzhledem k sinu i kosinu)"
+
+msgid   "substitution (the function is odd with respect to cos)"
+msgstr  "substituce (funkce je lichá vzhledem ke kosinu)"
+
+msgid   "substitution (the function is odd with respect to sin)"
+msgstr  "substituce (funkce je lichá vzhledem k sinu)"
+
+msgid   "substitution (use trigsimp function in the next step after "
+        "goniometric substitution)"
+msgstr  "substituce (pokud použijete goniometrickou substituci, doporučujeme  "
+        "po substituci zjednodušit volbou trigsimp)"
+
+msgid   "the function can be divided into sum of formulas"
+msgstr  "funkci lze dělením převést na součet vzorců"
+
+msgid   "the function can be expanded into sum of formulas"
+msgstr  "funkci lze rozložit nebo roznásobit na součet vzorců"
+
+msgid   "the intersection is red region"
+msgstr  "průnik je vyznačen červeně"
+
+msgid   "the numerator is derivative of denominator (or its constant multiple)"
+msgstr  "v čitateli je derivace jmenovatele (nebo její násobek)"
+
+msgid   "trigexpand"
+msgstr  "trigexpand"
+
+msgid   "trigonometric functions have different inside parts, you can try to "
+        "fix it by <b>trigexpand</b> or <b>trigreduce</b> command"
+msgstr  "goniometrické funkce nemají stejný argument, můžete se pokusit to "
+        "spravit úpravou pomocí funkcí <b>trigexpand</b> nebo <b>trigreduce</"
+        "b>"
+
+msgid   "trigreduce"
+msgstr  "trigreduce"
+
+msgid   "trigsimp"
+msgstr  "trigsimp"
+
+msgid   "unable to find the answer"
+msgstr  "nepodařilo se najít odpověď"
+
+msgid   "unstable focus"
+msgstr  "nestabilní ohnisko"
+
+msgid   "unstable node"
+msgstr  "nestabilní uzel"
+
+msgid   "upper bound for integration"
+msgstr  "horní mez"
+
+msgid   "upper function"
+msgstr  "horní ohraničující funkce"
+
+msgid   "upper limit for"
+msgstr  "horní mez pro"
+
+msgid   "upper limit for inside integral"
+msgstr  "vnitřní horní mez"
+
+msgid   "upper limit for outside integral"
+msgstr  "vnější horní mez"
+
+msgid   "upper limit of integration"
+msgstr  "horní mez"
+
+msgid   "use formula or ask the computer to finish the integration"
+msgstr  "aplikovat vzorec nebo dokončit integraci počítačem"
+
+msgid   "user expression"
+msgstr  "vlastní substituce"
+
+#, php-format
+msgid   "variable %s"
+msgstr  "proměnnou %s"
+
+#, php-format
+msgid   "variables %s"
+msgstr  "proměnné %s"
+
+msgid   "we have to find derivatives and put into the equation"
+msgstr  "musíme najít derivace a dosadit tyto derivace do zadané rovnice"
+
+msgid   "we substitute into (1)"
+msgstr  "dosadíme do (1)"
+
+msgid   "where the new variable is"
+msgstr  "kde nová proměnná je"
+
+msgid   "with linear inside part (you can use also substitution)"
+msgstr  "s lineární vnitřní složkou (můžete použít i substituci)"
+
+msgid   "with new variable"
+msgstr  "kde nová proměnná je"
+
+#, php-format
+msgid   "with unknowns %s and %s."
+msgstr  "s neznámými %s a %s."
+
+msgid   "xthru"
+msgstr  "xthru"
+
+msgid   "yields"
+msgstr  "dává"
+
+msgid   "you can convert the function to sine and cosine functions with the "
+        "<b>trigsimp</b> command"
+msgstr  "můžete funkci převést na funkce sinus a kosinus pomocí úpravy "
+        "<b>trigsimp</b>"
+
+msgid   "you can remove a constant multiple from the integral"
+msgstr  "můžete vytknout konstantu"

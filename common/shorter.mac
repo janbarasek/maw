@@ -1,0 +1,56 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2008 Robert Marik, Miroslava Tihlarikova
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+
+pfeformat:true;
+
+shorter(f):=
+([final_str,test_str],
+if ssearch ("csc",string(f))#false or ssearch ("sec",string(f))#false then f:trigsimp(f),
+final_str:xthru(f),
+test_str:ratsimp(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:trigexpand(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:trigsimp(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+/* test_str:trigreduce(f), 
+hangs when invoked to solution of ode2('diff(y,x)=sqrt(1-y/x),y,x);
+*/
+if ssearch ("cos",string(f))=true or ssearch ("sin",string(f))=true
+then (
+   test_str:trigreduce(f),
+   if ssearch ("csc",string(test_str))=false and ssearch ("sec",string(test_str))=false and slength(string(test_str))<slength(string(final_str)) then final_str:test_str      
+   ),
+test_str:(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:factor(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:expand(f),
+if slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:radcan(f),
+if  freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+final_str
+);
+
+

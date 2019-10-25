@@ -1,0 +1,86 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2013 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+ratprint:false;
+tisk(expr,key):=print("###",key, tex(expr,false), "###");
+tiskmath(expr,key):=print("###",key, expr, "###");
+separator(string):=(print(" "),print("****************************************"), print(string),print(" "));
+
+tisk(f,"funkce");
+tisk(a,"dolnimez");
+tisk(b,"hornimez");
+
+/* test that outside limits for integration are well-ordered constants */
+if not constantp(a) or not constantp(b) then (print("limits are not constant"),quit());
+
+shorter(f):=
+([final_str,test_str],
+final_str:xthru(f),
+test_str:ratsimp(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:factor(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:expand(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:radcan(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+final_str
+);
+
+separator("O.K.: trying inside integral");
+primitive:shorter(opttrigsimp(integrate(f,variable)));
+if numberp(ssearch("integrate",string(primitive))) then 
+(
+print("### integration failed"),
+quit()
+);
+separator("O.K.: integral has been evaluated");
+
+tisk(primitive,"primitiveFunction");
+
+primitiveB:radcan(eval_string(concat("ev(primitive,",variable,"=b)")));
+tisk(primitiveB,"primitiveAtB");
+primitiveA:radcan(eval_string(concat("ev(primitive,",variable,"=a)")));
+tisk(primitiveA,"primitiveAtA");
+simp:false;
+primitiveBA:primitiveB - primitiveA;
+tisk(primitiveBA,"substitutingLimits");
+simp:true;
+separator("O.K.: simplifying the result using radcan");
+
+tisk(result:radcan(opttrigsimp(primitiveBA)),"definiteintegral");
+tisk(float(ev(result,numer)),"floatresult");
+
+if not is(a<b) then (print("limits not well ordered"),quit());
+separator("O.K.: evaluating mean value");
+
+tisk(intlength:radcan(b-a),"length");
+
+tisk(mean:radcan(result/intlength),"meanValue");
+tisk(float(ev(mean,numer)),"floatmean");
+tisk(signum(mean),"meansgn");
+
+
+separator("O.K.: finished");

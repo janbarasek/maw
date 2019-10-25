@@ -1,0 +1,44 @@
+How to install
+--------------
+
+These scripts have been tested on Debian Lenny. You need maxima,
+maxima-shared, gnuplot, convert, formconv, gettext (including perl
+support, mercurial) and working TeX installation (including LaTeX and
+pdfLaTeX). If you have these tools on your computer, installation of
+MAW is pretty simple: it is sufficient to copy files into required
+directories and set few environment variables in php files.
+
+The installation has been tested on Debian Lenny.
+
+The installation script downloads the files, compiles language files,
+creates log directories and sets permisions for these directories.
+
+1. Put timeout script from support dierctory somewhere into the PATH 
+   of the www user (/usr/bin).
+
+2. You may want to put maw-html files into suitable directory. 
+   Customize maw-html/mawconfightml.php.
+
+3. Put the directory maw to /var/www of your server. If you use another
+   path, you must set the global variables defined in maw/common/maw.php
+   directory. The best place where to [put these customizations is the
+   maw/commmon/mawconfig.php file. Check that www user has write access to
+   files in /var/www/maw/common/log.
+
+4. For some calculators you must install formconv package
+   http://formconv.sourceforge.net/ (compiled binaries are part of
+   WMI2 bin distribution, http://sourceforge.net/projects/wmi),
+   jsmath (put the directory jsMath to /var/www) and mathtex.
+   
+5. You may want customize 
+
+   * variable $server defined in in maw-html/index.php (this
+     should point to the server with maw directory php files, since
+     I have html part on another server than the computing part).
+
+   * variables $pdflatex, $latex, $dvips, .... and  $texrender in the 
+     file maw/common/maw.php
+
+6. You can test the installation by opening the file maw/common/test.php.
+   If you encounter any problem with installation, send a message to 
+   the authors.

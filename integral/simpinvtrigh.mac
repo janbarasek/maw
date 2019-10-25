@@ -1,0 +1,11 @@
+/* logarc:true; */
+
+/* logarc:true changes also atan(x) and introduces imaginary unit */
+
+matchdeclare(allexpr,true);
+tellsimp(asinh(allexpr),log(sqrt(allexpr^2+1)+allexpr));
+tellsimp(acosh(allexpr),2*log(sqrt(allexpr+1)/sqrt(2)+sqrt(allexpr-1)/sqrt(2)));
+tellsimp(atanh(allexpr),(log(allexpr+1)-log(1-allexpr))/2);
+tellsimp(acoth(allexpr),(log(1/allexpr+1)-log(1-1/allexpr))/2);
+tellsimp(asech(allexpr),2*log(sqrt(1/allexpr+1)/sqrt(2)+sqrt(1/allexpr-1)/sqrt(2)));
+tellsimp(acsch(allexpr),log(1/allexpr+sqrt(1/allexpr^2+1)));

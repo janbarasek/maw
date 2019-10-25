@@ -1,0 +1,108 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2012 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+
+/* The function changevar allows to do the substitution in an indefinite */
+/* integral, if the substitution can be solved with respect to the old */
+/* variable. This prevents substitutions in the integral  */
+/* \int f(phi(x))*phi'(x)*dx if phi(x)=t  */
+/* cannot be solved with respect to x. The following procedure changevar2 */
+/* is written to fix this disadvantage. */
+
+changevar2(changevar_integral,changevar_substitution, changevar_newvar, changevar_old_var):=
+ block([dummy_function, dummy_variable, temp_changevar_substitution,  changevar_temp1, changevar_function_temp],
+
+ /* We try the ordinary changevar function first */
+
+ try_changevar:changevar(changevar_integral,changevar_substitution, changevar_newvar, changevar_old_var),
+ if (diff(try_changevar,changevar_old_var)=0) then (print ("changevar2: using plain changevar"),return(try_changevar)),
+
+ /* Ordinary changevar function failed we solve with respect to the
+    new variable and ensure that the subsitution can be solved, and
+    the solution is unique */
+
+ changevar_substitution:solve(changevar_substitution, changevar_newvar),
+
+ /* The solution must be unique and the substitution must be solvable for new variable. */
+
+ if (length(changevar_substitution)#1) or (changevar_newvar#lhs(changevar_substitution[1])) then (print ("changevar2: Sorry, unable to do the substitution."), return (changevar_integral)),
+ changevar_substitution:changevar_substitution[1],
+
+ /* We differentiate the substitution */
+
+ changevar_substitution_diff:diff(rhs(changevar_substitution),changevar_old_var),
+
+ /* We divide by the derivative */
+
+ changevar_function:factor(args(changevar_integral)[1])/factor(changevar_substitution_diff),
+
+ /* We convert into dummy variable. The dummy_function causes that the
+    solution does not have dummy_variable on the left hand
+    side. Solving sin(x)+x=t, sin(x) is isolated on the left and not
+    x.*/
+
+ changevar_temp1:changevar_old_var=dummy_function(dummy_variable),
+ changevar_function_temp:ev(changevar_function,changevar_temp1),
+ temp_changevar_substitution:ev(changevar_substitution,changevar_temp1),
+ temp_changevar_substitution:solve(temp_changevar_substitution,dummy_variable),
+ changevar_function:ev(changevar_function_temp,temp_changevar_substitution),
+
+ /* We check that the old variable goes away. Some algebraic modifications can be necessary to do this */
+
+ if not (freeof(dummy_variable,changevar_function)) then changevar_function:factor(changevar_function),
+ if not (freeof(dummy_variable,changevar_function)) then changevar_function:radcan(changevar_function),
+ if (freeof(dummy_variable,changevar_function)) and (fullratsimp(radcan(args(changevar_integral)[1])- radcan(ev(changevar_function,changevar_substitution)*changevar_substitution_diff))=0)then (return('integrate(changevar_function, changevar_newvar)))
+ else (print ("changevar2: Sorry, unable to do the substitution."), return(changevar_integral))
+ )$
+
+
+
+/* Tests for the fucntion changevar2 */
+/* --------------------------------- */
+
+/* display2d:false$ */
+/* changevar2('integrate(sqrt(x+sin(x))*(1+cos(x)),x),t=x+sin(x),t,x); */
+/* changevar2('integrate(sqrt(x+sin(x))*(1+cos(x)),x),t^2=x+sin(x),t,x); */
+/* changevar2('integrate(sqrt(sin(x))*(cos(x)),x),t=sin(x),t,x); */
+/* changevar2('integrate((2+sin(x+log(x)))*(1+1/x),x),t=x+log(x),t,x); */
+/* changevar2('integrate((2+exp(x+log(x)))*(1+1/x),x),t=x+log(x),t,x); */
+/* changevar2('integrate((2+exp(x+sin(x)))*(1+cos(x)),x),t=x+sin(x),t,x); */
+/* changevar2('integrate(sqrt((cos(x)+sin(x)))*(sin(x)-cos(x)),x),t=cos(x)+sin(x),t,x); */
+/* changevar2('integrate(sqrt((cos(x)+sin(x)))*(-sin(x)+cos(x)),x),t=cos(x)+sin(x),t,x); */
+/* changevar2('integrate(((cos(x)+sin(x)))^(1/6)*(-sin(x)+cos(x)),x),t=cos(x)+sin(x),t,x); */
+/* changevar2('integrate(((cos(x)+sin(x)))^(6)*(-sin(x)+cos(x)),x),t=cos(x)+sin(x),t,x); */
+
+/* (" *** Reported in Maxima mail list on Mon Apr 21 2008 by Robert Marik")$ */
+/*  changevar2('integrate((sin(x)+cos(x))/sqrt(sin(x)-cos(x)),x),sin(x)-cos(x)=t,t,x); */
+
+/* (" *** Reported in Maxima mail list on Mon Sep 23 2007 by Milan Lukic")$ */
+/* A : 'integrate((log(x)+1)*sqrt(1+(x*log(x))^2),x)$ */
+/* changevar2(A,x*log(x)-u,u,x); */
+/* ev(%,nouns); */
+/* ev(%,u=x*log(x)); */
+/* integrate((log(x)+1)*sqrt(1+(x*log(x))^2),x); */
+
+
+/* changevar2(1/2*'integrate(exp(2*x),x),t=2*x,t,x); */
+/* changevar2('integrate(exp(2*x+sin(x^2))*(1+x*cos(x^2)),x),t=2*x+sin(x^2),t,x); */
+/* changevar2('integrate(exp(2*x+sin(x^2))*(2+2*x*cos(x^2)),x),t=2*x+sin(x^2),t,x); */

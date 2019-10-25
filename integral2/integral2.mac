@@ -1,0 +1,185 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2008 Robert Marik, Miroslava Tihlarikova
+Copyright 2012 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+ratprint:false;
+tisk(expr,key):=print("###",key, tex(expr,false), "###");
+tiskmath(expr,key):=print("###",key, expr, "###");
+separator(string):=(print(" "),print("****************************************"), print(string),print(" "));
+
+tisk(f,"funkce");
+tisk(a,"vnejsimezea");
+tisk(b,"vnejsimezeb");
+tisk(c,"vnitrnimezec");
+tisk(d,"vnitrnimezed");
+
+/* test that outside limits for integration are well-ordered constants */
+if not constantp(a) or not constantp(b) or not is(a<b) then (print("invalid outside limits"),quit());
+
+
+/* test that inside limits for integration are not functions of inside variable */
+if not freeof(vnitrni,c) or not freeof(vnitrni,d) then (print("invalid inside limits - bad variable"),quit());
+
+eval_string(concat("lower_function(m):=ev(c,",vnejsi,"=m)"));
+eval_string(concat("upper_function(m):=ev(d,",vnejsi,"=m)"));
+
+parmin:10000;
+parmax:0;
+
+print(lower_function(m));
+print(upper_function(m));
+
+min_pic:lower_function(a);
+max_pic:upper_function(a);
+
+lower_expr:lower_function(m);
+upper_expr:upper_function(m);
+
+test1(f,g,a,b):=block(
+for i:a step (b-a)/100 unless i>b do 
+    (
+     tempi:ev(i,numer),
+     templ:float(ev(g,m:tempi,numer)),
+     tempu:float(ev(f,m:tempi,numer)),
+     parmin:min(parmin,templ),
+     parmax:max(parmax,tempu),
+     coord1min:min(coord1min,coor1(templ,i),coor1(tempu,i)),
+     coord1max:max(coord1max,coor1(templ,i),coor1(tempu,i)),
+     coord2min:min(coord2min,coor2(templ,i),coor2(tempu,i)),
+     coord2max:max(coord2max,coor2(templ,i),coor2(tempu,i)),    
+     if vnejsi = r then
+     (for j:templ step (tempu-templ)/10 unless j>=tempu do 
+     (
+       coord1min:min(coord1min,coor1(j,i)),
+       coord1max:max(coord1max,coor1(j,i)),
+       coord2min:min(coord2min,coor2(j,i)),
+       coord2max:max(coord2max,coor2(j,i))
+     )
+     ),
+     if is(float(imagpart(ev(f,m:i)))>0.001) then error("undefined inside limit at ",i),
+     if is(float(imagpart(ev(g,m:i)))>0.001) then error("undefined inside limit at ",i),
+     if ev(f,m:i)<ev(g,m:i) then error("invalid inside limits at ",i)
+    )
+)$
+
+outp:errcatch(test1(upper_expr, lower_expr,a,b));
+
+if outp=[] then (
+print(""),
+print("trying to interchange limits"),
+outq:errcatch(test1(lower_expr, upper_expr,a,b)),
+print(""),
+if outq=[] then (print("upper and lower limits have intersections"),quit())
+else (print("upper and lower limits are interchanged"),quit())
+);
+
+/* jacobian */
+jcbn:(diff(vnejsi,r)+diff(vnitrni,r))*r;
+if is(jcbn=0) then jcbn:1;
+
+/* test that radial coordinate is nonnegative */
+if vnejsi=r and a<0 then (print("variable r is negative"),quit());
+if vnitrni=r and constantp(c) and c<0 then (print("variable r is negative"),print("fails at ",float(c)),quit());
+if vnitrni=r then
+  (
+  for i:a step (b-a)/100 unless i>b do
+   (
+     if ev(lower_expr,m:i)<0 then (print("variable r is negative"),print("fails at ",float(i)),quit())  
+   ) 
+  );
+
+
+
+separator("O.K.: region for integration seems to be well defined");
+
+shorter(f):=
+([final_str,test_str],
+final_str:xthru(f),
+test_str:ratsimp(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:factor(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:expand(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+test_str:radcan(f),
+if freeof(%i,test_str) and slength(string(test_str))<slength(string(final_str)) then final_str:test_str,
+final_str
+);
+
+assume(vnejsi>a,vnejsi<b);
+
+separator("O.K.: trying inside integral");
+vnitrni1:shorter(opttrigsimp(integrate(f*jcbn,vnitrni)));
+if numberp(ssearch("integrate",string(vnitrni1))) then 
+(
+print("### integration failed"),
+quit()
+);
+separator("O.K.: inside integral evaluated");
+
+tisk(vnitrni1,"vnitrni1");
+simp:false;
+vnitrniD:eval_string(concat("ev(vnitrni1,",vnitrni,"=d)"));
+vnitrniC:eval_string(concat("ev(vnitrni1,",vnitrni,"=c)"));
+vnitrni2:vnitrniD-vnitrniC;
+tisk(vnitrni2,"dosazeniuvnitr");
+simp:true;
+vnitrni2:shorter(opttrigsimp(vnitrni2));
+tisk(vnitrni2,"vnitrni2");
+
+separator("O.K.: trying outside integral");
+if a>=0 then assume (vnejsi>=0);
+vnejsi1:shorter(opttrigsimp(rectform(integrate(vnitrni2,vnejsi))));
+if numberp(ssearch("integrate",string(vnejsi1))) then 
+(
+print("### integration failed"),
+quit()
+);
+separator("O.K.: outside integral evaluated");
+
+tisk(vnejsi1,"vnejsi1");
+vnejsiB:radcan(eval_string(concat("ev(vnejsi1,",vnejsi,"=b)")));
+vnejsiA:radcan(eval_string(concat("ev(vnejsi1,",vnejsi,"=a)")));
+simp:false;
+vnejsi2:vnejsiB-vnejsiA;
+tisk(vnejsi2,"dosazenivne");
+simp:true;
+separator("O.K.: simplifying the result using radcan");
+tisk(radcan(opttrigsimp(vnejsi2)),"vnejsi2");
+tisk(f,"funkce");
+tisk(a,"limita");
+tisk(b,"limitb");
+tisk(c,"limitc");
+tisk(d,"limitd");
+tiskmath(f,"int2");
+tiskmath(vnitrni2,"int1");
+
+
+tiskmath(float(parmin),"parmin");
+tiskmath(float(parmax),"parmax");
+tiskmath(float(coord1min),"coord1min");
+tiskmath(float(coord1max),"coord1max");
+tiskmath(float(coord2min),"coord2min");
+tiskmath(float(coord2max),"coord2max");

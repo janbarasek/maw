@@ -1,0 +1,2919 @@
+# MAW-translation into Ukrainian laguage.
+# Copyright (C) 2012 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Robert Marik <marik@mendelu.cz>, 2012.
+#
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-12-22 02:15+0100\n"
+        "PO-Revision-Date: 2012-03-30 19:02+0200\n"
+        "Last-Translator: Iryna Tkachenko\n"
+        "Language-Team: Ukrainian\n"
+        "Language: uk\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 "
+        "&& n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid   " Change <i>xmin</i>."
+msgstr  "Змініть <i>xmin</i>."
+
+msgid   " Submit the form to check, if the curve is well defined."
+msgstr  "Надіслати запит для перевірки коректності задання кривої."
+
+msgid   " Submit the form to check, if the region for integration is well "
+        "defined."
+msgstr  "Відправити форму, щоб перевірити, чи є корректною задана область "
+        "інтегрування"
+
+msgid   "$ n$-degree  Taylor polynomial for the function  $ f(x)$ around  $ "
+        "x=x_0$"
+msgstr  "Многочлен Тейлора $ n$-ого степеня для функції $ f(x)$ в точці $ "
+        "х=x_0$"
+
+msgid   "$x$-intercepts"
+msgstr  "корені функції (точки перетину з віссю абсцис $x$)"
+
+#, php-format
+msgid   "%s degree polynomial"
+msgstr  "поліном степеня %s"
+
+msgid   "(Click each equation to solve it using undetermined coefficients and "
+        "then sum up all particular solutions to and general solution of "
+        "associated homogeneous equation to get general solution. To find "
+        "solution of initial value problem use variation of constants.)"
+msgstr  "(Натисніть, щоб знайти розв'язок кожного рівняння за допомогою "
+        "невизначених коефіцієнтів, а потім потрібно просумувати всі частинні "
+        "розв'язки та загальний розв'язок однорідного рівняння, в результаті "
+        "отримаєте загальний розв'язок заданого рівняння. Щоб знайти "
+        "розв'язок заданої задачі, використовуйте метод варіації довільної "
+        "сталої)"
+
+msgid   "(Not including sets with zero measure, such as points, curves and "
+        "boundaries in the picture.)"
+msgstr  "На рисунку не передбачено брати до уваги умови для множини нульової "
+        "міри (тобто точки та криві). Тому не зображено, чи відноситься "
+        "границя множини до розв'язку, чи ні. "
+
+msgid   "(and remove odd power from denominator, if possible)"
+msgstr  "(й убрати непарний ступінь в знаменнику, якщо це можливо)"
+
+msgid   "(click the equation to solve it using undetermined coefficients)"
+msgstr  "(натисніть, щоб розв'язати рівняння за допомогою невизначених "
+        "коефіцієнтів)"
+
+msgid   "(clicking the expression you get this part of integral in new window)"
+msgstr  "(кліком по формулі відкриється нове вікно, в якому Ви можете окремо "
+        "займатися позначеною частиною)"
+
+msgid   "(not very useful in most cases)"
+msgstr  "(в більшості випадків це марно)"
+
+msgid   "(remember to return to the original variable)"
+msgstr  "(не забудьте повернутись до початкової змінної)"
+
+msgid   "(the trigreduce function yields this step)"
+msgstr  "(функція trigreduce дає цей результат)"
+
+msgid   "(use radiobuttons to choose the next computation method)"
+msgstr  "(оберіть наступний метод обчислення)"
+
+msgid   "(with completing square in denominator)"
+msgstr  "(з повним квадратом в знаменнику)"
+
+msgid   "(with completing square under square root)"
+msgstr  "(з повним квадратом під знаком квадратного кореня)"
+
+msgid   "(write an equation, e.g. x^2=t, this equation must involve new "
+        "variable and no parameter)"
+msgstr  "(напишіть рівність, яка містить лише нову змінну (напр. x^2=t), але "
+        "без всяких параметрів)"
+
+msgid   "(you can remove a constant multiple from the integral to match the "
+        "formula exactly)"
+msgstr  "(Ви можете винести постійний множник за знак інтегралу так, щоб Вам "
+        "стала зрозуміла формула для інтегрування)"
+
+msgid   "(you have to write the fraction in the form which matches the "
+        "formula, consider multiplying both numerator and denominator by a "
+        "convenient expression)"
+msgstr  "(Ви повинні написати дріб у вигляді, який точно відповідає "
+        "математичному виразу. Спопробуйте помножити чисельник та знаменник "
+        "на відповідний вираз)"
+
+msgid   "- Horizontal deformation -"
+msgstr  "Горизонтальна деформація"
+
+msgid   "- Horizontal shift -"
+msgstr  "Паралельно переносимо по горізонталі"
+
+msgid   "- Original function -"
+msgstr  "Вихідна функція"
+
+msgid   "- Turning about x -"
+msgstr  "Повертаємо навколо вісі х"
+
+msgid   "- Turning about y -"
+msgstr  "Повертаємо навколо вісі у"
+
+msgid   "- Vertical deformation -"
+msgstr  "Вертикальна деформація"
+
+msgid   "<b>Error. The most general expression which you can remove from the "
+        "integral is  a nonzero number written with digits or a multiple of "
+        "constants pi and e.</b> Go back and revise your choice."
+msgstr  "<b>Помилка. Найбільший спільний множник, який можна винести за знак "
+        "інтегралу, це ненульове число, яке складаеться  из цифр або як "
+        "результат множення постійних п та е.</b> Поверніться назад й "
+        "перегляньте свій ​​вибор."
+
+msgid   "<b>Error. You cannot multiply numerator and denominator by zero or a "
+        "zero equivalent expression.</b> Go back and revise your choice."
+msgstr  "<b>Помилка. Ви не можете помножити чисельник та знаменник на нуль "
+        "або нулю еквівалентні вирази. </b> Поверніться назад і перегляньте "
+        "свій вибор."
+
+msgid   "<b>Problems:</b> Infinitely many solutions, or some solutions cannot "
+        "be written using elementary functions."
+msgstr  "<b>Проблеми:</b> нескінченана кільксть розв'язків або розв'язки не "
+        "можуть бути записані через елементарні функції."
+
+#, php-format
+msgid   "<b>Sorry, the answer contains function %s which is not supported on "
+        "output. <br> Still curious? The answer is %s."
+msgstr  "<b>К сожалениюНажаль, відповідь содержить функцію %s, яка не "
+        "підтримується на виході.<br>Ми показали тільки кінцевий результат: "
+        "%s."
+
+#, php-format
+msgid   "<b>Sorry, the answer does not exist in the class of <a href=\"http://"
+        "en.wikipedia.org/wiki/Elementary_function\">elementary functions</a>."
+        "</b> From this reason the integral exceeds the level of primary "
+        "target students. <br> Still curious? The answer is %s."
+msgstr  "<b>Нажаль, відповідь не існує в класі <a href=\"http://ru.wikipedia."
+        "org/wiki/Елементарні_функції\"> елементарних функцій</a>.</b> "
+        "Інтеграл дорівнює %s (без проміжних кроків)."
+
+#, php-format
+msgid   "<b>Sorry, unable to evaluate the integral %s using Maxima.</"
+        "b><br><br>You may try to help Maxima by performing some "
+        "simplification (radcan?) or substitution.<br><br>You may get the "
+        "answer using another Computer Algebra System, such as %s or %s which "
+        "is reported by %s to be most powerful in integration."
+msgstr  "<b>Нажаль, не вдалося знайти інтеграл %s.</b><br> Ви можете "
+        "допомогти нам, виконуючи деякі  спрощення (radcan?) або замінy "
+        "змінних.<br><br>Ви можете знайти інтеграл за допомогою іншої системи "
+        "комп'ютерної алгебри, наприклад %s та %s."
+
+msgid   "<b>This message usually appears also if you click link more times "
+        "than once.</b>"
+msgstr  "<b>Це повідомлення, як правило, з'являється й тоді, коли ви "
+        "натискаєте \"Відправити\" більш  ніж один раз. </b>"
+
+msgid   "<b>Too long formula, sorry.</b> <ul><li>Try to install maxima on "
+        "your local computer or look at the formula on the page below.</"
+        "li><li>The problem is probably too difficult, but you can try "
+        "another method for integration.</li></ul>"
+msgstr  "<b>Занадто довгий математичний вираз, вибачте. </b> <ul><li> "
+        "Спробуйте установити Maxima програмне забезпечення на вашому "
+        "локальному комп'ютері або пoдивіться результат внизу на сторінці.</"
+        "li><li>Проблема досить складна, але можна спробувати інший метод "
+        "інтегрування. /li></ul>"
+
+msgid   "<br><b>Instructions</b><br>Use only sharp inequalities, one "
+        "inequality per row and use variables <i>x</i> and <i>y</i>."
+msgstr  "<br><b>Інструкція</b><br> Використовуйте лише строгі нерівності, "
+        "нерівність в рядку та використання змінних <i>х</i> і <i>у</i>."
+
+msgid   "<h2>Error on input</h2>The degree of Taylor polynomial must be an "
+        "integer between 1 and 9."
+msgstr  "<h2> Помилка на вході </ h2> степінь многочлена Тейлора повинна бути "
+        "цілим числом від 1 до 9."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be a "
+        "positive integer."
+msgstr  "<h2>Помилка на вводі </h2> число інтервалів повинно бути додатнім "
+        "цілим числом."
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be an "
+        "integer between 1 and 20."
+msgstr  "<h2>Помилка на вводі</h2> число інтервалів повинно бути цілим числом "
+        "від 1 до 20."
+
+#, php-format
+msgid   "<h2>Error</h2>The interval for integration, %s, is not subset of the "
+        "interval for drawing picture %s."
+msgstr  "<h2>Помилка</h2>Інтервал %s, на якому інтегруєте, не є підмножиною "
+        "інтервалу %s, на якому Вам потрібно зробити рисунок."
+
+#, php-format
+msgid   "<h2>Error</h2>The upper limit (%s) for the set (and for integration) "
+        "is bigger then the lower limit (%s). Interchange limits in the form "
+        "or clicking this %slink%s."
+msgstr  "<h2>Помилка</h2>Верхня границя інтегрування (%s)меньша, ніж нижня "
+        "границя (%s). Поміняйте границі в умові або натисніть це %sпосилання"
+        "%s."
+
+msgid   "<h2>Remarks</h2><ul> <li>You can load the function and computed "
+        "stationary points into the calculator for next calculations by "
+        "clicking the following link "
+msgstr  "<h2>Зауваження</h2><ul> <li>Ви можете внести як Вами задану функцію, "
+        "так і знайдені стаціонарні точки, в формуляр для наступних обчислень "
+        "- перейдіть по цьому посиланню"
+
+#, php-format
+msgid   "<h2>Simplify your function first</h2>The numerator and denominator "
+        "can be divided by the common factor %s. Simplify the fraction first "
+        "and then write the function into the field again.<br><br> Remark: "
+        "Simplifying we get y=%s."
+msgstr  "<h2>В першу чергу функцію спростимо</h2>Чисельник та знаменник можна "
+        "поділити на спільний множник %s. Спростимо так дріб, а результат "
+        "спрощення знову запишемо в полі завдання.<br><br> Примітка: після "
+        "спрощення маємо y=%s."
+
+#, php-format
+msgid   "<h3>Error in mathematical notation</h3>Use lowercase letters only "
+        "and notation from the program <a href=\"http://maxima.sourceforge.net"
+        "\">Maxima</a>. <ul><li>Use star to denote multiplication, write for "
+        "example 3*x^3-6*x+1</li><li>Use parenthesis to denote the scope of "
+        "the operation, for example sin(2*x)+ln(x)</li><li>Do not use "
+        "notation  sin^2(x), but (sin(x))^2.</li><li>Use abs(x) for absolute "
+        "value, not |x|</li><li>Constants for the area of unit circle and the "
+        "euler number are %%pi and %%e (yes, with percent sign, read the  <a "
+        "href=\"http://maxima.sourceforge.net/docs/manual/en/maxima.html"
+        "\">manual</a> to the Maxima program, a computer algebra system used "
+        "for all computations).</li></ul><hr> Your input is (after omitting "
+        "spaces and conversion ^ into **): %s and the problem is with the "
+        "substring %s<br><br> Still in troubles? You can contact the authors. "
+        "Email address is on the main page."
+msgstr  "<h3> Помилка в математичному запису </h3> Застосовуйте тільки малі "
+        "літери, також символи і правила математичних записів для програми <a "
+        "href=\"http://maxima.sourceforge.net\"> Maxima </a>. <ul> <li> "
+        "Пишіть зірочки * для позначення множення, наприклад 3 * x ^ 3-6 * x "
+        "+1 </li> <li> Застосовуйте круглі дужки для записів аргументів "
+        "функцій, наприклад sin (2 * x) + ln (x) </ li> <li> Не користуйтеся "
+        "записом sin ^ 2 (x), а лише (sin (x)) ^ 2. </li> <li> Застосовуйте "
+        "запис abs (x) для абсолютного значення, не можна писати | x | </ li> "
+        "<li> Постійні (число Людольфа й число Ейлера) - це %%pi та %%e (так, "
+        "насправді використано знак відсотків, див. <a href = \"http://"
+        "maxima. sourceforge.net/docs/manual/en/maxima.html \"> manual </a> "
+        "для програми Maxima, система комп'ютерної алгебри, яка служить для "
+        "всіх обчислень). </li> </ul> <hr> Ваш початковий запис (після "
+        "видалення пропусків та перепису знаків ^ на **): %s і проблема "
+        "виникла в результаті групи знаків %s <br> <br> Якщо Ви впевнені, що "
+        "вводите правильний запис і не вдалося видалити пропуски, "
+        "використовуючи наведені поради, Ви можете повідомити авторам. Адреса "
+        "електронної пошти знаходиться на головній сторінці."
+
+msgid   "<h3>Incorrect input, use only (decimal) numbers to enter bounds for "
+        "the picture.</h3> You are allowed to use only decimal numbers "
+        "(character minus, digits and a dot as a separator of decimal places)."
+msgstr  "<h3>Неправильний вхідний запис, використовуйте лише (десяткові) "
+        "числа для запису обмежень рисунка.</h3> Ви можете використовувати "
+        "лише десяткові числа (символ мінус, цифри й точку в якості "
+        "роздільника десяткових знаков)."
+
+#, php-format
+msgid   "<h3>You may mean %s.</h3> If yes, use Copy and Paste to move this "
+        "string into the input field.<br>To go back use the Back button in "
+        "your browser."
+msgstr  "<h3>Помилка. Ви маєте на увазі %s?</h3>"
+
+#, php-format
+msgid   "<ul><li> Choose the method for the next computation.  </li> <li> Try "
+        "to find the methods which simplify the integral. If your attempt "
+        "fails, you can return using Back button in you browser. You can also "
+        "return directly to the %s initial form%s.</li><li>You can use "
+        "computer to finish the integration. Educational value of such a this "
+        "step is minimal, so use this possibility with care, please.</"
+        "li><li>Questions marks |<b>?</b>| provide preview what you get when "
+        "using this function. Simply move the cursor over the question mark "
+        "and wait few seconds.</li><li>If the application gives incorrect or "
+        "unexpected results, let us know please.</li></ul><hr>"
+msgstr  "<ul><li>Оберіть метод для наступного обчислення. </li> <li> "
+        "Спробуйте знайти методи, які дозволяють знайти інтеграл. Після "
+        "кожного кроку можна повернутися на попередню сторінку, натиснувши на "
+        "кнопку Назад у вашому браузері. Ви також можете повернутися на %s "
+        "початкову форму%s.</li> <li> Ви можете використовувати комп'ютер для "
+        "завершення інтеграції. Але виховне значення такого крока невелике, "
+        "так що використовуйте цю можливість обережно, будь ласка </li> "
+        "<li>Знаки |<b>?</b>| дозволяють попередньо переглянути те, що ви "
+        "отримаєте, використовуючи відповідну функцію . Просто наведіть "
+        "курсор на знак питання й зачекайте декілька секунд.</li><li>Якщо "
+        "програма дає неправильні та несподівані результати, повідомте нам, "
+        "будь ласка.</li></ul><hr>"
+
+#, php-format
+msgid   "<ul><li>Error when checking continuity of functions and when "
+        "checking that lower bound is smaller than upper bound.<li> Are you "
+        "sure that both %s and %s are defined and continuous on the interval "
+        "%s and %s is bigger than %s on this interval?<li>Check your "
+        "functions on the following picture.</ul>"
+msgstr  "<ul><li>Виявлена помилка при перевірці функції на неперервність і "
+        "при перевірці того, що нижня функція, що обмежує, знаходиться під "
+        "верхньою функцією, що обмежує.<li> Ви впевнені, що обидві функції "
+        "мают неперервну область визначення на інтервалі %s, а також, що %s "
+        "на цьому інтервалі знаходиться над функцією %s?<li>Перевірьте "
+        "ситуацію по графіку.</ul>"
+
+#, php-format
+msgid   "<ul><li>The name of the function must be followed by its argument "
+        "enclosed in parenthesis. Write e.g. sin(x) instead of sin x and sin"
+        "(2*x) instead of sin 2*x</li><li>Remember that if you want to write "
+        "power of a function, you cannot write something like sin^2(x), but "
+        "(sin(x))^2.</li><li>For exponential function use exp(x) or %e^x or "
+        "e^x.</li></ul>"
+msgstr  "<ul> <li> За позначенням функції повинен бути її аргумент, взятий у "
+        "круглі дужки. Пишіть, наприклад, sin (x) замість sinx, пишіть sin (2 "
+        "* x) замість sin2x. </li> <li> Пам'ятайте, що для введення степенів "
+        "функцій слід правильно розмістити знак степеня по відношенню до "
+        "функції, не можна писати, наприклад, sin ^ 2 (x), апотрібно писати "
+        "(sin (x)) ^ 2. </li> <li> Для запису експоненційної функції "
+        "застосовуйте exp(x) або %e^x, або e^x </li> </ul>"
+
+#, php-format
+msgid   "<ul><li>Use numbers only, no functions are allowed.</li><li>Use "
+        "commas and semicolons to separate point coordinates and points in "
+        "the data file.</li><li>Use at least two and no more than six points. "
+        "If you really need to interpolate for bigger or more general data "
+        "file, use the full power of the <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a> software and the command lagrange on your local "
+        "computer.</li></ul><br>Your input was: %s"
+msgstr  "<ul><li>Используйте только числа, запрещено применять функции.</"
+        "li><li>Применяйте запятые (,) для разделения координат точки и точку "
+        "с запятой (;) для разделения точек.</li><li>Можете задать от двух до "
+        "шести точек. В случае, когда требуется задать больше точек или у Вас "
+        "более обширный набор дат, используйте непосредственно программу <a "
+        "href=\"http://maxima.sourceforge.net\">Maxima</a> й команда lagrange "
+        "прямо на Вашому комп'ютері.</li></ul><br>Ваш вхідний запис бул: %s"
+
+msgid   "<ul><li>integrate two times by parts and keep the choice of u and v' "
+        "suggested by this calculator</li><li>then remove constant multiple "
+        "(if necessary) and you get some terms and the same integral as the "
+        "original one</li><li>convert the problem into an algebraic equation "
+        "where the integral is the unknown and solve this equation</li></ul>"
+msgstr  "<ul><li>Ви можете два рази частинами й зберегти вибір u та v', "
+        "запропонований комп'ютером.</li><li> Потім уберіть постійні множники "
+        "(у разі потреби). Таким чином, ви можете перетворити задачу в "
+        "алгебраїчне рівняння, де інтеграл є невідомим та знайти розв'язок "
+        "отриманного рівняння</li></ul>"
+
+msgid   "<ul><li>the function has to be function in two variables, <li>the "
+        "limits for outside integral have to be numbers,<li>the limits for "
+        "the inside integral numbers or functions of variable which is used "
+        "for outside integration,<li>he lower limit must be smaller or equal "
+        "to the upper limit for integration for both integrals.</ul> One of "
+        "these conditions has been violated or Maxima failed to verify these "
+        "conditions (in most cases due to a typing error or bad mathematical "
+        "formula on input)."
+msgstr  "<ul><li>функція повинна мати не більш, ніж дві, змінні, <li>границі "
+        "зовнішніх інтегралів повинні бути лише числами,<li>границі "
+        "внутрішніх -  як числа, так і функції тих змінних, за якими "
+        "знаходяться зовнішні інтеграли,<li>нижня границя інтегрування "
+        "повинна бути меншою за верхню, ця вимога розповсюджується на обидва "
+        "інтеграла.</ul> Завдання не відповідає вище наведеним вимогам або "
+        "програмі Maxima не вдалося перевірити додержання цих вимог (зазвичай "
+        "причиною бувають описки або помилки при введені математичних "
+        "записів)."
+
+msgid   "Accessing this script from a web page which is outside Mendel "
+        "University is not allowed. You either came from such a page, or your "
+        "browser blocks the HTTP_REFERER information.<br> Use official pages "
+        "of <a href=\"http://user.mendelu.cz/marik/maw/index.php?lang=en"
+        "\">Mathematical Assistant on Web</a> or setup your browser properly."
+msgstr  "Заборонено доступ для веб-сторінки, з якої Ви перешли, вона "
+        "знаходиться поза нашого університету (Університет ім. Г. Менделя, "
+        "Brno) або Ваш браузер блокує доступ (за HTTP_REFERER інформацією). "
+        "Використовуйте офіційний перехід на сторінки нашого сайту <a href="
+        "\"http://user.mendelu.cz/marik/maw/index.php?lang=ru\"> </a> або "
+        "змініть настройки вашого браузера."
+
+#, php-format
+msgid   "After removing allowed strings we got redundant characters %s."
+msgstr  "Помилка , ви набрали знаки, які не підтримуються, або прописні "
+        "літери."
+
+msgid   "Algebraic modification"
+msgstr  "Алгебраїчне перетворення"
+
+msgid   "Algebraic modification (fullratsimp function)"
+msgstr  "Перетворення алгебраїчного виразу (fullratsimp функція)"
+
+msgid   "Algebraic modification (fullratsimp function) for each term in a sum"
+msgstr  "Перетворення алгебрїчного виразу (fullratsimp функція) для кожного "
+        "доданку в сумі"
+
+msgid   "Algebraic modification (logarc function)"
+msgstr  ""
+
+msgid   "Algebraic modification (radcan function)"
+msgstr  "Перетворення алгебрїчного виразу (radcan функція)"
+
+msgid   "Algebraic modification (removing sec and csc)"
+msgstr  "Перетворення алгебрїчного виразу (видалити sec та csc)"
+
+msgid   "Algebraic modification (trigexpand function)"
+msgstr  "Перетворення алгебрїчного виразу (trigexpand функція)"
+
+msgid   "Algebraic modification (trigreduce function)"
+msgstr  "Перетворення алгебрїчного виразу (trigreduce функція)"
+
+msgid   "Algebraic modification (trigsimp function)"
+msgstr  "Перетворення алгебрїчного виразу (trigsimp функція)"
+
+msgid   "Algebraic modification (xthru function)"
+msgstr  "Перетворення алгебрїчного виразу (xthru функція)"
+
+msgid   "Algebraic modification (xthru function) for each term in a sum"
+msgstr  "Перетворення алгебрїчного виразу (xthru функція) для кожного доданку "
+        "в сумі "
+
+msgid   "All x-coordiantes have to be mutually different numbers."
+msgstr  "Усі х-координати повинні бути взаємно різних номерів."
+
+msgid   "An error occurred when processing your input."
+msgstr  "Помилка при обробці вашого вхідного запису."
+
+msgid   "An error occurred when processing your input.<br>Check your formulas "
+        "(perhaps using Preview button) and report the problem if you think "
+        "that your input is correct and should be processed without any error."
+msgstr  "Під час обробки Ваших даних трапилася помилка. Перевірте вирази в "
+        "ваших записах (можете також скористатися кнопкою Попередній "
+        "перегляд). Якщо Ви впевнені, що проблеми виникли збоку сервісів MAW, "
+        "повідомте про це, будь ласка, авторам сервісів."
+
+msgid   "Answer"
+msgstr  "Відповідь"
+
+msgid   "Approximation"
+msgstr  "Наближення"
+
+msgid   "Arithmetic overflow. Consider smaller bounds for the picture on the "
+        "<i>x</i> axis or bigger on the <i>y</i> axis."
+msgstr  "Аріфметичне переповнення. Спробуйте змінити границі інтервалів, які "
+        "було обрано для побудови графіка, - зменьшити по вісі <i>x</i> або "
+        "збільшити по вісі <i>y</i>."
+
+msgid   "As a subproblem we have to integrate function with absolute value, "
+        "which is not supported well in our version of Maxima."
+msgstr  "Як підзадачу ми повинні інтегрувати функцію з абсолютним значенням. "
+        "Це у сервісі не підтримується."
+
+msgid   "Associated homogeneous equation"
+msgstr  "Спряжене однорідне рівняння"
+
+msgid   "Associated homogeneous equation is"
+msgstr  "Спряжене однорідне рівняння"
+
+msgid   "At least one y-coordinate has to be nonzero."
+msgstr  "Принаймні одна координата у повинна бути відмінною від нуля."
+
+msgid   "Autonomous system"
+msgstr  "Автономна система"
+
+msgid   "Autonomous system in plane"
+msgstr  "Автономна система в двухвимірному просторі"
+
+msgid   "Auxiliary determinants are"
+msgstr  "Допоміжні визначники"
+
+#, php-format
+msgid   "Bad input in row %s"
+msgstr  "Проблема з введенням у рядку %s"
+
+msgid   "Bad input. Check your data."
+msgstr  "Помилка введення. Перевірте свої данні."
+
+#, php-format
+msgid   "Binary operator %s found at the beginning of the string."
+msgstr  "На початку рядка знаходиться бінарний оператор %s."
+
+#, php-format
+msgid   "Binary operator %s found at the end of the string."
+msgstr  "У кінці рядка знаходиться бінарний оператор %s."
+
+msgid   "Bisection method"
+msgstr  "Mетод бісекції"
+
+msgid   "Bisection of interval"
+msgstr  "Mетод бісекції"
+
+msgid   "Build PDF"
+msgstr  "Отримайте PDF"
+
+#, php-format
+msgid   "Building animations is available only, if the server load in the "
+        "last minute is smaller than %s. The current load %s. Return to the "
+        "previous page and try it later, please. (Or reload the page after 1 "
+        "minute.)"
+msgstr  "Створення анімації можливе лише тоді, коли навантаження на сервер за "
+        "останню хвилину менше ніж %s. Зараз навантаження %s. Поверніться, "
+        "будь ласка, на попередню сторінку й спробуйте знову дещо пізніше "
+        "(або обновіть сторінку через хвилину)."
+
+msgid   "By clicking the integral you load the integral into an interactive "
+        "tool for integration."
+msgstr  "Натисніть на інтегралі, так він буде переданий в самостійний сервіс "
+        "для інтегрування."
+
+msgid   "Can't guess, what you actually mean. You may try to enter the "
+        "following inequalities"
+msgstr  "Разрешить написание латиницей Складно визначити, що фактично означає "
+        "ваша умова. Ви можете спробувати ввести наступні нерівності"
+
+msgid   "Change <i>xmax</i>."
+msgstr  "Змініть <i>xmax</i>."
+
+msgid   "Char π is not allowed. Write %pi or pi instead."
+msgstr  "Символ π заборонено. Напишіть %pi або pi."
+
+msgid   "Char ∞ is not allowed. No part of MAW works with infinity. You are "
+        "doing something curious. If you want to evaluate limits or improper "
+        "integrals on computer, use some of computer algebra systems like "
+        "Sage or Maxima (both are free to install and also available to try "
+        "live on the Internet, without installing anything on your local "
+        "computer)."
+msgstr  "Нескінченність і символ ∞ не допускаються. Програма MAW не вміє "
+        "використовувати нескінченність. Ви швидше за все вводите щось дивне. "
+        "У випадку, якщо Вам треба перевірити межі або невласні інтеграли, "
+        "користуйтеся іншими обчислювальними системами комп'ютерної алгебри "
+        "(Sage, Maxima), обидві системи є у вільному доступі для установки на "
+        "локальний комп'ютер, Ви також можете використати ці системи онлайн, "
+        "без установки на Ваш комп'ютер) ."
+
+msgid   "Characteristic equation"
+msgstr  "Характеристичне рівняння"
+
+msgid   "Characteristic equation has one double solution."
+msgstr  "Характеристичне рівняння має кратний корінь (подвійний корінь) "
+
+msgid   "Characteristic equation has two complex solutions."
+msgstr  "Характеристичне рівняння має два комплексні корені "
+
+msgid   "Characteristic equation has two real solutions."
+msgstr  "Характеристичне рівняння має два дійсні корені"
+
+msgid   "Characteristic polynomial"
+msgstr  "характеристичний поліном"
+
+msgid   "Check also that both functions are continuous on the interval used "
+        "to evaluate the integral and to draw the picture."
+msgstr  "Перевірьте, будь ласка, чи є функція, графік якої хочете побудувати, "
+        "неперервною на усьому інтервалі інтегрування та побудови графіка."
+
+msgid   "Check your formulas (perhaps using Preview button) and report the "
+        "problem if you think that your input is correct and should be "
+        "processed without any error."
+msgstr  "Перевірте свої формули (можливо, використовуючи кнопку Попередній "
+        "перегляд), а також повідомте про проблему, якщо ви вважаєте, що ваші "
+        "вихідні данні вірні і повинні бути оброблені без помилок."
+
+msgid   "Check your input data"
+msgstr  "Перевірте вхідні данні"
+
+msgid   "Choose the action for the next computation"
+msgstr  "Оберіть дії для наступного обчислення"
+
+msgid   "Clever expansion into two fractions"
+msgstr  "Розкладання на два дроба"
+
+#, perl-format
+msgid   "Click %shere%s to find stationary points by computer."
+msgstr  "Натисніть %s тут %s, щоб знайти стаціонарні точки за допомогою "
+        "комп'ютера."
+
+msgid   "Click the integral to send the function to a tool which helps to "
+        "evaluate the indefinite integral."
+msgstr  "Натисканням по інтегралу Ви можете перейти до самостійного сервісу, "
+        "з яким Ви пройдете крок за кроком знаходження невизначеного "
+        "інтегралу заданої функції. "
+
+msgid   "Close"
+msgstr  "Закрити"
+
+msgid   "Comparing coefficients we get (the first equation is from the "
+        "highest power)"
+msgstr  "прирівнюючи коефіцієнти при доданкках з однаковими степенями, "
+        "отримаэмо (починаючи зы старшого показника степеня)."
+
+msgid   "Comparison with other methods"
+msgstr  ""
+
+msgid   "Completing square"
+msgstr  "Виділення повного квадрату"
+
+msgid   "Computation opens in new panel or window."
+msgstr  ""
+
+msgid   "Conclusion"
+msgstr  "Результат"
+
+msgid   "Condition"
+msgstr  "Умова"
+
+msgid   "Condition for $x$-intercepts"
+msgstr  "Умови для точок перетину графика функції з віссю абсцис $x$ (корені "
+        "функції)"
+
+msgid   "Condition for critical points"
+msgstr  "Умови для критичних точок"
+
+msgid   "Condition for points of discontinuity"
+msgstr  "Умови для точок разриву"
+
+msgid   "Condition for stationary points"
+msgstr  "Умови для стаціонарних точок"
+
+msgid   "Conditions"
+msgstr  "Умови"
+
+msgid   "Consider reasonable bounds for axes, please."
+msgstr  "Спробуйте вибрати більш відповідні границі інтервалів "
+
+msgid   "Constant multiple rule"
+msgstr  "Похідна добутку постійних"
+
+msgid   "Constant rule"
+msgstr  "Похідна постійної (константи)"
+
+msgid   "Constant solution"
+msgstr  "Розв'язок у вигляді постійної"
+
+msgid   "Contract product of roots (rootscontract)"
+msgstr  "Підведення множників  під один степень (rootscontract)"
+
+msgid   "Conversion into algebraic equation"
+msgstr  "Перетворення до алгебраїчного рівняння"
+
+msgid   "Conversion into exponential function"
+msgstr  "Перетворення до форми експоненційної функції"
+
+msgid   "Critical points"
+msgstr  "Критичні точки"
+
+msgid   "Curve"
+msgstr  "Крива"
+
+msgid   "Curve derivatives"
+msgstr  "похідні кривої"
+
+msgid   "Decimal number (dot separates decimal places) cannot be a part of "
+        "another mathematical expression."
+msgstr  "Десяткові числа (точка - десятковий роздільник) не можуть бути "
+        "частиною іншого математичного виразу."
+
+msgid   "Definite integral"
+msgstr  ""
+
+msgid   "Delete one of these characters or use parentheses properly."
+msgstr  "Вилучіть один з цих символів або правильно застосовуйте круглі дужки."
+
+#, perl-format
+msgid   "Denote %s and %s."
+msgstr  "Позначимо %s та %s."
+
+msgid   "Derivative"
+msgstr  "Похідна"
+
+#, php-format
+msgid   "Derivative of %s"
+msgstr  "Похідна функції %s"
+
+msgid   "Derivative of absolute value"
+msgstr  "Похідна абсолютного значення"
+
+msgid   "Derivative of acrcotan function"
+msgstr  "Похідна функції арккотангенс"
+
+msgid   "Derivative of arccosine function"
+msgstr  "Похідна функції арккосинус"
+
+msgid   "Derivative of arcsine function"
+msgstr  "Похідна функції арксинус"
+
+msgid   "Derivative of arctan function"
+msgstr  "Похідна функції арктангенс"
+
+msgid   "Derivative of contangent function"
+msgstr  "Похідна функції котангенс"
+
+msgid   "Derivative of cosine function"
+msgstr  "Похідна функції косинус"
+
+msgid   "Derivative of csc function"
+msgstr  "Похідна функції косеканс"
+
+msgid   "Derivative of exponential function"
+msgstr  "Похідна експоненційної функції"
+
+msgid   "Derivative of general solution is"
+msgstr  "Похідна загального розв'язка"
+
+msgid   "Derivative of hyperbolic acrcotan function"
+msgstr  "Похідна функції гіперболічний арккотангенс"
+
+msgid   "Derivative of hyperbolic arccosine function"
+msgstr  "Похідна функції гіперболічний арккосинус"
+
+msgid   "Derivative of hyperbolic arcsine function"
+msgstr  "Похідна функції гіперболічний арксинус"
+
+msgid   "Derivative of hyperbolic arctan function"
+msgstr  "Похідна функції гіперболічний арктангенс"
+
+msgid   "Derivative of hyperbolic contangent function"
+msgstr  "Похідна функції гіперболічний котангенс"
+
+msgid   "Derivative of hyperbolic cosine function"
+msgstr  "Похідна функції гіперболічний косинус"
+
+msgid   "Derivative of hyperbolic sine function"
+msgstr  "Похідна функції гіперболічний синус"
+
+msgid   "Derivative of hyperbolic tangent function"
+msgstr  "Похідна функції гіперболічний тангенс"
+
+msgid   "Derivative of logarithm"
+msgstr  "Похідна логарифмічної функції"
+
+msgid   "Derivative of particular solution (simplified)"
+msgstr  "Похідна частинного розв'язку (проведено спрощення)"
+
+msgid   "Derivative of power function"
+msgstr  "Похідна степеневої функції"
+
+msgid   "Derivative of sec function"
+msgstr  "Похідна функції секанс"
+
+msgid   "Derivative of sine function"
+msgstr  "Похідна функції синус"
+
+msgid   "Derivative of tangent function"
+msgstr  "Похідна функції тангенс"
+
+msgid   "Derivatives, derivatives at  $#1$ and coefficients of Taylor "
+        "polynomial"
+msgstr  "Похідні, похідні в точці $ #1 $ та коефіцієнти многочлена Тейлора"
+
+#, php-format
+msgid   "Determinant of the coefficient matrix (wronskian of the solutions %s "
+        "and %s) is"
+msgstr  "Визначник матриці коефіцієнтів (вронскіан з розв'язками %s та %s)"
+
+#, php-format
+msgid   "Differentiate #1 with respect to %s"
+msgstr  "Знайти похідну функції #1 пo %s"
+
+msgid   "Differentiate function #1"
+msgstr  "Знайти похідну функції #1"
+
+#, perl-format
+msgid   "Differentiating we get %s."
+msgstr  "Диференціюючи, ми маємо %s."
+
+#, perl-format
+msgid   "Differentiating with respect to $ x$ we get %s."
+msgstr  "Диференціюючи по $x$, маємо %s."
+
+#, perl-format
+msgid   "Differentiating with respect to $ y$ we get %s."
+msgstr  "Диференціюючи  по $y$, маємо %s."
+
+msgid   "Division"
+msgstr  "Ділення"
+
+msgid   "Do not use comma."
+msgstr  "Не застосовуйте символ \",\"."
+
+msgid   "Do not use comma. To separate decimal places use the dot. If you "
+        "wish to enter decimal number, this decimal number cannot be a part "
+        "of mathematical formula."
+msgstr  "Не використовуйте кому. Для відділення знаків в десятковому дробі "
+        "замість коми потрібно поставити точку. Якщо ви хочете ввести "
+        "десяткове число (дріб), це десяткове число не може бути частиною "
+        "математичного виразу."
+
+msgid   "Do not use decadic logarithm, please."
+msgstr  "Не вводьте десятковий логарифм, будь ласка."
+
+msgid   "Do not use dot for multiplication."
+msgstr  "Не використовуйте точку для множення."
+
+msgid   "Do not use equations. The application cannot draw such an input."
+msgstr  "Не використовуйте рівняння. Наші сервіси не можуть обробляти такі "
+        "вхідні данні."
+
+msgid   "Do not use this function. If you need to use this function in your "
+        "computation, run the computation in Maxima on your local computer."
+msgstr  "Не застосовуйте цю функцію. Якщо вам потрібна саме ця функція для "
+        "вашого обчислення, використовуйте свій локальний комп'ютер."
+
+msgid   "Domain (red region)"
+msgstr  "Область визначення (позначено червоним коліром)"
+
+#, php-format
+msgid   "Domain of %s"
+msgstr  "Область визначення %s"
+
+msgid   "Domain where the inequality is valid"
+msgstr  "Область визначення, на якій дійсна ця нерівність"
+
+msgid   "Double integral"
+msgstr  "Подвійний інтеграл"
+
+msgid   "Download html"
+msgstr  "Завантажити html"
+
+msgid   "ERROR: Function is not bijection on the given interval."
+msgstr  "ПОМИЛКА: Функція не є бієкцією на даном відрізку."
+
+msgid   "ERROR: No change in sign between end points of the interval"
+msgstr  "ПОМИЛКА: Функція не змінює знак на даному інтервалі"
+
+msgid   "ERROR: function is out of domain at some point of the interval"
+msgstr  "ПОМИЛКА: функція в деякій точці інтервалу знаходиться поза областю "
+        "визначення"
+
+msgid   "Eigenvalues"
+msgstr  "Власні значення"
+
+msgid   "Eigenvalues (numerically)"
+msgstr  "Власні значення (чисельне представлення)"
+
+msgid   "Enter integrand only. Not the whole integral."
+msgstr  "Введіть лише підінтегральну функцію. Не весь інтеграл."
+
+msgid   "Equation"
+msgstr  "Рівняння"
+
+msgid   "Equation is homogeneous  -- we will use separation of variables and "
+        "write the solution in explicit form."
+msgstr  "Рівняння є однорідним, застосовуючи метод розділення змінних, "
+        "записуємо розв'язок у формі явної функції."
+
+msgid   "Equation is linear"
+msgstr  "Лінійне рівняння"
+
+msgid   "Error"
+msgstr  "Помилка"
+
+msgid   "Error in input data"
+msgstr  "Помилка в вихідних данних"
+
+msgid   "Error in math or the given point does not belong to the domain."
+msgstr  "Помилка в математичному запису або задана точка лежить поза областю "
+        "визначення"
+
+msgid   "Error in math. Check your input."
+msgstr  "Помилка в математичному записі. Перевірте Ваші данні."
+
+msgid   "Error in mathematical notation"
+msgstr  "Помилка в математичному виразі"
+
+msgid   "Error in solving. (Bad input?)"
+msgstr  "Помилка в розв'язку (неправильний вводний запис?)"
+
+msgid   "Error in the function or in the bound for integration."
+msgstr  "Помилка в запису функції або в границях для визначеного інтегралу"
+
+msgid   "Error in your expression"
+msgstr  "Помилка в Вашому математичному виразі"
+
+msgid   "Error in your formula"
+msgstr  "Помилка в математичному виразі"
+
+msgid   "Error occurred when processing your formula."
+msgstr  "Помилка при обробці вашого математичного запису."
+
+#, php-format
+msgid   "Error when processing input from the field %s."
+msgstr  "Помилка при обробці вхідних данних з поля %s."
+
+msgid   "Error, empty string on input."
+msgstr  "Помилка, пустий рядок на вході."
+
+msgid   "Error, sorry. The name of the function is not followed by the "
+        "parentheses."
+msgstr  "Помилка, вибачте. За позначенням функції відсутній аргумент, який "
+        "повинен знаходитися в дужках."
+
+msgid   "Error, you typed unsupported chars or uppercase letters."
+msgstr  "Помилка, ви ввели символи, які не підтримуються."
+
+msgid   "Error: Dimension too large."
+msgstr  "Помилка: надто великий розмір графіка"
+
+msgid   "Error: Failed to evaluate integral of <i>v'</i>."
+msgstr  "Помилка: Не вдалося знайти інтеграл функції <i>v'</i>. "
+
+msgid   "Error: Missing derivative"
+msgstr  "Помилка: Ваше рівняння не містить похідну"
+
+#, perl-format
+msgid   "Error: The Jacobian is zero, unable to clasify stationary point %s."
+msgstr  "Помилка: якобіан дорівнює нулю, неможливо класифікувати стаціонарні "
+        "точки %s."
+
+msgid   "Error: The equation cannot be solved."
+msgstr  "Помилка: ми не знаємо, як розв'язати це рівняння."
+
+#, perl-format
+msgid   "Error: The point %s is not a stationary point of the function %s"
+msgstr  "Помилка: точка %s не є стаціонарною точкою функції %s"
+
+#, perl-format
+msgid   "Error: There is no stationary point at %s."
+msgstr  "Помилка: Не існує стаціонарної точки %s."
+
+msgid   "Error: incorrect operation"
+msgstr  "Помилка: неправильна робота"
+
+msgid   "Error: incorrect substitution"
+msgstr  "Помилка: неправильнa заміна змінних"
+
+msgid   "Evaluation of $y'$"
+msgstr  "Обчислення $y'$"
+
+msgid   "Evaluation of $y''$"
+msgstr  "Обчислення $y''$"
+
+msgid   "Evaluation of definite integral"
+msgstr  "Оцінка визначеного інтеграла"
+
+msgid   "Even powers of cosine function replaced by sine"
+msgstr  "Парні степені функції косинус замінити на синус"
+
+msgid   "Even powers of sine function replaced by cosine"
+msgstr  "Парні степені функції синус замінити на косинус"
+
+msgid   "Expansion"
+msgstr  "Розкриття дужок (множення)"
+
+msgid   "Factorization"
+msgstr  "Факторизація (розкладання на прості множники)"
+
+msgid   "Final answer"
+msgstr  "Заключний результат розв'язку"
+
+msgid   "Final result"
+msgstr  "Готовий результат"
+
+msgid   "Final simplifications"
+msgstr  "Заключні спрощення"
+
+msgid   "Find $ #1 $-degree Taylor polynomial for function $ f(x)=#2$ in $ "
+        "x_0=#3$."
+msgstr  "Знайти многочлен Тейлора степені $ # 1$ функції $ f(х)=#2$ в точці $ "
+        "x_0=#3$."
+
+msgid   "Finishing computation by Maxima"
+msgstr  "Комп'ютер інтегрує "
+
+msgid   "First derivative"
+msgstr  "Перша похідна"
+
+#, perl-format
+msgid   "For more general right hand sides use %svariation of constants%s."
+msgstr  "Для більш загальної правої частини використовуйте %s метод варіаціх "
+        "довільних сталих %s."
+
+msgid   "Formconv (program which parses your input) failed. Correct the "
+        "formula on your input."
+msgstr  "Formconv (програма, яка аналізує введенне вами завдання) видає "
+        "помилку. Виправте ваш вводний запис."
+
+msgid   "Formula"
+msgstr  "Математичний вираз"
+
+msgid   "Found zero"
+msgstr  "Знайдено нульове значення"
+
+#, php-format
+msgid   "From the determinant of %s"
+msgstr  "Із визначника матриці %s"
+
+#, php-format
+msgid   "From trace and determinant of %s"
+msgstr  "Із слідa та визначника матриці %s "
+
+msgid   "Function"
+msgstr  "Функція"
+
+msgid   "Function and value of the function"
+msgstr  "функція та значення функції"
+
+msgid   "Function grapher"
+msgstr  ""
+
+msgid   "Function to be integrated"
+msgstr  "Підінтегральна функція"
+
+msgid   "Functions and characters available for mathematical notation"
+msgstr  "Функції та символи для математичних записів"
+
+msgid   "General solution"
+msgstr  "Загальний розв'язок "
+
+msgid   "General solution is"
+msgstr  "Загальним розв'язком є"
+
+msgid   "General solution of the equation"
+msgstr  "Загальний розв'язок рівняння"
+
+msgid   "Geometrical application of definite integral"
+msgstr  "Геометричне застосування визначеного інтегралу"
+
+msgid   "Given data files, we look for optimal linear approximation in the "
+        "form"
+msgstr  "Для заданного набору точок ми шукаємо оптимальну лінійну "
+        "апроксимацію у вигляді"
+
+msgid   "Given points in the plane, we look for the polynomial of "
+        "interpolation."
+msgstr  "Для заданих точок на площині знаходимо інтерполяційний поліном."
+
+msgid   "Go home"
+msgstr  "На стартову сторінку"
+
+msgid   "Graph"
+msgstr  "Графік"
+
+msgid   "Graph and approximation by trapezoids"
+msgstr  "Графік та наближення метода трапецій"
+
+#, php-format
+msgid   "Graph deformation: we draw function %s."
+msgstr  ""
+
+msgid   "Graph of the function and mean value"
+msgstr  ""
+
+msgid   "Graphs of basic elementary functions"
+msgstr  "Графіки основних елементарних функцій"
+
+msgid   "Help to find the primitive function"
+msgstr  ""
+
+#, perl-format
+msgid   "Hence %s."
+msgstr  "Звідси %s."
+
+msgid   "Hessian"
+msgstr  "Гессіан"
+
+msgid   "Homogeneous equation"
+msgstr  "Однорідне рівняння "
+
+msgid   "However, the right hand side can be written as sum of two or more "
+        "right hand sides which are fine for undetermined coefficients as "
+        "follows."
+msgstr  "Проте, права частина може бути розділена на дві або більше, до яких "
+        "можна застосувати метод невизначених коефіцієнтів наступним чином."
+
+msgid   "However, the right hand side can be written in the form as required."
+msgstr  "Проте, права частина може бути за допомогою алгебраїчних перетворень "
+        "записана в потрібному вигляді."
+
+msgid   "If the derivatives are not polynomials and if these derivative are "
+        "complicated, some stationary points may be missing."
+msgstr  "У випадку, коли похідны функції не є поліномами та представлені "
+        "занадто складним виразом, можливо програма не зможе знайти всі "
+        "стаціонарні точки.   "
+
+#, perl-format
+msgid   "If the function %s satisfies %s and %s, then the solution is %s, "
+        "where %s."
+msgstr  "Якщо функція %s задовільняє %s та %s, то розв'язок %s, де %s."
+
+msgid   "If the given function differs from the function which is actually "
+        "differentiated, then Maxima performed an automatical simplification "
+        "first."
+msgstr  "У випадку, коли задана Вами функція не відповідає запису функції, "
+        "яка знаходиться на початку ланцюжка похідних, це означає, що "
+        "програма Maxima провела автоматичні тотожні спрощення. Результат - "
+        "це тотожній, але більш простий запис у порівнянні із завданням."
+
+msgid   "If the rendering of the formulas is bad, consider another browser "
+        "than Internet Explorer. The application has been tested with <a href="
+        "\"http://www.mozilla.com/firefox/\">Firefox</a>."
+msgstr  "Якщо математичні вирази відображаються некоректно, спробуйте "
+        "використати інший браузер, ніж Internet Explorer. Ми рекомендуєм "
+        "Firefox."
+
+#, php-format
+msgid   "If you mean %s, you can try copy and paste the following string to "
+        "the input field:"
+msgstr  "Якщо Ви маєте на увазі %s, то Ви можете спробувати скопіювати й "
+        "вставити наступне:"
+
+msgid   "If you use another logarithm than natural, use logarithm with "
+        "integer base."
+msgstr  "Якщо ви використовуєте не натуральний логаріфм, надалі для основи "
+        "логаріфма задавайте лише цілі числа."
+
+msgid   "If you want to try various integration techniques, return to the "
+        "previous page and choose the required method."
+msgstr  "Якщо ви хочете спробувати різні методи інтегрування, поверніться на "
+        "попередню сторінку й оберіть ваш метод."
+
+msgid   "Ill posed problem, incorrect formulation of the problem or missing "
+        "informations"
+msgstr  "Погано поставлена ​​задача, неправильна постановка задачі або відсутня "
+        "інформація"
+
+msgid   "In computer notation"
+msgstr  "У комп'ютерному позначенні"
+
+msgid   "Incorrect input"
+msgstr  "Неправильні данні при вводі"
+
+msgid   "Incorrect input (not a number or empty string)"
+msgstr  "Неправильний початковий запис (нечислове значення або незаповнено "
+        "обов'язкове поле)"
+
+msgid   "Incorrect input, use only integers to enter number of steps."
+msgstr  "Неправильний вхідний запис, використовуйте тільки цілі числа, щоб "
+        "ввести число кроків."
+
+msgid   "Incorrect problem"
+msgstr  "Неправильне формулювання завдання"
+
+msgid   "Inequalities"
+msgstr  "Нерівності"
+
+msgid   "Inequalities and systems of inequalities"
+msgstr  "Нерівності та системи нерівностей"
+
+msgid   "Inequality"
+msgstr  ""
+
+#, php-format
+msgid   "Inequality %s"
+msgstr  "Нерівність %s"
+
+msgid   "Initial guess"
+msgstr  "Початкова оцінка"
+
+#, php-format
+msgid   "Insecure or unsupported command or function %s. Do not use this "
+        "command, please. If you insist on this command, use the full Maxima "
+        "software."
+msgstr  "Небезпечна або командa, що не підтримується, або функція % s. Не "
+        "використовуйте цю команду, будь ласка. Якщо ви наполягаєте на цій "
+        "команді, використовуйте все програмне забезпечення Maxima."
+
+msgid   "Integral"
+msgstr  "Інтеграл"
+
+msgid   "Integral methods assistant"
+msgstr  "Інтегральний помічник"
+
+msgid   "Integrate terms in the sum"
+msgstr  "Інтегрування доданків в сумі"
+
+#, php-format
+msgid   "Integrating <b>by parts</b> with %s we get:"
+msgstr  "Інтегруя <b>частинами</b> з %s отримуєм:"
+
+msgid   "Integrating terms in a sum"
+msgstr  "Інтегрування доданків в сумі"
+
+#, perl-format
+msgid   "Integrating with respect to $ x$ we get %s."
+msgstr  "Інтегруючи по $ x$, маємо %s."
+
+#, perl-format
+msgid   "Integrating with respect to $ y$ we get %s."
+msgstr  "Інтегруючи по $y$, маємо %s."
+
+#, php-format
+msgid   "Integration gives %s and %s (by clicking the integral you load the "
+        "integral into tool for indefinite integration)"
+msgstr  "Інтегрування дає %s та %s (натиснув на інтеграл, можете його "
+        "скопіювати в сервіс для невизначеного інтегралу, де побачите цю "
+        "частину розв'язку більш детально)"
+
+msgid   "Interpolation with Lagrange polynomial"
+msgstr  "Інтерполяція полиномом Лагранжа"
+
+msgid   "Interval"
+msgstr  "Інтервал"
+
+#, php-format
+msgid   "Invalid input in the field %s."
+msgstr  "Неправильний ввод в поле %s."
+
+#, php-format
+msgid   "Invalid limits for integration. Limits for the inside integral "
+        "cannot contain the variable %s, which is used for inside integration."
+        "<br>Bad limits or bad order of variables for integration."
+msgstr  "Помилка в границях інтегрування. Змінна %s, за якою беремо "
+        "внутрішній интеграл, не повинна бути в межах інтегрування для цього "
+        "інтегралу. <br>Проверьте - Вы, может быть, неправильно задали "
+        "границы или неправильный порядок интегрирования.   "
+
+msgid   "Invalid limits for integration. Limits for the outside integral must "
+        "be constants and the lower limit has to be smaller than upper limit."
+msgstr  "Помилка в границях інтегрування. Для границь інтегрування "
+        "зовнішнього інтеграла можна застосовувати лише постійні (числа), а "
+        "також потрібно, щоб нижня границя інтегрування була менше за верхню."
+
+msgid   "Invalid limits for integration. One of the limits is becomes "
+        "undefined on the region of integration."
+msgstr  "Невірні межі інтегрування. Одна з меж невизначенна в області "
+        "інтегрування."
+
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit."
+msgstr  "Недопустимі обмеження для інтегрування. Нижня границя для "
+        "внутрішнього інтегралу повинна бути менше, ніж верхня границя."
+
+#, php-format
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit. If you want to "
+        "interchange limits, you can try the following %s."
+msgstr  "Помилка в границях інтегрування. Нижня границя внутрішнього "
+        "інтегралу повинна бути менше, ніж верхня границя. На данний час у "
+        "Вас ця умова не виконується, переплутали границі. Змінити порядок "
+        "можете натисканням на %s.  "
+
+msgid   "Invalid limits for integration. The radial variable r must be "
+        "nonnegative."
+msgstr  "Недопустимі обмеження для інтегрування. Змінна r повинна бути "
+        "невід'ємною."
+
+#, perl-format
+msgid   "Invalid point number %s."
+msgstr  "Помилка в задані точки номер %s."
+
+msgid   "Investigating function using Maxima CAS"
+msgstr  "Дослідження функції із використанням Maxima CAS"
+
+msgid   "Iteration scheme"
+msgstr  ""
+
+msgid   "Jacobi matrix"
+msgstr  "матриця Якобі"
+
+msgid   "Jacobi matrix at stationary point"
+msgstr  "матриця Якобі в стаціонарній точці"
+
+msgid   "Least squares method"
+msgstr  "Метод найменьших квадратів"
+
+msgid   "Length of linear element"
+msgstr  "Довжина лінійних елементів"
+
+msgid   "Line integral"
+msgstr  "Криволінійний інтеграл"
+
+msgid   "Linear solution"
+msgstr  "лінійний розв'язок "
+
+msgid   "Linear system for coefficients"
+msgstr  "Лінійна система для визначення коефіцієнтів"
+
+#, php-format
+msgid   "Load: %s, Running processes: %s"
+msgstr  "Навантаження: %s, кількість активних процесів: %s"
+
+msgid   "Local extrema in two variables"
+msgstr  "Локальні екстремуми функції двох змінних"
+
+msgid   "Lower limit"
+msgstr  "Нижня границя"
+
+msgid   "MAW error: equal md5sum for different strings."
+msgstr  "MAW внутрішня помилка: md5sum однакова для різних строк."
+
+msgid   "Mathematical Assistant on Web"
+msgstr  "Математичні сервіси онлайн (MAW)"
+
+msgid   "Maxima failed to find $x$-intercepts. They probably do not exist."
+msgstr  "Програмі Maxima не вдалося знайти корені функції. Можливо, що "
+        "коренів немає й функція не перетинається с віссю абсцис $x$. "
+
+msgid   "Maxima failed to find critical points. They probably do not exist."
+msgstr  "Maxime не вдалося знайти критичні точки. Вони, ймовірно, не існують."
+
+msgid   "Maxima failed to find points of discontinuity. They probably do not "
+        "exist."
+msgstr  "Програма Maxima не знайшла точки разриву. Можливо, таких точек "
+        "задана функція не має."
+
+msgid   "Maxima failed to find stationary points. They probably do not exist."
+msgstr  "Програмі Maxima не вдалося знайти стаціонарні точки. Можливо, що "
+        "функція не має їх."
+
+msgid   "Maxima failed to find the primitive function."
+msgstr  "Нам не вдалося знайти примітивную функцію."
+
+msgid   "Maxima is using arc-trig functions to get a solution. Some solutions "
+        "will be lost."
+msgstr  "Для отримання розв'язку програма Maxima застосовує обернені "
+        "тригонометричні функції (arc). Деякі розв'язки можуть бути не "
+        "знайдені."
+
+msgid   "Mean value"
+msgstr  ""
+
+msgid   "Method"
+msgstr  "Метод"
+
+msgid   "Method of iterations"
+msgstr  "Метод ітерацій"
+
+msgid   "Method regula falsi"
+msgstr  "Метод фальшпозиції"
+
+msgid   "Missing comma or more semicolons than expected."
+msgstr  "Відсутня кома (,) або стоїть більше точок з комою (;), ніж потрібно. "
+
+#, perl-format
+msgid   "Missing coordinate for point number %s."
+msgstr  "Відсутні координати для точки номер %s."
+
+msgid   "Missing semicolon or more commas than expected."
+msgstr  "Відсутня точка з комою (;) або стоїть більше ком (,), ніж потрібно."
+
+msgid   "Missing stationary points in your input. I'll try to find the "
+        "stationary points first."
+msgstr  "Стаціонарні точки не задані, тому зараз спробуємо їх знайти."
+
+msgid   "Multiplication is denoted by star, write e.g. 2*x."
+msgstr  "Множення позначається знаком * \"зірочка\", наприклад, пишіть 2*x."
+
+msgid   "Multiplying both numerator and denominator"
+msgstr  "Множимо чисельник та знаменник "
+
+#, php-format
+msgid   "Multiplying both numerator and denominator by %s and simplification"
+msgstr  "Множимо чисельник та знаменник на %s й спростим"
+
+msgid   "Newton--Raphson method"
+msgstr  ""
+
+msgid   "Newton-Raphson method"
+msgstr  ""
+
+msgid   "Next computation"
+msgstr  "Наступне обчислення"
+
+msgid   "No isolated stationary point has been found. Either there are no "
+        "stationary points or the problem is too difficult for Maxima."
+msgstr  "Ізольовану стаціонарну точку не знайдено. Вона не існує або проблема "
+        "досить складна для нас."
+
+msgid   "No restriction on the domain of the function found. The function "
+        "seems to be defined everywhere."
+msgstr  "Немає обмежень на область визначення функції. Функція всюду "
+        "визначена."
+
+msgid   "No stationary point has been found. Either there are no stationary "
+        "points or the problem is too difficult for Maxima."
+msgstr  "Не вдалося знайти стаціонарні точки. Можливо, що дійсно таких точок "
+        "немає. Також можливо, що задача досить складна для програми Maxima."
+
+msgid   "Nonconstant solution"
+msgstr  "Непостійний розв'язок "
+
+msgid   "Nonhomogeneous equation"
+msgstr  "Неоднорідне рівняння"
+
+msgid   "Not all brackets which are written by the computer are necessary. "
+        "Many of them can be safely omitted."
+msgstr  "Не завжди себе виправдовує надмірна старанність у записі дужок - "
+        "деякі дужки написані для перестраховки."
+
+msgid   "Not found."
+msgstr  "Не знайдено."
+
+msgid   "Now we solve initial value problem"
+msgstr  "Зараз ми розв'язуєм задачу Коши"
+
+msgid   "Number of subintervals"
+msgstr  "Кількість підінтервалів "
+
+msgid   "Numerical computation"
+msgstr  "Числовий результат обчислення"
+
+#, php-format
+msgid   "On the next page you can find an animation which describes, how the "
+        "graph of %s is transformed into %s."
+msgstr  "На наступній сторінці знайдете анімацію, яка показує, як графік "
+        "функції %s перетворюється в графік функції %s."
+
+msgid   "One of the functions has probably point of discontinuity on the "
+        "interval under consideration. Look on the picture below and check "
+        "your input."
+msgstr  "Можливо, що одна із функцій має точку розриву на заданому інтервалі. "
+        "Подивіться на графік та перевірьте Ваш початковий запис завдання."
+
+msgid   "Ordinary differential equation"
+msgstr  "Звичайне диференціальне рівняння"
+
+#, perl-format
+msgid   "Our equation can be written in the form %s."
+msgstr  "Рівняння можна переписати у вигляді %s."
+
+msgid   "Our hint: (Some automatical hints based on few heuristic tests. Do "
+        "not follow these hints blindly and use your mind instead.)"
+msgstr  "Наша підказка: (Aвтоматичні підказки на основі еврістичних тестів. "
+        "Прото не слідуйте сліпо цим порадам й використовуйте свій власний "
+        "розум.)"
+
+msgid   "Parametric curve"
+msgstr  "Параметрична крива"
+
+msgid   "Partial fractions"
+msgstr  "Розкладення дробів"
+
+msgid   "Particular solution"
+msgstr  "Частинний розв'язок "
+
+msgid   "Particular solution (after substitution and simplification)"
+msgstr  "Частинний розв'язок (після підстановки та спрощення)"
+
+msgid   "Particular solution of the equation"
+msgstr  "Частинний розв'язок рівняння"
+
+msgid   "Picture"
+msgstr  "Рисунок"
+
+msgid   "Points of discontinuity"
+msgstr  "Точки разриву"
+
+msgid   "Points on boundary"
+msgstr  "Точки на границі"
+
+msgid   "Points on the boundary"
+msgstr  "Точки на границі "
+
+msgid   "Preliminary"
+msgstr  "Підготовчі й допоміжні розрахунки"
+
+msgid   "Primitive function"
+msgstr  "Первісна"
+
+#, php-format
+msgid   "Probably exchanged f and g functions. Interchange these functions "
+        "either in the previous form or by clicking the following %s."
+msgstr  "Можливо, що замінили позиції верхньої та нижньої функцій (f, g), які "
+        "обмежують. Поміняйте функції місцями (в попередньому формулярі "
+        "завдання або кліком по %s)"
+
+msgid   "Problem"
+msgstr  "Проблема"
+
+msgid   "Processing image"
+msgstr  "Обробка рисунка"
+
+msgid   "Processing request"
+msgstr  "Обробка запиту"
+
+msgid   "Processing the picture. If the picture does not appear within few "
+        "seconds, you may have error in your math expressions."
+msgstr  "Обробка зображення. Якщо зображення не з'являється на протязі "
+        "декількох секунд, можливо математичний вираз містить помилку."
+
+msgid   "Product rule"
+msgstr  "Похідна добутку"
+
+msgid   "Program Maxima finishes the answer automatically"
+msgstr  "Програма Maxima закінчує відповідь автоматично"
+
+msgid   "Quotient rule"
+msgstr  "Похідна частки (функцій)"
+
+msgid   "Read carefully the method and ignore other suggestions, such as "
+        "substitution"
+msgstr  "Уважно розглянте метод й ігноруйте інші пропозиції, такі, як заміна "
+        "змінних"
+
+msgid   "Region for integration"
+msgstr  "Область інтегрування"
+
+msgid   "Regula falsi method"
+msgstr  "Метод фальшпозиції"
+
+msgid   "Remarks"
+msgstr  "Зауваження"
+
+msgid   "Report bug"
+msgstr  "Повідомити про помилку"
+
+msgid   "Second derivative"
+msgstr  "Друга похідна"
+
+msgid   "Second order linear differential equation"
+msgstr  "Лінійне диференціальне рівняння другого порядку"
+
+msgid   "Separation of variables"
+msgstr  "Відокремлення змінних"
+
+msgid   "Server load too large"
+msgstr  "Захист від перевантаження сервера"
+
+msgid   "Server overloaded"
+msgstr  "сервер перевантажено"
+
+msgid   "Server refused to build more animations simultaneously."
+msgstr  "Сервер не может одночасно створювати велику кількість анімацій."
+
+#, php-format
+msgid   "Shift: horizontally %s units and vertically  %s units (positive "
+        "values mean move to the left or top, negative to the right or bottom)"
+msgstr  "Перенос графіка по горизонталі на %s одиниць та по вертикали на %s "
+        "одиниць (додатні значення означають перенос вліво або вверх, "
+        "від'ємні - вправо або вниз)"
+
+#, php-format
+msgid   "Shifting %s into %s."
+msgstr  "Паралельно переносимо %s на %s"
+
+msgid   "Simplification"
+msgstr  "Спрощення"
+
+msgid   "Simplifying we get"
+msgstr  "Після спрощення маємо"
+
+msgid   "Singular solution"
+msgstr  "Сингулярний розв'язок"
+
+msgid   "Solid of revolution"
+msgstr  "тіло обертання"
+
+msgid   "Solution"
+msgstr  "Розв'язок "
+
+msgid   "Solution from Newton--Leibniz formula"
+msgstr  "Розв'язання за допомогою формули Н'ютона-Лейбніца"
+
+msgid   "Solution of the linear system"
+msgstr  "Розв'язок лінійної системи"
+
+#, php-format
+msgid   "Solution of the system for %s and %s is"
+msgstr  "Розв'язок системи для %s і %s"
+
+msgid   "Solution of this equation"
+msgstr  "Розв'язання рівняння"
+
+msgid   "Something failed - report this to the authors of MAW, please."
+msgstr  "Щось не вдалося - повідомте про це авторам MAW, будь ласка."
+
+msgid   "Something is wrong. Probably too difficult integrals."
+msgstr  "Нажаль не вдається, можливо інтеграл занадто складний, тому ми не "
+        "можемо його взяти."
+
+msgid   "Sometimes Maxima fails to find some constant solutions of the "
+        "equation with separated variables."
+msgstr  "У випадку рівнянь з відокремлюваними змінними не гарантовано, що "
+        "програма Maxima знайде всі розв'язки."
+
+msgid   "Sorry, an error occurred when processing your input"
+msgstr  "Вибачьте,трапилася помилка при обробці ваших введених даних"
+
+msgid   "Sorry, our server is overloaded, try it again after a reasonable "
+        "time (10 sec)."
+msgstr  "Вибачте, наш сервер перевантажений, спробуйте знову через деякий час "
+        "(10 секунд)."
+
+msgid   "Sorry, report this problem please. We will investigate and (hope) we "
+        "fix it."
+msgstr  "Вибачте. Ви можете повідомити про цю проблему авторам, будь ласка. "
+        "Ми будемо разбиратися й (сподіваємося) ми її виправимо."
+
+msgid   "Sorry, the application cannot handle this substitution."
+msgstr  "Нажаль, ми не можемо впоратися з цією заміною змінних."
+
+msgid   "Sorry, the evaluation of the integral failed."
+msgstr  "Нажаль, обчислити інтеграл не вдалося."
+
+msgid   "Sorry, we are unable to process your function. The problem has been "
+        "saved and we will investigate."
+msgstr  "Вибачте, задана Вами функція поки що не може бути введена для "
+        "обробки в нашій системі. Проблему ми зафиксували й спробуємо з часом "
+        "рішити."
+
+msgid   "Sorry. An explanation for this error is not known automatically. The "
+        "problem has been logged and will be investigated."
+msgstr  ""
+
+msgid   "Stationary point"
+msgstr  "Стаціонарна точкa"
+
+#, php-format
+msgid   "Stationary point is %s."
+msgstr  "Стаціонарна точка %s."
+
+msgid   "Stationary points"
+msgstr  "Стаціонарні точки"
+
+msgid   "Step"
+msgstr  "Крок"
+
+msgid   "Submit"
+msgstr  "Відправити"
+
+msgid   "Substituting initial values we get the following linear system"
+msgstr  "Підставляючи початкові значення, ми отримаємо наступну лінійну "
+        "систему"
+
+msgid   "Substituting limits"
+msgstr  "Підставляючи межі"
+
+msgid   "Substituting these values into general solution we get particular "
+        "solution"
+msgstr  "Підставляючи ці значення в загальний розв'язок, ми отримаємо "
+        "частинний розв'язок"
+
+#, perl-format
+msgid   "Substituting we get linear equation  %s with general solution %s "
+        "(click %s to get more details)."
+msgstr  "За допомогою заміни отримуємо лінійне рівняння %s з загальним "
+        "розв'язком %s (натисніть на %s, щоб детальніше розглянути розв'язок)."
+
+msgid   "Substitution"
+msgstr  "Заміна змінних"
+
+msgid   "Substitution into equation"
+msgstr  "Підстановка в рівняння"
+
+msgid   "Substitution into equation (1) and simplifications"
+msgstr  "Заміна в рівнянні (1) та спрощення"
+
+msgid   "Sum rule"
+msgstr  "Похідна суми"
+
+msgid   "Summary"
+msgstr  "Взагалі"
+
+msgid   "Support request"
+msgstr  "Підтримка"
+
+msgid   "Symbolic computation"
+msgstr  "Результат аналітичного обчислення"
+
+msgid   "System of equations"
+msgstr  "Система рівнянь"
+
+msgid   "System of inequalities"
+msgstr  "Система нерівностей"
+
+msgid   "Table"
+msgstr  "Таблиця"
+
+msgid   "Taylor polynomial"
+msgstr  "Поліном Тейлора"
+
+msgid   "Tested stationary points"
+msgstr  "Перевірені стаціонарні точки"
+
+#, php-format
+msgid   "The asymptote at both $ \\pm\\infty $ is the line $\\displaystyle  "
+        "%s $."
+msgstr  ""
+
+msgid   "The asymptote at both $\\pm\\infty$ is the line $\\asymptota$."
+msgstr  "Асимптотою на $\\pm\\infty$ є пряма $\\asymptota$."
+
+#, perl-format
+msgid   "The back substitution gives %s and %s"
+msgstr  "Післе оберненої заміни отримуєм %s та %s."
+
+msgid   "The boundary points for the subintervals on the picture are either "
+        "points of discontinuity, or the points in which one of the partial "
+        "inequalities becomes equality. In this version of MAW we are not "
+        "able to find out, if these points belong to the domain or not. This "
+        "problem is left to the user. Also ignore complex numbers, if present."
+msgstr  "Граничні точки для інтервалів на рисунку або є точками розриву, або "
+        "точками, в яких одна із нерівностей стає рівністю. В цій версії MAW "
+        "ми не можемо визначити, чи належать ці точки області, чи ні. Цю "
+        "проблему користувач  вирішує сам. Також ігноруються комплексні "
+        "числа, якщо вони наявні."
+
+msgid   "The characteristic equation is"
+msgstr  "Характеристичне рівняння"
+
+#, perl-format
+msgid   "The check that the particular solution %s is correct failed."
+msgstr  "Нажаль, не вдалося автоматично перевірити, чи правильно отримано "
+        "частинний розв'язок %s."
+
+msgid   "The computation could be divided into more pages"
+msgstr  "Розв'язок може міститися на декількох сторінках"
+
+msgid   "The computation is usually divided into two pages. The first page "
+        "contains computations and the second page the graph."
+msgstr  "Розв'язання звичайно міститься на двох сторінках. На першій сторінці "
+        "знаходиться розв'язання, на другій - график."
+
+#, perl-format
+msgid   "The equation %s is exact if and only if %s."
+msgstr  "Рівняння %s є рівнянням в повних диференціалах тільки для %s."
+
+msgid   "The equation does not belong to the set of supported types. <br>You "
+        "may also have a typing error in your formula which changes the type "
+        "of the equation and makes the equation unsolvable for Maxima CAS.</"
+        "b> Check your data."
+msgstr  "Такий тип рівнянь не відноситься до рівнянь, які підтримує сервіс "
+        "MAW або які можуть бути розв'язані в програмі Maxima. <br>Може бути, "
+        "що Ваша умова містить описку, яка стала причиною проблеми.</b> "
+        "Перевірте Ваші вхідні данні."
+
+msgid   "The equation has been solved, but it is neither linear nor "
+        "separable, homogeneous or exact and no intermediate steps are shown. "
+        "The equation is #1."
+msgstr  "Вдалося знайти розв'язок рівняння, але рівняння не є ні лінійним, ні "
+        "рівнянням з відокремлюванними змінними, ни однорідним, ні рівнянням "
+        "в повних диференціалах, тому весь хід розв'язання не показано. "
+        "Рівняння типа: #1."
+
+msgid   "The equation has integrating factor #1."
+msgstr  "Рівняння містить інтегруючий множник #1."
+
+#, perl-format
+msgid   "The equation has integrating factor %s."
+msgstr  "Рівняння містить інтегруючий множник %s."
+
+msgid   "The equation solved with respect to the derivative"
+msgstr  "Рівняння розв'язано відносно похідної"
+
+#, perl-format
+msgid   "The equation with right hand side %s cannot be solved by "
+        "undetermined coefficients"
+msgstr  "Рівняння з правою частиною %s не може бути розв'язане методом "
+        "невизначених коефіцієнтів"
+
+msgid   "The first derivative"
+msgstr  "Перша похідна"
+
+msgid   "The first derivatives"
+msgstr  "Перші похідні"
+
+msgid   "The following messages have been reported by external programs and "
+        "they may help you to find the error.<br><br> Still in troubles? You "
+        "can contact the authors. Email address is on the main page."
+msgstr  "Наступні повідомлення були зареєстровані з зовнішніх програм, і вони "
+        "можуть допомогти вам знайти помилки. <br> <br> Проте неприємності? "
+        "Ви можете написати авторам. Адреса електронної пошти знаходиться на "
+        "головній сторінці."
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local maximum} at %s. (Hessian is "
+        "positive and there are negative numbers in the main diagonal.)"
+msgstr  "Функція %s має \\textbf{локальний максимум} в точці %s. (Гессіан "
+        "додатній та існують від'ємні числа на головній діагоналі). "
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local minimum} at %s. (Hessian is "
+        "positive and there are positive numbers in the main diagonal.)"
+msgstr  "Функція %s має \\textbf{локальний мінімум} в точці %s. (Гессіан "
+        "додатній і існують додатні числа на головній діагоналі)."
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{saddle point} at %s, there is no "
+        "local extremum at this point.  (Hessian is negative.)"
+msgstr  "Функція %s має \\textbf {сідлову точку} в %s, отже немає локального "
+        "екстремума в цій точці. (Гессіан від'ємний.)"
+
+#, php-format
+msgid   "The function %s has been transformed into %s."
+msgstr  "Функція %s була перетворена на %s"
+
+#, php-format
+msgid   "The function %s is not continuous at %s and we cannot find this "
+        "Taylor polynomial."
+msgstr  "Функція %s не є неперервною на %s й ми не можемо побудувати "
+        "многочлен Тейлора."
+
+#, perl-format
+msgid   "The function is either not well formatted mathematical expression or "
+        "it is not continuous or one of the derivatives at %s does not exist. "
+        "Check the Maxima output below."
+msgstr  "Або математичний вираз для цієї функції не дуже добре "
+        "відформатовано, або функція не є неперервною, або одна з похідних у "
+        "%s не існує. Перевірте результат програми Maxima нижче."
+
+msgid   "The function is even."
+msgstr  "Функція непарна"
+
+msgid   "The function is neither odd nor even."
+msgstr  "Функція ні парна, ні непарна."
+
+#, php-format
+msgid   "The function is not a function in two variables. You have to enter "
+        "function in two variables x and y. If you want to investigate "
+        "functions in one variable, you can continue %s here %s."
+msgstr  "Задана функція не представляє собою функцію двох змінних. Потрібно "
+        "ввести функцію змінних х, у. Якщо дійсно хочете досліджувати функцію "
+        "однієї змінної, перейдіть до сервісу %sДослідження функцій%s."
+
+msgid   "The function is odd."
+msgstr  "Функція непарна"
+
+msgid   "The functions have probably one or more intersection inside the "
+        "interval. Check the picture below. You can find the intersection by "
+        "choosing the corresponding option in the form on the previous page."
+msgstr  "Можливо, що функції перетинаються всередені заданого інтервалу, тому "
+        "Вам потрібно буде інтегрувати на кожному окремо взятому інтервалі. "
+        "Подивіться, будь ласка, на графік. Ви можете знайти точки перетинй "
+        "й, в залежності від цього, обрати в початковому формулярі завдання "
+        "відповідні умови інтегрування."
+
+#, php-format
+msgid   "The general solution is %s."
+msgstr  "Загальний розв'язок %s."
+
+msgid   "The general solution is sum of the particular solution (obtained "
+        "from (2)) and general solution of the associated homogeneous "
+        "equation obtained in the first part of the computation"
+msgstr  "Загальний розв'язок - сума частинного розв'язку (який отримали із "
+        "(2)) й загального розв'язку однорідного рівняння, отриманого в "
+        "першій частині розв'язання"
+
+msgid   "The general solution is sum of the particular solution and general "
+        "solution of the associated homogeneous equation obtained in the "
+        "first part of the computation"
+msgstr  "Загальний розв'язок є сумою частинного розв'язка та загального "
+        "розв'язка однорідного рівняння, які було отримано в першій частині "
+        "розв'язання"
+
+#, php-format
+msgid   "The general solution of the associated homogeneous equation is %s."
+msgstr  "Загальний розв'язок спряженого однорідного рівняння %s."
+
+msgid   "The graph can be drawn by shifting and resizing certain basic "
+        "elementary function"
+msgstr  ""
+
+msgid   "The length of one subinterval"
+msgstr  "Довжина одного відрізка"
+
+#, php-format
+msgid   "The multiplicity of this solution is %s."
+msgstr  "Кратність розв'язку %s"
+
+#, perl-format
+msgid   "The normal form of the equation is %s."
+msgstr  "Нормальна форма рівняння %s."
+
+#, php-format
+msgid   "The number %s is double zero of the characteristic equation and the "
+        "particular solution has the form %s."
+msgstr  "Число %s є кратним коренем характеристичного рівняння, тому "
+        "частинний розв'язок записано в вигляді %s  "
+
+#, php-format
+msgid   "The number %s is not a zero of the characteristic equation and the "
+        "particular solution is in the form %s."
+msgstr  "Число %s не є коренем характеристичного рівняння, тому частинний "
+        "розв'язок шукаємо у вигляді %s."
+
+#, php-format
+msgid   "The number %s is zero of multiplicity 1 of the characteristic "
+        "equation and the particular solution has the form %s."
+msgstr  "Число %s є простим коренем (коренем кратності 1) характеристичного "
+        "рівняння, тому частинний розв'язок записано в вигляді %s."
+
+#, php-format
+msgid   "The number %s takes the form %s and it is solution of the "
+        "characteristic equation %s."
+msgstr  "Число %s приймає значення %s, воно є коренем характеристичного "
+        "рівняння %s."
+
+#, php-format
+msgid   "The number %s takes the value %s and it is not solution of the "
+        "characteristic equation %s."
+msgstr  "Число %s приймає значення %s, це число не є коренем "
+        "характеристичного рівняння %s."
+
+#, php-format
+msgid   "The original function is %s."
+msgstr  "Вихідна функція %s."
+
+msgid   "The problem either does not make any sense or it is too difficult "
+        "for Maxima. Check also, that the integral on the top matches your "
+        "problem."
+msgstr  "Проблему не вдалося рішити, скоріш про все вона достатньо складна "
+        "для програми Maxima. Перевірте ще раз, чи дійсно Ви ввели той "
+        "інтеграл, який хотіли (чи немає помилки?)"
+
+msgid   "The result of advanced numerical method"
+msgstr  "Результат більш складного чисельного методу"
+
+msgid   "The result of symbolic computation"
+msgstr  "Результат аналітичних розрахунків"
+
+#, php-format
+msgid   "The right hand side has the form %s, where %s."
+msgstr  "Права частина у вигляді %s, де %s."
+
+#, php-format
+msgid   "The right hand side is polynomial %s, the degree of this polynomial "
+        "is %s."
+msgstr  "Права частина рівняння - це поліном %s степеня %s."
+
+#, php-format
+msgid   "The right hand side is product of polynomial %s and exponential "
+        "function %s, the degree of the polynomial is %s."
+msgstr  "В правій частині рівняння знаходиться добуток полінома %s та "
+        "експоненціальної функції %s, степень полінома %s."
+
+msgid   "The second derivative"
+msgstr  "Друга похідна"
+
+msgid   "The second derivatives"
+msgstr  "Другі похідні"
+
+msgid   "The second derivatives at stationary points"
+msgstr  "Другі похідні в стаціонарних точках"
+
+#, perl-format
+msgid   "The solution is %s."
+msgstr  "Загальний розв'язок %s."
+
+#, php-format
+msgid   "The solution is at the line starting with %o2"
+msgstr  "Зверніть увагу на на рядок, який починається символом %o2"
+
+msgid   "The solution of this linear system is"
+msgstr  "Розв'язок цієї лінійної системи"
+
+msgid   "The x axis goes through the set from the formulation of the problem. "
+        "The problem is not well formulated."
+msgstr  "Вісь абсцис (х) перетинається з заданою областю, тому умова завдання "
+        "некорректна."
+
+msgid   "There is no asymptote at $\\pm\\infty$."
+msgstr  "Асимптота на $\\pm\\infty$ не існує."
+
+msgid   "There should be no derivative  y' and no equality sign  = in your "
+        "input. Both are written on the left from the input field (you have "
+        "to enter the right hand side of the equation only)."
+msgstr  "У заданні заборонено використовувати похідну y' або знак = , обидва "
+        "символи уже записані зліва від поля завдання (Вам потрібно задавати "
+        "лише праву частину рівності). "
+
+msgid   "There should be no higher derivative than first derivative."
+msgstr  "Під час введеня потрібно мати похідну лише першого порядку."
+
+#, perl-format
+msgid   "This equation can be written as %s."
+msgstr  "Рівняння можна переписати як %s."
+
+msgid   "This error occurs also if there are too many requests in a short "
+        "time, for example if somebody uses this server for teaching in "
+        "computer lab."
+msgstr  "Це повідомлення про помилку з'являється і у випадку, коли в короткий "
+        "час на сервер надіслано занадто багато запросів, наприклад, при "
+        "використовуванні сервісів MAW під час заняттів посилають одночасно "
+        "свої запити всі студенти навчальної групи."
+
+msgid   "This error occurs if somebody (you or another user) clicks the "
+        "submit button many times in a sort time. Don't do it, please. Click "
+        "the Submit button only once"
+msgstr  "Це повідомлення про помилку означає, що хтось (Ви чи інший юзер, "
+        "який також в режимі онлайн) надсилає в короткий час один й той самий "
+        "запит. Будь ласка, не робіть цього, натискайте на кнопку Надіслати "
+        "лише один раз."
+
+msgid   "This error should be fixed. You may report this error to the authors."
+msgstr  "Ця помилка повинна бути виправлена. Ви можете повідомити про неї "
+        "авторaм."
+
+msgid   "This is not supported in our integral assistant."
+msgstr  "Це не підтримується нашим сервісом для інтегрування."
+
+msgid   "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+msgstr  "Простіше за все (в операційних системах LINUX та WINDOWS) установити "
+        "віртуальну машину - перейдіть за посиланням для завантаження (під "
+        "заголовком кожної сторінки MAW)."
+
+msgid   "This message appears if somebody else is working with the same "
+        "calculator - try again after 1 min."
+msgstr  "Це повідомлення з'являється у випадку, коли хто-небудь ще працює з "
+        "тими ж сервісами - спробуйте ще раз через хвилину."
+
+msgid   "To be independent on our server install MAW offline for yourselves "
+        "on your local computer."
+msgstr  "З метою усунення таких неприємностей Ви можете встановити сервіси "
+        "MAW на Ваш сервер або на особистий комп'ютер та можете їх "
+        "використовувати оффлайн. "
+
+msgid   "Too many requests"
+msgstr  "Надто багато запитів"
+
+msgid   "Transformation to Riemann integral"
+msgstr  "Переход до інтеграла Рімана"
+
+#, php-format
+msgid   "Transforming %s into %s."
+msgstr  "Перетворюємо (трансформуємо) %s на %s."
+
+msgid   "Trapeziodal rule for definite integral"
+msgstr  "Метод трапеції для визначеного інтегралу"
+
+msgid   "Try something another."
+msgstr  "Спробуйте що-небудь інше."
+
+#, php-format
+msgid   "Turning %s into %s."
+msgstr  "Поворот %s на %s"
+
+#, php-format
+msgid   "Two independent solutions are %s and %s."
+msgstr  "Два лінійно незалежні ррозв'язки - це %s и %s."
+
+msgid   "Under construction"
+msgstr  "В розробці"
+
+msgid   "Unmatched parenthesis has been found. Correct the problem please."
+msgstr  "Проблема в тому, що кількість відкритих та закритих дужок не "
+        "співпадає. Виправте помилку, будь ласка."
+
+#, php-format
+msgid   "Unsupported function %s."
+msgstr  "Функція %s, яка не підтримується."
+
+msgid   "Upper limit"
+msgstr  "Верхня границя"
+
+msgid   "Use 1/2 to insert one half. Not ½."
+msgstr  "Використовуйте 1/2 для половини, не ½."
+
+msgid   "Use ^2 to insert second power. Not ²."
+msgstr  "Застосовуйте знак ^2 для піднесення до квадрату. Заборонено ²."
+
+msgid   "Use dot only for decimal numbers, if necessary. Do not use dot for "
+        "multiplication. The operator for multiplication is star, write for "
+        "example 2*x for \"two eks\". If you wish to enter decimal number, "
+        "this decimal number cannot be a part of mathematical formula."
+msgstr  "Використовуйте точку тільки для десяткових чисел, якщо це необхідно. "
+        "Не використовуйте точку для множення. Оператор множення це * "
+        "(зірочка). Напишіть, наприклад, 2 * х для \"два ікс \". Якщо ви "
+        "хочете ввести десяткове число, це десяткове число не може бути "
+        "частиною математичної формули."
+
+msgid   "Use numbers only. Use commas and semicolons to separate point "
+        "coordinates and points in the data file."
+msgstr  "Застосовуйте лише числа. Використовуйте в вводному файлі кому (,) та "
+        "точку з комою (;) для відділення записів координат точек й вісей "
+        "координат."
+
+msgid   "Use only integers or decimal numbers for coefficients on the left "
+        "hand side."
+msgstr  "Як коефіцієнти в лівій частині використовуйте лише цілі або "
+        "десятичні числа."
+
+msgid   "Use only natural logarithm."
+msgstr  "Застосовуйте лише натуральний логарифм."
+
+msgid   "Using $ x$ coordiantes, we write and simplify the small Lagrange "
+        "polynomials."
+msgstr  "За допомогою $ x$ координат запишемо й спростимо базисні поліноми "
+        "Лагранжа"
+
+msgid   "Variable for inside integration and limits for this variable"
+msgstr  "Змінна для внутрішнього інтегрування та обмеження для цієї змінної"
+
+msgid   "Variable for outside integration and limits for this variable"
+msgstr  "Змінна для зовнішнього інтегрування й обмеження для цієї змінної для "
+        "этой переменной"
+
+msgid   "Variables aa or bb are not allowed."
+msgstr  "Змінні aa чи bb заборонені."
+
+#, perl-format
+msgid   "Variant %s"
+msgstr  "Варіант %s"
+
+msgid   "Variation of constant:"
+msgstr  ""
+
+msgid   "Variation of constant: {\\color{blue}(the sum of blue expressions is "
+        "zero)}"
+msgstr  "Варіація довільних постійних: {\\color{blue}(сума доданків, "
+        "виділених синім кольором, дорівнює 0)}"
+
+msgid   "Vertical shift"
+msgstr  "Паралельний перенос по вертикалі"
+
+msgid   "Wait a bit, return to the page with calculator form, fill again if "
+        "necessary and resend the form. Then you will be allowed to build "
+        "animation again. But click only once and be patient (about 20 sec)!"
+msgstr  "Зачекайте дейякий час, поверніться до самого першого формуляра "
+        "завдання, який заповнювали для цієї задачі, потім знову відправте "
+        "завдання. Після цього надіщліть заявку на створення анімації. "
+        "Натискайте на посилання лише один раз! Спокій, лише спокій (час "
+        "очикування до 20 секунд). "
+
+msgid   "Warning: your input is not checked against the substitution used "
+        "during evaluation of the integral. If you use incorrect "
+        "substitution, your result will be incorrect."
+msgstr  "Увага: Ми не перевіряємо, чи відповідає ваш вхідний запис заміні "
+        "змінних, яка використовується в процесі обчислення інтегралів. Якщо "
+        "ви застосовуєте неправильні заміни, ваш результат буде некоректним."
+
+msgid   "We attempted to parse your input automatically"
+msgstr  "Ми спробували автоматично розпізнати ваш вхідний запис"
+
+#, perl-format
+msgid   "We can \\textbf{neither proove nor disprove} existence of extrem for "
+        "the function %s and stationary point %s from second derivatives. "
+        "(Hessian is zero.)"
+msgstr  "Ми не можемо \\textbf {ні довести, ні спростувати існування} "
+        "екстремуму функції% s і стаціонарних точок% s за другими похідними. "
+        "(Гессіан дорівнює нулю.)"
+
+#, php-format
+msgid   "We draw the function %s."
+msgstr  "Ми строїли графік функції %s"
+
+msgid   "We find area between curves #1 and #2 on the interval from #3 to #4."
+msgstr  "Визначаємо площадь між кривими #1 та #2 на інтервалі від #3 до #4."
+
+msgid   "We find area under the curve #1 on the interval from #2 to #3."
+msgstr  "Визначаємо площадь під кривою #1 на інтервалі від #2 до #3."
+
+msgid   "We find the general solution first and then we use the initial "
+        "conditions to find particular solution."
+msgstr  "Ми знаходимо загальний розв'язок та, використовуючи початкові умови, "
+        "знайдемо частинний розв'язок."
+
+msgid   "We find undetermined coefficients"
+msgstr  "Обчислимо невизначені коефіцієнти"
+
+msgid   "We find volume of solid of revolution formed by revolving area "
+        "between curves #1 and #2 on the interval from #3 to #4 around $ x$ "
+        "axis.."
+msgstr  "Визначаємо об'єм тіла обертання,яке утворене обертанням части "
+        "площини між кривими #1 та #2 на інтервалі від #3 до #4 навколо вісі "
+        "абсцис $ x$."
+
+msgid   "We find volume of solid of revolution formed by revolving area under "
+        "the curve #1 on the interval from #2 to #3 around $ x$ axis."
+msgstr  "Визначаємо об'єм тіла обертання, яке утворене при обертанні частини "
+        "площіни під кривою #1 на інтервалі від #2 до #3 навколо вісі абсцис "
+        "$ x$."
+
+msgid   "We get the solution in its explicit form only for the linear "
+        "equations. For the equations with separated variables we get only "
+        "the implicit form."
+msgstr  "Зазвичай ми отримуєм розв'язок рівняння з відокремлюваними змінними "
+        "у формі неявної функції, виключення складають лінійні рівняння."
+
+#, perl-format
+msgid   "We have %s"
+msgstr  "Дійсно %s"
+
+#, php-format
+msgid   "We have %s points, the degree of the polynomial is not greater than "
+        "%s."
+msgstr  "У нас є %s точeк, степінь полінома не більше, ніж %s."
+
+#, perl-format
+msgid   "We have %s."
+msgstr  "Ми маємо %s."
+
+msgid   "We have to solve the linear system"
+msgstr  "Ми розв'язуємо систему лінійних рівнянь"
+
+msgid   "We integrate"
+msgstr  "Ми інтегруємо"
+
+#, php-format
+msgid   "We integrate the function %s on the set given by %s and %s."
+msgstr  "Ми інтегруємо функцію %s на множині, що задається нерівностями %s та "
+        "%s."
+
+msgid   "We investigate the function"
+msgstr  "Досліджуємо функцію"
+
+msgid   "We look for stationary points of the autonomous system."
+msgstr  "Ми шукаємо стаціонарні точки автономної системи."
+
+#, php-format
+msgid   "We look for stationary points of the function %s."
+msgstr  "Шукаємо стаціонарні точки функції %s."
+
+msgid   "We look for the particular solution of the nonhomogeneous equation."
+msgstr  "Шукаємо частинний розв'язок неоднорідного рівняння"
+
+msgid   "We put corresponding\n"
+        "terms on left and right equal (from smallest power)"
+msgstr  "Прирівнюєм відповідні коефіцієнти в лівій та правій частинах "
+        "рівності (починаючи з самих низьких показників степені)"
+
+msgid   "We remove absolute values"
+msgstr  "Ми знімаємо модулі"
+
+msgid   "We remove constant multiple from the integral"
+msgstr  "Виносимо постійний множник за знак інтегралу"
+
+#, php-format
+msgid   "We solve %s on the interval %s using bisection of interval."
+msgstr  "Ми розв'язуєм %s на интервалі %s з використанням бісекції інтервалу."
+
+#, php-format
+msgid   "We solve %s on the interval %s using regula falsi."
+msgstr  "Ми розв'язуємо %s на інтервалі %s з використанням методу фальшпозиції"
+
+msgid   "We solve initial value problem"
+msgstr  "Ми розв'язуєм задачу Коши"
+
+msgid   "We solve the associated homogeneous equation first"
+msgstr  "В першу чергу ми розв'язуєм спряжене одноріднe рівняння"
+
+#, php-format
+msgid   "We solve the equation %s using Newton--Raphson method with initial "
+        "guess %s."
+msgstr  ""
+
+#, php-format
+msgid   "We solve the equation %s using method of iterations on the interval "
+        "%s with initial guess %s."
+msgstr  "Ми розв'язуємо %s на інтервалі %s з використанням методу ітерацій з "
+        "початковим значенням %s."
+
+msgid   "We solve the homogeneous differential equation"
+msgstr  "Розв'язуєм однорідне диференціальне рівняння"
+
+msgid   "We solve the nonhomogeneous differential equation"
+msgstr  "Розв'язуєм неоднорідне диференціальне рівняння "
+
+msgid   "We solve the system in the first quadrant (for nonnegative variables)"
+msgstr  "Ми розв'язуємо системи в першій чверті (для невід'ємних змінних)"
+
+msgid   "We solve this system with respect to unknown coefficients and get"
+msgstr  "Розв'язуючи цю систему рівнянь відносно невизначених коефіцієнтів, в "
+        "результаті отримаємо"
+
+#, php-format
+msgid   "We start with the function %s."
+msgstr  ""
+
+msgid   "We try to simplify the answer. (This is rather tricky step, "
+        "sometimes it simplifies the answer and sometimes not.)"
+msgstr  "Ми спробуємо спростити відповідь."
+
+#, php-format
+msgid   "We try to solve the equation %s with respect to the derivative."
+msgstr  "Спробуємо розв'язати рівняння %s відносно похідної."
+
+msgid   "We use small Lagrange polynomials in the interpolation formula and "
+        "sum up like powers of $ x$ (the final result is in the frame)."
+msgstr  "Підставляємо базисні поліноми Лагранжа в формулу інтерполяційного "
+        "полінома та сумуємо члени з однаковими степенями (результат записано "
+        "в рамочці)."
+
+#, perl-format
+msgid   "We use substitution %s."
+msgstr  "Застосуємо заміну %s."
+
+msgid   "We use the variation of constants to find the particular solution in "
+        "the form"
+msgstr  "Застосовуємо метод варіації довільних сталих для знаходження "
+        "частинного розв'язку у вигляді"
+
+#, php-format
+msgid   "We will look for the intercepts of  y=%s and y=%s, symbolically and "
+        "numerically."
+msgstr  "Знайдемо точки перетину графіків функцій y=%s та y=%s, спопробуємо "
+        "їх визначити як аналітично,так і чисельно, будемо сподіватися, що "
+        "знайдемо хоча б один результат."
+
+msgid   "We write the form of the Lagrange polynomial from the $ y$ "
+        "coordinates."
+msgstr  "За допомогою $ y$ координат складемо запис полінома Лагранжа."
+
+msgid   "You are not allowed to enter more than six points."
+msgstr  "Ви не можете ввести більше, ніж шість точок"
+
+#, php-format
+msgid   "You can check is somebody else is working with the tool by checking "
+        "%s history%s."
+msgstr  "Ви можете переглянути, чи використовує ще хтось зараз сервіси, "
+        "перевіряючи %sісторію%s."
+
+msgid   "You can enter decimal number or mathematical formula which contains"
+msgstr  "Ви можете ввести десяткове число або математичний вираз, який містить"
+
+msgid   "You can use WYSIWYG editor <a href=\"http://user.mendelu.cz/tihlarik/"
+        "dragmath/DragMath.html\" target=\"_blank\">Dragmath</a> to edit "
+        "mathematical expressions and then move the expression into field in "
+        "the form by using clipboard in your operating system. This editor is "
+        "accessible at the end of some input fields, where we suppose "
+        "nontrivial input. In these cases it is not necessary to use the "
+        "clipboard and the transfer into field in our form is automatical."
+msgstr  "Можете використовувати редактор WYSIWYG <a href=\"http://user."
+        "mendelu.cz/tihlarik/dragmath/DragMath.html\" target=\"_blank"
+        "\">Dragmath</a> для редактування математичних виразів і потім "
+        "перенести математичний запис у відповідне поле формуляра завдання "
+        "(використовуючи при цьому буфер обміну Вашої операційної системи). У "
+        "випадку, коли будете записувати складні математичні вирази, до цього "
+        "редактора можна перейти за допомогою кнопки \"Редактор\" біля "
+        "вводного поля формуляра, такий запис із Редактора в поле буде "
+        "перенесений автоматично."
+
+#, php-format
+msgid   "You can use method of undetermined coefficients: the primitive "
+        "function has the form %s, where %s is %s and k is real number. The "
+        "application of this method in steps is not covered by this "
+        "application and from this reason you should leave the rest to Maxima "
+        "and evaluate the integral by computer. It is also possible in some "
+        "integrals of this type to remove the square root by a convenient "
+        "substitution."
+msgstr  "Метод невизначених коефіцієнтів: первісна у вигляді %s, де %s - це "
+        "%s і k - це дійсне число. Цей метод не можна пройти в програмі крок "
+        "за кроком, тому автоматично встановлений вибір можливості для "
+        "завершення інтегрування комп'ютером. Іноді є можливість для "
+        "інтегралів цього типу знайти підходящу заміну, яка допоможе "
+        "позбавитися від квадратного кореня."
+
+#, php-format
+msgid   "You cannot write group of two or more characters like %s."
+msgstr  "Ви не можете написати групу з двох або більше символів, таких як %s."
+
+msgid   "You choosed to integrate some terms but no term has been marked for "
+        "integration"
+msgstr  "Ви обрали інтегрування деяких доданків, але нічого не позначили для "
+        "інтегрування"
+
+msgid   "You did not choose any action"
+msgstr  "Ви не вибрали наступний крок"
+
+msgid   "You have to solve the equation with respect to the derivative first "
+        "and write the right hand side only. You may try also to write the "
+        "full equation to the second field and switch the radiobutton on the "
+        "left."
+msgstr  "В першу чергу потрібно розв'язати рівняння відносно похідної й "
+        "записати в поле формуляра лише праву частину. Або можна записати все "
+        "рівняння в друге поле формуляра, не забудьте переключити ліву кнопку "
+        "у відповідного поля."
+
+#, php-format
+msgid   "You have to specify %s or %s for integration by parts."
+msgstr  "Ви повинні вказати %s або %s для інтегрування частинами."
+
+#, php-format
+msgid   "You have to use new name for the variable and you have to enter "
+        "which substitution you wish to use. The name of the variable "
+        "consists of one letter only. This name cannot be %s."
+msgstr  "Ви повинні застосувати нове позначення для змінної та повинні "
+        "вказати підстановкy, яку ви хочете використати. Позначення змінної "
+        "складається тільки з однієї букви. Заборонено застосовувати "
+        "позначення %s. "
+
+msgid   "You have to use the PDF file in Adobe Reader or Adobe Acrobat (do "
+        "not use xpdf, kpdf and other PDF viewers)."
+msgstr  "Для перегляду анімації потрібно використати файл PDF в програмі "
+        "Adobe Reader або Adobe Acrobat (не використовуйте xpdf, kpdf та інші "
+        "PDF в'ювери) "
+
+#, perl-format
+msgid   "You may have a typing error in your mathematical expression or use "
+        "too general right hand side of the equation.  This interface works "
+        "only if the right hand side is in the form %s where P and Q are "
+        "polynomials of order at most 4."
+msgstr  "У вас, можливо, описка в математичному виразі або використана досить "
+        "загальна права частина рівняння. Цей інтерфейс працює лише в тому "
+        "випадку, коли права частина записана в формі %s, де P та Q - "
+        "многочлени степеня не вище 4."
+
+msgid   "You may try to interchange the order of integration and submit "
+        "again. (Remember also to adjust limits for integration properly.)"
+msgstr  "Ви можете спробувати змінити порядок інтегрування й обчислити ще "
+        "раз. (Не забудьте також налаштувати обмеження для інтегрування "
+        "належним чином.)"
+
+#, php-format
+msgid   "You may try to pass your expression to %sWolframAlpha%s."
+msgstr  "Спробуйте для розв'язання вашої проблеми використати систeму "
+        "%sWolframAlpha%s."
+
+msgid   "You may want to continue and simplify your result ..."
+msgstr  "Ви можете продовжувати й спростити результат ..."
+
+#, php-format
+msgid   "You probably reached the time limit, try simpler problem or %s."
+msgstr  "Ви, мабуть, вичерпали максимальний час, призначений для виконання "
+        "завдання, спробуйте більш просту задачу або %s."
+
+msgid   "You probably use the <i>y</i> variable, which is not allowed here."
+msgstr  "Ви, мабуть, написали <i>у</i> змінну, що тут не є допустимим."
+
+msgid   "You probably want to integrate a function involving the absolute "
+        "value."
+msgstr  "Ви хочете інтегрувати функцію з модулем."
+
+msgid   "You should turn JavaScript on to see popup informations."
+msgstr  "Ви повинні включити JavaScript, щоб побачити додаткову інформацію."
+
+#, php-format
+msgid   "You used %s opening and  %s closing parentheses."
+msgstr  "Ви повинні %s відкрити та %s закрити круглі дужки"
+
+msgid   "You used a name of a function followed by a power.<br>Do not use "
+        "this notation. Write for example (sin(x))^2 instead of sin^2(x)."
+msgstr  "Ви ввели ^ безпосередньо після символа функції. <br> Не "
+        "використовуйте такий запис. Напишіть, наприклад, (sin(х)) ^ 2, а не "
+        "sin^2(х)."
+
+msgid   "You used backslash or quote or double-quote or another insecure "
+        "character in your input, which is not allowed. Do you try to enter "
+        "the functions in TeX notation? Use notation of the Maxima program, "
+        "please."
+msgstr  "Ви використовуєте символ, що не підтримується. Це не допускається. "
+        "Ви намагаєтеся ввести позначення, прийняті в ТеХ? Використовуйте "
+        "тільки позначення програми Maxima, будь ласка."
+
+msgid   "Your bad input was"
+msgstr  "Ваш ввод був з помилкою"
+
+#, php-format
+msgid   "Your incorrect input is: %s and %s."
+msgstr  "Ваш вводний запис невірний: %s та %s."
+
+#, php-format
+msgid   "Your input is (after deleting spaces and conversion ^ into **) %s "
+        "and the disallowed substring catched by the input filter is %s."
+msgstr  "Ваше завдання (після того, як були прибрані зайві пробіли й замінені "
+        "знаки ^ на **), %s причому частина запису, яка не пройшла вхідний "
+        "фільтр, це %s. "
+
+#, php-format
+msgid   "Your input is being processed. Wait few seconds to see the output. "
+        "Click %shere%s to reopen the form which has been submited."
+msgstr  ""
+
+msgid   "Zeros"
+msgstr  "Корені"
+
+msgid   "Zeros of 1st derivative"
+msgstr  "Корені першої похідної"
+
+msgid   "Zeros of 2nd derivative"
+msgstr  "Корені другої похідної"
+
+msgid   "Zeros of characteristic equation"
+msgstr  "Корені характеристичного рівняння"
+
+msgid   "Zeros of function"
+msgstr  "Корені функції"
+
+msgid   "\\def\\nonneg{We solve the system in the first quadrant (for "
+        "nonnegative variables)}"
+msgstr  "\\def\\nonneg{Ми знаходимо розв'язок системи в першій чверті (для "
+        "невід'ємних змінних)}"
+
+msgid   "absolute value causes problems in integration, but in most cases can "
+        "be eliminated by considering suitable subinterval for integration."
+msgstr  "Причиною проблем з інтегруванням можуть бути абсолютні значення, але "
+        "найчастіше ці проблеми можна усунути за допомогою відповідного "
+        "підінтервала для інтегрування."
+
+msgid   "addition, subtraction, multiplication and division, i.e. chars + - "
+        "* /"
+msgstr  "додавання, відніманні, множення й ділення, тобто символи + - * /"
+
+msgid   "and add like powers of  $ x $ "
+msgstr  "та сумуємо відпвідні степеневі показники змінної $ x $ (зводимо "
+        "подібні)"
+
+msgid   "and back substitution is"
+msgstr  "та обернена заміна змінних"
+
+msgid   "and collect the coefficients at the powers of $ x $ "
+msgstr  "зведемо коефіцієнти при однакових степенях змінної $ x $  "
+
+#, php-format
+msgid   "and divide by the common exponential factor %s and add like powers "
+        "of $x$"
+msgstr  "поділимо на спільний множник %s й просумуємо відповідні степені "
+        "змінної $ x $  "
+
+msgid   "and simplify"
+msgstr  "й спростити"
+
+msgid   "and suppose that this variable is positive"
+msgstr  "й припустимо, що ця змінна додатня"
+
+msgid   "asinh(), acosh(), atanh(), .... -> log()"
+msgstr  ""
+
+msgid   "bold"
+msgstr  "жирний шрифт"
+
+msgid   "by parts (specify  <i>u</i> or <i>v'</i>, if you specify both, "
+        "Maxima will use <i>v'</i> for the next computation)"
+msgstr  "інтегрування частинами (Потрібно вказати <i>u</i> або <i>v'</i>. "
+        "Якщо ви вказуєте обидві, ми використовуємо лише <i>v'</i> для "
+        "наступного обчислення)"
+
+msgid   "clever expansion into two fractions"
+msgstr  "розкладення на два дроба"
+
+msgid   "click the equation to get step by step solution"
+msgstr  "натисніть рівняння, щоб отримати розв'язок крок за кроком"
+
+msgid   "click the point to get Jacobi matrix and clasify the stationary point"
+msgstr  "оберіть стаціонарну точку для визначення матриці Якобі й для "
+        "детальнішої класифікації точки"
+
+msgid   "complete square in denominator"
+msgstr  "виділити повний квадрат в знаменнику"
+
+msgid   "complete square under square root"
+msgstr  "під знаком квадратного кореня виділити повний квадрат"
+
+msgid   "constant"
+msgstr  "постійна"
+
+msgid   "constants %e and %pi"
+msgstr  "константи %e і %pi"
+
+msgid   "contract products of roots"
+msgstr  "підвести множники під один степінь"
+
+msgid   "convert into an equation for the unknown integral and solve with "
+        "pure algebra"
+msgstr  "переписати в рівнянні для невідомого інтегралу й розв'язати "
+        "алгебраїчно"
+
+msgid   "convert into equation for the integral"
+msgstr  "переписати як алгебраїчне рівняння по відношенню до інтеграла"
+
+msgid   "cubic polynomial"
+msgstr  "кубічний поліном"
+
+msgid   "custom"
+msgstr  "індивідуальна"
+
+msgid   "divide polynomials or partial fractions"
+msgstr  "ділити поліноми або розкладення дробів"
+
+msgid   "division"
+msgstr  "ділення"
+
+msgid   "expand"
+msgstr  "операція expand (розкриття дужок)"
+
+msgid   "expand to partial fractions"
+msgstr  "розкладення дробів"
+
+msgid   "factor"
+msgstr  "операція factor (коефіцієнт, множник)"
+
+msgid   "factorize"
+msgstr  "розкладення на множники"
+
+msgid   "finished, show computations only"
+msgstr  "готово, показують тільки розрахунки "
+
+msgid   "formula"
+msgstr  "математичний вираз, формула"
+
+msgid   "formula too long"
+msgstr  "вираз занадто довгий"
+
+msgid   "function"
+msgstr  "функція"
+
+msgid   "functions"
+msgstr  "функції"
+
+msgid   "here"
+msgstr  "тут"
+
+msgid   "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+msgstr  "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+
+msgid   "in red"
+msgstr  "у червоному"
+
+msgid   "inside integration"
+msgstr  "перший інтеграл"
+
+msgid   "integers (no decimals)"
+msgstr  "цілі числа (без десяткових дробів)"
+
+msgid   "integral of polynomial or constant"
+msgstr  "інтеграл від многочлена або постійної"
+
+msgid   "integrate terms in sum (mark terms to be integrated, you have to "
+        "mark at least one term)"
+msgstr  "інтегрування доданків в сумі (потрібно позначити доданок для "
+        "інтегрування, необхідно позначити хоча б один доданок)"
+
+msgid   "integration"
+msgstr  "другий інтеграл"
+
+msgid   "integration by parts"
+msgstr  "інтегрування частинами"
+
+msgid   "linear polynomial"
+msgstr  "лінійний поліном"
+
+msgid   "link"
+msgstr  "Посилання"
+
+msgid   "logarc"
+msgstr  ""
+
+msgid   "logcontract"
+msgstr  "операція logcontract"
+
+msgid   "lower bound for integration"
+msgstr  "нижня границя інтегрування"
+
+msgid   "lower function"
+msgstr  "функція, що обмежує знизу"
+
+msgid   "lower limit for"
+msgstr  "нижня границя для"
+
+msgid   "lower limit for inside integral"
+msgstr  "нижня границя для внутрішнього інтегралу"
+
+msgid   "lower limit for outside integral"
+msgstr  "нижня границя для зовнішнього інтегралу"
+
+msgid   "lower limit of integration"
+msgstr  "Нижня границя інтегрування"
+
+msgid   "map + fullratsimp"
+msgstr  "операція map і fullratsimp"
+
+msgid   "map + xthru"
+msgstr  "oперація map і xthru"
+
+msgid   "maximum"
+msgstr  "максимум"
+
+msgid   "minimum"
+msgstr  "мінімум"
+
+msgid   "move a number from the integral"
+msgstr  "винести числовий множник за дужки"
+
+msgid   "multiply both numerator and denominator"
+msgstr  "умножити як чисельник, так і знаменник"
+
+msgid   "no conclusion"
+msgstr  "не можна зробити висновок"
+
+msgid   "no variables"
+msgstr  "немає змінних"
+
+msgid   "not found"
+msgstr  "не знайдено"
+
+msgid   "notation"
+msgstr  "позначення"
+
+msgid   "number of subintervals"
+msgstr  "Кількість підінтервалів"
+
+msgid   "numerical approximation"
+msgstr  "чисельна апроксимація"
+
+msgid   "our hint"
+msgstr  "наша підказка"
+
+#, php-format
+msgid   "parameters %s"
+msgstr  "параметри %s"
+
+msgid   "partial fractions"
+msgstr  "розкладення дробів"
+
+msgid   "partial fractions or"
+msgstr  "розкладання дробів або"
+
+msgid   "point of rotation or focus"
+msgstr  "точка обертання або фокус"
+
+msgid   "power ^ or **"
+msgstr  "cтепінь позначається через ^ або **"
+
+msgid   "put these point into the form"
+msgstr  "запишіть ці точки в формуляр завдання"
+
+msgid   "quadratic polynomial"
+msgstr  "квадратичний поліном"
+
+msgid   "radcan"
+msgstr  "операція radcan"
+
+msgid   "rational function, but expansion into partial fractions failed (it "
+        "could be necessary to simplify first (radcan, xthru, ...), or the "
+        "function could be a <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">partial fraction with "
+        "repeated irreducible 2nd-degree polynomial in the denominator</a>)"
+msgstr  "раціональна функція, але не вдалося представити її в вигляді суми "
+        "простих дробів (можливо потрібно спочатку спростити (radcan, "
+        "xthru, ...) або може ця функція уже є <a href=\"http://en.wikipedia."
+        "org/wiki/Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">простим дробом з кратними "
+        "комплексними коренями в знаменнику</a>"
+
+msgid   "ratsimp"
+msgstr  "операція ratsimp"
+
+msgid   "red"
+msgstr  "червоний"
+
+msgid   "remove absolute values"
+msgstr  "позбавитись від модулів"
+
+msgid   "replace <b>even powers of cosine</b> function by sine function"
+msgstr  "замінить парні степені косинуса на функцію синус "
+
+msgid   "replace <b>even powers of sine</b> function by cosine function"
+msgstr  "заменити парні степені синуса на функцію косинус "
+
+msgid   "replace function <b>sec</b> and <b>csc</b> by equivalent functions "
+        "in terms <b>sin</b> and <b>cos</b>"
+msgstr  "замінити функцію <b>sec</b> і <b>csc</b> на тотожні функції, які "
+        "містять <b>sin</b> та <b>cos</b>"
+
+msgid   "rootscontract"
+msgstr  "операція rootscontract"
+
+msgid   "round parentheses"
+msgstr  "круглі дужки"
+
+msgid   "saddle point"
+msgstr  "сідлова точка"
+
+msgid   "should be checked for substitutions of the form"
+msgstr  "цей вибір для заміни повинен бути позначений галочкою"
+
+msgid   "simplification"
+msgstr  "спрощення"
+
+msgid   "simplify"
+msgstr  "спростити"
+
+msgid   "simplify fraction"
+msgstr  "спрощенний дріб"
+
+msgid   "simplify fraction, each part separately"
+msgstr  "спростити дріб, кожний окремо"
+
+msgid   "simplify the fractions using xthru or fullratsimp"
+msgstr  "спрощення дробів з використанням xthru або fullratsimp"
+
+msgid   "simplify trigonometric functions"
+msgstr  "спростити тригонометричні функції"
+
+msgid   "skipping the picture ... (as explained hereinabove)"
+msgstr  "пропустивши рисунок... (як описано вище)"
+
+#, php-format
+msgid   "split in a clever way into two fractions of the form %s and use "
+        "formulas for integration (ignore also the hint in the next step and "
+        "finish the integration by Maxima)"
+msgstr  "вправно перетворити в суму двох дробів у вигляді %s та застосувати "
+        "формули (не звертайте увагу на пораду на наступному кроці й оберіть "
+        "закінчення інтегрування)"
+
+msgid   "stable focus"
+msgstr  "стійкий фокус"
+
+msgid   "stable node"
+msgstr  "стійкий вузол"
+
+msgid   "substitute limits"
+msgstr  "підставити границі інтегрування (використати теоремy Ньютона-"
+        "Лейбніца)"
+
+msgid   "substituting limits"
+msgstr  "Теорема Ньютона-Лейбніца (підстановка границь інтегрування)"
+
+msgid   "substitution"
+msgstr  "заміна змінних"
+
+msgid   "substitution (the function is odd with respect to both sin and cos)"
+msgstr  "заміна змінних (функція непарна як по синусу, так і по косинусу)"
+
+msgid   "substitution (the function is odd with respect to cos)"
+msgstr  "заміна змінних (функція непарна по косинусу)"
+
+msgid   "substitution (the function is odd with respect to sin)"
+msgstr  "заміна змінних (функція непарна по синуcу) "
+
+msgid   "substitution (use trigsimp function in the next step after "
+        "goniometric substitution)"
+msgstr  "заміна змінних (після цієї заміны застосуйте функцію trigsimp для "
+        "спрощення виразу)"
+
+msgid   "the function can be divided into sum of formulas"
+msgstr  "функція може бути розкладена на суму виразів"
+
+msgid   "the function can be expanded into sum of formulas"
+msgstr  "функцію можна представити у вигляді суми виразів"
+
+msgid   "the intersection is red region"
+msgstr  "перетин в області, яку позначено червоним кольором"
+
+msgid   "the numerator is derivative of denominator (or its constant multiple)"
+msgstr  "чисельник є похідною знаменника (або виразом їй пропорційним)"
+
+msgid   "trigexpand"
+msgstr  "операція trigexpand"
+
+msgid   "trigonometric functions have different inside parts, you can try to "
+        "fix it by <b>trigexpand</b> or <b>trigreduce</b> command"
+msgstr  "тригонометричні функції мають різні проміжні аргументи, Ви можете "
+        "спробувати виправити це за допомогою <b>trigexpand</b> або "
+        "<b>trigreduce</b>"
+
+msgid   "trigreduce"
+msgstr  "операція trigreduce"
+
+msgid   "trigsimp"
+msgstr  "операція trigsimp"
+
+msgid   "unable to find the answer"
+msgstr  "не вдалося знайти відповідь"
+
+msgid   "unstable focus"
+msgstr  "нестійкий фокус"
+
+msgid   "unstable node"
+msgstr  "нестійкий вузол"
+
+msgid   "upper bound for integration"
+msgstr  "верхня границя інтегрування"
+
+msgid   "upper function"
+msgstr  "функція, що обмежує зверху"
+
+msgid   "upper limit for"
+msgstr  "верхня границя для"
+
+msgid   "upper limit for inside integral"
+msgstr  "верхня границя для внутрішнього інтегралу"
+
+msgid   "upper limit for outside integral"
+msgstr  "верхня границя для зовнішнього інтегралу"
+
+msgid   "upper limit of integration"
+msgstr  "Верхня границя інтегрування"
+
+msgid   "use formula or ask the computer to finish the integration"
+msgstr  "використати формулу або нехай комп'ютер завершить інтегрування"
+
+msgid   "user expression"
+msgstr  "ваш вираз"
+
+#, php-format
+msgid   "variable %s"
+msgstr  "змінна %s"
+
+#, php-format
+msgid   "variables %s"
+msgstr  "змінні %s"
+
+msgid   "we have to find derivatives and put into the equation"
+msgstr  "Нам потрібно знайти похідні й підставити отримані вирази в задане "
+        "рівняння"
+
+msgid   "we substitute into (1)"
+msgstr  "підставляємо в %s"
+
+msgid   "where the new variable is"
+msgstr  "де нова змінна"
+
+msgid   "with linear inside part (you can use also substitution)"
+msgstr  "з лінійним проміжним аргументом (ви також можете використовувати "
+        "заміну змінних)"
+
+msgid   "with new variable"
+msgstr  "з новою змінною"
+
+#, php-format
+msgid   "with unknowns %s and %s."
+msgstr  "з невідомими %s та %s"
+
+msgid   "xthru"
+msgstr  "операція xthru"
+
+msgid   "yields"
+msgstr  "дає"
+
+msgid   "you can convert the function to sine and cosine functions with the "
+        "<b>trigsimp</b> command"
+msgstr  "Ви можете перетворити до запису з функцією синус та косинус за "
+        "допомогою операції <b>trigsimp</b>"
+
+msgid   "you can remove a constant multiple from the integral"
+msgstr  "можете винести постійний множник за знак інтегралу"

@@ -1,0 +1,470 @@
+%%% ------------Cut here------------
+
+%% 1.
+%% We redefine internal commands of pdfanim. If you use
+%% \PDFAnimLoad[remember,loop,startframe=30]{aa}{trac}{90}, it is assumed
+%% that the file trac.pdf has at least 90 pages and first 90 pages form
+%% the frames of the animation.
+
+%% 2. In running animation, click means pause, not stop! In paused 
+%% animation, shift+click plays backwards. The shift button changes the
+%% direction also for stepwise animations.
+
+%% Macros start here.
+
+\newcount \mujcounter
+\makeatletter
+
+\def\PDFAnim@PictureButtonWidget#1{%
+  /Subtype /Widget
+  \ifPDFAnim@hidden /F 6 \else /F 4 \fi
+  \ifPDFAnim@step
+  \ifPDFAnim@checkshift
+  /TU(Click for the next frame. Shift+Click for previous frame.)
+  \else
+  /TU(Click for the next frame.)
+  \fi
+  \else
+  \ifPDFAnim@checkshift
+  /TU(Click to play. Shift+Click to play backwards.)
+  \else
+  /TU(Click to play.)
+  \fi
+  \fi
+  \ifx\PDFAnim@name\@empty
+  \else
+    /T (\PDFAnim@name)
+  \fi
+  /FT /Btn
+  /Ff 65536
+  /H /N
+  /BS << /W 1 /S /S >>
+  /MK <<
+    /TP 1
+    /I #1 0 R
+    /IF << /SW /\PDFAnim@scale /S /\PDFAnim@scaletype /A [0.5 0.5] >>
+    \ifx\PDFAnim@bcolor\@empty
+    \else
+      /BC [\PDFAnim@bcolor]
+    \fi 
+    \ifx\PDFAnim@bgcolor\@empty
+    \else
+      /BG [\PDFAnim@bgcolor]
+    \fi 
+  >>
+  \ifx\PDFAnim@onclick\@empty
+  \else
+    /A << /S /JavaScript /JS (\PDFAnim@onclick;) >>
+  \fi 
+}
+
+
+
+\def\PDFAnim@PictureButton[#1]#2#3{% parameters, picture file name,page
+%  \message{PDFanimpicturebutton #1; #2; #3^^J}
+  \bgroup
+  \mujcounter=#3
+  \advance \mujcounter by 1
+    \setkeys{PDFAnim}{#1}%
+%     \ifPDFAnim@checkshift
+%     \expandafter\xdef\csname checkshift#2\endcsname##1{##1}
+%     \else
+%     \expandafter\xdef\csname checkshift#2\endcsname##1{}
+%     \fi
+    \immediate\pdfximage
+      \ifx\PDFAnim@width\@empty\else width \PDFAnim@width\fi 
+      \ifx\PDFAnim@height\@empty\else height \PDFAnim@height\fi
+      \ifx\PDFAnim@depth\@empty\else depth \PDFAnim@depth\fi
+      page \mujcounter
+      {#2}%
+    \def\PDFAnim@Obj{\the\pdflastximage}%
+    \PDFAnim@LayoutPictureButtonField{%
+      \leavevmode
+      \pdfstartlink user{\PDFAnim@PictureButtonWidget{\PDFAnim@Obj}}%
+      \ifPDFAnim@hidden
+        \phantom{\pdfrefximage\PDFAnim@Obj}%
+      \else
+        \ifPDFAnim@fallback
+	  \pdfrefximage\PDFAnim@Obj%
+	\else
+          \phantom{\pdfrefximage\PDFAnim@Obj}%
+	\fi
+      \fi
+      \pdfendlink
+    }%
+  \egroup
+}
+
+\renewcommand*{\PDFAnimLoad}[4][]{%
+%  \vbox to\z@{\hb@xt@\z@{%
+%\message{soubor je #3 ^^J}
+\expandafter\edef\csname LastFrame#2\endcsname{#4}
+    \@PDFAnimLoad[#1]{#2}{#3}{#4}%\hss}\vss}%
+  }
+
+\newif\ifPDFAnim@checkshift
+\PDFAnim@checkshifttrue
+\define@key{PDFAnim}{noshift}[true]{%
+  \PDFAnim@checkshiftfalse
+}
+
+  
+\renewcommand*{\@PDFAnimLoad}[4][]{% options, name, files, number of files   
+  \bgroup
+  \def\PDFAnim@defaultframe{0}
+  \setkeys{PDFAnim}{#1}%  
+  \expandafter\xdef\csname #2PDFAnim@DefaultFrame\endcsname{\PDFAnim@defaultframe}
+  \ifPDFAnim@auto
+  \expandafter\gdef\csname#2PDFauto\endcsname{Pause}
+  \else
+  \expandafter\gdef\csname#2PDFauto\endcsname{Play}
+  \fi
+  \makeatletter
+  \expandafter\xdef\csname #2PDFDelayInterval\endcsname{\PDFAnim@interval}
+  \ifx\PDFAnim@usecnt\@empty
+  \else
+  \def\PDFAnim@startframe{\PDFAnim@usecnt cnt}%
+  \fi
+  \ifx\PDFAnim@use\@empty
+  \def\PDFAnim@UseName{#2h}%
+  \PDFAnim@argdef{#2@h}{%
+    \noexpand\PDFAnimPictureButton[	
+    width=0pt,
+    height=0pt,
+    depth=0pt,,
+    name=#2h##1,
+    hidden=true
+    ]{#3.\PDFAnim@extension}{##1}%
+  }%
+  \else
+  \def\PDFAnim@UseName{\PDFAnim@use h}%
+  \PDFAnim@argdef{#2@h}{}%
+  \fi 
+%   \expandafter\xdef\csname #2@PDFAnimName\endcsname{\PDFAnim@UseName}
+%   \ifPDFAnim@reverse
+%   \expandafter\xdef\csname#2@PDFAnimReverse\endcsname##1##2{##1}
+%   \else
+%   \expandafter\xdef\csname#2@PDFAnimReverse\endcsname##1##2{##2}
+%   \fi
+  \PDFAnim@def{#2}{%
+    \noexpand\PDFAnimPictureButton[%
+    #1,
+    name=#2,
+    onclick={
+      \ifPDFAnim@noclick\else
+      \ifPDFAnim@step
+      if (#2running==1) #2PDFStopAnimation();        
+      %%% stepwise animation
+      % if (#2running == 0) 
+      % {
+      %   #2running = 1;
+      %   #2cnt = \PDFAnim@startframe;
+      % }
+      \ifPDFAnim@checkshift
+      #2eventshift = event.shift;
+      \else
+      #2eventshift = false;
+      \fi
+      \ifPDFAnim@reverse  % reverse
+      if (#2eventshift) #2lr=true; else #2lr=false;
+      \else % normal 
+      if (#2eventshift) #2lr=false; else #2lr=true;
+      \fi
+      #2running=1;
+      #2PDFAnimate();
+      #2running=0;
+      %%% not stepwise animation
+      \else % nostep
+      #2StartAnimation();
+      \fi
+      \fi
+    }
+  ]{#3.\PDFAnim@extension}{\PDFAnim@defaultframe}%
+}%
+\PDFAnim@def{#2@frames}{#4}
+\PDFAnimJS@def{\thePDFAnimNr}{%
+  var #2running = 0;
+  var #2cnt = \PDFAnim@defaultframe;
+  var #2interval = \PDFAnim@interval;
+  var #2eventshift = false;
+  function #2StartAnimation(){
+    var PDFrun=true;
+    \ifPDFAnim@checkshift
+    #2eventshift = event.shift;
+    \else
+    #2eventshift = false;
+    \fi
+    \ifPDFAnim@reverse
+    if ((#2running == 0)&&(#2cnt<=0)&&!(#2eventshift))
+    {
+      #2cnt=(#4-1);
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+      } catch (e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      PDFrun=false;
+    }      
+    if ((#2running == 0)&&(#2cnt>=(#4-1))&&(#2eventshift))
+    {
+      #2cnt=0;
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+      } catch(e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      PDFrun=false;
+    }
+    \else
+    if ((#2running == 0)&&(#2cnt==0)&&(#2eventshift))
+    {
+      #2cnt=(#4-1);
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+      } catch(e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      PDFrun=false;
+    }      
+    if ((#2running == 0)&&(#2cnt>=(#4-1))&&!(#2eventshift))
+    {
+      #2cnt=0;
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+      } catch(e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      PDFrun=false;
+    }
+    \fi
+    if (PDFrun)
+    {
+      if (#2running == 0)
+      { % running==0 not runnning, we start the animation
+        #2running = 1;
+        try{
+          this.getField("#2PlayStop").buttonSetCaption("Pause");
+        } catch(e) {}
+        if (!(#2eventshift))
+        {
+          \ifPDFAnim@reverse
+          #2lr=false;
+          #2PDFAnimKey = app.setInterval('#2PDFAnimate()', #2interval);
+          \else
+          #2lr=true;
+          #2PDFAnimKey = app.setInterval('#2PDFAnimate()', #2interval);
+          \fi
+        } 
+        else 
+        {
+          \ifPDFAnim@reverse
+          #2lr=true;
+          #2PDFAnimKey = app.setInterval('#2PDFAnimate()', #2interval);
+          \else
+          #2lr=false;
+          #2PDFAnimKey = app.setInterval('#2PDFAnimate()', #2interval);
+          \fi
+        }
+      }
+      else
+      { % animation runs, we make pause
+        try{
+          this.getField("#2PlayStop").buttonSetCaption("Play");
+        } catch(e) {}
+        #2running = 0; % 0=pause
+        app.clearInterval(#2PDFAnimKey);
+      }
+    }
+  };
+  function #2PDFAnimUpdateTextProc(framenumber){
+    var hodnota= Math.floor(framenumber*100/(\csname LastFrame#2\endcsname-1));
+    if (hodnota>100) hodnota=100;
+  };
+  function #2PDFStopAnimation()
+  {
+    #2running = 0; % 0=pause
+    try{
+        app.clearInterval(#2PDFAnimKey);
+      } catch(e) {}
+    try{
+      this.getField("#2PlayStop").buttonSetCaption("Play");
+    } catch(e) {}
+  };
+  function #2PDFAnimate() {
+    \ifPDFAnim@step\else % lock fields with percents
+    \fi
+    if (#2lr ==true) {#2cnt++;} else {#2cnt--;}
+    if (#2cnt >= (#4-1)) {% out of upper bound
+      \ifPDFAnim@loop
+      #2cnt = 0;
+      \else
+      #2PDFStopAnimation();
+      \fi	  
+    }
+    if (#2cnt < 0) {% out of lower bound
+      \ifPDFAnim@loop
+      #2cnt = #4 - 1;
+      \else
+      #2cnt=0;
+      #2PDFStopAnimation();
+      \fi	  
+    }
+    #2PDFAnimUpdateTextProc(#2cnt);
+    try {
+    this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+    } catch (e) {}
+  };
+}%  
+% \fi%
+\PDFAnimOpen@def{\thePDFAnimNr}{%
+  \ifPDFAnim@remember\else%
+  #2cnt = \PDFAnim@defaultframe;
+  try{
+  this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+  } catch (e) {}
+  \fi%
+  \ifPDFAnim@step\else%
+  \ifPDFAnim@auto 
+  if (#2running == 0) {
+    #2cnt = \PDFAnim@startframe;
+  }
+  #2running = 1;
+  \ifPDFAnim@reverse
+  #2lr=false;
+  \else
+  #2lr=true;
+  \fi
+  #2PDFAnimKey = app.setInterval('#2PDFAnimate()', #2interval);
+  \fi
+  \fi      
+}%  
+\PDFAnimClose@def{\thePDFAnimNr}{%
+  \ifPDFAnim@remember\else%
+  if(#2running != 0) 
+  {
+    #2running = 0;
+    app.clearInterval(#2PDFAnimKey);
+  }
+  #2cnt = \PDFAnim@defaultframe;
+  try{
+  this.getField('#2').buttonSetIcon(this.getField('\PDFAnim@UseName'+#2cnt).buttonGetIcon());
+  } catch (e) {}
+  \fi
+}%   
+\egroup%
+\global\addtocounter{PDFAnimNr}{1}%
+\xdef\PDFAnimNr{\thePDFAnimNr}%
+% 
+\ifPDFAnim@debug
+\message{PDFAnim: defining animation }\message{\PDFAnimNr}%
+\message{with document level javascript:}\message{\csname PDFAnimationJS@\PDFAnimNr@\endcsname}%
+\fi%
+% 
+}
+
+
+
+\newcommand\PDFAnimButtons[2][]{%
+  \def\PDFAnimPlayButtonInit{\csname #2PDFauto\endcsname}%
+  \def\PDFAnimPlayButtonName{#2PlayStop}%
+  \@PDFAnimMakeButtons[#1]{#2}%
+}
+
+
+\newcommand{\@PDFAnimMakeButtons}[2][]{%
+  \pushButton[#1
+  \CA{\string\253}
+  \TU{First frame}
+  \A{\JS{ 
+      #2running=1;
+      #2cnt = 0;
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('#2h'+#2cnt).buttonGetIcon());
+      } catch (e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      #2PDFStopAnimation();
+    }}
+  ]{#2First}{12pt}{12pt}%
+  % 
+  \pushButton[#1
+  \CA{\string\210}
+  \TU{Previous frame}
+  \A{\JS{ 
+      #2running=1;
+      #2cnt --;
+      if (#2cnt<0) #2cnt=0;
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('#2h'+#2cnt).buttonGetIcon());
+      } catch (e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      #2PDFStopAnimation();
+    }}
+  ]{#2Prec}{12pt}{12pt}%
+  %
+  \pushButton[#1
+  \CA{\PDFAnimPlayButtonInit}
+  \TU{Click to Play / Pause animation. Shift+Click plays backwards (if allowed).}
+  \A{\JS{#2StartAnimation();}}]{\PDFAnimPlayButtonName}{30pt}{12pt}%
+  % 
+  \pushButton[#1
+  \CA{\string\211}
+  \TU{Next frame}
+  \A{\JS{
+      #2running=1;
+      #2cnt ++;
+      if (#2cnt>=\csname LastFrame#2\endcsname) #2cnt=(\csname LastFrame#2\endcsname - 1);
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('#2h'+#2cnt).buttonGetIcon());
+      } catch (e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      #2PDFStopAnimation();
+    }}
+  ]{#2Next}{12pt}{12pt}%
+  % 
+  \pushButton[#1
+  \CA{\string\273}
+  \TU{Last frame}
+  \A{\JS{ 
+      #2running=1;
+      #2cnt = \csname LastFrame#2\endcsname - 1;
+      try {
+      this.getField('#2').buttonSetIcon(this.getField('#2h'+#2cnt).buttonGetIcon());
+      } catch (e) {}
+      #2PDFAnimUpdateTextProc(#2cnt);
+      #2PDFStopAnimation();
+  }}
+  ]{#2Last}{12pt}{12pt}%
+}
+
+
+\def\defaultDelayIntName{Delay}
+
+\newcommand\PDFAnimDelayButton[4][]{
+  \pushButton
+  [#1
+  \TU{Click to increase for slower animation, Shift+Click to decrease.}
+  \CA{\defaultDelayIntName}
+  \RC{\csname #2PDFDelayInterval\endcsname}
+  \AA{\AAMouseExit{\JS{
+        this.getField("#2Interval").buttonSetCaption("\defaultDelayIntName");
+      }}}
+  \A{\JS{      
+      if (event.shift) #2interval=#2interval-5;
+      else #2interval=#2interval+5;
+      if (#2interval<=0) #2interval = 5;
+      this.getField("#2Interval").buttonSetCaption(#2interval,2);
+      this.getField("#2Interval").buttonSetCaption(#2interval);
+      if (#2running==1)
+      {
+        app.clearInterval(#2PDFAnimKey);
+        #2PDFAnimKey = app.setInterval('#2PDFAnimate(true)', #2interval);
+      }
+    }}
+  ]
+  {#2Interval}{#3}{#4}}
+
+
+\makeatother
+
+
+%%% Tady konci upravy vnitrnich maker pro pdfanim. Snad budou vsechny
+%%% option fungovat.
+%%% ------------Cut here------------
+
+

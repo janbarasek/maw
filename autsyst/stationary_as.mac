@@ -1,0 +1,53 @@
+display2d:false;
+
+test_freeofxy(expr):= freeof(x,expr) and freeof(y, expr) and freeof(%r1, expr) and freeof(%r2, expr) and freeof(%r3, expr) and freeof(%r4, expr);
+
+/* function find_point           */
+/* converts [y=6,x=5] into [5,6] */
+find_point(point_list):=
+([x1,y1,out],
+ print("point",point_list),
+ if lhs(point_list[1])=y then
+  (
+    temp:point_list[2],
+    point_list[2]:point_list[1],
+    point_list[1]:temp
+   ),
+ if test_freeofxy(rhs(point_list[1])) 
+    and test_freeofxy(rhs(point_list[2])) 
+    and lhs(point_list[1])=x 
+    and lhs(point_list[2])=y 
+    and freeof(%i,point_list[1])
+    and freeof(%i,point_list[2])
+    and (imagpart(ratsimp(rectform(rhs(point_list[1]))))=0)
+    and (imagpart(ratsimp(rectform(rhs(point_list[2]))))=0)
+    and (imagpart(float(rectform(rhs(point_list[1]))))=0)
+    and (imagpart(float(rectform(rhs(point_list[2]))))=0)
+   then
+   (
+    kill(x1),kill(x2),
+    out:errcatch (x1:rhs(point_list[1]),y1:rhs(point_list[2]),
+    [x1,y1])
+   ),
+  if out=[] then out else out[1]
+);
+
+
+kill(out);
+
+stat_point_computed:disjoin(out[1],disjoin([],setify(map(find_point,solve([f(x,y),g(x,y)],[x,y])))));
+
+print (keyprint,stat_point_computed,keyprint);
+
+if listp(user_points) then
+(
+if setify(map(test_point,user_points))#{true} then print("bad_stationary_points") else print ("stationary_points_OK")
+);
+
+A:jacobian([f(x,y),g(x,y)],[x,y]);
+
+ratprint:false;
+find_eigenvalues(point):=print(point,": ",ev(rectform(eigenvalues(subst(point[2],y,subst(point[1],x,A)))[1]),numer));
+
+list_of_points:listify(stat_point_computed);
+map(find_eigenvalues,list_of_points);

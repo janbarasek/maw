@@ -1,0 +1,270 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2010 Robert Marik, Miroslava Tihlarikova
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+aaa:1;
+display2d:false;
+
+print_key(key,expr):=print("###",key,expr,"###");
+print_key_tex(key,expr):=print("###",key,tex(expr,false),"###");
+
+testspecial(f):=(
+/* find polynomial at sin */
+matchdeclare(anything,true),
+let (sin(anything), 1), 
+let (cos(anything), 0), 
+PE:ratsimp(letsimp(f)),
+tempE:at(PE,x=(1/t)),
+if constantp(PE) then PA:0 else PA:limit(radcan(t*log(abs(tempE))), t, 0, plus),
+P:radcan(PE/exp(PA*x)),
+remlet(all),
+
+/* find polynomial at cos */
+matchdeclare(anything,true),
+let (cos(anything), 1), 
+let (sin(anything), 0), 
+QE:ratsimp(letsimp(f)),
+tempE:at(QE,x=(1/t)),
+if constantp(QE) then QA:0 else QA:limit(radcan(t*log(abs(tempE))), t, 0, plus),
+Q:radcan(QE/exp(QA*x)),
+remlet(all),
+
+if (PA#0) and (QA#0) and (QA#PA) then print_key("different exps",""),
+if (PA=0) and (QA#0) then PA:QA,
+if (QA=0) and (PA#0) then QA:PA,
+
+
+/* find degree */
+n:max(hipow(P,x),hipow(Q,x)),
+
+/* find arguments of sin and cos */
+
+A:{},
+matchdeclare(anything,true),
+defmatch(cosmatch, cos(anything)), 
+defmatch(sinmatch, sin(anything)), 
+defrule(findcos, cos(anything), (A:adjoin(anything,A),0)),
+defrule(findsin, sin(anything), (A:adjoin(anything,A),0)),
+ft:f,
+apply1(ft,findsin,findcos),
+
+if emptyp(A) then coeff_sin:0 else coeff_sin:coeff(listify(A)[1],x),
+if emptyp(A) then inside_sin:0 else inside_sin:listify(A)[1],
+if emptyp(A) then P:0,
+f_parsed:(P*sin(inside_sin)+Q*cos(inside_sin))*exp(PA*x),
+ALLES:ALLES+f_parsed*w^(findPAIRS(PA,inside_sin/x)),
+is(expand(radcan(f-(f_parsed)))=0 and n<5 and polynomialp(P,[x]) and polynomialp(Q,[x]) and constantp(inside_sin/x))
+);
+
+
+print("right hand side is ",f);
+/* test if the function is in the form (P(x)sin(k*x+q)+Q(x)cos(k*x+q))*exp(q*x) */
+check1:testspecial(f);
+
+print (check1);
+
+if not check1 then
+(
+  f:radcan(trigreduce(f)),
+  check1:testspecial(f),
+  if check1 then
+  (
+    print_key("can rewrite rhs",terms),
+    sol:ode2('diff(y,x,2)+bbb*'diff(y,x)+ccc*y=f,y,x),
+    print("### partsol",tex(sol,false),"###"),
+    printterm(expr):=(print("###begin###",expr,"TeX:",tex(expr,false),"TeX:",ssubst("y'","\\it AA",ssubst("y''","\\it AAAA",tex(AAAA+bbb*AA+ccc*y=expr,false))),"###end###")),
+    printterm(f),
+    quit()
+  )
+);
+
+if not check1 then 
+(
+ load(powers),
+ join_polynomials(expr):=
+ (
+  expr2:[],
+  pompol:0,
+  for i:1 step 1 thru length(expr) do 
+   (
+     if not polynomialp(expr[i],[x]) then expr2:append(expr2,[expr[i]]) 
+        else pompol:pompol+expr[i]
+   ),
+  if pompol#0 then expr2:append(expr2,[pompol]),
+  expr2
+ ),
+ findPAIRS(paira,pairb):=
+ (
+   if not elementp([paira,pairb],setify(PAIRS))
+   then PAIRS:append(PAIRS,[[paira,pairb]]),
+   sublist_indices(PAIRS,lambda ([qqqqq], qqqqq=[paira,pairb]))
+ ),
+ print_key("nonspecial rhs",""),
+/* COMMENT: this part is not necessary, I think
+ f:radcan(f),  
+ if op(f)=op(a+b) then 
+ ( terms:args(f),
+   print("trying radcan first"),
+   ALLES:0,
+   PAIRS:[],
+   if setify((map(testspecial,terms)))={true} then 
+    (
+     terms:map(lambda([ii],coeff(ALLES,w,ii)[1]),powers(ALLES,w)[1]),
+     sol:ode2('diff(y,x,2)+bbb*'diff(y,x)+ccc*y=f,y,x),
+     print("### partsol",tex(sol,false),"###"),
+     print_key("can split rhs",terms),
+     display2d:false, 
+     print(""),
+     printterm(expr):=(print("###begin###",expr,"TeX:",tex(expr,false),"TeX:",ssubst("y'","\\it AA",ssubst("y''","\\it AAAA",tex(AAAA+bbb*AA+ccc*y=expr,false))),"###end###")),
+     map (printterm,terms),
+     quit()
+    )
+ ),
+ print("radcan fails, trying expand"),
+COMMENT ended */
+ f:expand(f),  
+ if op(f)=op(a+b) then 
+ ( terms:args(f),
+   print ("terms:",terms),
+   ALLES:0,
+   PAIRS:[],
+   if setify((map(testspecial,terms)))={true} then 
+    (
+     terms:map(lambda([ii],coeff(ALLES,w,ii)[1]),powers(ALLES,w)[1]),
+     sol:ode2('diff(y,x,2)+bbb*'diff(y,x)+ccc*y=f,y,x),
+     print("### partsol",tex(sol,false),"###"),
+     print_key("can split rhs",terms),
+     display2d:false, 
+     print(""),
+     printterm(expr):=(print("###begin###",expr,"TeX:",tex(expr,false),"TeX:",ssubst("y'","\\it AA",ssubst("y''","\\it AAAA",tex(AAAA+bbb*AA+ccc*y=expr,false))),"###end###")),
+     map (printterm,terms),
+     quit()
+  )
+ ),
+ quit()
+)
+;
+
+
+
+print(f);
+print(expand(f-(f_parsed)),n);
+
+/* test if q+k*%i (see previous comment) is a solution of characteristic eq. */
+check2:is(rectform(at(aaa*x^2+bbb*x+ccc,x=PA+coeff_sin*%i))=0);
+if check2 then k:1 else k:0;
+
+/* test if q+k*%i is a double solution of characteristic eq. */
+check2:is ((coeff_sin=0) and (at(2*aaa*x+bbb,x=PA)=0));
+if check2 then k:2;
+
+partsol:sum(p[n-i]*x^i,i,0,n)*x^k*sin(inside_sin)*exp(PA*x)+sum(q[n-i]*x^i,i,0,n)*x^k*cos(inside_sin)*exp(PA*x);
+print_key_tex("form of part sol",partsol);
+
+dif1:radcan(diff(partsol,x));
+dif2:radcan(diff(partsol,x,2));
+print_key_tex("dif1",dif1);
+print_key_tex("dif2",dif2);
+
+
+
+simp:false;
+lhs_of_eq:aaa*dif2+bbb*dif1+ccc*partsol;
+print_key_tex("lhs_of_eq_false",lhs_of_eq);
+
+simp:true;
+lhs_of_eq:radcan(lhs_of_eq);
+print_key_tex("lhs_of_eq_true",lhs_of_eq);
+lhs_of_eq2:radcan(lhs_of_eq/exp(PA*x));
+rhs_of_eq2:radcan(f/exp(PA*x));
+print_key_tex("eq2",lhs_of_eq2=rhs_of_eq2);
+
+/* find polynomial at sin */
+matchdeclare(anything,true);
+let (sin(anything), 1); 
+let (cos(anything), 0); 
+Pl:ratsimp(letsimp(lhs_of_eq2));
+remlet(all);
+if emptyp(A) then Pl:0;
+
+/* find polynomial at cos */
+matchdeclare(anything,true);
+let (cos(anything), 1); 
+let (sin(anything), 0); 
+Ql:ratsimp(letsimp(lhs_of_eq2));
+remlet(all);
+
+Pl=P;
+Ql=Q;
+A;
+
+all_eqs:[];
+for i:0 step 1 thru n do 
+(
+if i>0 then
+(
+  if not emptyp(A) then all_eqs:append(all_eqs,[coeff(Pl,x^i)=coeff(P,x^i)]),
+  all_eqs:append(all_eqs,[coeff(Ql,x^i)=coeff(Q,x^i)])
+)
+else
+(
+  if not emptyp(A) then  all_eqs:append(all_eqs,[at(Pl,x=0)=at(P,x=0)]),
+  all_eqs:append(all_eqs,[at(Ql,x=0)=at(Q,x=0)])
+)
+);
+
+all_eqs;
+
+solution:solve(all_eqs);
+
+result:at(partsol,solution[1]);
+
+if not zeroequiv(radcan(aaa*diff(result,x,2)+bbb*diff(result,x)+ccc*result-(f)),x) then print("Particular solution failed. Something goes wrong, sorry. We will investigate this error.");
+
+print_key_tex("f",f);
+print_key_tex("k",k);
+print_key_tex("P",P);
+print_key_tex("Q",Q);
+print_key_tex("PA",PA);
+print_key_tex("EXPPA",exp(PA*x));
+print_key_tex("result",result);
+print_key_tex("testnumber",PA+%i*coeff_sin);
+print_key_tex("coeff_sin",coeff_sin);
+if (Pl#0) or (P#0) then print_key_tex("Pl=P",Pl=P);
+print_key_tex("Ql=Q",Ql=Q);
+print_key_tex("all_eqs",all_eqs);
+print_key_tex("sol_eqs",solution);
+all_eqs;
+
+
+%k1:C[1];
+%k2:C[2];
+eq:'diff(y,x,2)+bbb*'diff(y,x)+ccc*y=0;
+gensol:rhs(ode2(eq,y,x)) ;
+
+(D:ratsimp((bbb)^2-4*aaa*ccc),
+vysledek:expand(gensol),
+funda:if D<0 then (ev(vysledek,%k1=0,%k2=1)) else (ev(vysledek,%k1=1,%k2=0)),
+fundb:if D<0 then (ev(vysledek,%k1=1,%k2=0)) else (ev(vysledek,%k1=0,%k2=1)));
+
+print ("gensol", gensolh+result,"gensol");
+print_key("gensolh", C[1]*funda+C[2]*fundb);
+print_key("parsol", result);

@@ -1,0 +1,38 @@
+print("### function",tex(f(x),false),"### end");
+print("### interval",tex([a,b],false),"### end");
+print("### initial",tex(c,false),"### end");
+
+derf(x):=''(diff(f(x),x))$
+iteratef(x):=''(x-radcan(f(x)/derf(x)))$
+
+print("### derivative",tex(derf(x),false),"### end");
+print("### scheme",tex(iteratef(x[i]),false),"### end");
+
+printgnuplot(str):=print("### gnuplot",str,"### end");
+
+printgnuplot(sconcat("set xrange [",a,":",b,"]"));
+printgnuplot(sconcat("set size square"));
+printgnuplot(sconcat("unset key"));
+
+printarrow(x0,y0,x1,y1):=
+printgnuplot(sconcat("set arrow from ",ev(x0,numer),",",ev(y0,numer)," to ",ev(x1,numer),",",ev(y1,numer)," linetype 3  linewidth 2.000"));
+
+printarrow2(x0,y0,x1,y1):=
+printgnuplot(sconcat("set arrow from ",ev(x0,numer),",",ev(y0,numer)," to ",ev(x1,numer),",",ev(y1,numer)," linetype 3  linewidth 1.000"));
+
+/* printarrow(c,0,c,f(c)); */
+
+one_iteration():=
+block(
+ if i=0 then tempc:c else tempc:ev(iteratef(c),numer), 
+ print ("### iteration",i,"value",tempc,"### end"),
+ printarrow(c,0,c,f(c)),
+ if c#tempc then printarrow2(c,f(c),tempc,0),
+ prevc:c,
+ c:tempc
+);
+
+
+for i:0 step 1 thru n do (one_iteration());
+
+

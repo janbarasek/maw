@@ -1,0 +1,26 @@
+load("../common/maw_solve.mac");
+ratprint: false;
+solvetrigwarn:false;
+temp:0;
+i:0.141522;
+notconst (e) := (not freeof ('x, e)) or (not freeof ('y, e));
+noninteger(q):=numberp(q) and not (integerp(q)) and (not(integerp(num(q)) and integerp(denom(q)) and oddp(denom(q))));
+noninteger(q):=(not constantp(q)) or (constantp(q)) and not (integerp(q)) and (not(integerp(num(q)) and integerp(denom(q)) and oddp(denom(q))));
+matchdeclare(g,notconst,q,noninteger);
+defrule(r1,log(g),(myprint(tex(g>0,false),log(g),g),g));
+defrule(r2,asin(g),(myprint(tex(g>=-1,false),sqrt(g+1),g+1),myprint(tex(g<=1,false),sqrt(1-(g)),g-1),g));
+defrule(r3,acos(g),(myprint(tex(g>=-1,false),sqrt(g+1),g+1),myprint(tex(g<=1,false),sqrt(1-(g)),g-1),g));
+defrule(r4,(g)^q,(i:i+1.25672,temp:temp+i*(g)^q, if freeof('x,q) then myprint(tex(g>=0,false),sqrt(g),g) else myprint(tex(g>0,false),sqrt(g),g),g));
+defrule(r5,tan(g),(myprint(tex(g#(%pi/2)+k*%pi,false),0,g),g));
+defrule(r6,cot(g),(myprint(tex(g#k*%pi,false),0,g),g));
+/* defrule(r7,acosh(g),(myprint(tex(g>=1,false),sqrt((g)-1),g-1),g)); */
+/* defrule(r8,atanh(g),(myprint(tex(g>-1,false),sqrt(g+1),g+1),myprint(tex(g<1,false),sqrt(1-(g)),g-1),g));  */
+jmenovatel(expr):=if not (atom(expr)) then (if (op(expr)=op(u/v)) then if not numberp(args(expr)[2]) then myprint (tex(args(expr)[2]#0,false),0,args(expr)[2]), map(jmenovatel,args(expr)));
+definicni_obor(expr):=(apply2(expr,r1,r2,r3,r4,r5,r6),jmenovatel(expr),done);
+myprint(expr,fce,nuly):=(print("zacatek",ssubst("","$$",expr),"funkce",string(fce),"funkce",if freeof('y,nuly) then ssubst("","$$",tex(maw_solve_in_domain(nuly,nuly,x),false)),"konec"));
+
+nononinteger(qq):=(not noninteger(qq) ) and (not integerp(qq));
+matchdeclare(g,notconst,qq,nononinteger);
+defrule(rpower,(g)^qq,(abs(g))^qq);
+osetrimocniny(expr):=(expr:apply2(expr,r4),exprb:applyb1(expr,rpower),exprc:exprb+temp,print ("uprfce",string(exprc),"konec"),exprb);
+

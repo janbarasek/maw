@@ -1,0 +1,63 @@
+kontrola(zadani):=
+block(
+display2d:false,pfeformat:true,simp:false,j:1,a:[1,1],b:[0,0],
+f:zadani,print("### zadani: ",f),
+for i:1 step 1 unless atom(f) do block(ev(if j=2 then f:expand(f),simp),ev(if j>2 then block(f:0+0,print ("### Error: moc funkci")),simp),
+operace:op(f), 
+if operace="+" then block(if diff(args(f)[1],x)=0 then block(b[j]:args(f)[1],print ("##soucet:",args(f)[1],"  +  ",f:args(f)[2])) else block(b[j]:args(f)[2],print ("##soucet:",args(f)[2],"  +  ",f:args(f)[1]))) 
+elseif operace="^" then block(if diff(args(f)[2],x)=0 then block(define(funkce(x),x^(args(f)[2])),ev(j:j+1,simp),print("##mocnina s exponentem ",args(f)[2]," a zakladem ",f:args(f)[1])) else block(ev(j:j+1,simp),define(funkce(x),args(f)[1]^x),print("##exponenciela o zakladu ",args(f)[1]," s exponentem",f:args(f)[2]))) 
+elseif operace="*" then block(if diff(args(f)[1],x)=0 then block(t:args(f)[1],a[j]:ev((a[j])*t,simp),print ("##nasobek: ",args(f)[1],"  *  ",f:args(f)[2],"  celkem nasobek:",a[j])) else block(t:args(f)[2],a[j]:ev(a[j]*t,simp),print ("##nasobek: ",args(f)[2],"  *  ",f:args(f)[1]))) 
+elseif operace="-" and length(args(f))=1 then block(a[j]:ev(-1*a[j],simp),print ("##nasobek:", -1,"  *  ",f:args(f)[1])) 
+elseif operace=op(1/x) and not atom(args(f)[2]) and op(args(f)[2])="^"
+then block(a[j]:ev(a[j]*args(f)[1],simp),ev(j:j+1,simp),define(funkce(x),args(args(f)[2])[1]^x),print("##exponenciela o zakladu ",args(args(f)[2])[1]," nasobena ",args(f)[1]," a s exponentem",f:-args(args(f)[2])[2]))
+elseif operace=op(1/x) and freeof(x,args(f)[2]) then block(
+t:args(f)[2],a[j]:ev((a[j])/t,simp),print ("##nasobek: ",1/t,"  *  ",f:args(f)[1],"  celkem nasobek:",a[j]))
+elseif operace=op(1/x) and not freeof(x,args(f)[2]) then block(a[j]:ev(a[j]*args(f)[1],simp),ev(j:j+1,simp),define(funkce(x),1/(x)),print ("##deleni: citatel je ", args(f)[1]," a jmenovatel ",f:args(f)[2])) else block(funkce:op(f),ev(j:j+1,simp),print("##operace:",op(f),"  argument: ",f:args(f)[1]))));
+load(linearalgebra);
+if (polynomialp(fcenew,[x],numberp,integerp) and (not(polynomialp(fcenew,[x]))))
+  then fcenew:partfrac(fcenew,x);
+simp:false;
+%piargs : false;
+trigsign:false;
+kontrola(fcenew);
+simp:true;
+if ev(fullratsimp(a[1]*funkce(a[2]*x+b[2])+b[1]-(fcenew)),simp)#0 or not(constantp(b[1])) or not constantp(b[2]) or not constantp(a[1]) or not constantp(a[2])
+then (
+if polynomialp(expand(fcenew),[x]) and hipow(expand(fcenew),x)=2 then
+(
+oldfunction:expand(fcenew),
+koefa:coeff(oldfunction,x^2),
+koefb:coeff(oldfunction,x),
+koefc:ev(oldfunction,x=0),
+newfunction:koefa*(x+ratsimp(koefb/(2*koefa)))^2+ratsimp(koefc-koefb^2/(4*koefa)),
+simp:false,
+kontrola(newfunction)
+)
+);
+simp:false;
+if ratsimp(funkce(x)-1/x)=0 then pfeformat:false;
+if (j=1) then funkce(x):=x;
+print("### zakladni funkce je ",funkce(x)); 
+if ev(abs(a[2])#1,simp) then print("### ADefX ",ev(funkce((abs(a[2])**krok)*x),simp)) else print("## neni deformace v x"); 
+if ev(abs(a[1])#1,simp) then print("### ADefY ",ev(abs(a[1])**krok*funkce((abs(a[2])*x)),simp)) else print("## neni deformace v y"); 
+if ev(a[2]<0,simp) then print("### AZrcX ",ev(abs(a[1])*funkce((abs(a[2])*krok)*x),simp)) else print("## neni preklopeni v x"); 
+if ev(a[1]<0,simp) then print("### AZrcY ",ev(abs(a[1])*krok*funkce(a[2]*x),simp)) else print("## neni preklopeni v y"); 
+if ev(abs(b[2])#0,simp) then print("### APosX ",ev(a[1]*funkce((a[2])*x+(b[2])*krok),simp)) else print("## neni posun v x"); 
+if ev(abs(b[1])#0,simp) then print("### APosY ",ev(b[1]*krok+a[1]*funkce((a[2])*x+(b[2])),simp)) else print("## neni posun v y"); 
+print("### budu kreslit",ev(a[1]*funkce((a[2]*x+b[2]))+b[1],simp));
+print ("### budu posunovat",ev(a[1]*funkce((a[2]*x)),simp));
+if ((b[1]#0) or (b[2]#0)) then print ("### animace posunu",ev(b[1]*krok+a[1]*funkce((a[2]*x)+(b[2]*krok)),simp));
+if ((ev(abs(a[1]),simp)#1) or (ev(abs(a[2]),simp)#1)) then print("### animace deformace",ev((abs(a[1])**krok)*funkce((abs(a[2])**krok)*x),simp));
+ev(block(print ("### vodorovna deformace",a[2]), print ("### svisla deformace",a[1]), print ("### vodorovny posun ",b[2]/a[2]), print ("### svisly posun ",b[1])),simp);
+if (ev(a[1],simp)<0) then print("### preklopeniy");
+if (ev(a[2],simp)<0) then print("### preklopenix");
+print ("### kontrola1", ev(fullratsimp(a[1]*funkce(a[2]*x+b[2])+b[1]-(fcenew)),simp));
+print ("### kontrola2",ev([diff(a,x),diff(b,x)],simp));
+print ("### t0 y=",tex(funkce(x),false));
+print ("### t1 y=",tex(ev(funkce(abs(a[2])*x),simp),false));
+print ("### t2 y=",tex(ev(abs(a[1])*funkce(abs(a[2])*x),simp),false));
+print ("### t3 y=",tex(ev(abs(a[1])*funkce(a[2]*x),simp),false));
+print ("### t4 y=",tex(ev(a[1]*funkce(a[2]*x),simp),false));
+print ("### t5 y=",tex(ev(a[1]*funkce(a[2]*x+b[2]),simp),false));
+print ("### t6 y=",tex(ev(a[1]*funkce(a[2]*x+b[2])+b[1],simp),false));
+print ("### t7 y=",tex(ev(a[1]*funkce(a[2]*x+b[2])+b[1],simp),false));

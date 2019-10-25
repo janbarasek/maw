@@ -1,0 +1,24 @@
+  ooo        ooooo           .o.       oooooo   oooooo     oooo 
+  `88.       .888'          .888.       `888.    `888.     .8'  
+   888b     d'888          .8"888.       `888.   .8888.   .8'   
+   8 Y88. .P  888         .8' `888.       `888  .8'`888. .8'    
+   8  `888'   888        .88ooo8888.       `888.8'  `888.8'     
+   8    Y     888       .8'     `888.       `888'    `888'      
+  o8o        o888o     o88o     o8888o       `8'      `8'       
+                                                                  
+             .o88o.  .o88o. oooo   o8o                        
+             888 `"  888 `" `888   `"'                        
+   .ooooo.  o888oo  o888oo   888  oooo  ooo. .oo.    .ooooo.  
+  d88' `88b  888     888     888  `888  `888P"Y88b  d88' `88b 
+  888   888  888     888     888   888   888   888  888ooo888 
+  888   888  888     888     888   888   888   888  888    .o 
+  `Y8bod8P' o888o   o888o   o888o o888o o888o o888o `Y8bod8P' 
+
+Mathematical Assistant on Web (running offline on your PC)
+----------------------------------------------------------
+* Click this console to switch to the virtual machine 
+* Use root for login and mawroot as password 
+* You will see IP address of your virtual machine after logging as root
+* Use Alt+Ctrl to return from virtual machine to your personal computer 
+* Use halt command to stop the virtual machine
+

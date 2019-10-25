@@ -1,0 +1,14 @@
+msgA:"E R R O R  - lower bound bigger than upper bound at x="$
+msgB:"E R R O R  - incorrect data - the region between curves intercests x axis"$
+msgC:"E R R O R  - incorrect data - the function has not real value at x="$
+msg:msgA$
+
+testreal(f,a,b):=block(for i:a step (b-a)/100 unless i>b do (if
+imagpart(rectform(ev(f,x:i)))#0 then error(sconcat(msgC,i))))$
+
+test1(f,g,a,b):=block(for j:0 step 2 unless j>100 do (i:a+(b-a)*j/100, if
+float(ev(f-(g),x:i,numer))<-0.000001 then error(sconcat(msg,float(i),", f=",float(ev(f,x:i,numer)),", g=",float(ev(g,x:i,numer))))))$
+
+test2(f,g,a,b):=block(msg:msgB,kontout:errcatch(test1(min(f,g),0,a,b)),
+if kontout=[] then test1(0,max(f,g),a,b))$
+

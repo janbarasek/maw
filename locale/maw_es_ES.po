@@ -1,0 +1,2574 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2012 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# marik <robert.marik.cz@gmail.com>, 2012.
+#
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2013-12-22 02:15+0100\n"
+        "PO-Revision-Date: 2012-05-14 20:31+0200\n"
+        "Last-Translator: Mayckol J Morales C <mayckol@gmail.com>\n"
+        "Language-Team: Spanish\n"
+        "Language: es\n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+        "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid   " Change <i>xmin</i>."
+msgstr  "Cambie <i>xmin</i>"
+
+msgid   " Submit the form to check, if the curve is well defined."
+msgstr  ""
+
+msgid   " Submit the form to check, if the region for integration is well "
+        "defined."
+msgstr  ""
+
+msgid   "$ n$-degree  Taylor polynomial for the function  $ f(x)$ around  $ "
+        "x=x_0$"
+msgstr  ""
+
+msgid   "$x$-intercepts"
+msgstr  ""
+
+#, php-format
+msgid   "%s degree polynomial"
+msgstr  ""
+
+msgid   "(Click each equation to solve it using undetermined coefficients and "
+        "then sum up all particular solutions to and general solution of "
+        "associated homogeneous equation to get general solution. To find "
+        "solution of initial value problem use variation of constants.)"
+msgstr  ""
+
+msgid   "(Not including sets with zero measure, such as points, curves and "
+        "boundaries in the picture.)"
+msgstr  ""
+
+msgid   "(and remove odd power from denominator, if possible)"
+msgstr  ""
+
+msgid   "(click the equation to solve it using undetermined coefficients)"
+msgstr  ""
+
+msgid   "(clicking the expression you get this part of integral in new window)"
+msgstr  ""
+
+msgid   "(not very useful in most cases)"
+msgstr  "(no muy útil en muchos casos)"
+
+msgid   "(remember to return to the original variable)"
+msgstr  "(recuerde regresar a la variable original)"
+
+msgid   "(the trigreduce function yields this step)"
+msgstr  ""
+
+msgid   "(use radiobuttons to choose the next computation method)"
+msgstr  ""
+
+msgid   "(with completing square in denominator)"
+msgstr  ""
+
+msgid   "(with completing square under square root)"
+msgstr  ""
+
+msgid   "(write an equation, e.g. x^2=t, this equation must involve new "
+        "variable and no parameter)"
+msgstr  ""
+
+msgid   "(you can remove a constant multiple from the integral to match the "
+        "formula exactly)"
+msgstr  ""
+
+msgid   "(you have to write the fraction in the form which matches the "
+        "formula, consider multiplying both numerator and denominator by a "
+        "convenient expression)"
+msgstr  ""
+
+msgid   "- Horizontal deformation -"
+msgstr  ""
+
+msgid   "- Horizontal shift -"
+msgstr  "-Desplazamiento vertical-"
+
+msgid   "- Original function -"
+msgstr  ""
+
+msgid   "- Turning about x -"
+msgstr  ""
+
+msgid   "- Turning about y -"
+msgstr  ""
+
+msgid   "- Vertical deformation -"
+msgstr  ""
+
+msgid   "<b>Error. The most general expression which you can remove from the "
+        "integral is  a nonzero number written with digits or a multiple of "
+        "constants pi and e.</b> Go back and revise your choice."
+msgstr  ""
+
+msgid   "<b>Error. You cannot multiply numerator and denominator by zero or a "
+        "zero equivalent expression.</b> Go back and revise your choice."
+msgstr  ""
+
+msgid   "<b>Problems:</b> Infinitely many solutions, or some solutions cannot "
+        "be written using elementary functions."
+msgstr  ""
+
+#, php-format
+msgid   "<b>Sorry, the answer contains function %s which is not supported on "
+        "output. <br> Still curious? The answer is %s."
+msgstr  ""
+
+#, php-format
+msgid   "<b>Sorry, the answer does not exist in the class of <a href=\"http://"
+        "en.wikipedia.org/wiki/Elementary_function\">elementary functions</a>."
+        "</b> From this reason the integral exceeds the level of primary "
+        "target students. <br> Still curious? The answer is %s."
+msgstr  ""
+
+#, php-format
+msgid   "<b>Sorry, unable to evaluate the integral %s using Maxima.</"
+        "b><br><br>You may try to help Maxima by performing some "
+        "simplification (radcan?) or substitution.<br><br>You may get the "
+        "answer using another Computer Algebra System, such as %s or %s which "
+        "is reported by %s to be most powerful in integration."
+msgstr  ""
+
+msgid   "<b>This message usually appears also if you click link more times "
+        "than once.</b>"
+msgstr  ""
+
+msgid   "<b>Too long formula, sorry.</b> <ul><li>Try to install maxima on "
+        "your local computer or look at the formula on the page below.</"
+        "li><li>The problem is probably too difficult, but you can try "
+        "another method for integration.</li></ul>"
+msgstr  ""
+
+msgid   "<br><b>Instructions</b><br>Use only sharp inequalities, one "
+        "inequality per row and use variables <i>x</i> and <i>y</i>."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The degree of Taylor polynomial must be an "
+        "integer between 1 and 9."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be a "
+        "positive integer."
+msgstr  ""
+
+msgid   "<h2>Error on input</h2>The number of subintervals should be an "
+        "integer between 1 and 20."
+msgstr  ""
+
+#, php-format
+msgid   "<h2>Error</h2>The interval for integration, %s, is not subset of the "
+        "interval for drawing picture %s."
+msgstr  ""
+
+#, php-format
+msgid   "<h2>Error</h2>The upper limit (%s) for the set (and for integration) "
+        "is bigger then the lower limit (%s). Interchange limits in the form "
+        "or clicking this %slink%s."
+msgstr  ""
+
+msgid   "<h2>Remarks</h2><ul> <li>You can load the function and computed "
+        "stationary points into the calculator for next calculations by "
+        "clicking the following link "
+msgstr  ""
+
+#, php-format
+msgid   "<h2>Simplify your function first</h2>The numerator and denominator "
+        "can be divided by the common factor %s. Simplify the fraction first "
+        "and then write the function into the field again.<br><br> Remark: "
+        "Simplifying we get y=%s."
+msgstr  ""
+
+#, php-format
+msgid   "<h3>Error in mathematical notation</h3>Use lowercase letters only "
+        "and notation from the program <a href=\"http://maxima.sourceforge.net"
+        "\">Maxima</a>. <ul><li>Use star to denote multiplication, write for "
+        "example 3*x^3-6*x+1</li><li>Use parenthesis to denote the scope of "
+        "the operation, for example sin(2*x)+ln(x)</li><li>Do not use "
+        "notation  sin^2(x), but (sin(x))^2.</li><li>Use abs(x) for absolute "
+        "value, not |x|</li><li>Constants for the area of unit circle and the "
+        "euler number are %%pi and %%e (yes, with percent sign, read the  <a "
+        "href=\"http://maxima.sourceforge.net/docs/manual/en/maxima.html"
+        "\">manual</a> to the Maxima program, a computer algebra system used "
+        "for all computations).</li></ul><hr> Your input is (after omitting "
+        "spaces and conversion ^ into **): %s and the problem is with the "
+        "substring %s<br><br> Still in troubles? You can contact the authors. "
+        "Email address is on the main page."
+msgstr  ""
+
+msgid   "<h3>Incorrect input, use only (decimal) numbers to enter bounds for "
+        "the picture.</h3> You are allowed to use only decimal numbers "
+        "(character minus, digits and a dot as a separator of decimal places)."
+msgstr  ""
+
+#, php-format
+msgid   "<h3>You may mean %s.</h3> If yes, use Copy and Paste to move this "
+        "string into the input field.<br>To go back use the Back button in "
+        "your browser."
+msgstr  ""
+
+#, php-format
+msgid   "<ul><li> Choose the method for the next computation.  </li> <li> Try "
+        "to find the methods which simplify the integral. If your attempt "
+        "fails, you can return using Back button in you browser. You can also "
+        "return directly to the %s initial form%s.</li><li>You can use "
+        "computer to finish the integration. Educational value of such a this "
+        "step is minimal, so use this possibility with care, please.</"
+        "li><li>Questions marks |<b>?</b>| provide preview what you get when "
+        "using this function. Simply move the cursor over the question mark "
+        "and wait few seconds.</li><li>If the application gives incorrect or "
+        "unexpected results, let us know please.</li></ul><hr>"
+msgstr  ""
+
+#, php-format
+msgid   "<ul><li>Error when checking continuity of functions and when "
+        "checking that lower bound is smaller than upper bound.<li> Are you "
+        "sure that both %s and %s are defined and continuous on the interval "
+        "%s and %s is bigger than %s on this interval?<li>Check your "
+        "functions on the following picture.</ul>"
+msgstr  ""
+
+#, php-format
+msgid   "<ul><li>The name of the function must be followed by its argument "
+        "enclosed in parenthesis. Write e.g. sin(x) instead of sin x and sin"
+        "(2*x) instead of sin 2*x</li><li>Remember that if you want to write "
+        "power of a function, you cannot write something like sin^2(x), but "
+        "(sin(x))^2.</li><li>For exponential function use exp(x) or %e^x or "
+        "e^x.</li></ul>"
+msgstr  ""
+
+#, php-format
+msgid   "<ul><li>Use numbers only, no functions are allowed.</li><li>Use "
+        "commas and semicolons to separate point coordinates and points in "
+        "the data file.</li><li>Use at least two and no more than six points. "
+        "If you really need to interpolate for bigger or more general data "
+        "file, use the full power of the <a href=\"http://maxima.sourceforge."
+        "net\">Maxima</a> software and the command lagrange on your local "
+        "computer.</li></ul><br>Your input was: %s"
+msgstr  ""
+
+msgid   "<ul><li>integrate two times by parts and keep the choice of u and v' "
+        "suggested by this calculator</li><li>then remove constant multiple "
+        "(if necessary) and you get some terms and the same integral as the "
+        "original one</li><li>convert the problem into an algebraic equation "
+        "where the integral is the unknown and solve this equation</li></ul>"
+msgstr  ""
+
+msgid   "<ul><li>the function has to be function in two variables, <li>the "
+        "limits for outside integral have to be numbers,<li>the limits for "
+        "the inside integral numbers or functions of variable which is used "
+        "for outside integration,<li>he lower limit must be smaller or equal "
+        "to the upper limit for integration for both integrals.</ul> One of "
+        "these conditions has been violated or Maxima failed to verify these "
+        "conditions (in most cases due to a typing error or bad mathematical "
+        "formula on input)."
+msgstr  ""
+
+msgid   "Accessing this script from a web page which is outside Mendel "
+        "University is not allowed. You either came from such a page, or your "
+        "browser blocks the HTTP_REFERER information.<br> Use official pages "
+        "of <a href=\"http://user.mendelu.cz/marik/maw/index.php?lang=en"
+        "\">Mathematical Assistant on Web</a> or setup your browser properly."
+msgstr  ""
+
+#, php-format
+msgid   "After removing allowed strings we got redundant characters %s."
+msgstr  ""
+
+msgid   "Algebraic modification"
+msgstr  ""
+
+msgid   "Algebraic modification (fullratsimp function)"
+msgstr  ""
+
+msgid   "Algebraic modification (fullratsimp function) for each term in a sum"
+msgstr  ""
+
+msgid   "Algebraic modification (logarc function)"
+msgstr  ""
+
+msgid   "Algebraic modification (radcan function)"
+msgstr  ""
+
+msgid   "Algebraic modification (removing sec and csc)"
+msgstr  ""
+
+msgid   "Algebraic modification (trigexpand function)"
+msgstr  ""
+
+msgid   "Algebraic modification (trigreduce function)"
+msgstr  ""
+
+msgid   "Algebraic modification (trigsimp function)"
+msgstr  ""
+
+msgid   "Algebraic modification (xthru function)"
+msgstr  ""
+
+msgid   "Algebraic modification (xthru function) for each term in a sum"
+msgstr  ""
+
+msgid   "All x-coordiantes have to be mutually different numbers."
+msgstr  ""
+
+msgid   "An error occurred when processing your input."
+msgstr  ""
+
+msgid   "An error occurred when processing your input.<br>Check your formulas "
+        "(perhaps using Preview button) and report the problem if you think "
+        "that your input is correct and should be processed without any error."
+msgstr  ""
+
+msgid   "Answer"
+msgstr  "Respuesta"
+
+msgid   "Approximation"
+msgstr  "Aproximación"
+
+msgid   "Arithmetic overflow. Consider smaller bounds for the picture on the "
+        "<i>x</i> axis or bigger on the <i>y</i> axis."
+msgstr  ""
+
+msgid   "As a subproblem we have to integrate function with absolute value, "
+        "which is not supported well in our version of Maxima."
+msgstr  ""
+
+msgid   "Associated homogeneous equation"
+msgstr  ""
+
+msgid   "Associated homogeneous equation is"
+msgstr  "La ecuación homogénea asociada es "
+
+msgid   "At least one y-coordinate has to be nonzero."
+msgstr  ""
+
+msgid   "Autonomous system"
+msgstr  "Sistema Autónomo"
+
+msgid   "Autonomous system in plane"
+msgstr  "Sistema autónomo en el plano "
+
+msgid   "Auxiliary determinants are"
+msgstr  "Los determinantes auxiliares son"
+
+#, php-format
+msgid   "Bad input in row %s"
+msgstr  ""
+
+msgid   "Bad input. Check your data."
+msgstr  ""
+
+#, php-format
+msgid   "Binary operator %s found at the beginning of the string."
+msgstr  ""
+
+#, php-format
+msgid   "Binary operator %s found at the end of the string."
+msgstr  ""
+
+msgid   "Bisection method"
+msgstr  "Método de Bisección"
+
+msgid   "Bisection of interval"
+msgstr  "Intevalo de bisección"
+
+msgid   "Build PDF"
+msgstr  "Generar PDF"
+
+#, php-format
+msgid   "Building animations is available only, if the server load in the "
+        "last minute is smaller than %s. The current load %s. Return to the "
+        "previous page and try it later, please. (Or reload the page after 1 "
+        "minute.)"
+msgstr  ""
+
+msgid   "By clicking the integral you load the integral into an interactive "
+        "tool for integration."
+msgstr  ""
+
+msgid   "Can't guess, what you actually mean. You may try to enter the "
+        "following inequalities"
+msgstr  ""
+
+msgid   "Change <i>xmax</i>."
+msgstr  "Cambie <i>xmax</i>"
+
+msgid   "Char π is not allowed. Write %pi or pi instead."
+msgstr  ""
+
+msgid   "Char ∞ is not allowed. No part of MAW works with infinity. You are "
+        "doing something curious. If you want to evaluate limits or improper "
+        "integrals on computer, use some of computer algebra systems like "
+        "Sage or Maxima (both are free to install and also available to try "
+        "live on the Internet, without installing anything on your local "
+        "computer)."
+msgstr  ""
+
+msgid   "Characteristic equation"
+msgstr  "Ecuación característica"
+
+msgid   "Characteristic equation has one double solution."
+msgstr  "La ecuación característica tiene una raíz repetida."
+
+msgid   "Characteristic equation has two complex solutions."
+msgstr  "La ecuación característica tiene dos raíces complejas."
+
+msgid   "Characteristic equation has two real solutions."
+msgstr  "La ecuación característica tiene dos raíces reales."
+
+msgid   "Characteristic polynomial"
+msgstr  "Polinomio característico"
+
+msgid   "Check also that both functions are continuous on the interval used "
+        "to evaluate the integral and to draw the picture."
+msgstr  ""
+
+msgid   "Check your formulas (perhaps using Preview button) and report the "
+        "problem if you think that your input is correct and should be "
+        "processed without any error."
+msgstr  ""
+
+msgid   "Check your input data"
+msgstr  ""
+
+msgid   "Choose the action for the next computation"
+msgstr  ""
+
+msgid   "Clever expansion into two fractions"
+msgstr  ""
+
+#, perl-format
+msgid   "Click %shere%s to find stationary points by computer."
+msgstr  ""
+
+msgid   "Click the integral to send the function to a tool which helps to "
+        "evaluate the indefinite integral."
+msgstr  ""
+
+msgid   "Close"
+msgstr  ""
+
+msgid   "Comparing coefficients we get (the first equation is from the "
+        "highest power)"
+msgstr  ""
+
+msgid   "Comparison with other methods"
+msgstr  ""
+
+msgid   "Completing square"
+msgstr  "Completando cuadrados"
+
+msgid   "Computation opens in new panel or window."
+msgstr  ""
+
+msgid   "Conclusion"
+msgstr  "Conclusión"
+
+msgid   "Condition"
+msgstr  "Condición"
+
+msgid   "Condition for $x$-intercepts"
+msgstr  ""
+
+msgid   "Condition for critical points"
+msgstr  ""
+
+msgid   "Condition for points of discontinuity"
+msgstr  ""
+
+msgid   "Condition for stationary points"
+msgstr  ""
+
+msgid   "Conditions"
+msgstr  "Condiciones"
+
+msgid   "Consider reasonable bounds for axes, please."
+msgstr  ""
+
+msgid   "Constant multiple rule"
+msgstr  ""
+
+msgid   "Constant rule"
+msgstr  "Regla de la constante"
+
+msgid   "Constant solution"
+msgstr  ""
+
+msgid   "Contract product of roots (rootscontract)"
+msgstr  ""
+
+msgid   "Conversion into algebraic equation"
+msgstr  ""
+
+msgid   "Conversion into exponential function"
+msgstr  ""
+
+msgid   "Critical points"
+msgstr  ""
+
+msgid   "Curve"
+msgstr  ""
+
+msgid   "Curve derivatives"
+msgstr  "Derivadas curvas"
+
+msgid   "Decimal number (dot separates decimal places) cannot be a part of "
+        "another mathematical expression."
+msgstr  ""
+
+msgid   "Definite integral"
+msgstr  ""
+
+msgid   "Delete one of these characters or use parentheses properly."
+msgstr  ""
+
+#, perl-format
+msgid   "Denote %s and %s."
+msgstr  ""
+
+msgid   "Derivative"
+msgstr  "Derivada"
+
+#, php-format
+msgid   "Derivative of %s"
+msgstr  "Derivada de %s"
+
+msgid   "Derivative of absolute value"
+msgstr  "Derivada del valor absoluto"
+
+msgid   "Derivative of acrcotan function"
+msgstr  "Derivada de la función arcocotangente"
+
+msgid   "Derivative of arccosine function"
+msgstr  "Derivada de la función arcocoseno"
+
+msgid   "Derivative of arcsine function"
+msgstr  "Derivada de la función arcoseno"
+
+msgid   "Derivative of arctan function"
+msgstr  "Derivada de la función arcotangente"
+
+msgid   "Derivative of contangent function"
+msgstr  "Derivada de la función cotangente"
+
+msgid   "Derivative of cosine function"
+msgstr  "Derivada de la función coseno"
+
+msgid   "Derivative of csc function"
+msgstr  "Derivada de la función cosecante"
+
+msgid   "Derivative of exponential function"
+msgstr  "Derivada de la función exponencial"
+
+msgid   "Derivative of general solution is"
+msgstr  ""
+
+msgid   "Derivative of hyperbolic acrcotan function"
+msgstr  "Derivada de la función arcocotangente hiperbólica"
+
+msgid   "Derivative of hyperbolic arccosine function"
+msgstr  "Derivada de la función arcocoseno hiperbólico"
+
+msgid   "Derivative of hyperbolic arcsine function"
+msgstr  "Derivada de la función arcoseno hiperbólico"
+
+msgid   "Derivative of hyperbolic arctan function"
+msgstr  "Derivada de la función arcotangente hiperbólica"
+
+msgid   "Derivative of hyperbolic contangent function"
+msgstr  "Derivada de la función cotangente hiperbólica"
+
+msgid   "Derivative of hyperbolic cosine function"
+msgstr  "Derivada de la función coseno hiperbólico"
+
+msgid   "Derivative of hyperbolic sine function"
+msgstr  "Derivada de la función seno hiperbólico"
+
+msgid   "Derivative of hyperbolic tangent function"
+msgstr  "Derivada de la función tangente hiperbólica"
+
+msgid   "Derivative of logarithm"
+msgstr  "Derivada de la función logaritmo"
+
+msgid   "Derivative of particular solution (simplified)"
+msgstr  ""
+
+msgid   "Derivative of power function"
+msgstr  "Derivada de una potencia"
+
+msgid   "Derivative of sec function"
+msgstr  "Derivada de la función secante"
+
+msgid   "Derivative of sine function"
+msgstr  "Derivada d ela función seno"
+
+msgid   "Derivative of tangent function"
+msgstr  "Derivada de la función tangente"
+
+msgid   "Derivatives, derivatives at  $#1$ and coefficients of Taylor "
+        "polynomial"
+msgstr  ""
+
+#, php-format
+msgid   "Determinant of the coefficient matrix (wronskian of the solutions %s "
+        "and %s) is"
+msgstr  "El determinante de la matriz de coeficientes (el wronskiano de las "
+        "soluciones %s y %s) es"
+
+#, php-format
+msgid   "Differentiate #1 with respect to %s"
+msgstr  "Diferenciar función #1 con respecto %s"
+
+msgid   "Differentiate function #1"
+msgstr  "Diferenciar función #1"
+
+#, perl-format
+msgid   "Differentiating we get %s."
+msgstr  ""
+
+#, perl-format
+msgid   "Differentiating with respect to $ x$ we get %s."
+msgstr  ""
+
+#, perl-format
+msgid   "Differentiating with respect to $ y$ we get %s."
+msgstr  ""
+
+msgid   "Division"
+msgstr  "División"
+
+msgid   "Do not use comma."
+msgstr  "No use coma"
+
+msgid   "Do not use comma. To separate decimal places use the dot. If you "
+        "wish to enter decimal number, this decimal number cannot be a part "
+        "of mathematical formula."
+msgstr  ""
+
+msgid   "Do not use decadic logarithm, please."
+msgstr  ""
+
+msgid   "Do not use dot for multiplication."
+msgstr  "No use punto para la multiplicación"
+
+msgid   "Do not use equations. The application cannot draw such an input."
+msgstr  ""
+
+msgid   "Do not use this function. If you need to use this function in your "
+        "computation, run the computation in Maxima on your local computer."
+msgstr  ""
+
+msgid   "Domain (red region)"
+msgstr  ""
+
+#, php-format
+msgid   "Domain of %s"
+msgstr  "Dominio de %s"
+
+msgid   "Domain where the inequality is valid"
+msgstr  "Dominio donde la desigualdad es válida"
+
+msgid   "Double integral"
+msgstr  "Integral Doble"
+
+msgid   "Download html"
+msgstr  "Descargar html"
+
+msgid   "ERROR: Function is not bijection on the given interval."
+msgstr  "ERROR: Función no es biyectiva en el intervalo dado."
+
+msgid   "ERROR: No change in sign between end points of the interval"
+msgstr  "ERROR: Sin cambios en el signo entre los puntos extremos del "
+        "intervalo."
+
+msgid   "ERROR: function is out of domain at some point of the interval"
+msgstr  "ERROR: función está fuera del dominio en algún punto del intervalo"
+
+msgid   "Eigenvalues"
+msgstr  "Valores Propios"
+
+msgid   "Eigenvalues (numerically)"
+msgstr  "Valores propios (númericos)"
+
+msgid   "Enter integrand only. Not the whole integral."
+msgstr  ""
+
+msgid   "Equation"
+msgstr  "Ecuación"
+
+msgid   "Equation is homogeneous  -- we will use separation of variables and "
+        "write the solution in explicit form."
+msgstr  ""
+
+msgid   "Equation is linear"
+msgstr  "La ecuación es lineal"
+
+msgid   "Error"
+msgstr  "Error"
+
+msgid   "Error in input data"
+msgstr  "Error en datos de entrada"
+
+msgid   "Error in math or the given point does not belong to the domain."
+msgstr  "Error matemático o el punto dado no pertenece al dominio."
+
+msgid   "Error in math. Check your input."
+msgstr  ""
+
+msgid   "Error in mathematical notation"
+msgstr  ""
+
+msgid   "Error in solving. (Bad input?)"
+msgstr  ""
+
+msgid   "Error in the function or in the bound for integration."
+msgstr  ""
+
+msgid   "Error in your expression"
+msgstr  "Error en su expresión"
+
+msgid   "Error in your formula"
+msgstr  "Error en su fórmula"
+
+msgid   "Error occurred when processing your formula."
+msgstr  "Ocurrió un error mientras se procesaba su fórmula."
+
+#, php-format
+msgid   "Error when processing input from the field %s."
+msgstr  ""
+
+msgid   "Error, empty string on input."
+msgstr  ""
+
+msgid   "Error, sorry. The name of the function is not followed by the "
+        "parentheses."
+msgstr  ""
+
+msgid   "Error, you typed unsupported chars or uppercase letters."
+msgstr  ""
+
+msgid   "Error: Dimension too large."
+msgstr  ""
+
+msgid   "Error: Failed to evaluate integral of <i>v'</i>."
+msgstr  ""
+
+msgid   "Error: Missing derivative"
+msgstr  ""
+
+#, perl-format
+msgid   "Error: The Jacobian is zero, unable to clasify stationary point %s."
+msgstr  ""
+
+msgid   "Error: The equation cannot be solved."
+msgstr  ""
+
+#, perl-format
+msgid   "Error: The point %s is not a stationary point of the function %s"
+msgstr  "Error: El punto %s no es un punto estacionario de la función %s"
+
+#, perl-format
+msgid   "Error: There is no stationary point at %s."
+msgstr  ""
+
+msgid   "Error: incorrect operation"
+msgstr  "Error: operación incorrecta"
+
+msgid   "Error: incorrect substitution"
+msgstr  "Error: sustitución incorrecta"
+
+msgid   "Evaluation of $y'$"
+msgstr  ""
+
+msgid   "Evaluation of $y''$"
+msgstr  ""
+
+msgid   "Evaluation of definite integral"
+msgstr  ""
+
+msgid   "Even powers of cosine function replaced by sine"
+msgstr  ""
+
+msgid   "Even powers of sine function replaced by cosine"
+msgstr  ""
+
+msgid   "Expansion"
+msgstr  "Expansión"
+
+msgid   "Factorization"
+msgstr  "Factorización"
+
+msgid   "Final answer"
+msgstr  "Respuesta final"
+
+msgid   "Final result"
+msgstr  "Resultado final"
+
+msgid   "Final simplifications"
+msgstr  "Simplificaciones finales"
+
+msgid   "Find $ #1 $-degree Taylor polynomial for function $ f(x)=#2$ in $ "
+        "x_0=#3$."
+msgstr  ""
+
+msgid   "Finishing computation by Maxima"
+msgstr  ""
+
+msgid   "First derivative"
+msgstr  ""
+
+#, perl-format
+msgid   "For more general right hand sides use %svariation of constants%s."
+msgstr  ""
+
+msgid   "Formconv (program which parses your input) failed. Correct the "
+        "formula on your input."
+msgstr  ""
+
+msgid   "Formula"
+msgstr  ""
+
+msgid   "Found zero"
+msgstr  "Cero encontrado"
+
+#, php-format
+msgid   "From the determinant of %s"
+msgstr  "Del determinante de %s"
+
+#, php-format
+msgid   "From trace and determinant of %s"
+msgstr  "De la traza y el determinante de %s"
+
+msgid   "Function"
+msgstr  "Función"
+
+msgid   "Function and value of the function"
+msgstr  ""
+
+msgid   "Function grapher"
+msgstr  ""
+
+msgid   "Function to be integrated"
+msgstr  "Función a integrar"
+
+msgid   "Functions and characters available for mathematical notation"
+msgstr  ""
+
+msgid   "General solution"
+msgstr  "Solución general"
+
+msgid   "General solution is"
+msgstr  "La solución general es"
+
+msgid   "General solution of the equation"
+msgstr  "Solución general de la ecuación"
+
+msgid   "Geometrical application of definite integral"
+msgstr  "Aplicación geométrica de la integral definida"
+
+msgid   "Given data files, we look for optimal linear approximation in the "
+        "form"
+msgstr  ""
+
+msgid   "Given points in the plane, we look for the polynomial of "
+        "interpolation."
+msgstr  ""
+
+msgid   "Go home"
+msgstr  ""
+
+msgid   "Graph"
+msgstr  "Gráfica"
+
+msgid   "Graph and approximation by trapezoids"
+msgstr  ""
+
+#, php-format
+msgid   "Graph deformation: we draw function %s."
+msgstr  ""
+
+msgid   "Graph of the function and mean value"
+msgstr  ""
+
+msgid   "Graphs of basic elementary functions"
+msgstr  "Gráficas de funciones elementales"
+
+msgid   "Help to find the primitive function"
+msgstr  ""
+
+#, perl-format
+msgid   "Hence %s."
+msgstr  ""
+
+msgid   "Hessian"
+msgstr  "Hesiano"
+
+msgid   "Homogeneous equation"
+msgstr  "Ecuación homogénea"
+
+msgid   "However, the right hand side can be written as sum of two or more "
+        "right hand sides which are fine for undetermined coefficients as "
+        "follows."
+msgstr  ""
+
+msgid   "However, the right hand side can be written in the form as required."
+msgstr  ""
+
+msgid   "If the derivatives are not polynomials and if these derivative are "
+        "complicated, some stationary points may be missing."
+msgstr  ""
+
+#, perl-format
+msgid   "If the function %s satisfies %s and %s, then the solution is %s, "
+        "where %s."
+msgstr  ""
+
+msgid   "If the given function differs from the function which is actually "
+        "differentiated, then Maxima performed an automatical simplification "
+        "first."
+msgstr  ""
+
+msgid   "If the rendering of the formulas is bad, consider another browser "
+        "than Internet Explorer. The application has been tested with <a href="
+        "\"http://www.mozilla.com/firefox/\">Firefox</a>."
+msgstr  ""
+
+#, php-format
+msgid   "If you mean %s, you can try copy and paste the following string to "
+        "the input field:"
+msgstr  ""
+
+msgid   "If you use another logarithm than natural, use logarithm with "
+        "integer base."
+msgstr  "Si usa un logaritmo diferente al natural, use logaritmo con base "
+        "entera."
+
+msgid   "If you want to try various integration techniques, return to the "
+        "previous page and choose the required method."
+msgstr  ""
+
+msgid   "Ill posed problem, incorrect formulation of the problem or missing "
+        "informations"
+msgstr  ""
+
+msgid   "In computer notation"
+msgstr  ""
+
+msgid   "Incorrect input"
+msgstr  "Entrada incorrecta"
+
+msgid   "Incorrect input (not a number or empty string)"
+msgstr  ""
+
+msgid   "Incorrect input, use only integers to enter number of steps."
+msgstr  "Entrada incorrecta, solamente use números enteros para el número de "
+        "pasos."
+
+msgid   "Incorrect problem"
+msgstr  ""
+
+msgid   "Inequalities"
+msgstr  "Desigualdades"
+
+msgid   "Inequalities and systems of inequalities"
+msgstr  "Desigualdades y sistemas de desigualdades"
+
+msgid   "Inequality"
+msgstr  ""
+
+#, php-format
+msgid   "Inequality %s"
+msgstr  "Desigualdad %s"
+
+msgid   "Initial guess"
+msgstr  "Punto inicial"
+
+#, php-format
+msgid   "Insecure or unsupported command or function %s. Do not use this "
+        "command, please. If you insist on this command, use the full Maxima "
+        "software."
+msgstr  ""
+
+msgid   "Integral"
+msgstr  "Integral"
+
+msgid   "Integral methods assistant"
+msgstr  ""
+
+msgid   "Integrate terms in the sum"
+msgstr  "Integrando los términos en la suma"
+
+#, php-format
+msgid   "Integrating <b>by parts</b> with %s we get:"
+msgstr  ""
+
+msgid   "Integrating terms in a sum"
+msgstr  ""
+
+#, perl-format
+msgid   "Integrating with respect to $ x$ we get %s."
+msgstr  ""
+
+#, perl-format
+msgid   "Integrating with respect to $ y$ we get %s."
+msgstr  ""
+
+#, php-format
+msgid   "Integration gives %s and %s (by clicking the integral you load the "
+        "integral into tool for indefinite integration)"
+msgstr  ""
+
+msgid   "Interpolation with Lagrange polynomial"
+msgstr  "Interpolación con polinomios de Lagrange"
+
+msgid   "Interval"
+msgstr  "Intervalo"
+
+#, php-format
+msgid   "Invalid input in the field %s."
+msgstr  ""
+
+#, php-format
+msgid   "Invalid limits for integration. Limits for the inside integral "
+        "cannot contain the variable %s, which is used for inside integration."
+        "<br>Bad limits or bad order of variables for integration."
+msgstr  ""
+
+msgid   "Invalid limits for integration. Limits for the outside integral must "
+        "be constants and the lower limit has to be smaller than upper limit."
+msgstr  ""
+
+msgid   "Invalid limits for integration. One of the limits is becomes "
+        "undefined on the region of integration."
+msgstr  ""
+
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit."
+msgstr  ""
+
+#, php-format
+msgid   "Invalid limits for integration. The lower limit for the inside "
+        "integral has to be smaller than the upper limit. If you want to "
+        "interchange limits, you can try the following %s."
+msgstr  ""
+
+msgid   "Invalid limits for integration. The radial variable r must be "
+        "nonnegative."
+msgstr  ""
+
+#, perl-format
+msgid   "Invalid point number %s."
+msgstr  "Punto %s no válido"
+
+msgid   "Investigating function using Maxima CAS"
+msgstr  ""
+
+msgid   "Iteration scheme"
+msgstr  ""
+
+msgid   "Jacobi matrix"
+msgstr  "Matriz Jacobiana"
+
+msgid   "Jacobi matrix at stationary point"
+msgstr  "Matriz Jacobiana  del punto estacionario"
+
+msgid   "Least squares method"
+msgstr  "Método de los mínimos cuadrados"
+
+msgid   "Length of linear element"
+msgstr  "Longitud del elemento lineal"
+
+msgid   "Line integral"
+msgstr  "Integral de línea"
+
+msgid   "Linear solution"
+msgstr  "Solución lineal"
+
+msgid   "Linear system for coefficients"
+msgstr  "Sistema lineal para los coeficientes"
+
+#, php-format
+msgid   "Load: %s, Running processes: %s"
+msgstr  ""
+
+msgid   "Local extrema in two variables"
+msgstr  "Extremos locales en dos variables"
+
+msgid   "Lower limit"
+msgstr  "Límite inferior"
+
+msgid   "MAW error: equal md5sum for different strings."
+msgstr  ""
+
+msgid   "Mathematical Assistant on Web"
+msgstr  "Asistente Matemático en la Web"
+
+msgid   "Maxima failed to find $x$-intercepts. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find critical points. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find points of discontinuity. They probably do not "
+        "exist."
+msgstr  ""
+
+msgid   "Maxima failed to find stationary points. They probably do not exist."
+msgstr  ""
+
+msgid   "Maxima failed to find the primitive function."
+msgstr  ""
+
+msgid   "Maxima is using arc-trig functions to get a solution. Some solutions "
+        "will be lost."
+msgstr  ""
+
+msgid   "Mean value"
+msgstr  ""
+
+msgid   "Method"
+msgstr  "Método"
+
+msgid   "Method of iterations"
+msgstr  "Método de iteraciones"
+
+msgid   "Method regula falsi"
+msgstr  "Método d ela regla falsa"
+
+msgid   "Missing comma or more semicolons than expected."
+msgstr  ""
+
+#, perl-format
+msgid   "Missing coordinate for point number %s."
+msgstr  ""
+
+msgid   "Missing semicolon or more commas than expected."
+msgstr  ""
+
+msgid   "Missing stationary points in your input. I'll try to find the "
+        "stationary points first."
+msgstr  ""
+
+msgid   "Multiplication is denoted by star, write e.g. 2*x."
+msgstr  ""
+
+msgid   "Multiplying both numerator and denominator"
+msgstr  ""
+
+#, php-format
+msgid   "Multiplying both numerator and denominator by %s and simplification"
+msgstr  ""
+
+msgid   "Newton--Raphson method"
+msgstr  ""
+
+msgid   "Newton-Raphson method"
+msgstr  ""
+
+msgid   "Next computation"
+msgstr  ""
+
+msgid   "No isolated stationary point has been found. Either there are no "
+        "stationary points or the problem is too difficult for Maxima."
+msgstr  "Ningún punto estacionario ha sido encontrado. Entonces no hay puntos "
+        "estacionarios o el problema es muy complicado para Maxima."
+
+msgid   "No restriction on the domain of the function found. The function "
+        "seems to be defined everywhere."
+msgstr  ""
+
+msgid   "No stationary point has been found. Either there are no stationary "
+        "points or the problem is too difficult for Maxima."
+msgstr  ""
+
+msgid   "Nonconstant solution"
+msgstr  ""
+
+msgid   "Nonhomogeneous equation"
+msgstr  "Ecuación no homogénea "
+
+msgid   "Not all brackets which are written by the computer are necessary. "
+        "Many of them can be safely omitted."
+msgstr  "No todos los paréntesis escritos por el computador son necesarios. "
+        "Muchos de ellos pueden ser omitidos sin problemas."
+
+msgid   "Not found."
+msgstr  "No encontrado."
+
+msgid   "Now we solve initial value problem"
+msgstr  ""
+
+msgid   "Number of subintervals"
+msgstr  "Número de subintervalos"
+
+msgid   "Numerical computation"
+msgstr  "Cálculo numérico"
+
+#, php-format
+msgid   "On the next page you can find an animation which describes, how the "
+        "graph of %s is transformed into %s."
+msgstr  ""
+
+msgid   "One of the functions has probably point of discontinuity on the "
+        "interval under consideration. Look on the picture below and check "
+        "your input."
+msgstr  ""
+
+msgid   "Ordinary differential equation"
+msgstr  ""
+
+#, perl-format
+msgid   "Our equation can be written in the form %s."
+msgstr  ""
+
+msgid   "Our hint: (Some automatical hints based on few heuristic tests. Do "
+        "not follow these hints blindly and use your mind instead.)"
+msgstr  ""
+
+msgid   "Parametric curve"
+msgstr  "Curva paramétrica "
+
+msgid   "Partial fractions"
+msgstr  "Fracciones Parciales"
+
+msgid   "Particular solution"
+msgstr  "Solución particular"
+
+msgid   "Particular solution (after substitution and simplification)"
+msgstr  "Solución particular (después de sustitución y simplificación)"
+
+msgid   "Particular solution of the equation"
+msgstr  "Solución particular de la ecuación"
+
+msgid   "Picture"
+msgstr  "Gráfica"
+
+msgid   "Points of discontinuity"
+msgstr  ""
+
+msgid   "Points on boundary"
+msgstr  ""
+
+msgid   "Points on the boundary"
+msgstr  ""
+
+msgid   "Preliminary"
+msgstr  "Preliminares "
+
+msgid   "Primitive function"
+msgstr  "Función primitiva"
+
+#, php-format
+msgid   "Probably exchanged f and g functions. Interchange these functions "
+        "either in the previous form or by clicking the following %s."
+msgstr  ""
+
+msgid   "Problem"
+msgstr  "Problema"
+
+msgid   "Processing image"
+msgstr  "Procesando imagen"
+
+msgid   "Processing request"
+msgstr  "Procesando petición"
+
+msgid   "Processing the picture. If the picture does not appear within few "
+        "seconds, you may have error in your math expressions."
+msgstr  ""
+
+msgid   "Product rule"
+msgstr  "Regla del producto"
+
+msgid   "Program Maxima finishes the answer automatically"
+msgstr  ""
+
+msgid   "Quotient rule"
+msgstr  "Regla del cociente"
+
+msgid   "Read carefully the method and ignore other suggestions, such as "
+        "substitution"
+msgstr  ""
+
+msgid   "Region for integration"
+msgstr  ""
+
+msgid   "Regula falsi method"
+msgstr  "Método de la regla falsa"
+
+msgid   "Remarks"
+msgstr  ""
+
+msgid   "Report bug"
+msgstr  "Reportar fallo"
+
+msgid   "Second derivative"
+msgstr  ""
+
+msgid   "Second order linear differential equation"
+msgstr  "Ecuación diferencial lineal de segundo orden"
+
+msgid   "Separation of variables"
+msgstr  "Separación de variables"
+
+msgid   "Server load too large"
+msgstr  ""
+
+msgid   "Server overloaded"
+msgstr  ""
+
+msgid   "Server refused to build more animations simultaneously."
+msgstr  ""
+
+#, php-format
+msgid   "Shift: horizontally %s units and vertically  %s units (positive "
+        "values mean move to the left or top, negative to the right or bottom)"
+msgstr  ""
+
+#, php-format
+msgid   "Shifting %s into %s."
+msgstr  "Desplazando %s en %s"
+
+msgid   "Simplification"
+msgstr  "Simplificación"
+
+msgid   "Simplifying we get"
+msgstr  ""
+
+msgid   "Singular solution"
+msgstr  "Solución singular"
+
+msgid   "Solid of revolution"
+msgstr  "Sólido de revolución"
+
+msgid   "Solution"
+msgstr  "Solución"
+
+msgid   "Solution from Newton--Leibniz formula"
+msgstr  ""
+
+msgid   "Solution of the linear system"
+msgstr  "Solución del sistema lineal"
+
+#, php-format
+msgid   "Solution of the system for %s and %s is"
+msgstr  "Solución para el sistema para %s y %s es"
+
+msgid   "Solution of this equation"
+msgstr  "Solución a esta ecuación"
+
+msgid   "Something failed - report this to the authors of MAW, please."
+msgstr  "Algo a fallado - por favor reporta esto a los creadores de MAW"
+
+msgid   "Something is wrong. Probably too difficult integrals."
+msgstr  ""
+
+msgid   "Sometimes Maxima fails to find some constant solutions of the "
+        "equation with separated variables."
+msgstr  ""
+
+msgid   "Sorry, an error occurred when processing your input"
+msgstr  ""
+
+msgid   "Sorry, our server is overloaded, try it again after a reasonable "
+        "time (10 sec)."
+msgstr  ""
+
+msgid   "Sorry, report this problem please. We will investigate and (hope) we "
+        "fix it."
+msgstr  ""
+
+msgid   "Sorry, the application cannot handle this substitution."
+msgstr  "Lo sentimos, la aplicación no puede manejar esta sustitución"
+
+msgid   "Sorry, the evaluation of the integral failed."
+msgstr  "Lo sentimos, la evaluación de la integral falló."
+
+msgid   "Sorry, we are unable to process your function. The problem has been "
+        "saved and we will investigate."
+msgstr  ""
+
+msgid   "Sorry. An explanation for this error is not known automatically. The "
+        "problem has been logged and will be investigated."
+msgstr  ""
+
+msgid   "Stationary point"
+msgstr  "Punto estacionario"
+
+#, php-format
+msgid   "Stationary point is %s."
+msgstr  "El punto estacionario es %s"
+
+msgid   "Stationary points"
+msgstr  "Puntos estacionarios"
+
+msgid   "Step"
+msgstr  "Paso"
+
+msgid   "Submit"
+msgstr  "Enviar"
+
+msgid   "Substituting initial values we get the following linear system"
+msgstr  ""
+
+msgid   "Substituting limits"
+msgstr  "Sustituyendo límites"
+
+msgid   "Substituting these values into general solution we get particular "
+        "solution"
+msgstr  ""
+
+#, perl-format
+msgid   "Substituting we get linear equation  %s with general solution %s "
+        "(click %s to get more details)."
+msgstr  ""
+
+msgid   "Substitution"
+msgstr  "Sustitución"
+
+msgid   "Substitution into equation"
+msgstr  "Sustitución en la ecuación"
+
+msgid   "Substitution into equation (1) and simplifications"
+msgstr  "Sustituyendo en la ecuación (1) y simplificando"
+
+msgid   "Sum rule"
+msgstr  "Regla de la suma"
+
+msgid   "Summary"
+msgstr  "Sumario"
+
+msgid   "Support request"
+msgstr  ""
+
+msgid   "Symbolic computation"
+msgstr  "Cálculo simbólico"
+
+msgid   "System of equations"
+msgstr  "Sistema de ecuaciones"
+
+msgid   "System of inequalities"
+msgstr  "Sistema de desigualdades"
+
+msgid   "Table"
+msgstr  "Tabla"
+
+msgid   "Taylor polynomial"
+msgstr  "Polinomios de Taylor"
+
+msgid   "Tested stationary points"
+msgstr  ""
+
+#, php-format
+msgid   "The asymptote at both $ \\pm\\infty $ is the line $\\displaystyle  "
+        "%s $."
+msgstr  ""
+
+msgid   "The asymptote at both $\\pm\\infty$ is the line $\\asymptota$."
+msgstr  ""
+
+#, perl-format
+msgid   "The back substitution gives %s and %s"
+msgstr  ""
+
+msgid   "The boundary points for the subintervals on the picture are either "
+        "points of discontinuity, or the points in which one of the partial "
+        "inequalities becomes equality. In this version of MAW we are not "
+        "able to find out, if these points belong to the domain or not. This "
+        "problem is left to the user. Also ignore complex numbers, if present."
+msgstr  ""
+
+msgid   "The characteristic equation is"
+msgstr  "La ecuación característica es"
+
+#, perl-format
+msgid   "The check that the particular solution %s is correct failed."
+msgstr  ""
+
+msgid   "The computation could be divided into more pages"
+msgstr  ""
+
+msgid   "The computation is usually divided into two pages. The first page "
+        "contains computations and the second page the graph."
+msgstr  ""
+
+#, perl-format
+msgid   "The equation %s is exact if and only if %s."
+msgstr  ""
+
+msgid   "The equation does not belong to the set of supported types. <br>You "
+        "may also have a typing error in your formula which changes the type "
+        "of the equation and makes the equation unsolvable for Maxima CAS.</"
+        "b> Check your data."
+msgstr  ""
+
+msgid   "The equation has been solved, but it is neither linear nor "
+        "separable, homogeneous or exact and no intermediate steps are shown. "
+        "The equation is #1."
+msgstr  ""
+
+msgid   "The equation has integrating factor #1."
+msgstr  ""
+
+#, perl-format
+msgid   "The equation has integrating factor %s."
+msgstr  ""
+
+msgid   "The equation solved with respect to the derivative"
+msgstr  ""
+
+#, perl-format
+msgid   "The equation with right hand side %s cannot be solved by "
+        "undetermined coefficients"
+msgstr  ""
+
+msgid   "The first derivative"
+msgstr  ""
+
+msgid   "The first derivatives"
+msgstr  ""
+
+msgid   "The following messages have been reported by external programs and "
+        "they may help you to find the error.<br><br> Still in troubles? You "
+        "can contact the authors. Email address is on the main page."
+msgstr  ""
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local maximum} at %s. (Hessian is "
+        "positive and there are negative numbers in the main diagonal.)"
+msgstr  ""
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{local minimum} at %s. (Hessian is "
+        "positive and there are positive numbers in the main diagonal.)"
+msgstr  ""
+
+#, perl-format
+msgid   "The function %s  has a \\textbf{saddle point} at %s, there is no "
+        "local extremum at this point.  (Hessian is negative.)"
+msgstr  ""
+
+#, php-format
+msgid   "The function %s has been transformed into %s."
+msgstr  ""
+
+#, php-format
+msgid   "The function %s is not continuous at %s and we cannot find this "
+        "Taylor polynomial."
+msgstr  ""
+
+#, perl-format
+msgid   "The function is either not well formatted mathematical expression or "
+        "it is not continuous or one of the derivatives at %s does not exist. "
+        "Check the Maxima output below."
+msgstr  ""
+
+msgid   "The function is even."
+msgstr  ""
+
+msgid   "The function is neither odd nor even."
+msgstr  ""
+
+#, php-format
+msgid   "The function is not a function in two variables. You have to enter "
+        "function in two variables x and y. If you want to investigate "
+        "functions in one variable, you can continue %s here %s."
+msgstr  ""
+
+msgid   "The function is odd."
+msgstr  ""
+
+msgid   "The functions have probably one or more intersection inside the "
+        "interval. Check the picture below. You can find the intersection by "
+        "choosing the corresponding option in the form on the previous page."
+msgstr  ""
+
+#, php-format
+msgid   "The general solution is %s."
+msgstr  "La solución general es %s"
+
+msgid   "The general solution is sum of the particular solution (obtained "
+        "from (2)) and general solution of the associated homogeneous "
+        "equation obtained in the first part of the computation"
+msgstr  ""
+
+msgid   "The general solution is sum of the particular solution and general "
+        "solution of the associated homogeneous equation obtained in the "
+        "first part of the computation"
+msgstr  "La solución general es la suma de la solución particular y la "
+        "solución general asociada a la ecuación homogénea obtenida en la "
+        "primera parte del cálculo "
+
+#, php-format
+msgid   "The general solution of the associated homogeneous equation is %s."
+msgstr  "La solución general de la ecuación homogénea asociada es %s"
+
+msgid   "The graph can be drawn by shifting and resizing certain basic "
+        "elementary function"
+msgstr  ""
+
+msgid   "The length of one subinterval"
+msgstr  "La longitud de un subintervalo"
+
+#, php-format
+msgid   "The multiplicity of this solution is %s."
+msgstr  "La multiplicidad de esta solución es %s"
+
+#, perl-format
+msgid   "The normal form of the equation is %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s is double zero of the characteristic equation and the "
+        "particular solution has the form %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s is not a zero of the characteristic equation and the "
+        "particular solution is in the form %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s is zero of multiplicity 1 of the characteristic "
+        "equation and the particular solution has the form %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s takes the form %s and it is solution of the "
+        "characteristic equation %s."
+msgstr  ""
+
+#, php-format
+msgid   "The number %s takes the value %s and it is not solution of the "
+        "characteristic equation %s."
+msgstr  ""
+
+#, php-format
+msgid   "The original function is %s."
+msgstr  "La función original es %s"
+
+msgid   "The problem either does not make any sense or it is too difficult "
+        "for Maxima. Check also, that the integral on the top matches your "
+        "problem."
+msgstr  ""
+
+msgid   "The result of advanced numerical method"
+msgstr  ""
+
+msgid   "The result of symbolic computation"
+msgstr  ""
+
+#, php-format
+msgid   "The right hand side has the form %s, where %s."
+msgstr  ""
+
+#, php-format
+msgid   "The right hand side is polynomial %s, the degree of this polynomial "
+        "is %s."
+msgstr  ""
+
+#, php-format
+msgid   "The right hand side is product of polynomial %s and exponential "
+        "function %s, the degree of the polynomial is %s."
+msgstr  ""
+
+msgid   "The second derivative"
+msgstr  ""
+
+msgid   "The second derivatives"
+msgstr  ""
+
+msgid   "The second derivatives at stationary points"
+msgstr  ""
+
+#, perl-format
+msgid   "The solution is %s."
+msgstr  ""
+
+#, php-format
+msgid   "The solution is at the line starting with %o2"
+msgstr  ""
+
+msgid   "The solution of this linear system is"
+msgstr  ""
+
+msgid   "The x axis goes through the set from the formulation of the problem. "
+        "The problem is not well formulated."
+msgstr  ""
+
+msgid   "There is no asymptote at $\\pm\\infty$."
+msgstr  ""
+
+msgid   "There should be no derivative  y' and no equality sign  = in your "
+        "input. Both are written on the left from the input field (you have "
+        "to enter the right hand side of the equation only)."
+msgstr  ""
+
+msgid   "There should be no higher derivative than first derivative."
+msgstr  ""
+
+#, perl-format
+msgid   "This equation can be written as %s."
+msgstr  ""
+
+msgid   "This error occurs also if there are too many requests in a short "
+        "time, for example if somebody uses this server for teaching in "
+        "computer lab."
+msgstr  ""
+
+msgid   "This error occurs if somebody (you or another user) clicks the "
+        "submit button many times in a sort time. Don't do it, please. Click "
+        "the Submit button only once"
+msgstr  ""
+
+msgid   "This error should be fixed. You may report this error to the authors."
+msgstr  "Este error debe ser arreglado. Puede reportar este error a los "
+        "autores."
+
+msgid   "This is not supported in our integral assistant."
+msgstr  ""
+
+msgid   "This is pretty simple on Linux and on both Linux and Windows you can "
+        "use precompiled virtual machine (link below the main title of each "
+        "page)."
+msgstr  ""
+
+msgid   "This message appears if somebody else is working with the same "
+        "calculator - try again after 1 min."
+msgstr  ""
+
+msgid   "To be independent on our server install MAW offline for yourselves "
+        "on your local computer."
+msgstr  ""
+
+msgid   "Too many requests"
+msgstr  "Demasiadas peticiones"
+
+msgid   "Transformation to Riemann integral"
+msgstr  ""
+
+#, php-format
+msgid   "Transforming %s into %s."
+msgstr  ""
+
+msgid   "Trapeziodal rule for definite integral"
+msgstr  "Regla del trapecio para la integral definida"
+
+msgid   "Try something another."
+msgstr  ""
+
+#, php-format
+msgid   "Turning %s into %s."
+msgstr  ""
+
+#, php-format
+msgid   "Two independent solutions are %s and %s."
+msgstr  "Dos soluciones independiente son %s y %s"
+
+msgid   "Under construction"
+msgstr  "En construcción"
+
+msgid   "Unmatched parenthesis has been found. Correct the problem please."
+msgstr  ""
+
+#, php-format
+msgid   "Unsupported function %s."
+msgstr  ""
+
+msgid   "Upper limit"
+msgstr  "Límite superior"
+
+msgid   "Use 1/2 to insert one half. Not ½."
+msgstr  ""
+
+msgid   "Use ^2 to insert second power. Not ²."
+msgstr  ""
+
+msgid   "Use dot only for decimal numbers, if necessary. Do not use dot for "
+        "multiplication. The operator for multiplication is star, write for "
+        "example 2*x for \"two eks\". If you wish to enter decimal number, "
+        "this decimal number cannot be a part of mathematical formula."
+msgstr  ""
+
+msgid   "Use numbers only. Use commas and semicolons to separate point "
+        "coordinates and points in the data file."
+msgstr  ""
+
+msgid   "Use only integers or decimal numbers for coefficients on the left "
+        "hand side."
+msgstr  ""
+
+msgid   "Use only natural logarithm."
+msgstr  "Usar solo logaritmo natural"
+
+msgid   "Using $ x$ coordiantes, we write and simplify the small Lagrange "
+        "polynomials."
+msgstr  ""
+
+msgid   "Variable for inside integration and limits for this variable"
+msgstr  ""
+
+msgid   "Variable for outside integration and limits for this variable"
+msgstr  ""
+
+msgid   "Variables aa or bb are not allowed."
+msgstr  ""
+
+#, perl-format
+msgid   "Variant %s"
+msgstr  ""
+
+msgid   "Variation of constant:"
+msgstr  ""
+
+msgid   "Variation of constant: {\\color{blue}(the sum of blue expressions is "
+        "zero)}"
+msgstr  ""
+
+msgid   "Vertical shift"
+msgstr  "Desplazamiento vertical"
+
+msgid   "Wait a bit, return to the page with calculator form, fill again if "
+        "necessary and resend the form. Then you will be allowed to build "
+        "animation again. But click only once and be patient (about 20 sec)!"
+msgstr  ""
+
+msgid   "Warning: your input is not checked against the substitution used "
+        "during evaluation of the integral. If you use incorrect "
+        "substitution, your result will be incorrect."
+msgstr  ""
+
+msgid   "We attempted to parse your input automatically"
+msgstr  ""
+
+#, perl-format
+msgid   "We can \\textbf{neither proove nor disprove} existence of extrem for "
+        "the function %s and stationary point %s from second derivatives. "
+        "(Hessian is zero.)"
+msgstr  ""
+
+#, php-format
+msgid   "We draw the function %s."
+msgstr  "Dibujamos la función %s"
+
+msgid   "We find area between curves #1 and #2 on the interval from #3 to #4."
+msgstr  "Encontramoes el área entre las curva #1 y #2 en el intervalo que va "
+        "de #3 a #4."
+
+msgid   "We find area under the curve #1 on the interval from #2 to #3."
+msgstr  "Encontramos el área bajo la curva #1 en el intervalo que va de #2 a "
+        "#3."
+
+msgid   "We find the general solution first and then we use the initial "
+        "conditions to find particular solution."
+msgstr  ""
+
+msgid   "We find undetermined coefficients"
+msgstr  ""
+
+msgid   "We find volume of solid of revolution formed by revolving area "
+        "between curves #1 and #2 on the interval from #3 to #4 around $ x$ "
+        "axis.."
+msgstr  ""
+
+msgid   "We find volume of solid of revolution formed by revolving area under "
+        "the curve #1 on the interval from #2 to #3 around $ x$ axis."
+msgstr  ""
+
+msgid   "We get the solution in its explicit form only for the linear "
+        "equations. For the equations with separated variables we get only "
+        "the implicit form."
+msgstr  ""
+
+#, perl-format
+msgid   "We have %s"
+msgstr  ""
+
+#, php-format
+msgid   "We have %s points, the degree of the polynomial is not greater than "
+        "%s."
+msgstr  ""
+
+#, perl-format
+msgid   "We have %s."
+msgstr  ""
+
+msgid   "We have to solve the linear system"
+msgstr  "Tenemos que solucionar el sistema lineal"
+
+msgid   "We integrate"
+msgstr  "Integramos"
+
+#, php-format
+msgid   "We integrate the function %s on the set given by %s and %s."
+msgstr  ""
+
+msgid   "We investigate the function"
+msgstr  ""
+
+msgid   "We look for stationary points of the autonomous system."
+msgstr  "Buscamos puntos estacionarios para los sistemas autónomos"
+
+#, php-format
+msgid   "We look for stationary points of the function %s."
+msgstr  ""
+
+msgid   "We look for the particular solution of the nonhomogeneous equation."
+msgstr  ""
+
+msgid   "We put corresponding\n"
+        "terms on left and right equal (from smallest power)"
+msgstr  ""
+
+msgid   "We remove absolute values"
+msgstr  "Removemos los valores absolutos"
+
+msgid   "We remove constant multiple from the integral"
+msgstr  ""
+
+#, php-format
+msgid   "We solve %s on the interval %s using bisection of interval."
+msgstr  "Resolvemos %s en el intervalo %s usando intervalo de bisección."
+
+#, php-format
+msgid   "We solve %s on the interval %s using regula falsi."
+msgstr  "Resolvemos %s en el intervalo %s usando regla falsa."
+
+msgid   "We solve initial value problem"
+msgstr  "Solucionamos el problema de valor inicial"
+
+msgid   "We solve the associated homogeneous equation first"
+msgstr  ""
+
+#, php-format
+msgid   "We solve the equation %s using Newton--Raphson method with initial "
+        "guess %s."
+msgstr  ""
+
+#, php-format
+msgid   "We solve the equation %s using method of iterations on the interval "
+        "%s with initial guess %s."
+msgstr  "Resolvemos %s usando el método de interaciones en el intervalo %s "
+        "con punto inicial %s."
+
+msgid   "We solve the homogeneous differential equation"
+msgstr  "Solucionamos la ecuación diferencial homogénea "
+
+msgid   "We solve the nonhomogeneous differential equation"
+msgstr  "Solucionamos la ecuación diferencial no homogénea "
+
+msgid   "We solve the system in the first quadrant (for nonnegative variables)"
+msgstr  ""
+
+msgid   "We solve this system with respect to unknown coefficients and get"
+msgstr  ""
+
+#, php-format
+msgid   "We start with the function %s."
+msgstr  ""
+
+msgid   "We try to simplify the answer. (This is rather tricky step, "
+        "sometimes it simplifies the answer and sometimes not.)"
+msgstr  ""
+
+#, php-format
+msgid   "We try to solve the equation %s with respect to the derivative."
+msgstr  ""
+
+msgid   "We use small Lagrange polynomials in the interpolation formula and "
+        "sum up like powers of $ x$ (the final result is in the frame)."
+msgstr  ""
+
+#, perl-format
+msgid   "We use substitution %s."
+msgstr  ""
+
+msgid   "We use the variation of constants to find the particular solution in "
+        "the form"
+msgstr  "Usamos la variación de constantes para encontrar la solución "
+        "particular en la forma"
+
+#, php-format
+msgid   "We will look for the intercepts of  y=%s and y=%s, symbolically and "
+        "numerically."
+msgstr  "Buscaremos las intersecciones de y=%s y y=%s simbólica y "
+        "numéricamente "
+
+msgid   "We write the form of the Lagrange polynomial from the $ y$ "
+        "coordinates."
+msgstr  ""
+
+msgid   "You are not allowed to enter more than six points."
+msgstr  "No tiene permitido ingresar más de seis puntos"
+
+#, php-format
+msgid   "You can check is somebody else is working with the tool by checking "
+        "%s history%s."
+msgstr  ""
+
+msgid   "You can enter decimal number or mathematical formula which contains"
+msgstr  "Puede ingresar un número decimal o una fórmula matemática que "
+        "contenga"
+
+msgid   "You can use WYSIWYG editor <a href=\"http://user.mendelu.cz/tihlarik/"
+        "dragmath/DragMath.html\" target=\"_blank\">Dragmath</a> to edit "
+        "mathematical expressions and then move the expression into field in "
+        "the form by using clipboard in your operating system. This editor is "
+        "accessible at the end of some input fields, where we suppose "
+        "nontrivial input. In these cases it is not necessary to use the "
+        "clipboard and the transfer into field in our form is automatical."
+msgstr  ""
+
+#, php-format
+msgid   "You can use method of undetermined coefficients: the primitive "
+        "function has the form %s, where %s is %s and k is real number. The "
+        "application of this method in steps is not covered by this "
+        "application and from this reason you should leave the rest to Maxima "
+        "and evaluate the integral by computer. It is also possible in some "
+        "integrals of this type to remove the square root by a convenient "
+        "substitution."
+msgstr  ""
+
+#, php-format
+msgid   "You cannot write group of two or more characters like %s."
+msgstr  ""
+
+msgid   "You choosed to integrate some terms but no term has been marked for "
+        "integration"
+msgstr  ""
+
+msgid   "You did not choose any action"
+msgstr  "No escogió ninguna acción"
+
+msgid   "You have to solve the equation with respect to the derivative first "
+        "and write the right hand side only. You may try also to write the "
+        "full equation to the second field and switch the radiobutton on the "
+        "left."
+msgstr  ""
+
+#, php-format
+msgid   "You have to specify %s or %s for integration by parts."
+msgstr  ""
+
+#, php-format
+msgid   "You have to use new name for the variable and you have to enter "
+        "which substitution you wish to use. The name of the variable "
+        "consists of one letter only. This name cannot be %s."
+msgstr  ""
+
+msgid   "You have to use the PDF file in Adobe Reader or Adobe Acrobat (do "
+        "not use xpdf, kpdf and other PDF viewers)."
+msgstr  ""
+
+#, perl-format
+msgid   "You may have a typing error in your mathematical expression or use "
+        "too general right hand side of the equation.  This interface works "
+        "only if the right hand side is in the form %s where P and Q are "
+        "polynomials of order at most 4."
+msgstr  ""
+
+msgid   "You may try to interchange the order of integration and submit "
+        "again. (Remember also to adjust limits for integration properly.)"
+msgstr  ""
+
+#, php-format
+msgid   "You may try to pass your expression to %sWolframAlpha%s."
+msgstr  "Puede intentar pasar su expresión a %sWolframAlpha%s."
+
+msgid   "You may want to continue and simplify your result ..."
+msgstr  ""
+
+#, php-format
+msgid   "You probably reached the time limit, try simpler problem or %s."
+msgstr  ""
+
+msgid   "You probably use the <i>y</i> variable, which is not allowed here."
+msgstr  ""
+
+msgid   "You probably want to integrate a function involving the absolute "
+        "value."
+msgstr  ""
+
+msgid   "You should turn JavaScript on to see popup informations."
+msgstr  "Debe tener habilitado JavaScript para poder ver los mensajes "
+        "emergentes"
+
+#, php-format
+msgid   "You used %s opening and  %s closing parentheses."
+msgstr  ""
+
+msgid   "You used a name of a function followed by a power.<br>Do not use "
+        "this notation. Write for example (sin(x))^2 instead of sin^2(x)."
+msgstr  ""
+
+msgid   "You used backslash or quote or double-quote or another insecure "
+        "character in your input, which is not allowed. Do you try to enter "
+        "the functions in TeX notation? Use notation of the Maxima program, "
+        "please."
+msgstr  ""
+
+msgid   "Your bad input was"
+msgstr  ""
+
+#, php-format
+msgid   "Your incorrect input is: %s and %s."
+msgstr  ""
+
+#, php-format
+msgid   "Your input is (after deleting spaces and conversion ^ into **) %s "
+        "and the disallowed substring catched by the input filter is %s."
+msgstr  ""
+
+#, php-format
+msgid   "Your input is being processed. Wait few seconds to see the output. "
+        "Click %shere%s to reopen the form which has been submited."
+msgstr  ""
+
+msgid   "Zeros"
+msgstr  "Ceros"
+
+msgid   "Zeros of 1st derivative"
+msgstr  ""
+
+msgid   "Zeros of 2nd derivative"
+msgstr  ""
+
+msgid   "Zeros of characteristic equation"
+msgstr  "Ceros de la ecuación característica"
+
+msgid   "Zeros of function"
+msgstr  ""
+
+msgid   "\\def\\nonneg{We solve the system in the first quadrant (for "
+        "nonnegative variables)}"
+msgstr  ""
+
+msgid   "absolute value causes problems in integration, but in most cases can "
+        "be eliminated by considering suitable subinterval for integration."
+msgstr  ""
+
+msgid   "addition, subtraction, multiplication and division, i.e. chars + - "
+        "* /"
+msgstr  "suma, resta, multiplicación y división, es decir, los símbolos +,-,"
+        "*,/"
+
+msgid   "and add like powers of  $ x $ "
+msgstr  ""
+
+msgid   "and back substitution is"
+msgstr  ""
+
+msgid   "and collect the coefficients at the powers of $ x $ "
+msgstr  ""
+
+#, php-format
+msgid   "and divide by the common exponential factor %s and add like powers "
+        "of $x$"
+msgstr  ""
+
+msgid   "and simplify"
+msgstr  "y simplifica"
+
+msgid   "and suppose that this variable is positive"
+msgstr  "y suponemos que esta variable es positiva"
+
+msgid   "asinh(), acosh(), atanh(), .... -> log()"
+msgstr  ""
+
+msgid   "bold"
+msgstr  "negrilla"
+
+msgid   "by parts (specify  <i>u</i> or <i>v'</i>, if you specify both, "
+        "Maxima will use <i>v'</i> for the next computation)"
+msgstr  ""
+
+msgid   "clever expansion into two fractions"
+msgstr  ""
+
+msgid   "click the equation to get step by step solution"
+msgstr  ""
+
+msgid   "click the point to get Jacobi matrix and clasify the stationary point"
+msgstr  ""
+
+msgid   "complete square in denominator"
+msgstr  ""
+
+msgid   "complete square under square root"
+msgstr  ""
+
+msgid   "constant"
+msgstr  "constante"
+
+msgid   "constants %e and %pi"
+msgstr  "constantes %e y %pi"
+
+msgid   "contract products of roots"
+msgstr  ""
+
+msgid   "convert into an equation for the unknown integral and solve with "
+        "pure algebra"
+msgstr  ""
+
+msgid   "convert into equation for the integral"
+msgstr  ""
+
+msgid   "cubic polynomial"
+msgstr  "polinomio cúbico"
+
+msgid   "custom"
+msgstr  ""
+
+msgid   "divide polynomials or partial fractions"
+msgstr  ""
+
+msgid   "division"
+msgstr  ""
+
+msgid   "expand"
+msgstr  ""
+
+msgid   "expand to partial fractions"
+msgstr  ""
+
+msgid   "factor"
+msgstr  ""
+
+msgid   "factorize"
+msgstr  "factorizar"
+
+msgid   "finished, show computations only"
+msgstr  ""
+
+msgid   "formula"
+msgstr  "fórmula"
+
+msgid   "formula too long"
+msgstr  ""
+
+msgid   "function"
+msgstr  "función"
+
+msgid   "functions"
+msgstr  "funciones"
+
+msgid   "here"
+msgstr  ""
+
+msgid   "http://sourceforge.net/projects/mathassistant/forums/forum/796831"
+msgstr  ""
+
+msgid   "in red"
+msgstr  "en rojo"
+
+msgid   "inside integration"
+msgstr  ""
+
+msgid   "integers (no decimals)"
+msgstr  "enteros (no decimales)"
+
+msgid   "integral of polynomial or constant"
+msgstr  ""
+
+msgid   "integrate terms in sum (mark terms to be integrated, you have to "
+        "mark at least one term)"
+msgstr  ""
+
+msgid   "integration"
+msgstr  "integración"
+
+msgid   "integration by parts"
+msgstr  "integración por partes"
+
+msgid   "linear polynomial"
+msgstr  "polinomio lineal"
+
+msgid   "link"
+msgstr  "enlace"
+
+msgid   "logarc"
+msgstr  ""
+
+msgid   "logcontract"
+msgstr  ""
+
+msgid   "lower bound for integration"
+msgstr  ""
+
+msgid   "lower function"
+msgstr  "función inferior"
+
+msgid   "lower limit for"
+msgstr  ""
+
+msgid   "lower limit for inside integral"
+msgstr  ""
+
+msgid   "lower limit for outside integral"
+msgstr  ""
+
+msgid   "lower limit of integration"
+msgstr  "límite inferior de integración"
+
+msgid   "map + fullratsimp"
+msgstr  ""
+
+msgid   "map + xthru"
+msgstr  ""
+
+msgid   "maximum"
+msgstr  "máximo"
+
+msgid   "minimum"
+msgstr  "mínimo"
+
+msgid   "move a number from the integral"
+msgstr  ""
+
+msgid   "multiply both numerator and denominator"
+msgstr  ""
+
+msgid   "no conclusion"
+msgstr  "sin conclusión"
+
+msgid   "no variables"
+msgstr  "sin variables"
+
+msgid   "not found"
+msgstr  ""
+
+msgid   "notation"
+msgstr  "notación"
+
+msgid   "number of subintervals"
+msgstr  "números de subintervalos"
+
+msgid   "numerical approximation"
+msgstr  ""
+
+msgid   "our hint"
+msgstr  ""
+
+#, php-format
+msgid   "parameters %s"
+msgstr  ""
+
+msgid   "partial fractions"
+msgstr  ""
+
+msgid   "partial fractions or"
+msgstr  "fracciones parciales o"
+
+msgid   "point of rotation or focus"
+msgstr  "punto de rotación o foco"
+
+msgid   "power ^ or **"
+msgstr  ""
+
+msgid   "put these point into the form"
+msgstr  ""
+
+msgid   "quadratic polynomial"
+msgstr  "polinomio cuadrático"
+
+msgid   "radcan"
+msgstr  ""
+
+msgid   "rational function, but expansion into partial fractions failed (it "
+        "could be necessary to simplify first (radcan, xthru, ...), or the "
+        "function could be a <a href=\"http://en.wikipedia.org/wiki/"
+        "Partial_fractions_in_integration#A_repeated_irreducible_2nd-"
+        "degree_polynomial_in_the_denominator\">partial fraction with "
+        "repeated irreducible 2nd-degree polynomial in the denominator</a>)"
+msgstr  ""
+
+msgid   "ratsimp"
+msgstr  ""
+
+msgid   "red"
+msgstr  "rojo"
+
+msgid   "remove absolute values"
+msgstr  "remover valores absolutos"
+
+msgid   "replace <b>even powers of cosine</b> function by sine function"
+msgstr  ""
+
+msgid   "replace <b>even powers of sine</b> function by cosine function"
+msgstr  ""
+
+msgid   "replace function <b>sec</b> and <b>csc</b> by equivalent functions "
+        "in terms <b>sin</b> and <b>cos</b>"
+msgstr  ""
+
+msgid   "rootscontract"
+msgstr  ""
+
+msgid   "round parentheses"
+msgstr  "paréntesis redondos"
+
+msgid   "saddle point"
+msgstr  ""
+
+msgid   "should be checked for substitutions of the form"
+msgstr  ""
+
+msgid   "simplification"
+msgstr  "simplificación"
+
+msgid   "simplify"
+msgstr  "simplificar"
+
+msgid   "simplify fraction"
+msgstr  "simplificar fracción"
+
+msgid   "simplify fraction, each part separately"
+msgstr  ""
+
+msgid   "simplify the fractions using xthru or fullratsimp"
+msgstr  ""
+
+msgid   "simplify trigonometric functions"
+msgstr  "simplificar funciones trigonométricas"
+
+msgid   "skipping the picture ... (as explained hereinabove)"
+msgstr  ""
+
+#, php-format
+msgid   "split in a clever way into two fractions of the form %s and use "
+        "formulas for integration (ignore also the hint in the next step and "
+        "finish the integration by Maxima)"
+msgstr  ""
+
+msgid   "stable focus"
+msgstr  "foco estable"
+
+msgid   "stable node"
+msgstr  "nodo estable"
+
+msgid   "substitute limits"
+msgstr  ""
+
+msgid   "substituting limits"
+msgstr  ""
+
+msgid   "substitution"
+msgstr  ""
+
+msgid   "substitution (the function is odd with respect to both sin and cos)"
+msgstr  ""
+
+msgid   "substitution (the function is odd with respect to cos)"
+msgstr  ""
+
+msgid   "substitution (the function is odd with respect to sin)"
+msgstr  ""
+
+msgid   "substitution (use trigsimp function in the next step after "
+        "goniometric substitution)"
+msgstr  ""
+
+msgid   "the function can be divided into sum of formulas"
+msgstr  ""
+
+msgid   "the function can be expanded into sum of formulas"
+msgstr  ""
+
+msgid   "the intersection is red region"
+msgstr  "la intersección es la región roja"
+
+msgid   "the numerator is derivative of denominator (or its constant multiple)"
+msgstr  ""
+
+msgid   "trigexpand"
+msgstr  ""
+
+msgid   "trigonometric functions have different inside parts, you can try to "
+        "fix it by <b>trigexpand</b> or <b>trigreduce</b> command"
+msgstr  ""
+
+msgid   "trigreduce"
+msgstr  ""
+
+msgid   "trigsimp"
+msgstr  ""
+
+msgid   "unable to find the answer"
+msgstr  "incapaz de encontrar la respuesta"
+
+msgid   "unstable focus"
+msgstr  "foco inestable"
+
+msgid   "unstable node"
+msgstr  ""
+
+msgid   "upper bound for integration"
+msgstr  ""
+
+msgid   "upper function"
+msgstr  "función superior"
+
+msgid   "upper limit for"
+msgstr  ""
+
+msgid   "upper limit for inside integral"
+msgstr  ""
+
+msgid   "upper limit for outside integral"
+msgstr  ""
+
+msgid   "upper limit of integration"
+msgstr  "límite superior de integración"
+
+msgid   "use formula or ask the computer to finish the integration"
+msgstr  ""
+
+msgid   "user expression"
+msgstr  ""
+
+#, php-format
+msgid   "variable %s"
+msgstr  "variable %s"
+
+#, php-format
+msgid   "variables %s"
+msgstr  "variables %s"
+
+msgid   "we have to find derivatives and put into the equation"
+msgstr  ""
+
+msgid   "we substitute into (1)"
+msgstr  "sustituimos en (1)"
+
+msgid   "where the new variable is"
+msgstr  ""
+
+msgid   "with linear inside part (you can use also substitution)"
+msgstr  ""
+
+msgid   "with new variable"
+msgstr  "con nueva variable"
+
+#, php-format
+msgid   "with unknowns %s and %s."
+msgstr  "con incógnitas %s y %s "
+
+msgid   "xthru"
+msgstr  ""
+
+msgid   "yields"
+msgstr  ""
+
+msgid   "you can convert the function to sine and cosine functions with the "
+        "<b>trigsimp</b> command"
+msgstr  ""
+
+msgid   "you can remove a constant multiple from the integral"
+msgstr  ""

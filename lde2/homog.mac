@@ -1,0 +1,78 @@
+/*
+This file solves linear ODE and prints the steps necessary to find
+particular solution from general solution and initial conditions.
+
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2010 Robert Marik, Miroslava Tihlarikova
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+eq1:ev(gensol,x=x0)=y0;
+dergensol:diff(gensol,x);
+eq2:ev(dergensol,x=x0,y=y0)=y10;
+
+simplify_eqs(%eq):=
+(
+[templ, tempr],
+%eq:expand(%eq),
+tempr:rhs(%eq),
+templ:0,
+if atom(lhs(%eq)) or op(lhs(%eq))#"+" then (print("no change"),%eq)
+else
+(
+   map(lambda([iii],if freeof(C[1],iii) and freeof(C[2],iii) 
+      then tempr:tempr-iii else  templ:templ+iii),args(lhs(%eq))),
+   templ=tempr
+)
+);
+
+print_tex(str,stuff):=print("###",str," ",tex(stuff,false),"###");
+
+print("Rovnice");
+print_tex("eq",AAAA+p*AA+q*y=f(x));
+
+print("Pocatecni podminky");
+print_tex("ic0",x0);
+print_tex("ic1",y0);
+print_tex("ic2",y10);
+
+print("Obecne reseni");
+print_tex("gensol",gensol);
+
+print("Derivace obecneho reseni");
+print_tex("dergensol",dergensol);
+
+print("Rovnice pro C1 a C2");
+print_tex("eq1",eq1);
+print_tex("eq2",eq2);
+
+print("Upravene rovnice pro C1 a C2");
+eq11:simplify_eqs(eq1);
+print_tex("eq11",eq11);
+eq21:simplify_eqs(eq2);
+print_tex("eq21",eq21);
+
+print("Reseni soustavy");
+sol:solve([eq1,eq2],[C[1],C[2]]);
+print_tex("sol",sol[1]);
+
+print("Partikularni reseni");
+partsol:ev(gensol,sol[1]);
+print_tex("partsol",partsol);

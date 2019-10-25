@@ -1,0 +1,32 @@
+xgettext    --keyword=__ --from-code=utf-8 banach/banach.php
+xgettext -j --keyword=__ --from-code=utf-8 autsyst/autsyst.php
+xgettext -j --keyword=__ --from-code=utf-8 derivace/derivace.php
+xgettext -j --keyword=__ --from-code=utf-8 geom/geom.php
+xgettext -j --keyword=__ --from-code=utf-8 graf/graf.php
+xgettext -j --keyword=__ --from-code=utf-8 mnc/mnc.php
+xgettext -j --keyword=__ --from-code=utf-8 integral2/integral2.php
+xgettext -j --keyword=__ --from-code=utf-8 integral/integral.php
+xgettext -j --keyword=__ --from-code=utf-8 lagrange/lagrange.php
+xgettext -j --keyword=__ --from-code=utf-8 ode/ode.php
+xgettext -j --keyword=__ --from-code=utf-8 lagrange/lagrange.php
+xgettext -j --keyword=__ --from-code=utf-8 minmax3d/minmax3d.php
+xgettext -j --keyword=__ --from-code=utf-8 lde2/ldr2.php
+xgettext -j --keyword=__ --from-code=utf-8 common/maw.php
+xgettext -j --keyword=__ --from-code=utf-8 domf/domf.php
+xgettext -j --keyword=__ --from-code=utf-8 ineq2d/ineq2d.php
+xgettext -j --keyword=__ --from-code=utf-8 trap/trapezoidal.php
+xgettext -j --keyword=__ --from-code=utf-8 taylor/taylor.php
+xgettext -j --keyword=__ --from-code=utf-8 prubeh/zpracuj.php
+xgettext -j --keyword=__ --from-code=utf-8 common/formconv.php
+xgettext -j --keyword=__ --from-code=utf-8 lineintegral/lineintegral.php
+xgettext -j --keyword=__ --from-code=utf-8 gnuplot/curve.php
+xgettext -j --keyword=__ --from-code=utf-8 definite/definite.php
+xgettext -j --from-code=utf-8 ode/ode.pl
+xgettext -j --from-code=utf-8 geom/geom.pl
+xgettext -j --from-code=utf-8 lde2/ldr2.pl
+xgettext -j --from-code=utf-8 autsyst/autsyst.pl
+xgettext -j --from-code=utf-8 minmax3d/minmax3d.pl
+xgettext -j --from-code=utf-8 prubeh/lostsol.pl
+xgettext -j --from-code=utf-8 lagrange/lagrange.pl
+xgettext -j --from-code=utf-8 mnc/mnc.pl
+xgettext -j --from-code=utf-8 taylor/taylor.pl

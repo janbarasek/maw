@@ -1,0 +1,1 @@
+sed 's/^\?//' soubor.tex| sed 's/\\(%i[0-9]*\\)//'|sed 's/"//' | sed 's/konec;/konec/'| sed 's/\\\\/@backslash@/g'| sed 's/\\//g'| sed 's/@backslash@/\\/g'

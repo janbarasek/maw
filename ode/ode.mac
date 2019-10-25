@@ -1,0 +1,21 @@
+solveexplicit:true;
+display2d:false;
+
+print("texbeg",tex(equation,false),"texend");
+
+output:(solve(equation,'diff(y,x)));
+
+n:length(output);
+
+if not listp(output) or n # length(output) or output=[]
+then print("No solution")
+else
+(
+for i:1 step 1 thru n do print ("solbegin",rhs(output[i]),"soltex",tex(rhs(output[i]),false),"solend")
+);
+
+sol:ode2(equation,y,x);
+print("method is",method);
+
+if sol#false then print ("ode2 solved the equation") else print ("ode2 failed to solve the equation");
+

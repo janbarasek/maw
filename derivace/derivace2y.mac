@@ -1,0 +1,172 @@
+freeofx (e) := freeof (y, e)$
+notfreeofx (e) := not freeof (y, e)$
+
+file_output_append : true$
+
+freeofx_not1 (e) := e # 1 and freeofx (e)$
+_not1 (e) := e # 1$
+
+matchdeclare(g,true,n,freeofx_not1,c,freeofx,[na,nb,naa,nbb],notfreeofx,k,freeofx_not1,[not1a,not1b],_not1)$
+
+
+formula_to_tex(expr,str):= print(sconcat(str,ssubst("","$$",tex(rem_der_x(expr),false)),"\\konec"))$
+
+formula_to_tex(expr,str):= print(str,rem_der_x(expr))$
+
+formula_to_tex(expr,str):= stringout(soubor,sconcat(str," ",ssubst("","$$",tex(rem_der_x(expr),false)),"\\konec"))$
+
+
+
+rem_der_x(expr):=if rem_der_x_flag=1 then 
+		    eval_string(ssubst("1",sconcat("derivace(y)"),string(expr))) 
+		    else 
+		    expr$
+
+rem_der_x_flag=0$
+
+
+
+
+/* formulas with chain rule */
+defrule(c1, derivace(c), (formula_to_tex(derivace(c)=0,"\\constantrule"), 0))$
+defrule(c2, derivace(k*na), (formula_to_tex(derivace(k*na)=k*derivace(na),"\\constantmultrule"), k*derivace(na)))$
+defrule(x1, derivace(y), (formula_to_tex(derivaceb(y)=1,"\\powerrulex"), 1))$
+defrule(r1, derivace(sin(g)), (formula_to_tex(derivace(sin((g)))=cos(g)*derivace(g),"\\sinrule"),cos(g)*derivace(g)))$
+defrule(r2, derivace(cos(g)), (formula_to_tex(derivace(cos((g)))=-sin(g)*derivace(g),"\\cosrule"),-sin(g)*derivace(g)))$
+defrule(r3, derivace(tan(g)), (formula_to_tex(derivace(tan(g))=1/(cos(g))^2*derivace(g),"\\tanrule"), 1/(cos(g))^2*derivace(g)))$
+defrule(r4, derivace(cot(g)), (formula_to_tex(derivace(cot(g))=-1/(sin(g))^2*derivace(g),"\\cotrule"),  -1/(sin(g))^2*derivace(g)))$
+defrule(r5, derivace(n), (formula_to_tex (derivace(n)=0,"\\construle"),0))$
+defrule(r6, derivace(g^n), (formula_to_tex(derivace(mocnina(g,n))=n*g^(n-1)*derivace(g),"\\powerrule"), n*(g)^(n-1)*derivace(g)))$
+defrule(r7, derivace(exp(g)), (formula_to_tex(derivace(exp(g))=exp(g)*derivace(g),"\\exprule"), exp(g)*derivace(g)))$
+defrule(r8, derivace(n^g), (formula_to_tex(derivace(n^g)=log(n)*n^g*derivace(g),"\\genexprule"), log(n)*n^(g)*derivace(g)))$
+defrule(r9, derivace(log(g)), (formula_to_tex(derivace(log(g))=(1/(g))*derivace(g),"\\logrule"), 1/(g)*derivace(g)))$
+defrule(r10, derivace(log10(g)), (formula_to_tex(derivace(log10(g))=1/(log(10)*g)*derivace(g),"\\declogrule"), 1/(g*log(10))*derivace(g)))$
+defrule(r11, derivace(asin(g)), (formula_to_tex(derivace(asin(g))=1/sqrt(1-g^2)*derivace(g),"\\arcsinrule"), 1/sqrt(1-g^2)*derivace(g)))$
+defrule(r12, derivace(acos(g)), (formula_to_tex(derivace(acos(g))=-1/sqrt(1-g^2)*derivace(g),"\\arccosrule"), -1/sqrt(1-g^2)*derivace(g)))$
+defrule(r13, derivace(atan(g)), (formula_to_tex(derivace(atan(g))=1/(1+g^2)*derivace(g),"\\arctanrule"), 1/(1+g^2)*derivace(g)))$
+defrule(r14, derivace(acot(g)), (formula_to_tex(derivace(acos(g))=-1/(1+g^2)*derivace(g),"\\arccotrule"), -1/(1+g^2)*derivace(g)))$
+defrule(r15, derivace(na^nb), (formula_to_tex(derivace(na^nb)=derivace(exp(nb*log(na))),"\\expvarexprule"),derivace(exp(nb*log(na)))))$
+defrule(r16, derivace(abs(g)), (formula_to_tex(derivace(abs(g))=(abs(g)/g)*derivace(g),"\\absrule"), (abs(g)/g)*derivace(g)))$
+
+/* replaces r15,r6,r8 */
+defrule(r17, derivace(not1a^not1b), 
+if freeofx(not1a) then  
+(if freeofx(not1b) then (formula_to_tex(derivace(not1a^not1b)=0,"\\constantrule"), 0)
+else
+(formula_to_tex(derivace(not1a^not1b)=log(not1a)*not1a^not1b*derivace(not1b),"\\genexprule"), log(not1a)*not1a^(not1b)*derivace(not1b)))
+else
+(if freeofx(not1b) then
+(formula_to_tex(derivace(mocnina(not1a,not1b))=not1b*not1a^(not1b-1)*derivace(not1a),"\\powerrule"), not1b*(not1a)^(not1b-1)*derivace(not1a))
+else
+(formula_to_tex(derivace(not1a^not1b)=derivace(exp(not1b*log(not1a))),"\\expvarexprule"),derivace(exp(not1b*log(not1a))))))$
+
+defrule(r18, derivace(sinh(g)), (formula_to_tex(derivace(sinh((g)))=cosh(g)*derivace(g),"\\sinhrule"),cosh(g)*derivace(g)))$
+defrule(r19, derivace(cosh(g)), (formula_to_tex(derivace(cosh((g)))=sinh(g)*derivace(g),"\\coshrule"),sinh(g)*derivace(g)))$
+defrule(r20, derivace(tanh(g)), (formula_to_tex(derivace(tanh(g))=1/(cosh(g))^2*derivace(g),"\\tanhrule"), 1/(cosh(g))^2*derivace(g)))$
+defrule(r21, derivace(coth(g)), (formula_to_tex(derivace(coth(g))=-1/(sinh(g))^2*derivace(g),"\\cothrule"),  -1/(sinh(g))^2*derivace(g)))$
+defrule(r22, derivace(asinh(g)), (formula_to_tex(derivace(asinh(g))=1/sqrt(1+g^2)*derivace(g),"\\arcsinhrule"), 1/sqrt(1+g^2)*derivace(g)))$
+defrule(r23, derivace(acosh(g)), (formula_to_tex(derivace(acosh(g))=1/sqrt(g^2-1)*derivace(g),"\\arccoshrule"), 1/sqrt(g^2-1)*derivace(g)))$
+defrule(r24, derivace(atanh(g)), (formula_to_tex(derivace(atanh(g))=1/(1-g^2)*derivace(g),"\\arctanhrule"), 1/(1-g^2)*derivace(g)))$
+defrule(r25, derivace(acoth(g)), (formula_to_tex(derivace(acosh(g))=-1/(g^2-1)*derivace(g),"\\arccothrule"), -1/(g^2-1)*derivace(g)))$
+defrule(r26, derivace(sec(g)), (formula_to_tex(derivace(sec(g))=sin(g)/(cos(g))^2*derivace(g),"\\secrule"), sin(g)/(cos(g))^2*derivace(g)))$
+defrule(r27, derivace(csc(g)), (formula_to_tex(derivace(csc(g))=-cos(g)/(sin(g))^2*derivace(g),"\\secrule"), -cos(g)/(sin(g))^2*derivace(g)))$
+
+/* product and quotient rule */
+derivsoucinu(expr):= if (op(expr)="*") then (u:args(expr)[1], v:expr/u, formula_to_tex(derivace(u*v)=derivace(u)*v+u*derivace(v),"\\productrule"),derivace(u)*v+u*derivace(v)) else derivace(expr)$
+
+derivpodilu(expr):= if (op(expr)="//")  or (op(expr)="/") then
+ (
+  u:args(expr)[1],
+  v:u/expr,
+  if freeofx(u) then
+   (
+     formula_to_tex(derivace(u*recval(v))=(-1)*u*recvalsquare(v)*derivace(v),"\\powerrule"),
+     (-1)*u*v^(-2)*derivace(v)
+   )
+   else
+   (   
+     formula_to_tex(derivace(u/v)=(derivace(u)*v-u*derivace(v))/(v^2),"\\quotientrule"),
+     (derivace(u)*v-u*derivace(v))/(v^2)
+   )
+ )  
+else derivace(expr)$
+
+derivacep(expr):=numberp(ssearch("derivace",string(expr)))$
+
+finish_computation:0$
+
+diff_one_step(fce):=
+   if (derivacep(fce) and finish_computation=0) then 
+     (
+     block(initfce:string(fce), 
+     newfce:fce, 
+     for i:0 step 1 unless ((i>100) or 
+     (fullratsimp(fce-newfce)#0)) do 
+     (
+     maxapplydepth:i, 
+     rem_der_x_flag:1,
+     newfce:ev(apply2(newfce,c1,c2,x1,r5,r17,r1,r2,r3,r4,r7,r9,r10,r11,r12,r13,r14,r16,r18,r19,r20,r21,r22,r23,r24,r25,r26,r27)))),
+     newfce:rem_der_x(newfce),
+     rem_der_x_flag:0,
+     if is(radcan(fce)#radcan(newfce)) then 
+     	newfce
+     else 
+       (aa[1]:''trylinear(fce),
+       if fullratsimp(aa[1]-fce)#0 then aa[1] else
+         (bb[1]:''tryproduct(fce),
+         if fullratsimp(bb[1]-fce)#0 then bb[1] else 
+	 (cc[1]:''tryquotient(fce),
+	 if fullratsimp(cc[1]-fce)#0 then cc[1] else (finish_computation:1,fce)
+	 )
+	 )
+       )
+      )
+   else print("nothing more to differentiate ...") $
+
+
+/* function to differentiate products and quotients */
+tryproduct(expr):=
+   (
+   exprstr:string(expr),
+   newexprstr:ssubst("derivsoucinu","derivace",exprstr),
+   eval_string(newexprstr)
+   )$
+
+tryquotient(expr):=
+   (
+   exprstr:string(expr),
+   newexprstr:ssubst("derivpodilu","derivace",exprstr),
+   eval_string(newexprstr)
+   )$
+
+
+diff_in_steps(expr):=
+  (newfce:derivace(expr),
+  formula_to_tex(newfce,"\\krok {y}^\\prime="),
+  for counter:1 step 1 unless ((counter>300) or (not(derivacep(newfce))) or finish_computation=1) do
+  (
+    newfce:diff_one_step(newfce),
+    formula_to_tex(newfce,"\\krok {y}^\\prime="),
+    print(newfce)
+  )
+  )$
+  
+
+texput(recval,["\\left(","\\right)^{-1}"],matchfix)$
+texput(recvalsquare,["\\left(","\\right)^{-2}"],matchfix)$
+texput(derivace,["\\frac{\\partial }{\\partial y}\\left(","\\right)"],matchfix)$
+texput(derivaceb,["\\frac{\\partial }{\\partial y}\\left(","\\right)"],matchfix)$
+texput(mocnina,["\\left(","}","\\right)^{"],matchfix)$
+
+declare([a,b,c,d,x,z],constant)$
+
+diff_failed(expr):=
+(
+print("Error - differentiation in steps failed"),
+print(tex(expr,false)),
+error("Differentiation failed")
+)$
+
+finished():=print("Finished OK")$
+
+/* sed 's/"//' a.tex| sed 's/konec;/konec/'| sed 's/\\\\/@backslash@/g'| sed 's/\\//g'| sed 's/@backslash@/\\/g'>b.tex */

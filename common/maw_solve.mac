@@ -1,0 +1,60 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2007-2009 Robert Marik, Miroslava Tihlarikova
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+solveexplicit:true;
+/*    solve with errcatch to prevent errors in stuff like 
+solve(acot(x)=0,x)    */
+
+maw_solve(f,dummyx):=([tempsolv],
+tempsolv:errcatch(solve(f,dummyx)),
+if tempsolv=[] then [] else tempsolv[1]
+);
+
+
+/*    solve with errcatch to prevent errors in stuff like 
+solve(acot(x)=0,x) and returns only explicitly found real 
+solutions  which belong to the domain of the expression g 
+ (g could be a list of expressions as well) */
+
+maw_solve_in_domain(f,g,dummyx):=([tempsolv,tempsolv2],
+if not listp(g) then g:[g],
+g:append(g,[f]),
+tempsolv:maw_solve(f,dummyx),
+/* print ("Solution"),
+print (tempsolv), */
+tempsolv2:[],
+errcatch(for i:1 thru length(tempsolv) do (
+    tempnum:rhs(tempsolv[i]),
+    tempnumer:errcatch(ev(rectform(imagpart(tempnum)),numer)),
+    if (freeof(dummyx,tempnum)) and (dummyx=lhs(tempsolv[i])) and 
+      tempnumer=[0] 
+    then
+    (
+      tempval:errcatch(setify(map(lambda([gg],block(pomm:ev(rectform(imagpart(at (gg,dummyx=tempnum))),numer), if pomm=0 then return(pomm), pomm2:ev(rectform(imagpart(at (gg,dummyx=tempnum)))), if pomm2=0 then return(pomm2),pomm)),g))),
+      tempvalf:block(errcatch(pomm3:ev(rectform(imagpart(at (f,dummyx=tempnum))),numer)), if pomm3=0 then return (pomm3), errcatch(pomm4:ev(rectform(imagpart(at (f,dummyx=tempnum))))), if pomm4=0 then return(pomm4), pomm3), 
+      if tempval#[] and tempvalf=0 and tempval[1]={0}
+        then tempsolv2:append(tempsolv2,[dummyx=tempnum])
+    )
+  )),
+tempsolv2
+);

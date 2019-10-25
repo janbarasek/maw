@@ -1,0 +1,5 @@
+mawtexlist(a):=(
+resa:a,
+for i:1 thru length(resa) do print("item",tex(resa[i],false),"meti"),
+print("MAW summary:",length(resa),"items")
+);

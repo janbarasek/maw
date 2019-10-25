@@ -1,0 +1,10 @@
+#!/bin/bash
+
+bash ./maw_xgettext
+
+for i in `cat ./maw_languages.txt`
+do
+    echo "Updating po file for $i language"
+    msgmerge -U -N locale/maw_$i.po messages.po
+done
+

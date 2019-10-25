@@ -1,0 +1,52 @@
+/*
+Mathematical Assistant on Web - web interface for mathematical          
+computations including step by step solutions
+Copyright 2012 Robert Marik
+
+This file is part of Mathematical Assistant on Web.
+
+Mathematical Assistant on Web is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License as published by the Free Software
+Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Mathematical Assistant on Web is distributed in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Mathematical Assistant o Web.  If not, see 
+<http://www.gnu.org/licenses/>.
+*/
+
+ratprint:false;
+load("../common/shorter.mac");
+assume(t>tmin);
+assume(t<tmax);
+myprint(expr,key):=print("###START",key, strim("
+",tex(expr,false)), key, "END###");
+myprintmath(expr,key):=print("###START",key, expr, key, "END###");
+separator(string):=(print(" "),print("****************************************"), print(string),print(" "));
+
+
+myprint(fx,"fx");
+myprint(x,"x");
+myprint(y,"y");
+myprint(z,"z");
+myprint(tmin,"tmin");
+myprint(tmax,"tmax");
+myprint(diff(x,t),"dx");
+myprint(diff(y,t),"dy");
+myprint(diff(z,t),"dz");
+myprint(shorter(sqrt(diff(z,t)^2+diff(y,t)^2+diff(x,t)^2)),"ds");
+integrand:shorter(ev(fx*sqrt(diff(z,t)^2+diff(y,t)^2+diff(x,t)^2)));
+myprint(integrand,"integrand");
+primitive:shorter(integrate(integrand,t));
+myprint(primitive,"primitive");
+myprint(shorter(integrate(integrand,t,tmin,tmax)),"result");
+myprint(ev(primitive,t=tmin),"Fa");
+myprint(ev(primitive,t=tmax),"Fb");
+myprintmath(integrand,"integrand-math");
+myprintmath("FINISHED OK","ok");
