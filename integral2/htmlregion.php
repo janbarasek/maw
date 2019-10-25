@@ -1,11 +1,11 @@
 <div class=inlinediv>
-<div class=logickyBlok>
+	<div class=logickyBlok>
 
 <?php
 
     $vars1=rawurlencode($vars);
     $parameters=" "; $variables=" ";
-    foreach (array("a", "b", "xmin", "xmax", "ymin", "ymax") as $value)
+    foreach (["a", "b", "xmin", "xmax", "ymin", "ymax"] as $value)
       {
 	$$value=$_REQUEST[$value];
 	$$value=input_to_maxima($$value);
@@ -16,7 +16,7 @@
     if ($vars=="dy dx")
       {
 	$variables="x";
-	foreach (array("c", "d") as $value)
+	foreach (["c", "d"] as $value)
 	  {
 	    $$value=$_REQUEST[$value];
 	    $$value=input_to_maxima($$value);
@@ -29,7 +29,7 @@
     elseif ($vars=="dx dy")
       {
 	$variables="y";
-	foreach (array("c", "d") as $value)
+	foreach (["c", "d"] as $value)
 	  {
 	    $$value=$_REQUEST[$value];
 	    $$value=input_to_maxima($$value);
@@ -42,7 +42,7 @@
     elseif ($vars=="r dphi dr")
       {
 	$variables="r";
-	foreach (array("c", "d") as $value)
+	foreach (["c", "d"] as $value)
 	  {
 	    $$value=$_REQUEST[$value];
 	    $$value=input_to_maxima($$value);
@@ -54,7 +54,7 @@
     elseif ($vars=="r dr dphi")
       {
 	$variables="phi";
-	foreach (array("c", "d") as $value)
+	foreach (["c", "d"] as $value)
 	  {
 	    $$value=$_REQUEST[$value];
 	    $$value=input_to_maxima($$value);
@@ -71,4 +71,5 @@
 
 
 ?>
-</div></div>
+</div>
+</div>

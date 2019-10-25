@@ -1,112 +1,364 @@
-.support{font-size:65%; position: absolute; top:30px; right:5px; text-align:right; }
-div#flags-left{font-size:75%; position:absolute; left: 0px; top: 0px; }
-div#flags-right{font-size:75%; text-align:right; position:absolute; right: 0; top: 0;}
-div#flags {position: relative;}
+.support {
+	font-size: 65%;
+	position: absolute;
+	top: 30px;
+	right: 5px;
+	text-align: right;
+}
 
-div#main-title{font-size:160%; text-align:center; font-weight:bolder; margin-bottom:10px;padding-top:30px;}
-div#subtitle:first-letter{text-transform: capitalize;}
-#subtitle {padding-bottom: 10px;}
+div#flags-left {
+	font-size: 75%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
 
-form {font-size:110%; background-color: #E0FFFF; padding:10px;}
+div#flags-right {
+	font-size: 75%;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
 
-#maw_calculator {margin-bottom:20px; margin-top: 1px; padding: 10px; text-align:left; background-color: #9ce6f3;}
-legend {color:black;}
+div#flags {
+	position: relative;
+}
 
-#after-form {margin-left: 5px; margin-top: 5px; padding: 10px; text-align:left; background-color: #E0FFFF; color:gray;}
-#after-form a{color:gray;}
+div#main-title {
+	font-size: 160%;
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	padding-top: 30px;
+}
 
-#aftermenu{color:#444444; margin-top: 5px; display:none;}
-#comments{color:#444444; }
-#comments a{color:#4444FF; }
-#history{margin-bottom:12px;}
-#history a{color: #444444;}
+div#subtitle:first-letter {
+	text-transform: capitalize;
+}
 
-#odkaz_hlavicka {border: 3px solid #9CE6F3;}
+#subtitle {
+	padding-bottom: 10px;
+}
 
-#odkaz_hlavicka a {line-height:220%; text-decoration:none; margin:2px; padding: 5px; border-left: 2px solid  #555; color:#555; 
-font-weight : bold; white-space: nowrap; }
+form {
+	font-size: 110%;
+	background-color: #E0FFFF;
+	padding: 10px;
+}
 
-#odkaz_hlavicka{text-align: left; margin-top:20px; margin-bottom:10px;}
+#maw_calculator {
+	margin-bottom: 20px;
+	margin-top: 1px;
+	padding: 10px;
+	text-align: left;
+	background-color: #9ce6f3;
+}
 
-#odkaz_hlavicka ul li {display: inline;}
-#odkaz_hlavicka ul {margin: 0; padding: 0;}
+legend {
+	color: black;
+}
+
+#after-form {
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	text-align: left;
+	background-color: #E0FFFF;
+	color: gray;
+}
+
+#after-form a {
+	color: gray;
+}
+
+#aftermenu {
+	color: #444444;
+	margin-top: 5px;
+	display: none;
+}
+
+#comments {
+	color: #444444;
+}
+
+#comments a {
+	color: #4444FF;
+}
+
+#history {
+	margin-bottom: 12px;
+}
+
+#history a {
+	color: #444444;
+}
+
+#odkaz_hlavicka {
+	border: 3px solid #9CE6F3;
+}
+
+#odkaz_hlavicka a {
+	line-height: 220%;
+	text-decoration: none;
+	margin: 2px;
+	padding: 5px;
+	border-left: 2px solid #555;
+	color: #555;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+#odkaz_hlavicka {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#odkaz_hlavicka ul li {
+	display: inline;
+}
+
+#odkaz_hlavicka ul {
+	margin: 0;
+	padding: 0;
+}
 
 
-.submenu {margin-bottom:10px ; }
-.submenu a{font-size:90%; font-weight : normal; border-style:none; border-left: 1px solid ; }
+.submenu {
+	margin-bottom: 10px;
+}
 
-.submenu .maw_active a{border-bottom: 1px solid #555; color:#000;}
-#odkaz_hlavicka .maw_active a { border-bottom: 2px solid #555; color:#000;}
+.submenu a {
+	font-size: 90%;
+	font-weight: normal;
+	border-style: none;
+	border-left: 1px solid;
+}
 
-.submenu a:hover   {color: red;}
-#odkaz_hlavicka a:hover   {color: red;}
+.submenu .maw_active a {
+	border-bottom: 1px solid #555;
+	color: #000;
+}
 
-div#dvojint td   {text-align: center;}
+#odkaz_hlavicka .maw_active a {
+	border-bottom: 2px solid #555;
+	color: #000;
+}
 
-body {background-color: #E0FFFF; font-size:14px; font-family: Arial, ARIAL CE, Helvetica, sans-serif;}
+.submenu a:hover {
+	color: red;
+}
 
-.nadpis{font-size:150%; }
-.podnadpis{font-size: 110%; }
+#odkaz_hlavicka a:hover {
+	color: red;
+}
 
-.mainmenu{background-color: #9ce6f3;}
+div#dvojint td {
+	text-align: center;
+}
 
-td {font-size:14px; }
+body {
+	background-color: #E0FFFF;
+	font-size: 14px;
+	font-family: Arial, ARIAL CE, Helvetica, sans-serif;
+}
 
-.main{border-width: 0px;}
+.nadpis {
+	font-size: 150%;
+}
 
-.vnitrni {border: 3px solid #9ce6f3; }
-.fieldsetmin {border-width: 0px; margin:10px; margin-left:60px;}
+.podnadpis {
+	font-size: 110%;
+}
 
-.olfg {background-color:#9ce6f3; }
+.mainmenu {
+	background-color: #9ce6f3;
+}
 
-.red {color:red;}
-.text {color:black;}
-.letterspaced {letter-spacing: 1px; font-weight: bold;}
-.color0 {color:blue;}
-.color1 {color:red;}
-.color2 {color:green;}
-.color3 {color:black;}
+td {
+	font-size: 14px;
+}
 
-.color0err {color:blue; background-color: lightgray; padding:2px; display:inline-block; letter-spacing:3px; border:solid;}
-.color1err {color:red; background-color: white; padding:2px; display:inline-block; letter-spacing:3px; border:solid;}
-.color2err {color:green; background-color: yellow; padding:2px; display:inline-block; letter-spacing:3px; border:solid;}
-.color3err {color:black; background-color: yellow; padding:2px; display:inline-block; letter-spacing:3px; border:solid;}
+.main {
+	border-width: 0px;
+}
 
-#processing {color:gray;}
+.vnitrni {
+	border: 3px solid #9ce6f3;
+}
 
-.gray { color:gray;}
-.gray a { color:gray;}
+.fieldsetmin {
+	border-width: 0px;
+	margin: 10px;
+	margin-left: 60px;
+}
 
-.hint { color:red; font-size:80%; font-style: italic;}
+.olfg {
+	background-color: #9ce6f3;
+}
 
-.bold {font-weight: bold;}
+.red {
+	color: red;
+}
 
-.h3_error { color:red; font-size:200%; font-weight: bold; margin-bottom: 10px;}
-.ie_warning { color:red; font-size:120%; font-weight: bold;}
+.text {
+	color: black;
+}
 
- .submit_comment, .hint_preview {font-size: 80%; color:#444444;}
+.letterspaced {
+	letter-spacing: 1px;
+	font-weight: bold;
+}
 
-.olfgmath {background-color: #E0FFFF;}
+.color0 {
+	color: blue;
+}
 
-.hint_preview {margin-top: 10px; margin-bottom: 10px;}
+.color1 {
+	color: red;
+}
 
-input.tlacitko {margin-bottom: 5px; margin-top: 5px;}
+.color2 {
+	color: green;
+}
 
-.test_maw {margin-left:30px;}
+.color3 {
+	color: black;
+}
 
-#test_binaries, #test_forms, #test_filter {display:none;}
-#test_binaries {background-color: #BBB; max-width:900px; margin:5px;}
+.color0err {
+	color: blue;
+	background-color: lightgray;
+	padding: 2px;
+	display: inline-block;
+	letter-spacing: 3px;
+	border: solid;
+}
 
-.yellow_background {background-color:#FFFFBB; padding:3px;}
+.color1err {
+	color: red;
+	background-color: white;
+	padding: 2px;
+	display: inline-block;
+	letter-spacing: 3px;
+	border: solid;
+}
 
-input.preview_region {}
+.color2err {
+	color: green;
+	background-color: yellow;
+	padding: 2px;
+	display: inline-block;
+	letter-spacing: 3px;
+	border: solid;
+}
 
-.vnitrni2 {border: 2px solid gray; margin:5px; padding:5px; display:inline-block; vertical-align:top;}
+.color3err {
+	color: black;
+	background-color: yellow;
+	padding: 2px;
+	display: inline-block;
+	letter-spacing: 3px;
+	border: solid;
+}
 
-.editor {display:none;}
+#processing {
+	color: gray;
+}
 
-#facebox .popup .content {padding:30px;}
+.gray {
+	color: gray;
+}
 
-#facebox form, #facebox .zavrit {display:none;}
+.gray a {
+	color: gray;
+}
 
-#facebox img {vertical-align:center;}
+.hint {
+	color: red;
+	font-size: 80%;
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.h3_error {
+	color: red;
+	font-size: 200%;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.ie_warning {
+	color: red;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.submit_comment, .hint_preview {
+	font-size: 80%;
+	color: #444444;
+}
+
+.olfgmath {
+	background-color: #E0FFFF;
+}
+
+.hint_preview {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input.tlacitko {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.test_maw {
+	margin-left: 30px;
+}
+
+#test_binaries, #test_forms, #test_filter {
+	display: none;
+}
+
+#test_binaries {
+	background-color: #BBB;
+	max-width: 900px;
+	margin: 5px;
+}
+
+.yellow_background {
+	background-color: #FFFFBB;
+	padding: 3px;
+}
+
+input.preview_region {
+}
+
+.vnitrni2 {
+	border: 2px solid gray;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.editor {
+	display: none;
+}
+
+#facebox .popup .content {
+	padding: 30px;
+}
+
+#facebox form, #facebox .zavrit {
+	display: none;
+}
+
+#facebox img {
+	vertical-align: center;
+}

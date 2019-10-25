@@ -23,71 +23,77 @@ along with Mathematical Assistant o Web.  If not, see
 */
 
 
-$scriptname="trapezoidalgnu";
-require ("../common/maw.php");
+$scriptname = "trapezoidalgnu";
+require("../common/maw.php");
 
 
-$fce=$_REQUEST["funkce"];
-$allpoints=$_REQUEST["allpoints"];
-$a=$_REQUEST["a"];
-$b=$_REQUEST["b"];
-$n=$_REQUEST["n"];
-$ymin=$_REQUEST["ymin"];
-$ymax=$_REQUEST["ymax"];
+$fce = $_REQUEST["funkce"];
+$allpoints = $_REQUEST["allpoints"];
+$a = $_REQUEST["a"];
+$b = $_REQUEST["b"];
+$n = $_REQUEST["n"];
+$ymin = $_REQUEST["ymin"];
+$ymax = $_REQUEST["ymax"];
 
-$maw_tempdir="/tmp/MAW_trapezoidal".getmypid()."xx".RandomName(6);
-system ("mkdir ".$maw_tempdir."; chmod oug+rwx ".$maw_tempdir);
+$maw_tempdir = "/tmp/MAW_trapezoidal" . getmypid() . "xx" . RandomName(6);
+system("mkdir " . $maw_tempdir . "; chmod oug+rwx " . $maw_tempdir);
 
-$temp=str_replace (";","\n",$allpoints);
-$temp=str_replace (","," ",$temp);
-system ("cd $maw_tempdir; echo \"$temp\" > data; ");
+$temp = str_replace(";", "\n", $allpoints);
+$temp = str_replace(",", " ", $temp);
+system("cd $maw_tempdir; echo \"$temp\" > data; ");
 
 function math_to_GNUplot($vyraz)
 {
-  global $logbasegnuplot, $formconv_bin;
-  $uprfunkceGNU=`echo "$vyraz" | $formconv_bin -r -O gnuplot`;
-  $uprfunkceGNU=chop($uprfunkceGNU);	
-  //$uprfunkceGNU=str_replace("log(", "mylog($logbasegnuplot,", $uprfunkceGNU);
-  $uprfunkceGNU=str_replace("sqrt","mysqrt",$uprfunkceGNU);
-  return($uprfunkceGNU);
+	global $logbasegnuplot, $formconv_bin;
+	$uprfunkceGNU = `echo "$vyraz" | $formconv_bin -r -O gnuplot`;
+	$uprfunkceGNU = chop($uprfunkceGNU);
+	//$uprfunkceGNU=str_replace("log(", "mylog($logbasegnuplot,", $uprfunkceGNU);
+	$uprfunkceGNU = str_replace("sqrt", "mysqrt", $uprfunkceGNU);
+
+	return ($uprfunkceGNU);
 }
 
-$funkce=math_to_GNUplot($fce); 
+$funkce = math_to_GNUplot($fce);
 
-define ("NAZEV_SOUBORU_OBR", $maw_tempdir."/vstup");
-$souborobr=fopen(NAZEV_SOUBORU_OBR, "w");
-  
-fwrite($souborobr,"mylog(a,b)=(b>0)? log(b)/log(a):0/0\n");
-fwrite($souborobr,"mysqrt(x)=(x>=0)? sqrt(x):0/0 \n");
-$points=split(";",$allpoints);
-array_shift ($points);
-foreach ($points as $onepoint)
-{
-  $coords=split(",",$onepoint);
-  fwrite ($souborobr, "set arrow from $coords[0],0 to $coords[0],$coords[1] nohead\n");
+define("NAZEV_SOUBORU_OBR", $maw_tempdir . "/vstup");
+$souborobr = fopen(NAZEV_SOUBORU_OBR, "w");
+
+fwrite($souborobr, "mylog(a,b)=(b>0)? log(b)/log(a):0/0\n");
+fwrite($souborobr, "mysqrt(x)=(x>=0)? sqrt(x):0/0 \n");
+$points = split(";", $allpoints);
+array_shift($points);
+foreach ($points as $onepoint) {
+	$coords = split(",", $onepoint);
+	fwrite($souborobr, "set arrow from $coords[0],0 to $coords[0],$coords[1] nohead\n");
 }
-fwrite($souborobr,"set zeroaxis lt -1 \nunset key\n");
-fwrite($souborobr,"set xtics axis nomirror \n");
-fwrite($souborobr,"set ytics axis nomirror \n");
-fwrite($souborobr,"set samples 1000 \n");
-fwrite($souborobr,"set term svg font 'Verdana,9' rounded solid\n");
-fwrite($souborobr,'set output "graf.svg"'."\n");
+fwrite($souborobr, "set zeroaxis lt -1 \nunset key\n");
+fwrite($souborobr, "set xtics axis nomirror \n");
+fwrite($souborobr, "set ytics axis nomirror \n");
+fwrite($souborobr, "set samples 1000 \n");
+fwrite($souborobr, "set term svg font 'Verdana,9' rounded solid\n");
+fwrite($souborobr, 'set output "graf.svg"' . "\n");
 //fwrite($souborobr,"set term png transparent \n");
 //fwrite($souborobr,'set output "graf.png"'."\n");
-fwrite($souborobr,'unset key'."\n");
-fwrite($souborobr,'set style fill pattern 4 bo'."\n");
-fwrite($souborobr,"set xrange [".math_to_GNUplot($a).":".math_to_GNUplot($b)."]\n");
-fwrite($souborobr,"set yrange [".$ymin.":".$ymax."]\n");
-if ($dummy!="") {fwrite($souborobr,"set dummy ".$dummy."\n");}
-if ($xlabel!="") {fwrite($souborobr,"set xlabel \" ".$xlabel."\"\n");}
-if ($ylabel!="") {fwrite($souborobr,"set ylabel \" ".$ylabel."\"\n");}
-fwrite($souborobr,"set style function lines\n");
+fwrite($souborobr, 'unset key' . "\n");
+fwrite($souborobr, 'set style fill pattern 4 bo' . "\n");
+fwrite($souborobr, "set xrange [" . math_to_GNUplot($a) . ":" . math_to_GNUplot($b) . "]\n");
+fwrite($souborobr, "set yrange [" . $ymin . ":" . $ymax . "]\n");
+if ($dummy != "") {
+	fwrite($souborobr, "set dummy " . $dummy . "\n");
+}
+if ($xlabel != "") {
+	fwrite($souborobr, "set xlabel \" " . $xlabel . "\"\n");
+}
+if ($ylabel != "") {
+	fwrite($souborobr, "set ylabel \" " . $ylabel . "\"\n");
+}
+fwrite($souborobr, "set style function lines\n");
 //  $funkcegnuplot=`$mawtimeout echo "$funkce" | $formconv_bin -r -O gnuplot`;
 //  $funkcegnuplot=chop($funkcegnuplot);	
-fwrite($souborobr,"plot ".$funkce." with lines linewidth 3, \"data\" with filledcurves x1 rgb \"blue\"\n");
-fclose($souborobr); 
+fwrite($souborobr, "plot " . $funkce . " with lines linewidth 3, \"data\" with filledcurves x1 rgb \"blue\"\n");
+fclose($souborobr);
 
-system ("cd $maw_tempdir;  gnuplot vstup; cp * /tmp");
+system("cd $maw_tempdir;  gnuplot vstup; cp * /tmp");
 
 //$file=$maw_tempdir."/graf.png"; 
 //header("Content-Type: image/png");
@@ -96,13 +102,12 @@ system ("cd $maw_tempdir;  gnuplot vstup; cp * /tmp");
 //readfile($file);
 //die();
 
-$file=$maw_tempdir."/graf.svg"; 
+$file = $maw_tempdir . "/graf.svg";
 header('Content-Type: image/svg+xml');
-header("Content-Disposition: attachment; filename=".basename($file).";" );
+header("Content-Disposition: attachment; filename=" . basename($file) . ";");
 readfile($file);
 
-system ("rm -r ".$maw_tempdir);
-
+system("rm -r " . $maw_tempdir);
 
 
 ?>

@@ -24,13 +24,13 @@ along with Mathematical Assistant o Web.  If not, see
 */
 
 
-$scriptname="formconv2";
-require ("maw.php");
-require ("redirect.php");
+$scriptname = "formconv2";
+require("maw.php");
+require("redirect.php");
 
-$fnc=rawurldecode($_SERVER['QUERY_STRING']);
+$fnc = rawurldecode($_SERVER['QUERY_STRING']);
 
-save_log($fnc,"formconv2");
+save_log($fnc, "formconv2");
 
-redirect($texrender.rawurlencode(formconv($fnc)));
+redirect($texrender . rawurlencode(formconv($fnc)));
 

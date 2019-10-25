@@ -1,6 +1,6 @@
 <?php
 
-echo "<h2>".__("Autonomous system in plane")."</h2>";
+echo "<h2>" . __("Autonomous system in plane") . "</h2>";
 
 ?>
 
@@ -26,50 +26,52 @@ $$[x,y]=\left[<?php echo $stbod; ?>\right]$$
  $$J\left(<?php echo $stbod; ?>\right)=
 <?php echo $jakobihomatices; ?>
  $$
-</div> 
+</div>
 <div class=logickyBlok>
-<?php
-echo __("Characteristic polynomial");
+	<?php
+	echo __("Characteristic polynomial");
 
-echo "<br><br> a)";
-echo (sprintf(__("From the determinant of %s"),"\$J-\\lambda I\$")); 
+	echo "<br><br> a)";
+	echo(sprintf(__("From the determinant of %s"), "\$J-\\lambda I\$"));
 
-?>
+	?>
 
-<br>&nbsp;&nbsp; $\Bigl|J-\lambda I\Bigr|=
- \left |\matrix{<?php echo $dfxs; ?>-\lambda&<?php echo $dfys; ?>\cr <?php echo $dgxs; ?> &<?php echo $dgys; ?>-\lambda\cr}\right|=
- \left(<?php echo $dfxs; ?>-\lambda\right)\left(<?php echo $dgys; ?>-\lambda\right)-(<?php echo $dfys?>)(<?php echo $dgxs; ?>)=
- <?php echo $charpoly; ?>$
+	<br>&nbsp;&nbsp; $\Bigl|J-\lambda I\Bigr|=
+	\left |\matrix{<?php echo $dfxs; ?>-\lambda&<?php echo $dfys; ?>\cr <?php echo $dgxs; ?> &<?php echo $dgys; ?>
+	-\lambda\cr}\right|=
+	\left(<?php echo $dfxs; ?>-\lambda\right)\left(<?php echo $dgys; ?>-\lambda\right)-(<?php echo $dfys ?>
+	)(<?php echo $dgxs; ?>)=
+	<?php echo $charpoly; ?>$
 
- <br> b) <?php echo (sprintf(__("From trace and determinant of %s"),"\$J\$")); ?>
+	<br> b) <?php echo(sprintf(__("From trace and determinant of %s"), "\$J\$")); ?>
 
-<br>&nbsp;&nbsp;$|J|=<?php echo $determinant; ?>$
+	<br>&nbsp;&nbsp;$|J|=<?php echo $determinant; ?>$
 
-<br>&nbsp;&nbsp;$\hbox{Tr } J=<?php echo $trace;?>$
+	<br>&nbsp;&nbsp;$\hbox{Tr } J=<?php echo $trace; ?>$
 
-<br>&nbsp;&nbsp;$\lambda^2-\text{Tr}(J)\lambda+|J|=<?php echo $charpoly; ?>$
+	<br>&nbsp;&nbsp;$\lambda^2-\text{Tr}(J)\lambda+|J|=<?php echo $charpoly; ?>$
 
 </div>
 <div class=logickyBlok>
-<?php
+	<?php
 
-function upravitVystup ($co)
-{
-return(str_replace(Array("\\\\", "\\null", "\\qquad"),Array(""),$co));
-}
+	function upravitVystup($co)
+	{
+		return (str_replace(["\\\\", "\\null", "\\qquad"], [""], $co));
+	}
 
-echo __("Eigenvalues");
-echo upravitVystup($vlastnicisla);
+	echo __("Eigenvalues");
+	echo upravitVystup($vlastnicisla);
 
-?>
+	?>
 
-<br>
+	<br>
 
-<?php
-echo __("Eigenvalues (numerically)");
-echo upravitVystup($vlastnicislanum);
+	<?php
+	echo __("Eigenvalues (numerically)");
+	echo upravitVystup($vlastnicislanum);
 
-?>
+	?>
 </div>
 <div class=logickyBlok>
 <?php
